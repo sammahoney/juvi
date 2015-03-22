@@ -1,0 +1,734 @@
+@charset "UTF-8";
+.header-language-background, .button, .cart-table .product-cart-actions .button,
+#co-shipping-method-form .buttons-set .button, .footer .button,
+.opc .section .step-title .number, .opc .section.allow.active .step-title .number,
+.no-touch .opc .section.allow:hover .step-title .number, .cart .buttons-set .button,
+.cart-table .button, .sidebar .actions .button, .button.button-secondary {
+  background-color: #000;
+}
+
+.skip-cart, .footer .block-title, .footer address, .footer .links a:hover,
+.cms-page-view .std h1, .cms-no-route .std h1, .cms-page-view .std h2, .cms-no-route .std h2,
+.button2 span, .button2 span span {
+  color: #000;
+}
+
+.buttons-set a, button.button span span {
+  color: #FFF;
+}
+
+.product-view .product-shop .product-name .h1, .product-view .product-img-box .product-name h1,
+.product-view .product-shop .price-box .regular-price .price, .product-view .product-shop .price-box .special-price .price,
+.product-view .product-shop .price-box .full-product-price .price, .product-collateral .toggle-tabs li.current span,
+.product-collateral .toggle-tabs li:hover span, .opc .section.allow .step-title:hover h2, .opc .section.active .step-title h2 {
+  color: #4d4d4d;
+}
+
+.price-box .price {
+  color: #333;
+}
+
+.no-touch .product-image:hover {
+  border-color: #000;
+}
+
+body {
+  font-family: "Roboto", arial;
+  font-weight: 300;
+}
+
+.wrapper {
+  margin: 10px auto;
+  overflow-x: hidden;
+}
+
+a {
+  color: #4d4d4d;
+  transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+}
+a:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #4d4d4d;
+}
+
+label {
+  font-family: "Roboto", arial;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.page-title h1, .page-title h2, .product-name h1, .product-name h2 {
+  color: #000;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 130%;
+}
+
+.block-title h2, .block-title h3, .block-title strong {
+  color: #000;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.header-language-background {
+  padding: 0;
+}
+
+p.welcome-msg {
+  position: absolute;
+  font-size: 108%;
+  margin: 80px 0 0 165px;
+}
+
+.logo {
+  padding: 0;
+}
+
+#phone {
+  float: right;
+  margin: 10px 186px 0 0;
+  font-size: 110%;
+  letter-spacing: 1px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+#phone:before {
+  font-family: 'PG_Icons';
+  content: "4";
+  display: block;
+  position: absolute;
+  font-size: 25px;
+  margin: -7px 0 0 -26px;
+}
+
+.account-cart-wrapper {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.account-cart-wrapper .icon {
+  background: none;
+}
+.account-cart-wrapper .icon:before {
+  font-family: 'PG_Icons';
+  text-indent: 0;
+  display: block;
+  position: absolute;
+  font-size: 25px;
+  margin: -8px 0 0 10px;
+  color: #000;
+}
+.account-cart-wrapper .skip-account .icon:before {
+  content: "0";
+}
+.account-cart-wrapper .skip-cart .icon:before {
+  content: "1";
+}
+.account-cart-wrapper .label {
+  font-size: 110%;
+}
+
+.header-minicart .block-subtitle {
+  font-family: "Roboto", arial;
+  color: #000;
+}
+
+#search_mini_form input#search {
+  font-family: "Roboto", arial;
+  font-size: 80%;
+  letter-spacing: 1px;
+  border-color: #000;
+  font-weight: 300;
+  color: #000;
+  line-height: 15px;
+}
+#search_mini_form .search-button:before {
+  font-family: 'PG_Icons';
+  content: "2";
+  text-indent: 0;
+  display: block;
+  position: absolute;
+  font-size: 25px;
+  margin: -9px 0 0 -15px;
+  background: none;
+  color: #000;
+}
+
+#header-nav {
+  border-bottom: 2px solid #000;
+}
+
+.menu-promo {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  margin-top: 45px;
+  width: 365px;
+}
+.menu-promo img {
+  width: 100%;
+}
+
+.show-promo .menu-promo {
+  opacity: 1;
+  z-index: 10;
+  transition: opacity 0.1s ease-in;
+  -webkit-transition: opacity 0.1s ease-in;
+  -moz-transition: opacity 0.1s ease-in;
+  -o-transition: opacity 0.1s ease-in;
+}
+.show-promo .menu-promo:hover {
+  opacity: 1;
+  transition: opacity 0 ease-in;
+  -webkit-transition: opacity 0 ease-in;
+  -moz-transition: opacity 0 ease-in;
+  -o-transition: opacity 0 ease-in;
+}
+.show-promo .menu-promo.active {
+  opacity: 1 !important;
+  transition: opacity 0 ease-in;
+  -webkit-transition: opacity 0 ease-in;
+  -moz-transition: opacity 0 ease-in;
+  -o-transition: opacity 0 ease-in;
+}
+
+.nav-primary {
+  position: relative;
+}
+.nav-primary .menu-active {
+  z-index: 10;
+  position: static;
+}
+.nav-primary .menu-active ul.level0 {
+  opacity: 0.99 !important;
+  left: 0 !important;
+  top: 45px;
+}
+.nav-primary li.level0 {
+  position: static;
+}
+.nav-primary li.level0.nav-1 a.level0 {
+  padding: 0 25px 15px 0;
+}
+.nav-primary li.level0.nav-2.menu-active:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #FFF transparent transparent transparent;
+  position: absolute;
+  bottom: -10px;
+  z-index: 20;
+  left: 138px;
+}
+.nav-primary li.level0 a {
+  color: #000;
+}
+.nav-primary li.level0 a.level0 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 128%;
+  letter-spacing: 1px;
+  padding: 0 25px 15px;
+}
+.nav-primary li.level0 a:hover {
+  color: gray;
+}
+.nav-primary li.level0 ul.level0 {
+  border: 0;
+  background: #333;
+  padding: 40px 390px 40px 0;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  left: -300%;
+  width: 100% !important;
+  min-height: 286px;
+  column-count: 5;
+  -webkit-column-count: 5;
+  -moz-column-count: 5;
+  -o-column-count: 5;
+  column-gap: 20px;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  -o-column-gap: 20px;
+  transition: opacity 0.1s ease-in;
+  -webkit-transition: opacity 0.1s ease-in;
+  -moz-transition: opacity 0.1s ease-in;
+  -o-transition: opacity 0.1s ease-in;
+}
+.nav-primary li.level0 ul.level0 a:hover {
+  margin-left: 5px;
+}
+.nav-primary li.level0 ul.level0 li.level1 {
+  margin-bottom: 5px;
+}
+.nav-primary li.level0 ul.level0 li.level1 a {
+  border: 0;
+  color: #FFF;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 122%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.nav-primary li.level0 ul.level0 li.level1.parent {
+  padding-bottom: 15px;
+  display: inline-block;
+}
+.nav-primary li.level0 ul.level0 li.level1.parent > a:after {
+  display: none;
+}
+.nav-primary li.level0 ul.level0:after {
+  content: "";
+  background: #333;
+  width: 300%;
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: -100%;
+}
+.nav-primary li.level0 ul.level1 {
+  position: static !important;
+  border: 0;
+  padding: 8px 0 0;
+  background: #333;
+  display: block;
+  min-height: 40px;
+  width: auto;
+}
+.nav-primary li.level0 ul.level1 li.level2 a {
+  border: 0;
+  color: #FFF;
+  line-height: 22px;
+  font-family: "Roboto", arial;
+  font-size: 80%;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+.breadcrumbs li, .breadcrumbs a {
+  font-family: "Roboto", arial;
+  text-transform: lowercase;
+}
+.breadcrumbs a:hover {
+  color: gray;
+}
+.breadcrumbs strong {
+  color: #000;
+}
+
+.cms-index-index .carousel {
+  width: 200%;
+  margin-left: -50%;
+  margin-top: -53px;
+}
+.cms-index-index .carousel .swiper-container .swiper-wrapper .swiper-slide .slide {
+  height: 560px;
+  background-position: 50% 0 !important;
+  display: table;
+  width: 100%;
+}
+.cms-index-index .carousel .swiper-container .swiper-wrapper .swiper-slide .slide .slider-content {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  padding-left: 450px;
+  text-align: center;
+}
+.cms-index-index .carousel .swiper-container .swiper-wrapper .swiper-slide .slide .slider-content h2 {
+  font-weight: 300;
+  color: #000;
+  font-size: 720%;
+  letter-spacing: 12px;
+  margin: 0;
+}
+.cms-index-index .carousel .swiper-container .swiper-wrapper .swiper-slide .slide .slider-content h3 {
+  font-weight: 300;
+  color: #000;
+  font-size: 270%;
+  letter-spacing: 5px;
+  margin: 0;
+  line-height: 90%;
+}
+.cms-index-index .carousel .swiper-container .swiper-wrapper .swiper-slide .slide .slider-content a {
+  display: inline-block;
+  background: transparent;
+  border: 2px solid #000;
+  color: #000;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 90%;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  margin-top: 30px;
+}
+
+.block-layered-nav {
+  color: #000;
+}
+.block-layered-nav .block-title {
+  display: none;
+}
+.block-layered-nav .actions a {
+  font-family: "Roboto", arial;
+  font-size: 80%;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  margin: -40px 0 0 15px;
+}
+.block-layered-nav .currently {
+  padding: 15px 15px 25px;
+  background: #f7f7f7;
+  letter-spacing: 1px;
+}
+.block-layered-nav .currently .block-subtitle {
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+.block-layered-nav .currently ol {
+  padding: 0;
+  font-family: "Roboto", arial;
+  font-weight: 300;
+  font-size: 80%;
+}
+.block-layered-nav .currently ol li .label {
+  font-weight: 400;
+}
+.block-layered-nav .currently .btn-remove {
+  border-color: #cccccc;
+  transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+}
+.block-layered-nav .currently .btn-remove:hover {
+  background: #000;
+  border-color: #000;
+}
+.block-layered-nav .currently .btn-remove:after {
+  content: "×";
+  font-size: 18px;
+  font-weight: 100;
+  color: #4d4d4d;
+  display: block;
+  text-align: center;
+  margin-left: 1px;
+  transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+}
+.block-layered-nav .currently .btn-remove:hover:after {
+  color: #FFF;
+}
+.block-layered-nav .block-content > dl > dt, .block-layered-nav .block-content > dl > dt:hover, .block-layered-nav .block-content > dl > dd {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 100;
+  color: #000;
+  background: transparent;
+  border: 0;
+  padding: 5px 0;
+  letter-spacing: 1px;
+}
+.block-layered-nav .block-content > dl > dt ol > li > span, .block-layered-nav .block-content > dl > dt ol > li > a, .block-layered-nav .block-content > dl > dt ol > li > a span.price, .block-layered-nav .block-content > dl > dt:hover ol > li > span, .block-layered-nav .block-content > dl > dt:hover ol > li > a, .block-layered-nav .block-content > dl > dt:hover ol > li > a span.price, .block-layered-nav .block-content > dl > dd ol > li > span, .block-layered-nav .block-content > dl > dd ol > li > a, .block-layered-nav .block-content > dl > dd ol > li > a span.price {
+  padding: 5px 0;
+  font-family: "Roboto", arial;
+  font-size: 80%;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.block-layered-nav .block-content > dl > dt ol > li > a .count, .block-layered-nav .block-content > dl > dt:hover ol > li > a .count, .block-layered-nav .block-content > dl > dd ol > li > a .count {
+  display: none;
+}
+.block-layered-nav .block-content > dl > dt ol > li > a span.price, .block-layered-nav .block-content > dl > dt:hover ol > li > a span.price, .block-layered-nav .block-content > dl > dd ol > li > a span.price {
+  padding: 0;
+  font-size: 100%;
+}
+
+.category-description.std {
+  font-size: 75%;
+  font-family: "Roboto", arial;
+  letter-spacing: 1px;
+  line-height: 200%;
+  padding-bottom: 20px;
+}
+
+.products-grid .product-name {
+  padding-top: 10px;
+}
+.products-grid .product-name a {
+  font-size: 80%;
+  font-family: "Roboto", arial;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.products-grid .product-name a:hover {
+  color: gray;
+}
+.products-grid .product-image {
+  overflow: hidden;
+  border: 0;
+}
+.products-grid .product-image img {
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+.products-grid .product-image:hover img {
+  opacity: 0.8;
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+.products-grid .product-info {
+  padding: 0;
+}
+.products-grid .price-box .price {
+  font-family: "Roboto", arial;
+  font-size: 90%;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.toolbar {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid #000;
+  padding-top: 20px;
+}
+.toolbar label {
+  text-transform: lowercase;
+  font-weight: 500;
+  font-size: 90%;
+  letter-spacing: 1px;
+}
+.toolbar .sorter .sort-by a.sort-by-switcher {
+  background: none;
+}
+.toolbar .sorter .sort-by a.sort-by-switcher:after {
+  font-family: 'FontAwesome';
+  text-indent: 0;
+  position: absolute;
+  display: block;
+  margin: -30px 0 0 8px;
+  color: #000;
+}
+.toolbar .sorter .sort-by a.sort-by-switcher--asc:after {
+  content: "\f176";
+}
+.toolbar .sorter .sort-by a.sort-by-switcher--desc:after {
+  content: "\f175";
+}
+.toolbar .pager .amount {
+  font-family: "Roboto", arial;
+  font-size: 90%;
+  letter-spacing: 1px;
+}
+.toolbar .pager .pages a, .toolbar .pager .pages .current {
+  color: #000;
+}
+.toolbar .pager .pages .next:hover, .toolbar .pager .pages .previous:hover {
+  border: 0;
+}
+.toolbar .pager .pages .next:before {
+  border-left: 4px solid #000;
+}
+
+.product-view .product-shop .product-name {
+  width: 100%;
+}
+.product-view .product-shop .product-name .h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 155%;
+  letter-spacing: 1px;
+  color: #000;
+}
+.product-view .product-shop .price-info {
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.product-view .product-shop .price-info .price-box .price {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 155%;
+  letter-spacing: 1px;
+}
+.product-view .product-shop .short-description {
+  font-size: 80%;
+  font-family: "Roboto", arial;
+  letter-spacing: 1px;
+  line-height: 200%;
+}
+.product-view .product-shop .availability.in-stock span:before {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+  padding-right: 6px;
+}
+.product-view .product-img-box .product-image img {
+  max-height: 900px !important;
+}
+.product-view .product-img-box .product-image-thumbs li a {
+  margin-right: 6px;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+.product-view .product-img-box .product-image-thumbs li a:hover {
+  border-color: transparent;
+  opacity: 0.8;
+}
+.product-view .product-img-box .product-image-thumbs li a:hover img {
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -o-transform: scale(1.03);
+}
+.product-view .qty-wrapper {
+  display: none;
+}
+.product-view .add-to-cart-buttons .button {
+  background: transparent;
+  border: 2px solid #000;
+}
+.product-view .add-to-cart-buttons .button span {
+  color: #000;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 90%;
+}
+.product-view .box-collateral h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+  letter-spacing: 1px;
+  color: #000;
+  border-top: 1px solid #000;
+  text-align: center;
+  padding: 20px 0 10px;
+}
+
+.product-image, .no-touch .product-img-box .product-image:not(.zoom-available):hover {
+  border: 0;
+}
+
+.block-related .block-title h2 {
+  display: none;
+}
+
+.footer {
+  font-family: "Roboto", arial;
+}
+.footer button.button {
+  font-family: "Roboto", arial;
+}
+.footer .links a {
+  font-family: "Roboto", arial;
+  font-size: 110%;
+}
+.footer .block-title {
+  border: 0;
+  padding: 0;
+}
+.footer .block-title strong {
+  font-size: 180%;
+  letter-spacing: 0px;
+  font-weight: 100;
+}
+
+#footer_message {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #333;
+  color: #FFF;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  padding: 1%;
+  z-index: 10;
+  text-transform: uppercase;
+  font-size: 110%;
+  letter-spacing: 2px;
+}
+
+/* Responsive Styles */
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
+  .nav-primary li.level0 ul.level0 {
+    padding: 40px 300px 20px 0;
+    column-gap: 10px;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    -o-column-gap: 10px;
+  }
+
+  .menu-promo {
+    width: 285px;
+  }
+}
+@media only screen and (min-width: 771px) and (max-width: 979px) {
+  .nav-primary li.level0 ul.level0 {
+    padding: 40px 0 20px 0;
+    column-count: 5;
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    -o-column-count: 5;
+    column-gap: 20px;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    -o-column-gap: 20px;
+  }
+
+  .menu-promo {
+    display: none;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 770px) {
+  p.welcome-msg {
+    margin: 16% 0 0 36%;
+  }
+
+  .product-view .product-img-box .product-image img {
+    max-height: 450px !important;
+    margin: 0 1px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  p.welcome-msg {
+    margin: 16% 0 0 36%;
+  }
+}
+/* Icon Set */
+@font-face {
+  font-family: 'PG_Icons';
+  src: url("webfonts/PG_Icons-webfont.eot");
+  src: url("webfonts/PG_Icons-webfont.eot?#iefix") format("embedded-opentype"), url("webfonts/PG_Icons-webfont.woff2") format("woff2"), url("webfonts/PG_Icons-webfont.woff") format("woff"), url("webfonts/PG_Icons-webfont.ttf") format("truetype"), url("webfonts/PG_Icons-webfont.svg#PG_Icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

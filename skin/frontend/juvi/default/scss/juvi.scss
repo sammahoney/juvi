@@ -1,0 +1,850 @@
+
+
+// =============================================
+// Variables
+// =============================================
+
+// Main
+$background: #000;
+// Text
+$textcolor: #000;
+$buttontextcolor: #FFF;
+$pricecolor: #333;
+// Borders
+$bordercolor: #000;
+// Fonts & Weights
+$mainfont: 'Roboto', arial;
+$titlefont: 'Roboto Condensed', sans-serif;
+$lightweight: 100;
+$mediumweight: 300;
+$boldweight: 500;
+$spacing: 0px;
+// Transition - courtesy of http://log.vieron.net/articles/sass-mixins-for-vendor-prefixed-transitions-including-properties/
+$transpeed: 0.1s;
+$transease: ease-in;
+@function prefix($property, $prefixes: (webkit moz o ms)) {
+	$vendor-prefixed-properties: transform background-clip background-size;
+	$result: ();
+	@each $prefix in $prefixes {
+		@if index($vendor-prefixed-properties, $property) {
+			$property: -#{$prefix}-#{$property}
+		}
+		$result: append($result, $property);
+	}
+	@return $result;
+}
+@function trans-prefix($transition, $prefix: moz) {
+	$prefixed: ();
+	@each $trans in $transition {
+		$prop-name: nth($trans, 1);
+		$vendor-prop-name: prefix($prop-name, $prefix);
+		$prop-vals: nth($trans, 2);
+		$prefixed: append($prefixed, ($vendor-prop-name $prop-vals), comma);
+	}
+	@return $prefixed;
+}
+@mixin transition($values...) { 
+	$transitions: ();
+	@each $declaration in $values {
+		$prop: nth($declaration, 1);
+		$prop-opts: ();
+		$length: length($declaration);
+		@for $i from 2 through $length {
+			$prop-opts: append($prop-opts, nth($declaration, $i));   
+		}
+		$trans: ($prop, $prop-opts);
+		$transitions: append($transitions, $trans, comma);
+	}
+	transition: $values;
+	-webkit-transition: trans-prefix($transitions, webkit);
+	-moz-transition: trans-prefix($transitions, moz);
+	-o-transition: trans-prefix($transitions, o);
+}
+// Additional Mixins - courtesy of https://github.com/matthieua/sass-css3-mixins/blob/master/css3-mixins.sass
+// Browser prefixes
+@mixin css3-prefix($property, $value) {
+	#{$property}: #{$value};
+	-webkit-#{$property}: #{$value};
+	-moz-#{$property}: #{$value};
+	-o-#{$property}: #{$value};
+}
+
+// =============================================
+// Basic Styles
+// =============================================
+
+// Backgrounds
+.header-language-background, .button, .cart-table .product-cart-actions .button, 
+#co-shipping-method-form .buttons-set .button, .footer .button,
+.opc .section .step-title .number, .opc .section.allow.active .step-title .number, 
+.no-touch .opc .section.allow:hover .step-title .number, .cart .buttons-set .button,
+.cart-table .button, .sidebar .actions .button, .button.button-secondary {
+	background-color: $background;
+}
+.skip-cart, .footer .block-title, .footer address, .footer .links a:hover,
+.cms-page-view .std h1, .cms-no-route .std h1, .cms-page-view .std h2, .cms-no-route .std h2,
+.button2 span, .button2 span span {
+	color: $textcolor;
+}
+.buttons-set a, button.button span span {
+	color: $buttontextcolor;
+}
+.product-view .product-shop .product-name .h1, .product-view .product-img-box .product-name h1,
+.product-view .product-shop .price-box .regular-price .price, .product-view .product-shop .price-box .special-price .price, 
+.product-view .product-shop .price-box .full-product-price .price, .product-collateral .toggle-tabs li.current span, 
+.product-collateral .toggle-tabs li:hover span, .opc .section.allow .step-title:hover h2, .opc .section.active .step-title h2 {
+	color: lighten( $textcolor, 30% );
+}
+.price-box .price {
+	color: $pricecolor;
+}
+.no-touch .product-image:hover {
+	border-color: $bordercolor;
+}
+
+// =============================================
+// Main Styles
+// =============================================
+
+body {
+	font-family: $mainfont;
+	font-weight: $mediumweight;
+}
+.wrapper {
+	margin: 10px auto;
+	overflow-x: hidden;
+}
+// Links
+a {
+	color: lighten( $textcolor, 30% );
+	@include transition(all $transpeed $transease);
+	&:hover {
+		color: lighten( $textcolor, 50% );
+		text-decoration: none;
+	}
+}
+a:visited {
+	color: lighten( $textcolor, 30% );
+}
+label {
+	font-family: $mainfont;
+	font-weight: $mediumweight;
+}
+
+// =============================================
+// Titles
+// =============================================
+
+h1, h2, h3, h4, h5 {
+	font-family: $titlefont;
+}
+.page-title, .product-name {
+	h1, h2 {
+		color: $textcolor;
+		font-family: $titlefont;
+		font-weight: normal;
+		letter-spacing: $spacing+1;
+		font-size: 130%;
+	}
+}
+.block-title {
+	h2, h3, strong {
+		color: $textcolor;
+		font-family: $titlefont;
+		font-weight: normal;
+		letter-spacing: $spacing+1;
+	}
+}
+
+// =============================================
+// Header
+// =============================================
+
+.header-language-background {
+	padding: 0;
+}
+p.welcome-msg {
+	position: absolute;
+	font-size: 108%;
+	margin: 80px 0 0 165px;
+}
+.logo {
+	padding: 0;
+}
+#phone {
+	float: right;
+	margin: 10px 186px 0 0;
+	font-size: 110%;
+	letter-spacing: $spacing+1;
+	font-family: $titlefont;
+	&:before {
+		font-family: 'PG_Icons';
+		content: "4";
+		display: block;
+		position: absolute;
+		font-size: 25px;
+		margin: -7px 0 0 -26px;
+	}
+}
+.account-cart-wrapper {
+	font-family: $titlefont;
+	.icon {
+		background: none;
+		&:before {
+			font-family: 'PG_Icons';
+			text-indent: 0;
+			display: block;
+			position: absolute;
+			font-size: 25px;
+			margin: -8px 0 0 10px;
+			color: $textcolor;
+		}
+	}
+	.skip-account .icon:before {
+		content: "0";
+	}
+	.skip-cart .icon:before {
+		content: "1";
+	}
+	.label {
+		font-size: 110%;
+	}
+}
+// Header Cart
+.header-minicart .block-subtitle {
+	font-family: $mainfont;
+	color: $textcolor;
+}
+// Search
+#search_mini_form {
+	input#search {
+		font-family: $mainfont;
+		font-size: 80%;
+		letter-spacing: $spacing+1;
+		border-color: $bordercolor;
+		font-weight: $mediumweight;
+		color: $textcolor;
+		line-height: 15px;
+	}
+	.search-button:before {
+		font-family: 'PG_Icons';
+		content: "2";
+		text-indent: 0;
+		display: block;
+		position: absolute;
+		font-size: 25px;
+		margin: -9px 0 0 -15px;
+		background: none;
+		color: $textcolor;
+	}
+}
+
+// =============================================
+// Navigation
+// =============================================
+
+#header-nav {
+	border-bottom: 2px solid $textcolor;
+}
+.menu-promo {
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	z-index: -1;
+	margin-top: 45px;
+	width: 365px;
+	img {
+		width: 100%;
+	}
+}
+.show-promo .menu-promo {
+	opacity: 1;
+	z-index: 10;
+	@include transition(opacity $transpeed $transease);
+	&:hover {
+		opacity: 1;
+		@include transition(opacity 0 $transease);
+	}
+	&.active {
+		opacity: 1 !important;
+		@include transition(opacity 0 $transease);
+	}
+}
+.nav-primary {
+	position: relative;
+	.menu-active {
+		z-index: 10;
+		position: static;
+		ul.level0 {
+			opacity: 0.99 !important;
+			left: 0 !important;
+			top: 45px;
+		}
+	}
+	li.level0 {
+		position: static;
+		&.nav-1 a.level0 {
+			padding: 0 25px 15px 0;
+		}
+		&.nav-2.menu-active:after {
+			content:"";
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 10px 10px 0 10px;
+			border-color: #FFF transparent transparent transparent;
+			position: absolute;
+			bottom: -10px;
+			z-index: 20;
+			left: 138px;
+		}
+		a {
+			color: $textcolor;
+			&.level0 {
+				font-family: $titlefont;
+				font-size: 128%;
+				letter-spacing: $spacing+1;
+				padding: 0 25px 15px;
+			}
+			&:hover {
+				color: lighten( $textcolor, 50% );
+			}
+		}
+		ul.level0 {
+			border: 0;
+			background: #333;
+			padding: 40px 390px 40px 0;
+			opacity: 0;
+			display: block;
+			position: absolute;
+			left: -300%;
+			width: 100% !important;
+			min-height: 286px;
+			@include css3-prefix(column-count, 5);
+			@include css3-prefix(column-gap, 20px);
+			@include transition(opacity $transpeed $transease);
+			a:hover {
+				margin-left: 5px;
+			}
+			li.level1 {
+				margin-bottom: 5px;
+				a {
+					border: 0;
+					color: $buttontextcolor;
+					font-family: $titlefont;
+					font-size: 122%;
+					letter-spacing: $spacing+1;
+					text-transform: uppercase;
+				}
+				&.parent {
+					padding-bottom: 15px;
+					display: inline-block;
+					> a:after{
+						display: none;
+					}
+				}
+			}
+			&:after {
+				content: "";
+				background: #333;
+				width: 300%;
+				display: block;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				z-index: -1;
+				left: -100%;
+			}
+		}
+		ul.level1 {
+			position: static !important;
+			border: 0;
+			padding: 8px 0 0;
+			background: #333;
+			display: block;
+			min-height: 40px;
+			width: auto;
+			li.level2 {
+				a {
+					border: 0;
+					color: $buttontextcolor;
+					line-height: 22px;
+					font-family: $mainfont;
+					font-size: 80%;
+					letter-spacing: $spacing+1;
+					font-weight: $lightweight;
+				}
+			}
+		}
+	}
+}
+.breadcrumbs {
+	li, a {
+		font-family: $mainfont;
+		text-transform: lowercase;
+	}
+	a:hover {
+		color: lighten( $textcolor, 50% );
+	}
+	strong {
+		color: $textcolor;
+	}
+}
+
+// =============================================
+// Homepage
+// =============================================
+
+.cms-index-index {
+	.carousel {
+		width: 200%;
+		margin-left: -50%;
+		margin-top: -53px;
+		.swiper-container {
+			.swiper-wrapper {
+				.swiper-slide {
+					.slide {
+						height: 560px;
+						background-position: 50% 0 !important;
+						display: table;
+						width: 100%;
+						.slider-content {
+							display: table-cell;
+							vertical-align: middle;
+							width: 100%;
+							padding-left: 450px;
+							text-align: center;
+							h2 {
+								font-weight: $mediumweight;
+								color: $textcolor;
+								font-size: 720%;
+								letter-spacing: $spacing+12;
+								margin: 0;
+							}
+							h3 {
+								font-weight: $mediumweight;
+								color: $textcolor;
+								font-size: 270%;
+								letter-spacing: $spacing+5;
+								margin: 0;
+								line-height: 90%;
+							}
+							a {
+								display: inline-block;
+								background: transparent;
+								border: 2px solid $bordercolor;
+								color: $textcolor;
+								font-family: $titlefont;
+								font-weight: $boldweight;
+								font-size: 90%;
+								text-transform: uppercase;
+								padding: 5px 20px;
+								margin-top: 30px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// =============================================
+// Layered Nav
+// =============================================
+
+.block-layered-nav {
+	color: $textcolor;
+	.block-title {
+		display: none;
+	}
+	.actions a {
+		font-family: $mainfont;
+		font-size: 80%;
+		font-weight: $mediumweight;
+		letter-spacing: $spacing+1;
+		text-decoration: underline;
+		margin: -40px 0 0 15px;
+	}
+	.currently {
+		padding: 15px 15px 25px;
+		background: lighten( $background, 97% );
+		letter-spacing: $spacing+1;
+		.block-subtitle {
+			padding: 0;
+			font-family: $titlefont;
+			font-weight: $mediumweight+100;
+			color: $textcolor;
+		}
+		ol {
+			padding: 0;
+			font-family: $mainfont;
+			font-weight: $mediumweight;
+			font-size: 80%;
+			li .label {
+				font-weight: $mediumweight+100;
+			}
+		}
+		.btn-remove {
+			border-color: lighten( $bordercolor, 80% );
+			@include transition(all $transpeed $transease);
+		}
+		.btn-remove:hover {
+			background: $background;
+			border-color: $bordercolor;
+		}
+		.btn-remove:after {
+			content: "×";
+			font-size: 18px;
+			font-weight: $lightweight;
+			color: lighten( $textcolor, 30% );
+			display: block;
+			text-align: center;
+			margin-left: 1px;
+			@include transition(all $transpeed $transease);
+		}
+		.btn-remove:hover:after {
+			color: #FFF;
+		}
+	}
+	.block-content > dl > {
+		dt, dt:hover, dd {
+			font-family: $titlefont;
+			font-weight: $lightweight;
+			color: $textcolor;
+			background: transparent;
+			border: 0;
+			padding: 5px 0;
+			letter-spacing: $spacing+1;
+			ol > li > {
+				span, a, a span.price {
+					padding: 5px 0;
+					font-family: $mainfont;
+					font-size: 80%;
+					font-weight: $mediumweight;
+					letter-spacing: $spacing+2;
+				}
+				a .count {
+					display: none;
+				}
+				a span.price {
+					padding: 0;
+					font-size: 100%;
+				}
+			}
+		}
+	}
+}
+
+// =============================================
+// Category View
+// =============================================
+
+.category-description.std {
+	font-size: 75%;
+	font-family: $mainfont;
+	letter-spacing: $spacing+1;
+	line-height: 200%;
+	padding-bottom: 20px;
+}
+.products-grid {
+	.product-name {
+		padding-top: 10px;
+		a {
+			font-size: 80%;
+			font-family: $mainfont;
+			font-weight: $mediumweight+100;
+			color: $textcolor;
+			letter-spacing: $spacing+1;
+			text-transform: capitalize;
+		}
+		a:hover {
+			color: lighten( $textcolor, 50% );
+		}
+	}
+	.product-image {
+		overflow: hidden;
+		border: 0;
+		img {
+			@include transition(all 0.2s $transease);
+		}
+		&:hover img {
+			opacity: 0.8;
+			@include css3-prefix(transform, scale(1.02));
+		}
+	}
+	.product-info {
+		padding: 0;
+	}
+	.price-box {
+		.price {
+			font-family: $mainfont;
+			font-size: 90%;
+			letter-spacing: $spacing+1;
+			font-weight: $mediumweight+100;
+		}
+	}
+}
+// Toolbar
+.toolbar {
+	background: transparent;
+	border: 0;
+	border-top: 1px solid $bordercolor;
+	padding-top: 20px;
+	label {
+		text-transform: lowercase;
+		font-weight: $boldweight;
+		font-size: 90%;
+		letter-spacing: $spacing+1;
+	}
+	.sorter .sort-by {
+		a.sort-by-switcher {
+			background: none;
+			&:after {
+				font-family: 'FontAwesome';
+				text-indent: 0;
+				position: absolute;
+				display: block;
+				margin: -30px 0 0 8px;
+				color: $textcolor;
+			}
+			&--asc:after {
+				content:"\f176";
+			}
+			&--desc:after {
+				content:"\f175";
+			}
+		}
+	}
+	.pager {
+		.amount {
+			font-family: $mainfont;
+			font-size: 90%;
+			letter-spacing: $spacing+1;
+		}
+		.pages {
+			a, .current {
+				color: $textcolor;
+			}
+			.next:hover, .previous:hover {
+				border: 0;
+			}
+			.next:before {
+				border-left: 4px solid $bordercolor;
+			}
+		}
+	}
+}
+
+// =============================================
+// Product View
+// =============================================
+
+.product-view {
+	.product-shop {
+		.product-name {
+			width: 100%;
+			.h1 {
+				font-family: $titlefont;
+				font-weight: $boldweight;
+				font-size: 155%;
+				letter-spacing: $spacing+1;
+				color: $textcolor;
+			}
+		}
+		.price-info {
+			width: 100%;
+			max-width: 100%;
+			text-align: left;
+			padding: 0;
+			margin: 0;
+			.price-box .price {
+				font-family: $titlefont;
+				font-size: 155%;
+				letter-spacing: $spacing+1;
+			}
+		}
+		.short-description {
+			font-size: 80%;
+			font-family: $mainfont;
+			letter-spacing: $spacing+1;
+			line-height: 200%;
+		}
+		.availability.in-stock {
+			& span:before {
+				font-family: 'FontAwesome';
+				content: "\f00c";
+				padding-right: 6px;
+			}
+		}
+	}
+	.product-img-box {
+		.product-image img {
+			max-height: 900px !important;
+		}
+		.product-image-thumbs li a {
+			margin-right: 6px;
+			overflow: hidden;
+			@include transition(all 0.2s $transease);
+			&:hover {
+				border-color: transparent;
+				opacity: 0.8;
+				img {
+					@include transition(all 0.2s $transease);
+					@include css3-prefix(transform, scale(1.03));
+				}
+			}
+		}
+	}
+	.qty-wrapper {
+		display: none;
+	}
+	.add-to-cart-buttons .button {
+		background: transparent;
+		border: 2px solid $bordercolor;
+		span {
+			color: $textcolor;
+			font-family: $titlefont;
+			font-weight: $boldweight;
+			font-size: 90%;
+		}
+	}
+	.box-collateral {
+		h2 {
+			font-family: $titlefont;
+			font-weight: $mediumweight;
+			font-size: 100%;
+			letter-spacing: $spacing+1;
+			color: $textcolor;
+			border-top: 1px solid $bordercolor;
+			text-align: center;
+			padding: 20px 0 10px;
+		}
+	}
+}
+// Media 
+.product-image, .no-touch .product-img-box .product-image:not(.zoom-available):hover {
+	border: 0;
+}
+// Related (used as swatches)
+.block-related .block-title h2 { display: none; }
+
+// =============================================
+// Footer
+// =============================================
+
+.footer {
+	font-family: $mainfont;
+	button.button {
+		font-family: $mainfont;
+	}
+	.links a {
+		font-family: $mainfont;
+		font-size: 110%;
+	}
+	.block-title {
+		border: 0;
+		padding: 0;
+		strong {
+			font-size: 180%;
+			letter-spacing: $spacing;
+			font-weight: $lightweight;
+		}
+	}
+}
+#footer_message {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: #333;
+	color: $buttontextcolor;
+	font-family: $titlefont;
+	text-align: center;
+	padding: 1%;
+	z-index: 10;
+	text-transform: uppercase;
+	font-size: 110%;
+	letter-spacing: $spacing+2;
+}
+
+// =============================================
+// Responsive
+// =============================================
+
+// If these are changed, they must also be updated in app.js
+
+$bp-small: 479px;
+$bp-medium: 770px;
+$bp-large: 979px;
+$bp-xlarge: 1199px;
+
+/* Responsive Styles */
+// 1200px and above
+@media only screen and (min-width: $bp-xlarge+1) {
+
+
+	
+}
+// 1199px to 980px
+@media only screen and (min-width: $bp-large+1) and (max-width: $bp-xlarge) {
+
+	.nav-primary li.level0 ul.level0 {
+		padding: 40px 300px 20px 0;
+		@include css3-prefix(column-gap, 10px);
+	}
+	.menu-promo {
+		width: 285px;
+	}
+
+}
+// 979px to 771px
+@media only screen and (min-width: $bp-medium+1) and (max-width: $bp-large) {
+
+	.nav-primary li.level0 ul.level0 {
+		padding: 40px 0 20px 0;
+		@include css3-prefix(column-count, 5);
+		@include css3-prefix(column-gap, 20px);
+	}
+	.menu-promo {
+		display: none;
+	}
+
+}
+// 770px to 480px
+@media only screen and (min-width: $bp-small+1) and (max-width: $bp-medium) {
+
+	p.welcome-msg {
+		margin: 16% 0 0 36%;
+	}
+	.product-view .product-img-box {
+		.product-image img {
+			max-height: 450px !important;
+			margin: 0 1px;
+		}
+	}
+	
+}
+// 479px and below
+@media only screen and (max-width: $bp-small) {
+
+	p.welcome-msg {
+		margin: 16% 0 0 36%;
+	}
+	
+}
+
+// =============================================
+// Icons
+// =============================================
+/* Icon Set */
+@font-face {
+	font-family: 'PG_Icons';
+	src: url('webfonts/PG_Icons-webfont.eot');
+	src: url('webfonts/PG_Icons-webfont.eot?#iefix') format('embedded-opentype'),
+	url('webfonts/PG_Icons-webfont.woff2') format('woff2'),
+	url('webfonts/PG_Icons-webfont.woff') format('woff'),
+	url('webfonts/PG_Icons-webfont.ttf') format('truetype'),
+	url('webfonts/PG_Icons-webfont.svg#PG_Icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

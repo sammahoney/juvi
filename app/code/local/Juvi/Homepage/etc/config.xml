@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      Sam Mahoney for http://www.juvidesigns.com
+ * @copyright   Copyright (C) 2015 - Sam Mahoney
+ */
+-->
+<config>
+    <modules>
+        <Juvi_Homepage>
+            <version>1.0.0</version>
+        </Juvi_Homepage>
+    </modules>
+    <default>
+    </default>
+    <global>
+        <blocks>
+            <homepage>
+                <class>Juvi_Homepage_Block</class>
+            </homepage>
+        </blocks>
+        <helpers>
+            <homepage>
+                <class>Juvi_Homepage_Helper</class>
+            </homepage>
+        </helpers>
+    </global>
+    <adminhtml>
+        <menu>
+            <cms>
+                <children>
+                    <homepage translate="title" module="homepage">
+                        <title>Homepage Settings</title>
+                        <sort_order>40</sort_order>
+                        <action>adminhtml/system_config/edit/section/homepage</action>
+                    </homepage>
+                </children>
+            </cms>
+        </menu>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <homepage translate="title" module="homepage">
+                                            <title>Homepage</title>
+                                            <sort_order>60</sort_order>
+                                        </homepage>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>

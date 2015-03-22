@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      Sam Mahoney for http://www.juvidesigns.com
+ * @copyright   Copyright (C) 2015 - Sam Mahoney
+ */
+-->
+<config>
+    <modules>
+        <Juvi_Homepage>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Juvi_Homepage>
+    </modules>
+</config>

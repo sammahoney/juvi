@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @author      Sam Mahoney for http://www.lewisecommerce.com
+ * @copyright   Copyright (C) 2015 - Lewis Ecommerce
+ */
+
+ // Get carousel items as array
+	$carousel = $this->getCarouselArray(); 
+?>
+
+<div class="carousel">
+	<?php if(array_count_values($carousel) > 2): ?>
+	<a class="arrow-left" href="javascript:void(0);"></a> 
+	<a class="arrow-right active" href="javascript:void(0);"></a>
+	<?php endif; ?>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<?php foreach($carousel as $img => $text): if($img != ''): ?>
+			<div class="swiper-slide">
+				<div class="slide" style="background-image: url('<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."homepage/".$img; ?>');">
+					<div class="slider-content">
+						<?php echo $text; ?>
+					</div>
+					<div class="clear">&nbsp;</div>
+				</div>
+			</div>
+			<?php endif; endforeach; ?>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+<?php if(count($carousel) > 2): ?>
+// Carousel
+var mySwiper = new Swiper('.swiper-container', {
+	loop: true,
+	speed: 600,
+	longSwipesRatio: 0.1
+});
+jQuery('.arrow-left').on('click', function(e){
+    e.preventDefault()
+    mySwiper.swipePrev()
+})
+jQuery('.arrow-right').on('click', function(e){
+    e.preventDefault()
+    mySwiper.swipeNext()
+});
+<?php endif; ?>
+</script>

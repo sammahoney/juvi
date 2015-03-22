@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      Sam Mahoney for http://www.juvidesigns.com
+ * @copyright   Copyright (C) 2015 - Sam Mahoney
+ */
+-->
+<config>
+    <tabs>
+        <homepage translate="label" module="homepage">
+            <label>Homepage</label>
+            <sort_order>196</sort_order>
+        </homepage>
+    </tabs>
+    <sections>
+        <homepage translate="label" module="homepage">
+            <label>Homepage Settings</label>
+            <tab>homepage</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>3</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <settings translate="label">
+                    <label>Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <comment_1>
+                            <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Carousel #1</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </comment_1>
+                        <image_1 translate="label, comment">
+                            <label>Image</label>
+                            <comment><![CDATA[Add carousel #1 image (1900px wide x 560px tall)]]></comment>
+                            <frontend_type>image</frontend_type>
+                            <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <base_url type="media" scope_info="1">homepage</base_url>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_1>
+                        <text_1 translate="label, comment">
+                            <label>Text</label>
+                            <comment><![CDATA[Add carousel #1 text]]></comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_1>
+                        <comment_2>
+                            <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Carousel #2</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </comment_2>
+                        <image_2 translate="label, comment">
+                            <label>Image</label>
+                            <comment><![CDATA[Add carousel #2 image (1900px wide x 560px tall)]]></comment>
+                            <frontend_type>image</frontend_type>
+                            <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <base_url type="media" scope_info="1">homepage</base_url>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_2>
+                        <text_2 translate="label, comment">
+                            <label>Text</label>
+                            <comment><![CDATA[Add carousel #2 text]]></comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_2>
+                        <comment_3>
+                            <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Carousel #3</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </comment_3>
+                        <image_3 translate="label, comment">
+                            <label>Image</label>
+                            <comment><![CDATA[Add carousel #3 image (1900px wide x 560px tall)]]></comment>
+                            <frontend_type>image</frontend_type>
+                            <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <base_url type="media" scope_info="1">homepage</base_url>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_3>
+                        <text_3 translate="label, comment">
+                            <label>Text</label>
+                            <comment><![CDATA[Add carousel #3 text]]></comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_3>
+                        <comment_4>
+                            <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Carousel #4</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </comment_4>
+                        <image_4 translate="label, comment">
+                            <label>Image</label>
+                            <comment><![CDATA[Add carousel #4 image (1900px wide x 560px tall)]]></comment>
+                            <frontend_type>image</frontend_type>
+                            <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <base_url type="media" scope_info="1">homepage</base_url>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_4>
+                        <text_4 translate="label, comment">
+                            <label>Text</label>
+                            <comment><![CDATA[Add carousel #4 text]]></comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_4>
+                    </fields>
+                </settings>
+            </groups>
+        </homepage>
+    </sections>
+</config>
