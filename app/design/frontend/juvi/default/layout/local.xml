@@ -21,6 +21,10 @@
 				<name>css/juvi.css</name>
 			</action>
 			<action method="addItem">
+				<type>skin_css</type>
+				<name>css/Engravers_Gothic.css</name>
+			</action>
+			<action method="addItem">
 				<type>skin_js</type>
 				<name>js/min/juvi-min.js</name>
 				<params/>
