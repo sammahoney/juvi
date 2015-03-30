@@ -4,12 +4,12 @@
 .opc .section .step-title .number, .opc .section.allow.active .step-title .number,
 .no-touch .opc .section.allow:hover .step-title .number, .cart .buttons-set .button,
 .cart-table .button, .sidebar .actions .button, .button.button-secondary {
-  background-color: #000; }
+  background-color: #35100A; }
 
 .skip-cart, .footer .block-title, .footer address, .footer .links a:hover,
 .cms-page-view .std h1, .cms-no-route .std h1, .cms-page-view .std h2, .cms-no-route .std h2,
 .button2 span, .button2 span span {
-  color: #000; }
+  color: #35100A; }
 
 .buttons-set a, button.button span span {
   color: #FFF; }
@@ -18,13 +18,13 @@
 .product-view .product-shop .price-box .regular-price .price, .product-view .product-shop .price-box .special-price .price,
 .product-view .product-shop .price-box .full-product-price .price, .product-collateral .toggle-tabs li.current span,
 .product-collateral .toggle-tabs li:hover span, .opc .section.allow .step-title:hover h2, .opc .section.active .step-title h2 {
-  color: #4d4d4d; }
+  color: #b63722; }
 
 .price-box .price {
   color: #333; }
 
 .no-touch .product-image:hover {
-  border-color: #000; }
+  border-color: #35100A; }
 
 body {
   font-family: "EngraversGothicBT", sans-serif;
@@ -35,17 +35,17 @@ body {
   overflow-x: hidden; }
 
 a {
-  color: #4d4d4d;
+  color: #b63722;
   transition: all 0.1s ease-in;
   -webkit-transition: all 0.1s ease-in;
   -moz-transition: all 0.1s ease-in;
   -o-transition: all 0.1s ease-in; }
   a:hover {
-    color: gray;
+    color: #e1705d;
     text-decoration: none; }
 
 a:visited {
-  color: #4d4d4d; }
+  color: #b63722; }
 
 label {
   font-family: "EngraversGothicBT", sans-serif;
@@ -55,14 +55,14 @@ h1, h2, h3, h4, h5 {
   font-family: "EngraversGothicBT", sans-serif; }
 
 .page-title h1, .page-title h2, .product-name h1, .product-name h2 {
-  color: #000;
+  color: #35100A;
   font-family: "EngraversGothicBT", sans-serif;
   font-weight: normal;
   letter-spacing: 1px;
   font-size: 130%; }
 
 .block-title h2, .block-title h3, .block-title strong {
-  color: #000;
+  color: #35100A;
   font-family: "EngraversGothicBT", sans-serif;
   font-weight: normal;
   letter-spacing: 1px; }
@@ -78,72 +78,39 @@ p.welcome-msg {
 .logo {
   padding: 0; }
 
-#phone {
-  float: right;
-  margin: 10px 186px 0 0;
-  font-size: 110%;
-  letter-spacing: 1px;
-  font-family: "EngraversGothicBT", sans-serif; }
-  #phone:before {
-    font-family: 'PG_Icons';
-    content: "4";
-    display: block;
-    position: absolute;
-    font-size: 25px;
-    margin: -7px 0 0 -26px; }
-
 .account-cart-wrapper {
   font-family: "EngraversGothicBT", sans-serif; }
-  .account-cart-wrapper .icon {
-    background: none; }
-    .account-cart-wrapper .icon:before {
-      font-family: 'PG_Icons';
-      text-indent: 0;
-      display: block;
-      position: absolute;
-      font-size: 25px;
-      margin: -8px 0 0 10px;
-      color: #000; }
-  .account-cart-wrapper .skip-account .icon:before {
-    content: "0"; }
-  .account-cart-wrapper .skip-cart .icon:before {
-    content: "1"; }
   .account-cart-wrapper .label {
     font-size: 110%; }
 
 .header-minicart .block-subtitle {
   font-family: "EngraversGothicBT", sans-serif;
-  color: #000; }
+  color: #35100A; }
+
+#search {
+  height: 28px;
+  margin-top: -20px;
+  display: block; }
 
 #search_mini_form input#search {
   font-family: "EngraversGothicBT", sans-serif;
   font-size: 80%;
   letter-spacing: 1px;
-  border-color: #000;
+  border-color: #35100A;
   font-weight: 300;
-  color: #000;
+  color: #35100A;
   line-height: 15px; }
-#search_mini_form .search-button:before {
-  font-family: 'PG_Icons';
-  content: "2";
-  text-indent: 0;
-  display: block;
-  position: absolute;
-  font-size: 25px;
-  margin: -9px 0 0 -15px;
-  background: none;
-  color: #000; }
 
 #header-nav {
-  border-bottom: 2px solid #000; }
+  border-bottom: 2px solid #35100A; }
 
 .menu-promo {
   opacity: 0;
   position: absolute;
   right: 0;
   z-index: -1;
-  margin-top: 45px;
-  width: 365px; }
+  margin: 10px;
+  width: 600px; }
   .menu-promo img {
     width: 100%; }
 
@@ -167,6 +134,10 @@ p.welcome-msg {
     -moz-transition: opacity 0 ease-in;
     -o-transition: opacity 0 ease-in; }
 
+#nav {
+  margin-left: 220px;
+  margin-top: -50px; }
+
 .nav-primary {
   position: relative; }
   .nav-primary .menu-active {
@@ -178,38 +149,38 @@ p.welcome-msg {
       top: 45px; }
   .nav-primary li.level0 {
     position: static; }
-    .nav-primary li.level0.nav-1 a.level0 {
-      padding: 0 25px 15px 0; }
-    .nav-primary li.level0.menu-active:after {
+    .nav-primary li.level0.menu-active > a:after {
       content: "";
       width: 0;
       height: 0;
       border-style: solid;
       border-width: 10px 10px 0 10px;
-      border-color: #FFF transparent transparent transparent;
+      border-color: #35100A transparent transparent transparent;
       position: absolute;
       bottom: -10px;
       z-index: 20;
-      margin-left: -70px; }
+      left: 50%;
+      margin-left: -10px; }
     .nav-primary li.level0 a {
-      color: #000; }
+      color: #35100A;
+      position: relative; }
       .nav-primary li.level0 a.level0 {
         font-family: "EngraversGothicBT", sans-serif;
         font-size: 128%;
         letter-spacing: 1px;
         padding: 0 25px 15px; }
-      .nav-primary li.level0 a:hover {
-        color: gray; }
     .nav-primary li.level0 ul.level0 {
       border: 0;
-      background: #333;
-      padding: 40px 390px 40px 0;
+      background: #FFF;
+      padding: 20px 600px 20px 30px;
+      border-top: 2px solid #35100A;
       opacity: 0;
       display: block;
       position: absolute;
       left: -300%;
-      width: 100% !important;
-      min-height: 286px;
+      width: 1200px;
+      min-height: 206px;
+      margin-left: -220px;
       column-count: 5;
       -webkit-column-count: 5;
       -moz-column-count: 5;
@@ -221,14 +192,18 @@ p.welcome-msg {
       transition: opacity 0.1s ease-in;
       -webkit-transition: opacity 0.1s ease-in;
       -moz-transition: opacity 0.1s ease-in;
-      -o-transition: opacity 0.1s ease-in; }
+      -o-transition: opacity 0.1s ease-in;
+      box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.2);
+      -o-box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.2); }
       .nav-primary li.level0 ul.level0 a:hover {
-        margin-left: 5px; }
+        color: #8b2a1a; }
       .nav-primary li.level0 ul.level0 li.level1 {
         margin-bottom: 5px; }
         .nav-primary li.level0 ul.level0 li.level1 a {
           border: 0;
-          color: #FFF;
+          color: #35100A;
           font-family: "EngraversGothicBT", sans-serif;
           font-size: 122%;
           letter-spacing: 1px;
@@ -238,27 +213,17 @@ p.welcome-msg {
           display: inline-block; }
           .nav-primary li.level0 ul.level0 li.level1.parent > a:after {
             display: none; }
-      .nav-primary li.level0 ul.level0:after {
-        content: "";
-        background: #333;
-        width: 300%;
-        display: block;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        z-index: -1;
-        left: -100%; }
     .nav-primary li.level0 ul.level1 {
       position: static !important;
       border: 0;
       padding: 8px 0 0;
-      background: #333;
+      background: transparent;
       display: block;
       min-height: 40px;
       width: auto; }
       .nav-primary li.level0 ul.level1 li.level2 a {
         border: 0;
-        color: #FFF;
+        color: #35100A;
         line-height: 22px;
         font-family: "EngraversGothicBT", sans-serif;
         font-size: 80%;
@@ -269,9 +234,9 @@ p.welcome-msg {
   font-family: "EngraversGothicBT", sans-serif;
   text-transform: lowercase; }
 .breadcrumbs a:hover {
-  color: gray; }
+  color: #e1705d; }
 .breadcrumbs strong {
-  color: #000; }
+  color: #35100A; }
 
 .cms-index-index .carousel {
   width: 200%;
@@ -290,13 +255,13 @@ p.welcome-msg {
       text-align: center; }
       .cms-index-index .carousel .swiper-container .swiper-wrapper .swiper-slide .slide .slider-content h2 {
         font-weight: 300;
-        color: #000;
+        color: #35100A;
         font-size: 720%;
         letter-spacing: 12px;
         margin: 0; }
       .cms-index-index .carousel .swiper-container .swiper-wrapper .swiper-slide .slide .slider-content h3 {
         font-weight: 300;
-        color: #000;
+        color: #35100A;
         font-size: 270%;
         letter-spacing: 5px;
         margin: 0;
@@ -304,8 +269,8 @@ p.welcome-msg {
       .cms-index-index .carousel .swiper-container .swiper-wrapper .swiper-slide .slide .slider-content a {
         display: inline-block;
         background: transparent;
-        border: 2px solid #000;
-        color: #000;
+        border: 2px solid #35100A;
+        color: #35100A;
         font-family: "EngraversGothicBT", sans-serif;
         font-weight: 500;
         font-size: 90%;
@@ -314,7 +279,7 @@ p.welcome-msg {
         margin-top: 30px; }
 
 .block-layered-nav {
-  color: #000; }
+  color: #35100A; }
   .block-layered-nav .block-title {
     display: none; }
   .block-layered-nav .actions a {
@@ -326,13 +291,13 @@ p.welcome-msg {
     margin: -40px 0 0 15px; }
   .block-layered-nav .currently {
     padding: 15px 15px 25px;
-    background: #f7f7f7;
+    background: white;
     letter-spacing: 1px; }
     .block-layered-nav .currently .block-subtitle {
       padding: 0;
       font-family: "EngraversGothicBT", sans-serif;
       font-weight: 400;
-      color: #000; }
+      color: #35100A; }
     .block-layered-nav .currently ol {
       padding: 0;
       font-family: "EngraversGothicBT", sans-serif;
@@ -341,19 +306,19 @@ p.welcome-msg {
       .block-layered-nav .currently ol li .label {
         font-weight: 400; }
     .block-layered-nav .currently .btn-remove {
-      border-color: #cccccc;
+      border-color: #f9e2de;
       transition: all 0.1s ease-in;
       -webkit-transition: all 0.1s ease-in;
       -moz-transition: all 0.1s ease-in;
       -o-transition: all 0.1s ease-in; }
     .block-layered-nav .currently .btn-remove:hover {
-      background: #000;
-      border-color: #000; }
+      background: #35100A;
+      border-color: #35100A; }
     .block-layered-nav .currently .btn-remove:after {
       content: "×";
       font-size: 18px;
       font-weight: 100;
-      color: #4d4d4d;
+      color: #b63722;
       display: block;
       text-align: center;
       margin-left: 1px;
@@ -366,7 +331,7 @@ p.welcome-msg {
   .block-layered-nav .block-content > dl > dt, .block-layered-nav .block-content > dl > dt:hover, .block-layered-nav .block-content > dl > dd {
     font-family: "EngraversGothicBT", sans-serif;
     font-weight: 100;
-    color: #000;
+    color: #35100A;
     background: transparent;
     border: 0;
     padding: 5px 0;
@@ -396,11 +361,11 @@ p.welcome-msg {
     font-size: 80%;
     font-family: "EngraversGothicBT", sans-serif;
     font-weight: 400;
-    color: #000;
+    color: #35100A;
     letter-spacing: 1px;
     text-transform: capitalize; }
   .products-grid .product-name a:hover {
-    color: gray; }
+    color: #e1705d; }
 .products-grid .product-image {
   overflow: hidden;
   border: 0; }
@@ -426,7 +391,7 @@ p.welcome-msg {
 .toolbar {
   background: transparent;
   border: 0;
-  border-top: 1px solid #000;
+  border-top: 1px solid #35100A;
   padding-top: 20px; }
   .toolbar label {
     text-transform: lowercase;
@@ -441,7 +406,7 @@ p.welcome-msg {
       position: absolute;
       display: block;
       margin: -30px 0 0 8px;
-      color: #000; }
+      color: #35100A; }
     .toolbar .sorter .sort-by a.sort-by-switcher--asc:after {
       content: "\f176"; }
     .toolbar .sorter .sort-by a.sort-by-switcher--desc:after {
@@ -451,11 +416,11 @@ p.welcome-msg {
     font-size: 90%;
     letter-spacing: 1px; }
   .toolbar .pager .pages a, .toolbar .pager .pages .current {
-    color: #000; }
+    color: #35100A; }
   .toolbar .pager .pages .next:hover, .toolbar .pager .pages .previous:hover {
     border: 0; }
   .toolbar .pager .pages .next:before {
-    border-left: 4px solid #000; }
+    border-left: 4px solid #35100A; }
 
 .product-view .product-shop .product-name {
   width: 100%; }
@@ -464,7 +429,7 @@ p.welcome-msg {
     font-weight: 500;
     font-size: 155%;
     letter-spacing: 1px;
-    color: #000; }
+    color: #35100A; }
 .product-view .product-shop .price-info {
   width: 100%;
   max-width: 100%;
@@ -509,9 +474,9 @@ p.welcome-msg {
   display: none; }
 .product-view .add-to-cart-buttons .button {
   background: transparent;
-  border: 2px solid #000; }
+  border: 2px solid #35100A; }
   .product-view .add-to-cart-buttons .button span {
-    color: #000;
+    color: #35100A;
     font-family: "EngraversGothicBT", sans-serif;
     font-weight: 500;
     font-size: 90%; }
@@ -520,8 +485,8 @@ p.welcome-msg {
   font-weight: 300;
   font-size: 100%;
   letter-spacing: 1px;
-  color: #000;
-  border-top: 1px solid #000;
+  color: #35100A;
+  border-top: 1px solid #35100A;
   text-align: center;
   padding: 20px 0 10px; }
 
@@ -561,6 +526,10 @@ p.welcome-msg {
   letter-spacing: 2px; }
 
 /* Responsive Styles */
+@media only screen and (min-width: 1200px) {
+  .logo {
+    max-width: 180px;
+    min-height: 65px; } }
 @media only screen and (min-width: 980px) and (max-width: 1199px) {
   .nav-primary li.level0 ul.level0 {
     padding: 40px 300px 20px 0;
