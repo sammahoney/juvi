@@ -286,7 +286,7 @@ p.welcome-msg {
 		&.nav-1 a.level0 {
 			padding: 0 25px 15px 0;
 		}
-		&.nav-2.menu-active:after {
+		&.menu-active:after {
 			content:"";
 			width: 0;
 			height: 0;
@@ -296,7 +296,7 @@ p.welcome-msg {
 			position: absolute;
 			bottom: -10px;
 			z-index: 20;
-			left: 138px;
+			margin-left: -70px;
 		}
 		a {
 			color: $textcolor;

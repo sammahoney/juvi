@@ -180,7 +180,7 @@ p.welcome-msg {
     position: static; }
     .nav-primary li.level0.nav-1 a.level0 {
       padding: 0 25px 15px 0; }
-    .nav-primary li.level0.nav-2.menu-active:after {
+    .nav-primary li.level0.menu-active:after {
       content: "";
       width: 0;
       height: 0;
@@ -190,7 +190,7 @@ p.welcome-msg {
       position: absolute;
       bottom: -10px;
       z-index: 20;
-      left: 138px; }
+      margin-left: -70px; }
     .nav-primary li.level0 a {
       color: #000; }
       .nav-primary li.level0 a.level0 {

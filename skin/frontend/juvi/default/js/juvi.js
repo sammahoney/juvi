@@ -4,10 +4,10 @@ jQuery(document).ready(function(){
 	// Animate menu dropdown
 	jQuery('li.level0.parent, .menu-promo').hover(
 		function() {
-			jQuery('li.level0.parent').addClass("menu-active");
+			jQuery(this,'li.level0.parent').addClass("menu-active");
 			jQuery('#nav').addClass("show-promo");
 		}, function() {
-			jQuery('li.level0.parent').removeClass("menu-active");
+			jQuery(this,'li.level0.parent').removeClass("menu-active");
 			jQuery('#nav').removeClass("show-promo");
 		}
 	);
@@ -18,7 +18,15 @@ jQuery(document).ready(function(){
 			jQuery('.menu-promo').removeClass("active");
 		}
 	);
-
+	// Fix for tablet hover (to override stuff in app.js)
+	jQuery('#nav li.level1 a').on('click touchend', function() {
+		var el = jQuery(this);
+		var link = el.attr('href');
+		window.location = link;
+	});
+	jQuery('#nav li.level0.parent').on('touchend', function() {
+		jQuery('#nav').addClass("show-promo");
+	});
 	/*
 	// Sidr menu
 	jQuery('#left-menu').sidr({
