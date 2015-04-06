@@ -9,7 +9,7 @@
 .skip-cart, .footer .block-title, .footer address, .footer .links a:hover,
 .cms-page-view .std h1, .cms-no-route .std h1, .cms-page-view .std h2, .cms-no-route .std h2,
 .button2 span, .button2 span span {
-  color: #35100A; }
+  color: #000; }
 
 .buttons-set a, button.button span span {
   color: #FFF; }
@@ -18,7 +18,7 @@
 .product-view .product-shop .price-box .regular-price .price, .product-view .product-shop .price-box .special-price .price,
 .product-view .product-shop .price-box .full-product-price .price, .product-collateral .toggle-tabs li.current span,
 .product-collateral .toggle-tabs li:hover span, .opc .section.allow .step-title:hover h2, .opc .section.active .step-title h2 {
-  color: #b63722; }
+  color: #4d4d4d; }
 
 .price-box .price {
   color: #333; }
@@ -35,17 +35,17 @@ body {
   overflow-x: hidden; }
 
 a {
-  color: #b63722;
+  color: #4d4d4d;
   transition: all 0.1s ease-in;
   -webkit-transition: all 0.1s ease-in;
   -moz-transition: all 0.1s ease-in;
   -o-transition: all 0.1s ease-in; }
   a:hover {
-    color: #e1705d;
+    color: gray;
     text-decoration: none; }
 
 a:visited {
-  color: #b63722; }
+  color: #4d4d4d; }
 
 label {
   font-family: "EngraversGothicBT", sans-serif;
@@ -55,14 +55,14 @@ h1, h2, h3, h4, h5 {
   font-family: "EngraversGothicBT", sans-serif; }
 
 .page-title h1, .page-title h2, .product-name h1, .product-name h2 {
-  color: #35100A;
+  color: #000;
   font-family: "EngraversGothicBT", sans-serif;
   font-weight: normal;
   letter-spacing: 1px;
   font-size: 130%; }
 
 .block-title h2, .block-title h3, .block-title strong {
-  color: #35100A;
+  color: #000;
   font-family: "EngraversGothicBT", sans-serif;
   font-weight: normal;
   letter-spacing: 1px; }
@@ -85,7 +85,7 @@ p.welcome-msg {
 
 .header-minicart .block-subtitle {
   font-family: "EngraversGothicBT", sans-serif;
-  color: #35100A; }
+  color: #000; }
 
 #search {
   height: 28px;
@@ -98,11 +98,11 @@ p.welcome-msg {
   letter-spacing: 1px;
   border-color: #35100A;
   font-weight: 300;
-  color: #35100A;
+  color: #000;
   line-height: 15px; }
 
 #header-nav {
-  border-bottom: 2px solid #35100A; }
+  border-bottom: 2px solid #000; }
 
 .menu-promo {
   opacity: 0;
@@ -162,18 +162,18 @@ p.welcome-msg {
       left: 50%;
       margin-left: -10px; }
     .nav-primary li.level0 a {
-      color: #35100A;
+      color: #000;
       position: relative; }
       .nav-primary li.level0 a.level0 {
         font-family: "EngraversGothicBT", sans-serif;
-        font-size: 128%;
+        font-size: 100%;
         letter-spacing: 1px;
         padding: 0 25px 15px; }
     .nav-primary li.level0 ul.level0 {
       border: 0;
       background: #FFF;
       padding: 20px 600px 20px 30px;
-      border-top: 2px solid #35100A;
+      border-top: 2px solid #000;
       opacity: 0;
       display: block;
       position: absolute;
@@ -181,10 +181,10 @@ p.welcome-msg {
       width: 1200px;
       min-height: 206px;
       margin-left: -220px;
-      column-count: 5;
-      -webkit-column-count: 5;
-      -moz-column-count: 5;
-      -o-column-count: 5;
+      column-count: 4;
+      -webkit-column-count: 4;
+      -moz-column-count: 4;
+      -o-column-count: 4;
       column-gap: 20px;
       -webkit-column-gap: 20px;
       -moz-column-gap: 20px;
@@ -198,45 +198,45 @@ p.welcome-msg {
       -moz-box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.2);
       -o-box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.2); }
       .nav-primary li.level0 ul.level0 a:hover {
-        color: #8b2a1a; }
+        color: #333333; }
       .nav-primary li.level0 ul.level0 li.level1 {
         margin-bottom: 5px; }
         .nav-primary li.level0 ul.level0 li.level1 a {
           border: 0;
-          color: #35100A;
+          color: #000;
           font-family: "EngraversGothicBT", sans-serif;
-          font-size: 122%;
-          letter-spacing: 1px;
+          font-size: 90%;
+          letter-spacing: 0px;
           text-transform: uppercase; }
         .nav-primary li.level0 ul.level0 li.level1.parent {
           padding-bottom: 15px;
-          display: inline-block; }
+          display: block; }
           .nav-primary li.level0 ul.level0 li.level1.parent > a:after {
             display: none; }
     .nav-primary li.level0 ul.level1 {
       position: static !important;
       border: 0;
-      padding: 8px 0 0;
+      padding: 0;
       background: transparent;
       display: block;
       min-height: 40px;
       width: auto; }
       .nav-primary li.level0 ul.level1 li.level2 a {
         border: 0;
-        color: #35100A;
+        color: #000;
         line-height: 22px;
         font-family: "EngraversGothicBT", sans-serif;
         font-size: 80%;
-        letter-spacing: 1px;
+        letter-spacing: 0px;
         font-weight: 100; }
 
 .breadcrumbs li, .breadcrumbs a {
   font-family: "EngraversGothicBT", sans-serif;
   text-transform: lowercase; }
 .breadcrumbs a:hover {
-  color: #e1705d; }
+  color: gray; }
 .breadcrumbs strong {
-  color: #35100A; }
+  color: #000; }
 
 .cms-index-index .carousel {
   width: 200%;
@@ -255,13 +255,13 @@ p.welcome-msg {
       text-align: center; }
       .cms-index-index .carousel .swiper-container .swiper-wrapper .swiper-slide .slide .slider-content h2 {
         font-weight: 300;
-        color: #35100A;
+        color: #000;
         font-size: 720%;
         letter-spacing: 12px;
         margin: 0; }
       .cms-index-index .carousel .swiper-container .swiper-wrapper .swiper-slide .slide .slider-content h3 {
         font-weight: 300;
-        color: #35100A;
+        color: #000;
         font-size: 270%;
         letter-spacing: 5px;
         margin: 0;
@@ -270,7 +270,7 @@ p.welcome-msg {
         display: inline-block;
         background: transparent;
         border: 2px solid #35100A;
-        color: #35100A;
+        color: #000;
         font-family: "EngraversGothicBT", sans-serif;
         font-weight: 500;
         font-size: 90%;
@@ -279,7 +279,7 @@ p.welcome-msg {
         margin-top: 30px; }
 
 .block-layered-nav {
-  color: #35100A; }
+  color: #000; }
   .block-layered-nav .block-title {
     display: none; }
   .block-layered-nav .actions a {
@@ -297,7 +297,7 @@ p.welcome-msg {
       padding: 0;
       font-family: "EngraversGothicBT", sans-serif;
       font-weight: 400;
-      color: #35100A; }
+      color: #000; }
     .block-layered-nav .currently ol {
       padding: 0;
       font-family: "EngraversGothicBT", sans-serif;
@@ -318,7 +318,7 @@ p.welcome-msg {
       content: "×";
       font-size: 18px;
       font-weight: 100;
-      color: #b63722;
+      color: #4d4d4d;
       display: block;
       text-align: center;
       margin-left: 1px;
@@ -331,7 +331,7 @@ p.welcome-msg {
   .block-layered-nav .block-content > dl > dt, .block-layered-nav .block-content > dl > dt:hover, .block-layered-nav .block-content > dl > dd {
     font-family: "EngraversGothicBT", sans-serif;
     font-weight: 100;
-    color: #35100A;
+    color: #000;
     background: transparent;
     border: 0;
     padding: 5px 0;
@@ -361,11 +361,11 @@ p.welcome-msg {
     font-size: 80%;
     font-family: "EngraversGothicBT", sans-serif;
     font-weight: 400;
-    color: #35100A;
+    color: #000;
     letter-spacing: 1px;
     text-transform: capitalize; }
   .products-grid .product-name a:hover {
-    color: #e1705d; }
+    color: gray; }
 .products-grid .product-image {
   overflow: hidden;
   border: 0; }
@@ -406,7 +406,7 @@ p.welcome-msg {
       position: absolute;
       display: block;
       margin: -30px 0 0 8px;
-      color: #35100A; }
+      color: #000; }
     .toolbar .sorter .sort-by a.sort-by-switcher--asc:after {
       content: "\f176"; }
     .toolbar .sorter .sort-by a.sort-by-switcher--desc:after {
@@ -416,7 +416,7 @@ p.welcome-msg {
     font-size: 90%;
     letter-spacing: 1px; }
   .toolbar .pager .pages a, .toolbar .pager .pages .current {
-    color: #35100A; }
+    color: #000; }
   .toolbar .pager .pages .next:hover, .toolbar .pager .pages .previous:hover {
     border: 0; }
   .toolbar .pager .pages .next:before {
@@ -429,7 +429,7 @@ p.welcome-msg {
     font-weight: 500;
     font-size: 155%;
     letter-spacing: 1px;
-    color: #35100A; }
+    color: #000; }
 .product-view .product-shop .price-info {
   width: 100%;
   max-width: 100%;
@@ -476,7 +476,7 @@ p.welcome-msg {
   background: transparent;
   border: 2px solid #35100A; }
   .product-view .add-to-cart-buttons .button span {
-    color: #35100A;
+    color: #000;
     font-family: "EngraversGothicBT", sans-serif;
     font-weight: 500;
     font-size: 90%; }
@@ -485,7 +485,7 @@ p.welcome-msg {
   font-weight: 300;
   font-size: 100%;
   letter-spacing: 1px;
-  color: #35100A;
+  color: #000;
   border-top: 1px solid #35100A;
   text-align: center;
   padding: 20px 0 10px; }

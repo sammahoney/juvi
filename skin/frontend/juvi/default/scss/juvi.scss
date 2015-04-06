@@ -8,7 +8,7 @@
 $background: #35100A;
 $backgroundinvert: #FFF;
 // Text
-$textcolor: #35100A;
+$textcolor: #000;
 $buttontextcolor: #FFF;
 $pricecolor: #333;
 // Borders
@@ -267,7 +267,7 @@ p.welcome-msg {
 			position: relative;
 			&.level0 {
 				font-family: $titlefont;
-				font-size: 128%;
+				font-size: 100%;
 				letter-spacing: $spacing+1;
 				padding: 0 25px 15px;
 			}
@@ -284,7 +284,7 @@ p.welcome-msg {
 			width: 1200px;
 			min-height: 206px;
 			margin-left: -220px;
-			@include css3-prefix(column-count, 5);
+			@include css3-prefix(column-count, 4);
 			@include css3-prefix(column-gap, 20px);
 			@include transition(opacity $transpeed $transease);
 			@include css3-prefix(box-shadow, 0 2px 8px -2px rgba(0, 0, 0, 0.2));
@@ -297,13 +297,13 @@ p.welcome-msg {
 					border: 0;
 					color: $textcolor;
 					font-family: $titlefont;
-					font-size: 122%;
-					letter-spacing: $spacing+1;
+					font-size: 90%;
+					letter-spacing: $spacing;
 					text-transform: uppercase;
 				}
 				&.parent {
 					padding-bottom: 15px;
-					display: inline-block;
+					display: block;
 					> a:after{
 						display: none;
 					}
@@ -313,7 +313,7 @@ p.welcome-msg {
 		ul.level1 {
 			position: static !important;
 			border: 0;
-			padding: 8px 0 0;
+			padding: 0;
 			background: transparent;
 			display: block;
 			min-height: 40px;
@@ -325,7 +325,7 @@ p.welcome-msg {
 					line-height: 22px;
 					font-family: $mainfont;
 					font-size: 80%;
-					letter-spacing: $spacing+1;
+					letter-spacing: $spacing;
 					font-weight: $lightweight;
 				}
 			}

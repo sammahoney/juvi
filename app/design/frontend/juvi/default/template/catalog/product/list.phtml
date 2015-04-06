@@ -50,7 +50,7 @@
             <li class="item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?>">
                 <a href="<?php echo $_product->getProductUrl() ?>" class="product-image">
                     <img id="product-collection-image-<?php echo $_product->getId(); ?>"
-                         src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(230,345)->constrainOnly(true)->keepAspectRatio(true)->keepFrame(false); ?>"
+                         src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(460); ?>"
                          alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
                 </a>
                 <div class="product-info">
