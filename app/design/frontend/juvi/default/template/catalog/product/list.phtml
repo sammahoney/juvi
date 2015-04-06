@@ -118,3 +118,25 @@ if ($this->getChild('after')) {
     }
 }
 ?>
+
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(document).ready(function(){
+        $j("#narrow-by-list > dd").hide();
+        $j("#narrow-by-list > dt").click(function(){
+            $j("#narrow-by-list > dt").removeClass("active");
+            if ($j(this).next("#narrow-by-list > dd").is(":hidden")) {
+                $j("#narrow-by-list > dd:visible").slideUp("normal");
+                $j(this).next("#narrow-by-list > dd").slideDown("normal");
+                $j(this).addClass("active");
+                $j(this).prev("#narrow-by-list > dt").addClass("active");
+            } else {
+                $j(this).next("#narrow-by-list > dd").slideUp("normal");
+                $j(this).removeClass("active");
+                $j(this).prev("#narrow-by-list > dt").removeClass("active");
+            }      
+        });
+        $j("#narrow-by-list > dt:first-child").addClass("active").next("#narrow-by-list > dd").show();
+    });
+</script>
+
