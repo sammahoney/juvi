@@ -67,6 +67,9 @@ h1, h2, h3, h4, h5 {
   font-weight: normal;
   letter-spacing: 1px; }
 
+a:hover, a:active, a:focus {
+  outline: 0; }
+
 .header-language-background {
   padding: 0; }
 
@@ -501,12 +504,17 @@ p.welcome-msg {
 a.arrow-left, a.arrow-right {
   font-family: "Alegreya Sans SC", "EngraversGothicBT", sans-serif;
   position: absolute;
-  top: 42%;
+  top: 37%;
   z-index: 10;
   display: block;
   left: 10px;
   font-size: 750%;
-  font-weight: 100; }
+  font-weight: 100;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in; }
 
 a.arrow-right {
   left: auto;
@@ -514,6 +522,8 @@ a.arrow-right {
 
 .product-image img {
   max-height: 900px !important; }
+.product-image:hover a.arrow-left, .product-image:hover a.arrow-right {
+  opacity: 1; }
 
 a.enlarge {
   opacity: 0;
@@ -521,7 +531,7 @@ a.enlarge {
   left: 50%;
   top: 50%;
   font-size: 40px;
-  margin: 10px 0 0 -20px;
+  margin: -20px 0 0 -20px;
   width: 60px;
   height: 60px;
   background: rgba(0, 0, 0, 0.2);
