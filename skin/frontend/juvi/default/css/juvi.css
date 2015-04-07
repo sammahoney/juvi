@@ -241,45 +241,18 @@ p.welcome-msg {
 .breadcrumbs strong {
   color: #000; }
 
-.cms-index-index .carousel {
-  width: 200%;
-  margin-left: -50%;
-  margin-top: -53px; }
-  .cms-index-index .carousel .swiper-container .swiper-wrapper .swiper-slide .slide {
-    height: 560px;
-    background-position: 50% 0 !important;
-    display: table;
-    width: 100%; }
-    .cms-index-index .carousel .swiper-container .swiper-wrapper .swiper-slide .slide .slider-content {
-      display: table-cell;
-      vertical-align: middle;
-      width: 100%;
-      padding-left: 450px;
-      text-align: center; }
-      .cms-index-index .carousel .swiper-container .swiper-wrapper .swiper-slide .slide .slider-content h2 {
-        font-weight: 300;
-        color: #000;
-        font-size: 720%;
-        letter-spacing: 12px;
-        margin: 0; }
-      .cms-index-index .carousel .swiper-container .swiper-wrapper .swiper-slide .slide .slider-content h3 {
-        font-weight: 300;
-        color: #000;
-        font-size: 270%;
-        letter-spacing: 5px;
-        margin: 0;
-        line-height: 90%; }
-      .cms-index-index .carousel .swiper-container .swiper-wrapper .swiper-slide .slide .slider-content a {
-        display: inline-block;
-        background: transparent;
-        border: 2px solid #35100A;
-        color: #000;
-        font-family: "EngraversGothicBT", sans-serif;
-        font-weight: 500;
-        font-size: 90%;
-        text-transform: uppercase;
-        padding: 5px 20px;
-        margin-top: 30px; }
+.cms-index-index .page-title {
+  display: none; }
+.cms-index-index .promo-box {
+  float: left; }
+  .cms-index-index .promo-box.box-a {
+    margin-right: 20px; }
+  .cms-index-index .promo-box.box-b {
+    margin: 0 20px 20px 0; }
+  .cms-index-index .promo-box.box-e, .cms-index-index .promo-box.box-f {
+    margin: 20px 20px 0 0; }
+  .cms-index-index .promo-box.box-g {
+    margin-top: 20px; }
 
 .block-layered-nav {
   color: #000; }

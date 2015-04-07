@@ -65,6 +65,9 @@
 				<name>css/swiper.min.css</name>
 			</action>
 		</reference>
+		<reference name="content">
+			<block type="homepage/homepage" name="homepage" as="homepage" template="home/homepage.phtml"/>
+		</reference>
 	</cms_index_index>
 
 	<!-- Category List View -->

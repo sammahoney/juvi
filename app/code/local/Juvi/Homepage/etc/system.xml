@@ -30,17 +30,17 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <comment_1>
-                            <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Carousel #1</span>]]></label>
+                        <comment_a>
+                            <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Block A</span>]]></label>
                             <frontend_type>label</frontend_type>
                             <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </comment_1>
-                        <image_1 translate="label, comment">
+                        </comment_a>
+                        <image_a translate="label, comment">
                             <label>Image</label>
-                            <comment><![CDATA[Add carousel #1 image (1900px wide x 560px tall)]]></comment>
+                            <comment><![CDATA[Add "Block A" image (590px wide x 940px tall)]]></comment>
                             <frontend_type>image</frontend_type>
                             <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
                             <backend_model>adminhtml/system_config_backend_image</backend_model>
@@ -49,103 +49,253 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </image_1>
-                        <text_1 translate="label, comment">
+                        </image_a>
+                        <text_a translate="label, comment">
                             <label>Text</label>
-                            <comment><![CDATA[Add carousel #1 text]]></comment>
+                            <comment><![CDATA[Add "Block A" text]]></comment>
                             <frontend_type>textarea</frontend_type>
                             <sort_order>3</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </text_1>
-                        <comment_2>
-                            <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Carousel #2</span>]]></label>
-                            <frontend_type>label</frontend_type>
+                        </text_a>
+                        <link_a translate="label, comment">
+                            <label>Link</label>
+                            <comment><![CDATA[Add "Block A" link (full link including http://)]]></comment>
+                            <frontend_type>text</frontend_type>
                             <sort_order>4</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </comment_2>
-                        <image_2 translate="label, comment">
-                            <label>Image</label>
-                            <comment><![CDATA[Add carousel #2 image (1900px wide x 560px tall)]]></comment>
-                            <frontend_type>image</frontend_type>
-                            <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
-                            <backend_model>adminhtml/system_config_backend_image</backend_model>
-                            <base_url type="media" scope_info="1">homepage</base_url>
+                        </link_a>
+                        <comment_b>
+                            <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Block B</span>]]></label>
+                            <frontend_type>label</frontend_type>
                             <sort_order>5</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </image_2>
-                        <text_2 translate="label, comment">
-                            <label>Text</label>
-                            <comment><![CDATA[Add carousel #2 text]]></comment>
-                            <frontend_type>textarea</frontend_type>
+                        </comment_b>
+                        <image_b translate="label, comment">
+                            <label>Image</label>
+                            <comment><![CDATA[Add "Block B" image (285px wide x 400px tall)]]></comment>
+                            <frontend_type>image</frontend_type>
+                            <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <base_url type="media" scope_info="1">homepage</base_url>
                             <sort_order>6</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </text_2>
-                        <comment_3>
-                            <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Carousel #3</span>]]></label>
-                            <frontend_type>label</frontend_type>
+                        </image_b>
+                        <text_b translate="label, comment">
+                            <label>Text</label>
+                            <comment><![CDATA[Add "Block B" text]]></comment>
+                            <frontend_type>textarea</frontend_type>
                             <sort_order>7</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </comment_3>
-                        <image_3 translate="label, comment">
-                            <label>Image</label>
-                            <comment><![CDATA[Add carousel #3 image (1900px wide x 560px tall)]]></comment>
-                            <frontend_type>image</frontend_type>
-                            <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
-                            <backend_model>adminhtml/system_config_backend_image</backend_model>
-                            <base_url type="media" scope_info="1">homepage</base_url>
+                        </text_b>
+                        <link_b translate="label, comment">
+                            <label>Link</label>
+                            <comment><![CDATA[Add "Block B" link (full link including http://)]]></comment>
+                            <frontend_type>text</frontend_type>
                             <sort_order>8</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </image_3>
-                        <text_3 translate="label, comment">
-                            <label>Text</label>
-                            <comment><![CDATA[Add carousel #3 text]]></comment>
-                            <frontend_type>textarea</frontend_type>
+                        </link_b>
+                        <comment_c>
+                            <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Block C</span>]]></label>
+                            <frontend_type>label</frontend_type>
                             <sort_order>9</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </text_3>
-                        <comment_4>
-                            <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Carousel #4</span>]]></label>
-                            <frontend_type>label</frontend_type>
-                            <sort_order>10</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </comment_4>
-                        <image_4 translate="label, comment">
+                        </comment_c>
+                        <image_c translate="label, comment">
                             <label>Image</label>
-                            <comment><![CDATA[Add carousel #4 image (1900px wide x 560px tall)]]></comment>
+                            <comment><![CDATA[Add "Block C" image (285px wide x 400px tall)]]></comment>
                             <frontend_type>image</frontend_type>
                             <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
                             <backend_model>adminhtml/system_config_backend_image</backend_model>
                             <base_url type="media" scope_info="1">homepage</base_url>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_c>
+                        <text_c translate="label, comment">
+                            <label>Text</label>
+                            <comment><![CDATA[Add "Block C" text]]></comment>
+                            <frontend_type>textarea</frontend_type>
                             <sort_order>11</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </image_4>
-                        <text_4 translate="label, comment">
-                            <label>Text</label>
-                            <comment><![CDATA[Add carousel #4 text]]></comment>
-                            <frontend_type>textarea</frontend_type>
+                        </text_c>
+                        <link_c translate="label, comment">
+                            <label>Link</label>
+                            <comment><![CDATA[Add "Block C" link (full link including http://)]]></comment>
+                            <frontend_type>text</frontend_type>
                             <sort_order>12</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </text_4>
+                        </link_c>
+                        <comment_d>
+                            <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Block D</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </comment_d>
+                        <image_d translate="label, comment">
+                            <label>Image</label>
+                            <comment><![CDATA[Add "Block D" image (590px wide x 520px tall)]]></comment>
+                            <frontend_type>image</frontend_type>
+                            <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <base_url type="media" scope_info="1">homepage</base_url>
+                            <sort_order>14</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_d>
+                        <text_d translate="label, comment">
+                            <label>Text</label>
+                            <comment><![CDATA[Add "Block D" text]]></comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_d>
+                        <link_d translate="label, comment">
+                            <label>Link</label>
+                            <comment><![CDATA[Add "Block D" link (full link including http://)]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>16</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_d>
+                        <comment_e>
+                            <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Block E</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>17</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </comment_e>
+                        <image_e translate="label, comment">
+                            <label>Image</label>
+                            <comment><![CDATA[Add "Block E" image (285px wide x 400px tall)]]></comment>
+                            <frontend_type>image</frontend_type>
+                            <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <base_url type="media" scope_info="1">homepage</base_url>
+                            <sort_order>18</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_e>
+                        <text_e translate="label, comment">
+                            <label>Text</label>
+                            <comment><![CDATA[Add "Block E" text]]></comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>19</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_e>
+                        <link_e translate="label, comment">
+                            <label>Link</label>
+                            <comment><![CDATA[Add "Block E" link (full link including http://)]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_e>
+                        <comment_f>
+                            <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Block F</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>21</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </comment_f>
+                        <image_f translate="label, comment">
+                            <label>Image</label>
+                            <comment><![CDATA[Add "Block F" image (285px wide x 400px tall)]]></comment>
+                            <frontend_type>image</frontend_type>
+                            <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <base_url type="media" scope_info="1">homepage</base_url>
+                            <sort_order>22</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_f>
+                        <text_f translate="label, comment">
+                            <label>Text</label>
+                            <comment><![CDATA[Add "Block F" text]]></comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>23</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_f>
+                        <link_f translate="label, comment">
+                            <label>Link</label>
+                            <comment><![CDATA[Add "Block F" link (full link including http://)]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>24</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_f>
+                        <comment_g>
+                            <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Block G</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </comment_g>
+                        <image_g translate="label, comment">
+                            <label>Image</label>
+                            <comment><![CDATA[Add "Block G" image (590px wide x 400px tall)]]></comment>
+                            <frontend_type>image</frontend_type>
+                            <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <base_url type="media" scope_info="1">homepage</base_url>
+                            <sort_order>26</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_g>
+                        <text_g translate="label, comment">
+                            <label>Text</label>
+                            <comment><![CDATA[Add "Block G" text]]></comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>27</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_g>
+                        <link_g translate="label, comment">
+                            <label>Link</label>
+                            <comment><![CDATA[Add "Block G" link (full link including http://)]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>28</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_g>
                     </fields>
                 </settings>
             </groups>

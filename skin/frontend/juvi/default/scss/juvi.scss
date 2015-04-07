@@ -353,55 +353,22 @@ p.welcome-msg {
 // =============================================
 
 .cms-index-index {
-	.carousel {
-		width: 200%;
-		margin-left: -50%;
-		margin-top: -53px;
-		.swiper-container {
-			.swiper-wrapper {
-				.swiper-slide {
-					.slide {
-						height: 560px;
-						background-position: 50% 0 !important;
-						display: table;
-						width: 100%;
-						.slider-content {
-							display: table-cell;
-							vertical-align: middle;
-							width: 100%;
-							padding-left: 450px;
-							text-align: center;
-							h2 {
-								font-weight: $mediumweight;
-								color: $textcolor;
-								font-size: 720%;
-								letter-spacing: $spacing+12;
-								margin: 0;
-							}
-							h3 {
-								font-weight: $mediumweight;
-								color: $textcolor;
-								font-size: 270%;
-								letter-spacing: $spacing+5;
-								margin: 0;
-								line-height: 90%;
-							}
-							a {
-								display: inline-block;
-								background: transparent;
-								border: 2px solid $bordercolor;
-								color: $textcolor;
-								font-family: $titlefont;
-								font-weight: $boldweight;
-								font-size: 90%;
-								text-transform: uppercase;
-								padding: 5px 20px;
-								margin-top: 30px;
-							}
-						}
-					}
-				}
-			}
+	.page-title {
+		display: none;
+	}
+	.promo-box {
+		float: left;
+		&.box-a {
+			margin-right: 20px;
+		}
+		&.box-b {
+			margin: 0 20px 20px 0;
+		}
+		&.box-e, &.box-f {
+			margin: 20px 20px 0 0;
+		}
+		&.box-g {
+			margin-top: 20px;
 		}
 	}
 }
