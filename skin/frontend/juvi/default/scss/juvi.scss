@@ -540,7 +540,6 @@ p.welcome-msg {
 		}
 		&:hover img {
 			opacity: 0.8;
-			@include css3-prefix(transform, scale(1.02));
 		}
 	}
 	.product-info {
@@ -661,7 +660,6 @@ p.welcome-msg {
 				opacity: 0.8;
 				img {
 					@include transition(all 0.2s $transease);
-					@include css3-prefix(transform, scale(1.03));
 				}
 			}
 		}
@@ -695,6 +693,41 @@ p.welcome-msg {
 // Media 
 .product-image, .no-touch .product-img-box .product-image:not(.zoom-available):hover {
 	border: 0;
+}
+a.arrow-left, a.arrow-right {
+	font-family: 'Alegreya Sans SC', $mainfont;
+	position: absolute;
+	top: 42%;
+	z-index: 10;
+	display: block;
+	left: 10px;
+	font-size: 750%;
+	font-weight: $lightweight;
+}
+a.arrow-right {
+	left: auto;
+	right: 10px;
+}
+.product-image img {
+	max-height: 900px !important;
+}
+a.enlarge {
+	opacity: 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	font-size: 40px;
+	margin: 10px 0 0 -20px;
+	width: 60px;
+	height: 60px;
+	background: rgba(0,0,0,0.2);
+	border-radius: 10px;
+	text-align: center;
+	padding: 1px 0 0 6px;
+	@include transition(all 0.2s $transease);
+}
+.slide:hover a.enlarge {
+	opacity: 1;
 }
 // Related (used as swatches)
 .block-related .block-title h2 { display: none; }

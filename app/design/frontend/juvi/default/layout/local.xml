@@ -92,6 +92,19 @@
 				<type>skin_css</type>
 				<name>css/swiper.min.css</name>
 			</action>
+			<action method="addItem">
+				<type>skin_js</type>
+				<name>js/min/jquery.magnific-popup-min.js</name>
+			</action>
+			<action method="addItem">
+				<type>skin_css</type>
+				<name>css/magnific-popup.css</name>
+			</action>
+			<block type="core/text" name="google.fonts">
+			    <action method="setText">
+			        <text><![CDATA[<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100' rel='stylesheet' type='text/css'>]]></text>
+			    </action>
+			</block>
 		</reference>
 	</catalog_product_view>
 

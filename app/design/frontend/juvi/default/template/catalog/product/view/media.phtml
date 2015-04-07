@@ -38,17 +38,23 @@
 ?>
 <div class="product-image">
     <div class="product-image-gallery">
+        <?php if (count($this->getGalleryImages()) > 0): ?>
+        <a class="arrow-left" href="javascript:void(0);">&lsaquo;</a> 
+        <a class="arrow-right active" href="javascript:void(0);">&rsaquo;</a>
+        <?php endif; ?>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <?php if ($_product->getImage() != 'no_selection' && $_product->getImage()): ?>
                     <div class="swiper-slide">
-                        <div class="slide slide-l">
+                        <div class="slide">
+                            <a class="enlarge" href="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_product->getFile())->resize(1000,1000); ?>"><i class="fa fa-search-plus"></i></a>
                             <img src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_product->getFile())->resize(1000,1000); ?>" alt="<?php echo $this->escapeHtml($_product->getLabel()) ?>" />
                         </div>
                     </div>
                 <?php else: ?>
                     <div class="swiper-slide">
-                        <div class="slide slide-l">
+                        <div class="slide">
+                            <a class="enlarge" href="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(1000,1000); ?>"><i class="fa fa-search-plus"></i></a>
                             <?php
                             $_img = '<img src="'.$this->helper('catalog/image')->init($_product, 'image')->resize(1000,1000).'" alt="'.$this->htmlEscape($this->getImageLabel()).'" title="'.$this->htmlEscape($this->getImageLabel()).'" />';
                             echo $_helper->productAttribute($_product, $_img, 'image');
@@ -60,7 +66,8 @@
                     <?php foreach ($this->getGalleryImages() as $_image): ?>
                         <?php if (basename($_image->getFile()) != basename($_product->getImageUrl())): ?>
                         <div class="swiper-slide">
-                            <div class="slide slide-l">
+                            <div class="slide">
+                                <a class="enlarge" href="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize(1000,1000); ?>"><i class="fa fa-search-plus"></i></a>
                                 <img src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize(1000,1000); ?>" alt="<?php echo $this->escapeHtml($_image->getLabel()) ?>" />
                             </div>
                         </div>
@@ -84,14 +91,31 @@
     <?php endif; ?>
 <?php $i++; endforeach; ?>
 </ul>
+<?php endif; ?>
 
 <script type="text/javascript">
+<?php if (count($this->getGalleryImages()) > 0): ?>
 var mySwiper = new Swiper('.swiper-container',{
     loop:true,
     speed: 600,
     longSwipesRatio: 0.2
 });
-</script>
+jQuery('.arrow-left').on('click', function(e){
+    e.preventDefault()
+    mySwiper.slidePrev()
+})
+jQuery('.arrow-right').on('click', function(e){
+    e.preventDefault()
+    mySwiper.slideNext()
+});
 <?php endif; ?>
+jQuery(document).ready(function() {
+    jQuery('.enlarge').magnificPopup({
+        type:'image',
+        mainClass: 'mfp-fade',
+        closeOnContentClick: 'true'
+    });
+});
+</script>
 
 <?php echo $this->getChildHtml('after'); ?>

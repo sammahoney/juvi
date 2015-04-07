@@ -388,11 +388,7 @@ p.welcome-msg {
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in; }
   .products-grid .product-image:hover img {
-    opacity: 0.8;
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02); }
+    opacity: 0.8; }
 .products-grid .product-info {
   padding: 0; }
 .products-grid .price-box .price {
@@ -478,11 +474,7 @@ p.welcome-msg {
       transition: all 0.2s ease-in;
       -webkit-transition: all 0.2s ease-in;
       -moz-transition: all 0.2s ease-in;
-      -o-transition: all 0.2s ease-in;
-      transform: scale(1.03);
-      -webkit-transform: scale(1.03);
-      -moz-transform: scale(1.03);
-      -o-transform: scale(1.03); }
+      -o-transition: all 0.2s ease-in; }
 .product-view .qty-wrapper {
   display: none; }
 .product-view .add-to-cart-buttons .button {
@@ -505,6 +497,44 @@ p.welcome-msg {
 
 .product-image, .no-touch .product-img-box .product-image:not(.zoom-available):hover {
   border: 0; }
+
+a.arrow-left, a.arrow-right {
+  font-family: "Alegreya Sans SC", "EngraversGothicBT", sans-serif;
+  position: absolute;
+  top: 42%;
+  z-index: 10;
+  display: block;
+  left: 10px;
+  font-size: 750%;
+  font-weight: 100; }
+
+a.arrow-right {
+  left: auto;
+  right: 10px; }
+
+.product-image img {
+  max-height: 900px !important; }
+
+a.enlarge {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 40px;
+  margin: 10px 0 0 -20px;
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  padding: 1px 0 0 6px;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in; }
+
+.slide:hover a.enlarge {
+  opacity: 1; }
 
 .block-related .block-title h2 {
   display: none; }
