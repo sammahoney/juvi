@@ -166,9 +166,9 @@ p.welcome-msg {
       position: relative; }
       .nav-primary li.level0 a.level0 {
         font-family: "EngraversGothicBT", sans-serif;
-        font-size: 100%;
+        font-size: 90%;
         letter-spacing: 1px;
-        padding: 0 25px 15px; }
+        padding: 0 10px 15px; }
     .nav-primary li.level0 ul.level0 {
       border: 0;
       background: #FFF;

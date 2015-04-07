@@ -37,6 +37,11 @@
     <nav id="nav">
         <ol class="nav-primary">
             <?php echo $_menu ?>
+            <?php // Check for associated CMS block
+            if(Mage::getModel('cms/block')->load('topnav_links')->getIsActive()){
+                echo $this->getLayout()->createBlock('cms/block')->setBlockId('topnav_links')->toHtml();
+            };
+            ?>
         </ol>
         <?php // Check for associated CMS block
 		if(Mage::getModel('cms/block')->load('menu_promo')->getIsActive()){
