@@ -586,6 +586,18 @@ a.enlarge {
       padding: 4px 6px 0 0;
       color: #666; }
 
+.cms-page-view h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 250%; }
+
+.cms-faq h5 {
+  color: #000;
+  font-weight: 100;
+  font-size: 120%; }
+.cms-faq p {
+  font-size: 13px; }
+
 /* Responsive Styles */
 @media only screen and (min-width: 1200px) {
   .logo {
