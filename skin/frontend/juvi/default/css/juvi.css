@@ -31,7 +31,7 @@ body {
   font-weight: 300; }
 
 .wrapper {
-  margin: 10px auto;
+  margin: 10px auto 35px;
   overflow-x: hidden; }
 
 a {
@@ -50,6 +50,9 @@ a:visited {
 label {
   font-family: "EngraversGothicBT", sans-serif;
   font-weight: 300; }
+
+input:focus {
+  outline: none; }
 
 h1, h2, h3, h4, h5 {
   font-family: "EngraversGothicBT", sans-serif; }
@@ -90,19 +93,35 @@ p.welcome-msg {
   font-family: "EngraversGothicBT", sans-serif;
   color: #000; }
 
+#header-search {
+  top: 20px;
+  width: 190px; }
+
 #search {
   height: 28px;
   margin-top: -20px;
   display: block; }
 
 #search_mini_form input#search {
-  font-family: "EngraversGothicBT", sans-serif;
-  font-size: 80%;
-  letter-spacing: 1px;
+  font-family: arial, sans-serif;
+  letter-spacing: 0px;
   border-color: #35100A;
-  font-weight: 300;
+  font-weight: 100;
   color: #000;
-  line-height: 15px; }
+  line-height: 18px;
+  height: 28px;
+  margin-top: -26px;
+  display: block;
+  border: 0;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+  font-size: 11px !important; }
+#search_mini_form .search-button:before {
+  content: "\f002";
+  font-family: "FontAwesome";
+  background: none;
+  text-indent: 0 !important;
+  color: #000; }
 
 #header-nav {
   border-bottom: 2px solid #000; }
@@ -233,11 +252,29 @@ p.welcome-msg {
         letter-spacing: 0px;
         font-weight: 100; }
 
+.account-cart-wrapper {
+  width: 260px;
+  right: 154px;
+  top: -14px; }
+  .account-cart-wrapper a {
+    background: url(../images/top-menu-div.png) no-repeat 100% 50%; }
+  .account-cart-wrapper .icon {
+    display: none; }
+  .account-cart-wrapper .label, .account-cart-wrapper .count {
+    text-transform: uppercase;
+    color: gray;
+    font-size: 11px !important; }
+
+.skip-cart.no-count .count {
+  display: inline-block !important;
+  color: #000;
+  font-family: "EngraversGothicBT", sans-serif; }
+
 .breadcrumbs li, .breadcrumbs a {
   font-family: "EngraversGothicBT", sans-serif;
   text-transform: lowercase; }
 .breadcrumbs a:hover {
-  color: gray; }
+  color: #b3b3b3 !important; }
 .breadcrumbs strong {
   color: #000; }
 
@@ -454,10 +491,12 @@ p.welcome-msg {
 .product-view .qty-wrapper {
   display: none; }
 .product-view .add-to-cart-buttons .button {
-  background: transparent;
-  border: 2px solid #35100A; }
+  background: #35100A;
+  border: 0; }
+  .product-view .add-to-cart-buttons .button:hover {
+    background: #000; }
   .product-view .add-to-cart-buttons .button span {
-    color: #000;
+    color: #FFF;
     font-family: "EngraversGothicBT", sans-serif;
     font-weight: 500;
     font-size: 90%; }
@@ -522,34 +561,30 @@ a.enlarge {
 .block-related .block-title h2 {
   display: none; }
 
-.footer {
-  font-family: "EngraversGothicBT", sans-serif; }
-  .footer button.button {
-    font-family: "EngraversGothicBT", sans-serif; }
-  .footer .links a {
-    font-family: "EngraversGothicBT", sans-serif;
-    font-size: 110%; }
-  .footer .block-title {
-    border: 0;
-    padding: 0; }
-    .footer .block-title strong {
-      font-size: 180%;
-      letter-spacing: 0px;
-      font-weight: 100; }
-
-#footer_message {
+#fixed_footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: #333;
-  color: #FFF;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
   font-family: "EngraversGothicBT", sans-serif;
   text-align: center;
   padding: 1%;
   z-index: 10;
   text-transform: uppercase;
-  font-size: 110%;
-  letter-spacing: 2px; }
+  font-size: 80%;
+  letter-spacing: 1px; }
+  #fixed_footer .footer-container {
+    padding: 0; }
+    #fixed_footer .footer-container .footer-wrap {
+      text-align: right;
+      padding: 0 30px; }
+    #fixed_footer .footer-container .copyright {
+      font-family: arial, sans-serif;
+      font-size: 80%;
+      text-transform: none;
+      padding: 4px 6px 0 0;
+      color: #666; }
 
 /* Responsive Styles */
 @media only screen and (min-width: 1200px) {

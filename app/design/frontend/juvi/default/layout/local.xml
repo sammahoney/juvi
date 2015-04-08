@@ -41,9 +41,10 @@
 			    </action>
 			</block>
 		</reference>
+		<remove name="footer"/>
 		<reference name="before_body_end">
-			<block type="cms/block" name="fixed_message">
-				<action method="setBlockId"><block_id>fixed_message</block_id></action>
+			<block type="cms/block" name="fixed_footer">
+				<action method="setBlockId"><block_id>fixed_footer</block_id></action>
 			</block>
 		</reference>
 	</default>
