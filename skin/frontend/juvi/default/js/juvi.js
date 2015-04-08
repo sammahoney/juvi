@@ -27,6 +27,12 @@ jQuery(document).ready(function(){
 	jQuery('#nav li.level0.parent').on('touchend', function() {
 		jQuery('#nav').addClass("show-promo");
 	});
+	// Fix for shipping link
+	jQuery('a.skip-shipping').on('click touchend', function() {
+		var el = jQuery(this);
+		var link = el.attr('href');
+		window.location = link;
+	});
 	/*
 	// Sidr menu
 	jQuery('#left-menu').sidr({
