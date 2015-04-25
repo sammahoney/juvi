@@ -1,0 +1,32 @@
+
+// =============================================
+// Basic Styles
+// =============================================
+
+.header-language-background, .button, .cart-table .product-cart-actions .button, 
+#co-shipping-method-form .buttons-set .button, .footer .button,
+.opc .section .step-title .number, .opc .section.allow.active .step-title .number, 
+.no-touch .opc .section.allow:hover .step-title .number, .cart .buttons-set .button,
+.cart-table .button, .sidebar .actions .button, .button.button-secondary {
+	background-color: $background;
+}
+.skip-cart, .footer .block-title, .footer address, .footer .links a:hover,
+.cms-page-view .std h1, .cms-no-route .std h1, .cms-page-view .std h2, .cms-no-route .std h2,
+.button2 span, .button2 span span {
+	color: $textcolor;
+}
+.buttons-set a, button.button span span {
+	color: $buttontextcolor;
+}
+.product-view .product-shop .product-name .h1, .product-view .product-img-box .product-name h1,
+.product-view .product-shop .price-box .regular-price .price, .product-view .product-shop .price-box .special-price .price, 
+.product-view .product-shop .price-box .full-product-price .price, .product-collateral .toggle-tabs li.current span, 
+.product-collateral .toggle-tabs li:hover span, .opc .section.allow .step-title:hover h2, .opc .section.active .step-title h2 {
+	color: lighten( $textcolor, 30% );
+}
+.price-box .price {
+	color: $pricecolor;
+}
+.no-touch .product-image:hover {
+	border-color: $bordercolor;
+}

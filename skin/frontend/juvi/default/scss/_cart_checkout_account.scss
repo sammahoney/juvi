@@ -1,0 +1,190 @@
+
+// =============================================
+// Cart & Checkout
+// =============================================
+
+.cart-table {
+	thead th, tbody td {
+		font-family: $titlefont;
+	}
+	.button2 {
+		span, span span {
+			font-family: $mainfont;
+			font-size: 90%;
+			&:hover {
+				color: lighten( $textcolor, 50% );
+				text-decoration: underline;
+			}
+		}
+	}
+	.item-options {
+		font-family: $mainfont;
+		padding-left: 0;
+		margin-left: 0 !important;
+		font-size: 85%;
+		letter-spacing: $spacing+1;
+		dt {
+			font-style: normal;
+			font-weight: $mediumweight;
+		}
+	}
+	.product-cart-sku {
+		display: none;
+	}
+	.product-name a {
+		font-family: $titlefont;
+		font-weight: $mediumweight;
+	}
+	.cart-links > li > a {
+		font-family: $mainfont;
+		font-size: 80%;
+		letter-spacing: $spacing+1;
+	}
+}
+.cart-totals, .cart-forms .discount, .cart-forms .giftcard, .cart-forms .shipping {
+	background: lighten( $background, 98% );
+}
+#co-shipping-method-form .buttons-set .button:hover {
+	background: lighten( $background, 30% );
+}
+.checkout-cart-index .checkout-types a:not(.button), #crosssell-products-list .add-to-links a {
+	font-family: $mainfont;
+	font-size: 80%;
+	letter-spacing: $spacing+1;
+}
+#co-shipping-method-form .buttons-set .button, .shipping .sp-methods label span, .shipping #co-shipping-method-form .sp-methods dd label, .sp-methods dt {
+	font-family: $titlefont;
+}
+#discount-coupon-form label, .cart .giftcard label, #discount-coupon-form .button-wrapper > button,
+.cart .giftcard .button-wrapper > button, .shipping .form-list label, .cart .cart-totals table,
+.cart .cart-totals table tfoot strong span, .cart .cart-totals table tfoot span.price, .crosssell h2,
+.block-progress dt, #checkout-step-review .data-table thead th, #checkout-step-review .data-table tbody td, .opc h3,
+#checkout-step-review .data-table tbody td, #checkout-step-review .data-table tfoot td,
+body.customer-account .my-account .fieldset h2, body.customer-account .my-account .addresses-list h2, 
+body.customer-account .my-account .order-details h2 {
+	font-family: $titlefont;
+	font-weight: $mediumweight;
+	font-size: 100%;
+	color: $textcolor;
+}
+.cart .cart-totals table tfoot strong span, .cart .cart-totals table tfoot span.price {
+	font-weight: $boldweight;
+}
+.cart-table .product-cart-actions, #co-shipping-method-form .buttons-set  {
+	.button:active {
+		background: lighten( $background, 30% );
+	}
+	.button:focus {
+		background: lighten( $background, 50% );
+	}
+}
+.opc .section.allow .step-title .number {
+	background: lighten( $background, 80% );
+}
+.checkout-onepage-index .page-title h1 {
+	border: 0;
+}
+.item-options {
+	dd, dt {
+		font-family: $mainfont;
+		font-style: normal;
+		font-weight: $mediumweight;
+	}
+}
+
+// =============================================
+// Account
+// =============================================
+
+p.hello strong {
+	font-weight: $mediumweight;
+	font-size: 130%;
+}
+.dashboard {
+	.box-head h2 {
+		font-weight: $boldweight;
+		color: $textcolor;
+	}
+	.col2-set {
+		.col-1, .col-2 {
+			.box-title {
+				h2, h3 {
+					font-weight: $boldweight;
+					color: $textcolor;
+				}
+			}
+		}
+	}
+}
+.order-info-box .box-title h2, #my_recent_reviews h3.product-name a, body.customer-account .data-table td .product-name a, .product-review .product-details h2 {
+	font-family: $titlefont;
+	font-weight: $boldweight;
+	color: $textcolor;
+}
+h2.table-caption {
+	font-weight: $mediumweight;
+	font-size: 130%;
+	color: $textcolor;
+}
+.box-content p {
+	font-size: 100%;
+	letter-spacing: $spacing;
+}
+.order-date, body.customer-account .data-table td a, .dashboard .box-reviews li .details .ratings strong {
+	font-family: $mainfont;
+}
+.block-account, .block-cms-menu {
+	li {
+		a {
+			color: $textcolor;
+			font-family: $titlefont;
+			letter-spacing: $spacing+1;
+			&:hover {
+				color: lighten($textcolor,30%)
+			}
+		}
+		strong, .block-cms-menu li strong {
+			color: lighten($textcolor,50%);
+			font-weight: $mediumweight;
+		}
+	}
+	.block-title {
+		border-bottom: 1px solid $bordercolor;
+		width: 75%;
+		padding-bottom: 10px;
+		margin-bottom: 15px;
+	}
+}
+.customer-account {
+	p.product-name {
+		font-family: $titlefont;
+		font-weight: $boldweight;
+		color: $textcolor;
+	}
+}
+// Wishlist
+#wishlist-table {
+	.product-name a, &.clean-table thead th {
+		font-family: $titlefont;
+		font-weight: $boldweight;
+		color: $textcolor;
+		font-size: 120%;
+	}
+	.wishlist-sku, textarea {
+		font-family: $mainfont;
+	}
+}
+// Reviews
+.product-review {
+	.ratings-table th, .ratings-description dt, .ratings-description dd, .product-img-box p.label {
+		font-family: $mainfont;
+		color: $textcolor;
+	}
+	.product-img-box {
+		float: none;
+		width: 100%;
+		.product-image {
+			float: left;
+		}
+	}
+}

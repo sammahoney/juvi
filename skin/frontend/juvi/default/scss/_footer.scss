@@ -1,0 +1,33 @@
+
+// =============================================
+// Footer
+// =============================================
+
+#fixed_footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: rgba(255,255,255,0.8);
+	color: $textcolor;
+	font-family: $titlefont;
+	text-align: center;
+	padding: 1%;
+	z-index: 10;
+	text-transform: uppercase;
+	font-size: 80%;
+	letter-spacing: $spacing+1;
+	.footer-container {
+		padding: 0;
+		.footer-wrap {
+			text-align: right;
+			padding: 0 30px;
+		}
+		.copyright {
+			font-family: arial, sans-serif;
+			font-size: 80%;
+			text-transform: none;
+			padding: 4px 6px 0 0;
+			color: #666;
+		}
+	}
+}

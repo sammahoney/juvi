@@ -1,0 +1,257 @@
+
+// =============================================
+// Product View Reviews
+// =============================================
+
+// Reviews
+.no-rating {
+	margin: 10px 0 15px;
+}
+#customer-reviews {
+	position: relative;
+	> h2 {
+		font-family: $titlefont;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 100%;
+		letter-spacing: $spacing+1;
+		width: 100%;
+		display: block;
+		font-weight: $mediumweight;
+		padding: 25px 0 20px;
+		color: $textcolor;
+	}
+	> .rating-box {
+		float: left;
+		margin: 9px;
+	}
+	.reviews-count {
+		padding: 8px 14px 8px;
+		font-size: 13px;
+		color: lighten($textcolor, 50%);
+		margin: 0;
+		display: inline-block;
+	}
+	.reviews-wrapper {
+		position: relative;
+		overflow: hidden;
+		padding-top: 0;
+		ul {
+			clear: both;
+			margin-top: 0;
+			li {
+				width: 45%;
+				margin-right: 5%;
+				padding-bottom: 25px;
+				float: left;
+				text-align: left;
+				.ratings {
+					margin: -8px 10px -5px 0;
+					float: left;
+					.rating-box { 
+						float: none;
+						margin: 10px 0;
+					}
+				}
+				.review-title, .review-name, .review-date {
+					font-size: 100%;
+					font-weight: $mediumweight;
+					font-family: $titlefont;
+					text-transform: uppercase;
+					letter-spacing: $spacing+1;
+				}
+				.review-detail {
+					padding-top: 5px;
+					font-size: 80%;
+					display: block;
+					letter-spacing: $spacing+1;
+				}
+				.review-name, .review-date {
+					padding: 4px 0;
+					color: lighten($textcolor, 70%);
+				}
+			}
+		}
+	}
+	&.form-open {
+		.reviews-wrapper {
+			padding-top: 25px;
+		}
+	}
+	&.form-open {
+		.reviewform-wrapper {
+			border-bottom: 1px solid $bordercolor;
+		}
+	}
+}
+.review-button {
+	position: absolute;
+	right: 0;
+	top: 24px;
+	background: $background;
+	text-transform: uppercase;
+	padding: 5px 16px;
+	font-size: 80%;
+	cursor: pointer;
+	letter-spacing: $spacing+1;
+	color: $buttontextcolor;
+	opacity: 1;
+	@include transition(all $transpeed $transease);
+}
+.review-button:hover {
+	color: $buttontextcolor;
+	background: lighten( $background, 30% );
+}
+.reviews-sub, .rating-wrapper {
+	text-align: center;
+	font-weight: 100;
+}
+.rating-wrapper .rating-box {
+	display: inline-block;
+}
+.reviewform-wrapper {
+	overflow: hidden;
+	border-bottom: 0;
+}
+.review-expand, .review-contract {
+	position: relative;
+	width: 110px;
+	font-family: $titlefont;
+	text-transform: uppercase;
+	background-color: $backgroundinvert;
+	text-align: center;
+	display: block;
+	font-size: 85%;
+	cursor: pointer;
+	border: 1px solid $bordercolor;
+	margin: 0 auto 25px;
+	padding: 5px;
+}
+.reviews-wrapper-after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	height: 75px;
+	padding: 0;
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 13px;
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 49%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(49%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 100%); /* W3C */
+} 
+
+.review-spacer {
+	clear: both;
+	padding: 0 !important;
+}
+// Review Form
+#customer-reviews {
+	.reviewform-wrapper {
+		margin-bottom: -1px;
+		text-align: center;
+		.fieldset, .buttons-set {
+			margin: 0 auto;
+			padding-top: 0;
+			padding-bottom: 20px;
+		}
+		h2 {
+			display: none;
+		}
+		h3, h4 {
+			font-family: $mainfont;
+			margin: 5px 0;
+			font-weight: normal;
+		}
+		h4 {
+			padding-bottom: 15px;
+		}
+		h3 span {
+			font-family: $titlefont;
+			color: $textcolor;
+		}
+		.fieldset .form-list textarea {
+			font-size: 100%;
+		}
+		#product-review-table th {
+			line-height: 230%;
+		}
+	}
+}
+.reviewform-wrapper .form-add {
+	padding: 10px 40px 0;
+}
+.reviewform-wrapper fieldset {
+	display: block;
+	width: 440px;
+	margin: 0 auto;
+}
+.reviewform-wrapper .form-list .input-box {
+	width: 100%;
+}
+#review-form h3 span {
+	font-weight: normal;
+	font-size: 22px;
+	display: block;
+	margin: 10px 0;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+.reviewform-wrapper .form-list label {
+	color: $textcolor;
+	font-weight: normal;
+	font-size: 13px;
+	margin: 6px 0;
+}
+.reviewform-wrapper .form-list input.input-text, .reviewform-wrapper .form-list textarea {
+	width: 100%;
+	padding: 7px;
+}
+.reviewform-wrapper #product-review-table {
+	width: 440px;
+	border: 0;
+}
+.reviewform-wrapper #product-review-table th {
+	border: 0;
+}
+.reviewform-wrapper #product-review-table td {
+	padding: 5px 36px 5px 20px;
+	border: 0;
+}
+.reviewform-wrapper .form-list {
+	margin: 20px 0;
+}
+.reviewform-wrapper .buttons-set {
+	border: 0;
+	margin: 0 -40px;
+	text-align: center;
+}
+.reviewform-wrapper .buttons-set button.button {
+	float: none;
+	position: relative;
+	margin: 0 0 20px;
+	background: $background;
+	padding: 8px 20px;
+	cursor: pointer;
+	letter-spacing: 1px;
+	height: 37px;
+	@include transition(all $transpeed $transease);
+}
+.reviewform-wrapper .buttons-set button.button:hover {
+	background: lighten( $background, 30% );
+	@include transition(all $transpeed $transease);
+}
+.reviewform-wrapper .buttons-set button.button span span {
+	font-size: 13px;
+	color: $buttontextcolor;
+	font-weight: normal;
+}
+#review-form.review-nologged {
+	padding: 30px 0 40px;
+}
+#customer-reviews .review-summary-table .rating-box {
+	overflow: visible;
+}

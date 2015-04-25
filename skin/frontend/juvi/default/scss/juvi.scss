@@ -5,14 +5,14 @@
 // =============================================
 
 // Main
-$background: #35100A;
+$background: #26130B;
 $backgroundinvert: #FFF;
 // Text
-$textcolor: #000;
+$textcolor: #111;
 $buttontextcolor: #FFF;
 $pricecolor: #333;
 // Borders
-$bordercolor: #35100A;
+$bordercolor: #26130B;
 // Fonts & Weights
 $mainfont: 'EngraversGothicBT', sans-serif;
 $titlefont: 'EngraversGothicBT', sans-serif;
@@ -23,85 +23,18 @@ $spacing: 0px;
 // Transition - courtesy of http://log.vieron.net/articles/sass-mixins-for-vendor-prefixed-transitions-including-properties/
 $transpeed: 0.1s;
 $transease: ease-in;
-@function prefix($property, $prefixes: (webkit moz o ms)) {
-	$vendor-prefixed-properties: transform background-clip background-size;
-	$result: ();
-	@each $prefix in $prefixes {
-		@if index($vendor-prefixed-properties, $property) {
-			$property: -#{$prefix}-#{$property}
-		}
-		$result: append($result, $property);
-	}
-	@return $result;
-}
-@function trans-prefix($transition, $prefix: moz) {
-	$prefixed: ();
-	@each $trans in $transition {
-		$prop-name: nth($trans, 1);
-		$vendor-prop-name: prefix($prop-name, $prefix);
-		$prop-vals: nth($trans, 2);
-		$prefixed: append($prefixed, ($vendor-prop-name $prop-vals), comma);
-	}
-	@return $prefixed;
-}
-@mixin transition($values...) { 
-	$transitions: ();
-	@each $declaration in $values {
-		$prop: nth($declaration, 1);
-		$prop-opts: ();
-		$length: length($declaration);
-		@for $i from 2 through $length {
-			$prop-opts: append($prop-opts, nth($declaration, $i));   
-		}
-		$trans: ($prop, $prop-opts);
-		$transitions: append($transitions, $trans, comma);
-	}
-	transition: $values;
-	-webkit-transition: trans-prefix($transitions, webkit);
-	-moz-transition: trans-prefix($transitions, moz);
-	-o-transition: trans-prefix($transitions, o);
-}
-// Additional Mixins - courtesy of https://github.com/matthieua/sass-css3-mixins/blob/master/css3-mixins.sass
-// Browser prefixes
-@mixin css3-prefix($property, $value) {
-	#{$property}: #{$value};
-	-webkit-#{$property}: #{$value};
-	-moz-#{$property}: #{$value};
-	-o-#{$property}: #{$value};
-}
+
+// =============================================
+// Mixins
+// =============================================
+
+@import "mixins";
 
 // =============================================
 // Basic Styles
 // =============================================
 
-// Backgrounds
-.header-language-background, .button, .cart-table .product-cart-actions .button, 
-#co-shipping-method-form .buttons-set .button, .footer .button,
-.opc .section .step-title .number, .opc .section.allow.active .step-title .number, 
-.no-touch .opc .section.allow:hover .step-title .number, .cart .buttons-set .button,
-.cart-table .button, .sidebar .actions .button, .button.button-secondary {
-	background-color: $background;
-}
-.skip-cart, .footer .block-title, .footer address, .footer .links a:hover,
-.cms-page-view .std h1, .cms-no-route .std h1, .cms-page-view .std h2, .cms-no-route .std h2,
-.button2 span, .button2 span span {
-	color: $textcolor;
-}
-.buttons-set a, button.button span span {
-	color: $buttontextcolor;
-}
-.product-view .product-shop .product-name .h1, .product-view .product-img-box .product-name h1,
-.product-view .product-shop .price-box .regular-price .price, .product-view .product-shop .price-box .special-price .price, 
-.product-view .product-shop .price-box .full-product-price .price, .product-collateral .toggle-tabs li.current span, 
-.product-collateral .toggle-tabs li:hover span, .opc .section.allow .step-title:hover h2, .opc .section.active .step-title h2 {
-	color: lighten( $textcolor, 30% );
-}
-.price-box .price {
-	color: $pricecolor;
-}
-.no-touch .product-image:hover {
-	border-color: $bordercolor;
-}
+@import "basicstyles";
 
 // =============================================
 // Main Styles
@@ -131,16 +64,21 @@ label {
 	font-family: $mainfont;
 	font-weight: $mediumweight;
 }
+.input-text:focus {
+	border: 1px solid $bordercolor;
+}
 input:focus {
 	outline: none;
 }
 
 // =============================================
-// Typography
+// Titles & Typography
 // =============================================
 
 h1, h2, h3, h4, h5 {
 	font-family: $titlefont;
+	font-weight: $mediumweight;
+	color: $textcolor;
 }
 .page-title, .product-name {
 	h1, h2 {
@@ -149,6 +87,8 @@ h1, h2, h3, h4, h5 {
 		font-weight: normal;
 		letter-spacing: $spacing+1;
 		font-size: 130%;
+		margin-top: 10px;
+		padding-bottom: 10px;
 	}
 }
 .block-title {
@@ -159,634 +99,204 @@ h1, h2, h3, h4, h5 {
 		letter-spacing: $spacing+1;
 	}
 }
-a:hover, a:active, a:focus {
-	outline: 0;
+h2, h3, h4, h5, p {
+	&.product-name {
+		a:hover {
+			color: lighten( $textcolor, 50% );
+		}
+	}
+}
+p {
+	font-size: 90%;
+	font-family: $mainfont;
+	letter-spacing: $spacing+1;
+	line-height: 200%;
+	padding-bottom: 20px;
+}
+.price-box .price, .price {
+	font-family: $titlefont;
+	letter-spacing: $spacing+1;
+	font-weight: $mediumweight+100;
+}
+.fa {
+	text-indent: -9999px;
+	position: relative;
+	&:before {
+		text-indent: 0;
+		font-size: 20px;
+		color: $textcolor;
+		position: absolute;
+		right: 0;
+		font-family: "FontAwesome";
+		@include transition(color $transpeed $transease);
+	}
+	&:hover:before {
+		color: lighten($textcolor, 30%);
+	}
+}
+// Buttons
+.button {
+	background: $background;
+	@include transition(background-color $transpeed $transease);
+}
+.button {
+	&:hover, &:active {
+		background: lighten( $background, 30% );
+	}
+	&:focus {
+		background: lighten( $background, 50% );
+	}
+}
+.button, .button2 span, .button2 span span {
+	font-family: $titlefont;
+	&:hover {
+		color: lighten( $textcolor, 50% );
+	}
+}
+.button.button-secondary, a.button:visited {
+	color: $buttontextcolor;
+}
+.btn-remove {
+	border-color: lighten( $bordercolor, 80% );
+	@include transition(all $transpeed $transease);
+	&:hover {
+	background: $background;
+	border-color: $bordercolor;
+	}
+	&:after {
+		content: "×";
+		font-size: 18px;
+		font-weight: $lightweight;
+		color: lighten( $textcolor, 30% );
+		display: block;
+		text-align: center;
+		margin-left: 1px;
+		@include transition(all $transpeed $transease);
+	}
+	&:hover:after {
+		color: #FFF;
+	}
+}
+// Forms etc
+input, select, textarea {
+	font-family: $mainfont;
+	font-size: 85%;
+	font-weight: $mediumweight;
+}
+select {
+	border: 1px solid lighten($bordercolor, 80%);
+	height: 30px;
+}
+form .legend {
+	font-size: 100%;
+	font-weight: $mediumweight;
+	font-family: $titlefont;
+}
+.fieldset p.required {
+	font-size: 80%;
+}
+// Tables
+.data-table {
+	th, tr, td, tbody td, tfoot td, h3.product-name {
+		font-family: $titlefont;
+		font-weight: $mediumweight;
+		font-size: 100%;
+		color: $textcolor;
+	}
+}
+
+// =============================================
+// Messages
+// =============================================
+
+ul.messages {
+	width: 101%;
+	overflow: hidden;
+	position: fixed;
+	z-index: 999999;
+	left: 0;
+	top: 0;
+	margin: -1px !important;
+	cursor: pointer;
+	li {
+		padding: 14px 10px 12px 20px;
+	}
+	> li:after { 
+		font-family: 'Alegreya Sans SC', $mainfont;
+		content: "×";
+		position: absolute;
+		width:30px; 
+		height:30px; 
+		right: 20px;
+		top: 0;
+		font-size: 32px;
+	}
+	a {
+		text-decoration: underline;
+	}
+}
+.error-msg, .success-msg, .note-msg, .notice-msg {
+	font-family: $titlefont;
+	background: $backgroundinvert;
+	text-align: center !important;
+	min-height: 0 !important;
+	padding: 0 !important;
+	font-size: 13px !important;
+	letter-spacing: $spacing+2;
+	margin: 0 0 20px !important;
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: 100 !important;
+	box-shadow: 0 0 4px rgba(0,0,0,0.3);
 }
 
 // =============================================
 // Header
 // =============================================
 
-.header-language-background {
-	padding: 0;
-}
-p.welcome-msg {
-	position: absolute;
-	font-size: 108%;
-	margin: 80px 0 0 165px;
-}
-.logo {
-	padding: 0;
-}
-.account-cart-wrapper {
-	font-family: $titlefont;
-	.label {
-		font-size: 110%;
-	}
-}
-// Header Cart
-.header-minicart .block-subtitle {
-	font-family: $mainfont;
-	color: $textcolor;
-}
-// Search
-#header-search {
-	top: 20px;
-	width: 190px;
-}
-#search {
-	height: 28px;
-	margin-top: -20px;
-	display: block;
-}
-#search_mini_form {
-	input#search {
-		font-family: arial, sans-serif;
-		letter-spacing: $spacing;
-		border-color: $bordercolor;
-		font-weight: $lightweight;
-		color: $textcolor;
-		line-height: 18px;
-		height: 28px;
-		margin-top: -26px;
-		display: block;
-		border: 0;
-		border-bottom: 1px solid #000;
-		border-radius: 0;
-		font-size: 11px !important;
-	}
-	.search-button:before {
-		content:"\f002";
-		font-family: "FontAwesome";
-		background: none;
-		text-indent: 0 !important;
-		color: $textcolor;
-	}
-}
+@import "header";
 
 // =============================================
 // Navigation
 // =============================================
 
-#header-nav {
-	border-bottom: 2px solid $textcolor;
-}
-.menu-promo {
-	opacity: 0;
-	position: absolute;
-	right: 0;
-	z-index: -1;
-	margin: 10px;
-	width: 600px;
-	img {
-		width: 100%;
-	}
-}
-.show-promo .menu-promo {
-	opacity: 1;
-	z-index: 10;
-	@include transition(opacity $transpeed $transease);
-	&:hover {
-		opacity: 1;
-		@include transition(opacity 0 $transease);
-	}
-	&.active {
-		opacity: 1 !important;
-		@include transition(opacity 0 $transease);
-	}
-}
-#nav {
-  margin-left: 220px;
-  margin-top: -50px;
-}
-.nav-primary {
-	position: relative;
-	.menu-active {
-		z-index: 10;
-		position: static;
-		ul.level0 {
-			opacity: 0.99 !important;
-			left: 0 !important;
-			top: 45px;
-		}
-	}
-	li.level0 {
-		position: static;
-		&.menu-active > a:after {
-			content:"";
-			width: 0;
-			height: 0;
-			border-style: solid;
-			border-width: 10px 10px 0 10px;
-			border-color: $background transparent transparent transparent;
-			position: absolute;
-			bottom: -10px;
-			z-index: 20;
-			left: 50%;
-			margin-left: -10px;
-		}
-		a {
-			color: $textcolor;
-			position: relative;
-			&.level0 {
-				font-family: $titlefont;
-				font-size: 90%;
-				letter-spacing: $spacing+1;
-				padding: 0 10px 15px;
-			}
-		}
-		ul.level0 {
-			border: 0;
-			background: $backgroundinvert;
-			padding: 20px 600px 20px 30px;
-			border-top: 2px solid $textcolor;
-			opacity: 0;
-			display: block;
-			position: absolute;
-			left: -300%;
-			width: 1200px;
-			min-height: 206px;
-			margin-left: -220px;
-			@include css3-prefix(column-count, 4);
-			@include css3-prefix(column-gap, 20px);
-			@include transition(opacity $transpeed $transease);
-			@include css3-prefix(box-shadow, 0 2px 8px -2px rgba(0, 0, 0, 0.2));
-			a:hover {
-				color: lighten( $textcolor, 20% );
-			}
-			li.level1 {
-				margin-bottom: 5px;
-				a {
-					border: 0;
-					color: $textcolor;
-					font-family: $titlefont;
-					font-size: 90%;
-					letter-spacing: $spacing;
-					text-transform: uppercase;
-				}
-				&.parent {
-					padding-bottom: 15px;
-					display: block;
-					> a:after{
-						display: none;
-					}
-				}
-			}
-		}
-		ul.level1 {
-			position: static !important;
-			border: 0;
-			padding: 0;
-			background: transparent;
-			display: block;
-			min-height: 40px;
-			width: auto;
-			li.level2 {
-				a {
-					border: 0;
-					color: $textcolor;
-					line-height: 22px;
-					font-family: $mainfont;
-					font-size: 80%;
-					letter-spacing: $spacing;
-					font-weight: $lightweight;
-				}
-			}
-		}
-	}
-}
-.account-cart-wrapper {
-	width: 260px;
-	right: 154px;
-	top: -14px;
-	a {
-		background: url(../images/top-menu-div.png) no-repeat 100% 50%;
-	}
-	.icon {
-		display: none;
-	}
-	.label, .count {
-		text-transform: uppercase;
-		color: lighten($textcolor, 50%);
-		font-size: 11px !important;
-	}
-}
-.skip-cart.no-count .count {
-	display: inline-block !important;
-	color: $textcolor;
-	font-family: $mainfont;
-}
-.breadcrumbs {
-	li, a {
-		font-family: $mainfont;
-		text-transform: lowercase;
-	}
-	a:hover {
-		color: lighten( $textcolor, 70% ) !important;
-	}
-	strong {
-		color: $textcolor;
-	}
-}
+@import "navigation";
 
 // =============================================
 // Homepage
 // =============================================
 
-.cms-index-index {
-	.page-title {
-		display: none;
-	}
-	.promo-box {
-		float: left;
-		&.box-a {
-			margin-right: 20px;
-		}
-		&.box-b {
-			margin: 0 20px 20px 0;
-		}
-		&.box-e, &.box-f {
-			margin: 20px 20px 0 0;
-		}
-		&.box-g {
-			margin-top: 20px;
-		}
-	}
-}
+@import "homepage";
 
 // =============================================
 // Layered Nav
 // =============================================
 
-.block-layered-nav {
-	color: $textcolor;
-	.block-title {
-		  border-bottom: 1px solid $bordercolor;
-		  width: 75%;
-		  padding-bottom: 10px;
-		  margin-top: 8px;
-		  margin-bottom: 20px;
-	}
-	.actions a {
-		font-family: $mainfont;
-		font-size: 80%;
-		font-weight: $mediumweight;
-		letter-spacing: $spacing+1;
-		text-decoration: underline;
-		margin: -40px 0 0 15px;
-	}
-	.currently {
-		padding: 15px 15px 25px;
-		background: lighten( $background, 97% );
-		letter-spacing: $spacing+1;
-		.block-subtitle {
-			padding: 0;
-			font-family: $titlefont;
-			font-weight: $mediumweight+100;
-			color: $textcolor;
-		}
-		ol {
-			padding: 0;
-			font-family: $mainfont;
-			font-weight: $mediumweight;
-			font-size: 80%;
-			li .label {
-				font-weight: $mediumweight+100;
-			}
-		}
-		.btn-remove {
-			border-color: lighten( $bordercolor, 80% );
-			@include transition(all $transpeed $transease);
-		}
-		.btn-remove:hover {
-			background: $background;
-			border-color: $bordercolor;
-		}
-		.btn-remove:after {
-			content: "×";
-			font-size: 18px;
-			font-weight: $lightweight;
-			color: lighten( $textcolor, 30% );
-			display: block;
-			text-align: center;
-			margin-left: 1px;
-			@include transition(all $transpeed $transease);
-		}
-		.btn-remove:hover:after {
-			color: #FFF;
-		}
-	}
-	.block-content > dl > {
-		dt {
-			cursor: pointer;
-			width: 75%;
-			&:before {
-				content: "\f107";
-				font-family: "FontAwesome";
-				float: right;
-			}
-			&.active:before {
-				content: "\f106";
-			}
-		}
-		dt, dt:hover, dd {
-			font-family: $titlefont;
-			font-weight: $lightweight;
-			color: $textcolor;
-			background: transparent;
-			border: 0;
-			padding: 5px 0;
-			letter-spacing: $spacing+1;
-			ol > li > {
-				span, a, a span.price {
-					padding: 5px 0;
-					font-family: $mainfont;
-					font-size: 80%;
-					font-weight: $mediumweight;
-					letter-spacing: $spacing+2;
-				}
-				a .count {
-					display: none;
-				}
-				a span.price {
-					padding: 0;
-					font-size: 100%;
-				}
-			}
-		}
-	}
-}
+@import "layerednav";
 
 // =============================================
 // Category View
 // =============================================
 
-.category-description.std {
-	font-size: 75%;
-	font-family: $mainfont;
-	letter-spacing: $spacing+1;
-	line-height: 200%;
-	padding-bottom: 20px;
-}
-.products-grid {
-	.product-name {
-		padding-top: 10px;
-		a {
-			font-size: 80%;
-			font-family: $mainfont;
-			font-weight: $mediumweight+100;
-			color: $textcolor;
-			letter-spacing: $spacing+1;
-			text-transform: capitalize;
-		}
-		a:hover {
-			color: lighten( $textcolor, 50% );
-		}
-	}
-	.product-image {
-		overflow: hidden;
-		border: 0;
-		img {
-			@include transition(all 0.2s $transease);
-		}
-		&:hover img {
-			opacity: 0.8;
-		}
-	}
-	.product-info {
-		padding: 0;
-	}
-	.price-box {
-		.price {
-			font-family: $mainfont;
-			font-size: 90%;
-			letter-spacing: $spacing+1;
-			font-weight: $mediumweight+100;
-		}
-	}
-}
-// Toolbar
-.toolbar {
-	background: transparent;
-	border: 0;
-	border-top: 1px solid $bordercolor;
-	padding-top: 20px;
-	label {
-		text-transform: lowercase;
-		font-weight: $boldweight;
-		font-size: 90%;
-		letter-spacing: $spacing+1;
-	}
-	.sorter .sort-by {
-		a.sort-by-switcher {
-			background: none;
-			&:after {
-				font-family: 'FontAwesome';
-				text-indent: 0;
-				position: absolute;
-				display: block;
-				margin: -30px 0 0 8px;
-				color: $textcolor;
-			}
-			&--asc:after {
-				content:"\f176";
-			}
-			&--desc:after {
-				content:"\f175";
-			}
-		}
-	}
-	.pager {
-		.amount {
-			font-family: $mainfont;
-			font-size: 90%;
-			letter-spacing: $spacing+1;
-		}
-		.pages {
-			a, .current {
-				color: $textcolor;
-			}
-			.next:hover, .previous:hover {
-				border: 0;
-			}
-			.next:before {
-				border-left: 4px solid $bordercolor;
-			}
-		}
-	}
-}
+@import "categoryview";
 
 // =============================================
 // Product View
 // =============================================
 
-.product-view {
-	.product-shop {
-		.product-name {
-			width: 100%;
-			.h1 {
-				font-family: $titlefont;
-				font-weight: $boldweight;
-				font-size: 155%;
-				letter-spacing: $spacing+1;
-				color: $textcolor;
-			}
-		}
-		.price-info {
-			width: 100%;
-			max-width: 100%;
-			text-align: left;
-			padding: 0;
-			margin: 0;
-			.price-box .price {
-				font-family: $titlefont;
-				font-size: 155%;
-				letter-spacing: $spacing+1;
-			}
-		}
-		.short-description {
-			font-size: 80%;
-			font-family: $mainfont;
-			letter-spacing: $spacing+1;
-			line-height: 200%;
-		}
-		.availability.in-stock {
-			& span:before {
-				font-family: 'FontAwesome';
-				content: "\f00c";
-				padding-right: 6px;
-			}
-		}
-	}
-	.product-img-box {
-		.product-image img {
-			max-height: 900px !important;
-		}
-		.product-image-thumbs li a {
-			margin-right: 6px;
-			overflow: hidden;
-			@include transition(all 0.2s $transease);
-			&:hover {
-				border-color: transparent;
-				opacity: 0.8;
-				img {
-					@include transition(all 0.2s $transease);
-				}
-			}
-		}
-	}
-	.qty-wrapper {
-		display: none;
-	}
-	.add-to-cart-buttons .button {
-		background: $bordercolor;
-		border: 0;
-		&:hover {
-			background: #000;
-		}
-		span {
-			color: $buttontextcolor;
-			font-family: $titlefont;
-			font-weight: $boldweight;
-			font-size: 90%;
-		}
-	}
-	.box-collateral {
-		h2 {
-			font-family: $titlefont;
-			font-weight: $mediumweight;
-			font-size: 100%;
-			letter-spacing: $spacing+1;
-			color: $textcolor;
-			border-top: 1px solid $bordercolor;
-			text-align: center;
-			padding: 20px 0 10px;
-		}
-	}
-}
-// Media 
-.product-image, .no-touch .product-img-box .product-image:not(.zoom-available):hover {
-	border: 0;
-}
-a.arrow-left, a.arrow-right {
-	font-family: 'Alegreya Sans SC', $mainfont;
-	position: absolute;
-	top: 37%;
-	z-index: 10;
-	display: block;
-	left: 10px;
-	font-size: 750%;
-	font-weight: $lightweight;
-	opacity: 0;
-	@include transition(all 0.2s $transease);
-}
-a.arrow-right {
-	left: auto;
-	right: 10px;
-}
-.product-image {
-	img {
-		max-height: 900px !important;
-	}
-	&:hover {
-		a.arrow-left, a.arrow-right {
-			opacity: 1;
-		}
-	}
-}
-a.enlarge {
-	opacity: 0;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	font-size: 40px;
-	margin: -20px 0 0 -20px;
-	width: 60px;
-	height: 60px;
-	background: rgba(0,0,0,0.2);
-	border-radius: 10px;
-	text-align: center;
-	padding: 1px 0 0 6px;
-	@include transition(all 0.2s $transease);
-}
-.slide:hover a.enlarge {
-	opacity: 1;
-}
-// Related (used as swatches)
-.block-related .block-title h2 { display: none; }
+@import "productview";
 
 // =============================================
 // Footer
 // =============================================
 
-#fixed_footer {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	background: rgba(255,255,255,0.8);
-	color: $textcolor;
-	font-family: $titlefont;
-	text-align: center;
-	padding: 1%;
-	z-index: 10;
-	text-transform: uppercase;
-	font-size: 80%;
-	letter-spacing: $spacing+1;
-	.footer-container {
-		padding: 0;
-		.footer-wrap {
-			text-align: right;
-			padding: 0 30px;
-		}
-		.copyright {
-			font-family: arial, sans-serif;
-			font-size: 80%;
-			text-transform: none;
-			padding: 4px 6px 0 0;
-			color: #666;
-		}
-	}
-}
+@import "footer";
+
+// =============================================
+// Cart / Checkout / Account
+// =============================================
+
+@import "cart_checkout_account";
 
 // =============================================
 // CMS Pages
@@ -807,6 +317,7 @@ a.enlarge {
 		font-size: 13px;
 	}
 }
+@import "cms_helpers";
 
 // =============================================
 // Responsive
@@ -819,76 +330,4 @@ $bp-medium: 770px;
 $bp-large: 979px;
 $bp-xlarge: 1199px;
 
-/* Responsive Styles */
-// 1200px and above
-@media only screen and (min-width: $bp-xlarge+1) {
-
-	.logo {
-		max-width: 180px;
-		min-height: 65px;
-	}
-	
-}
-// 1199px to 980px
-@media only screen and (min-width: $bp-large+1) and (max-width: $bp-xlarge) {
-
-	.nav-primary li.level0 ul.level0 {
-		padding: 40px 300px 20px 0;
-		@include css3-prefix(column-gap, 10px);
-	}
-	.menu-promo {
-		width: 285px;
-	}
-
-}
-// 979px to 771px
-@media only screen and (min-width: $bp-medium+1) and (max-width: $bp-large) {
-
-	.nav-primary li.level0 ul.level0 {
-		padding: 40px 0 20px 0;
-		@include css3-prefix(column-count, 5);
-		@include css3-prefix(column-gap, 20px);
-	}
-	.menu-promo {
-		display: none;
-	}
-
-}
-// 770px to 480px
-@media only screen and (min-width: $bp-small+1) and (max-width: $bp-medium) {
-
-	p.welcome-msg {
-		margin: 16% 0 0 36%;
-	}
-	.product-view .product-img-box {
-		.product-image img {
-			max-height: 450px !important;
-			margin: 0 1px;
-		}
-	}
-	
-}
-// 479px and below
-@media only screen and (max-width: $bp-small) {
-
-	p.welcome-msg {
-		margin: 16% 0 0 36%;
-	}
-	
-}
-
-// =============================================
-// Icons
-// =============================================
-/* Icon Set */
-@font-face {
-	font-family: 'PG_Icons';
-	src: url('webfonts/PG_Icons-webfont.eot');
-	src: url('webfonts/PG_Icons-webfont.eot?#iefix') format('embedded-opentype'),
-	url('webfonts/PG_Icons-webfont.woff2') format('woff2'),
-	url('webfonts/PG_Icons-webfont.woff') format('woff'),
-	url('webfonts/PG_Icons-webfont.ttf') format('truetype'),
-	url('webfonts/PG_Icons-webfont.svg#PG_Icons') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+@import "responsive";

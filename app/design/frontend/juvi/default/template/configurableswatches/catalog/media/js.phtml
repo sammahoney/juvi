@@ -25,38 +25,15 @@
  */
 ?>
 <?php
-/**
- * Top menu for store
- *
- * @see Mage_Page_Block_Html_Topmenu
- */
+    /* @var $this Mage_ConfigurableSwatches_Block_Catalog_Media_Js_Abstract */
 ?>
-<?php $_menu = $this->getHtml('level-top') ?>
-
-<?php if($_menu): ?>
-    <nav id="nav">
-        <ul class="nav-primary">
-            <?php echo $_menu ?>
-            <?php // Check for associated CMS block
-            if(Mage::getModel('cms/block')->load('topnav_links')->getIsActive()){
-                echo $this->getLayout()->createBlock('cms/block')->setBlockId('topnav_links')->toHtml();
-            };
-            ?>
-        </ul>
-        <?php // Check for associated CMS block
-		if(Mage::getModel('cms/block')->load('menu_promo')->getIsActive()){
-		    echo $this->getLayout()->createBlock('cms/block')->setBlockId('menu_promo')->toHtml();
-		};
-		?>
-    </nav>
-<?php endif ?>
 
 <script type="text/javascript">
-jQuery(document).ready(function() {
-    jQuery('a.skip-link.skip-nav').sidr({
-        side: 'left',
-        source: '#nav'
+    $j(document).on('product-media-loaded', function() {
+        ConfigurableMediaImages.init('<?php echo $this->getImageType(); ?>');
+        <?php foreach ($this->getProductImageFallbacks() as $imageFallback): ?>
+        ConfigurableMediaImages.setImageFallback(<?php echo $imageFallback['product']->getId(); ?>, $j.parseJSON('<?php echo $imageFallback['image_fallback']; ?>'));
+        <?php endforeach; ?>
+        $j(document).trigger('configurable-media-images-init', ConfigurableMediaImages);
     });
-});
 </script>
-

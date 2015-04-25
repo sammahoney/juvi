@@ -1,0 +1,73 @@
+
+// =============================================
+// Homepage
+// =============================================
+
+.cms-index-index {
+	.std {
+		display: none;
+	}
+	.page-title {
+		display: none;
+	}
+	.promo-box {
+		float: left;
+		&.box-a {
+			margin-right: 2%;
+			width: 49%;
+		}
+		&.box-b {
+			margin: 0 2% 2% 0;
+			width: 23.5%;
+		}
+		&.box-c {
+			width: 23.5%;
+		}
+		&.box-d {
+			width: 49%;
+		}
+		&.box-e, &.box-f {
+			margin: 2% 1.4% 2% 0;
+			width: 23.8%;
+		}
+		&.box-g {
+			margin-top: 2%;
+			margin-left: 0.4%;
+			width: 49.2%;
+		}
+		.promo-content {
+			position: relative;
+			img {
+				width: 100%;
+			}
+			.content-wrap {
+				position: absolute;
+				bottom: 20px;
+				left: 20px;
+				h3 {
+					background: $background;
+					color: $buttontextcolor;
+					display: inline-block;
+					font-size: 90%;
+					padding: 0 5px 2px;
+					&:before {
+						position: absolute;
+						content: "";
+						width: 0;
+						height: 0;
+						border-style: solid;
+						border-width: 7.5px 0 7.5px 10px;
+						border-color: transparent transparent transparent $backgroundinvert;
+						margin-left: -25px;
+					}
+				}
+				h2 {
+					color: $textcolor;
+					display: block;
+					font-size: 90%;
+					margin-top: -5px;
+				}
+			}
+		}
+	}
+}

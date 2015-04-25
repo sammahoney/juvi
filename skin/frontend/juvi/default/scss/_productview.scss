@@ -1,0 +1,172 @@
+
+// =============================================
+// Product View
+// =============================================
+
+.product-view {
+	.product-shop {
+		.product-name {
+			width: 100%;
+			.h1 {
+				font-family: $titlefont;
+				font-weight: $boldweight;
+				font-size: 155%;
+				letter-spacing: $spacing+1;
+				color: $textcolor;
+			}
+		}
+		.price-info {
+			width: 100%;
+			max-width: 100%;
+			text-align: left;
+			padding: 0;
+			margin: 0;
+			.price-box .price {
+				font-family: $titlefont;
+				font-size: 155%;
+				letter-spacing: $spacing+1;
+			}
+		}
+		.short-description {
+			font-size: 80%;
+			font-family: $mainfont;
+			letter-spacing: $spacing+1;
+			line-height: 200%;
+		}
+		.availability.in-stock {
+			& span:before {
+				font-family: 'FontAwesome';
+				content: "\f00c";
+				padding-right: 6px;
+			}
+		}
+	}
+	.product-img-box {
+		.product-image img {
+			max-height: 900px !important;
+		}
+		.product-image-thumbs li a {
+			margin-right: 6px;
+			overflow: hidden;
+			@include transition(all 0.2s $transease);
+			&:hover {
+				border-color: transparent;
+				opacity: 0.8;
+				img {
+					@include transition(all 0.2s $transease);
+				}
+			}
+		}
+	}
+	.qty-wrapper {
+		display: none;
+	}
+	.add-to-cart-buttons .button {
+		background: $bordercolor;
+		border: 0;
+		&:hover {
+			background: #000;
+		}
+		span {
+			color: $buttontextcolor;
+			font-family: $titlefont;
+			font-weight: $boldweight;
+			font-size: 90%;
+		}
+	}
+	.box-collateral {
+		h2 {
+			font-family: $titlefont;
+			font-weight: $mediumweight;
+			font-size: 100%;
+			letter-spacing: $spacing+1;
+			color: $textcolor;
+			border-top: 1px solid $bordercolor;
+			text-align: center;
+			padding: 20px 0 10px;
+		}
+	}
+}
+// Media 
+.product-image, .no-touch .product-img-box .product-image:not(.zoom-available):hover {
+	border: 0;
+}
+a.arrow-left, a.arrow-right {
+	font-family: 'Alegreya Sans SC', $mainfont;
+	position: absolute;
+	top: 37%;
+	z-index: 10;
+	display: block;
+	left: 10px;
+	font-size: 750%;
+	font-weight: $lightweight;
+	opacity: 0;
+	@include transition(all 0.2s $transease);
+}
+a.arrow-right {
+	left: auto;
+	right: 10px;
+}
+.product-image {
+	img {
+		max-height: 900px !important;
+	}
+	&:hover {
+		a.arrow-left, a.arrow-right {
+			opacity: 1;
+		}
+	}
+}
+a.enlarge {
+	opacity: 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	font-size: 40px;
+	margin: -20px 0 0 -20px;
+	width: 60px;
+	height: 60px;
+	background: rgba(0,0,0,0.2);
+	border-radius: 10px;
+	text-align: center;
+	padding: 1px 0 0 6px;
+	@include transition(all 0.2s $transease);
+}
+.slide:hover a.enlarge {
+	opacity: 1;
+}
+// Related (used as swatches)
+.block-related .block-title h2 { display: none; }
+// Media 
+img.mfp-img { 
+	max-height: none !important; 
+}
+.mfp-bg {
+	background: $backgroundinvert !important;
+	opacity: 0.95 !important;
+}
+.mfp-figure:after {
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+	background: $backgroundinvert !important;
+}
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
+	color: $textcolor !important;
+}
+.mfp-preloader {
+	text-indent: -9999px;
+	background: url(../images/ajax-loader.gif) no-repeat 50% 50%;
+	height: 32px;
+	width: 32px;
+}
+.product-image, .no-touch .product-img-box .product-image:not(.zoom-available):hover {
+	border: 0;
+}
+// Related (used as swatches)
+.block-related .block-title h2 { display: none; }
+// Upsell
+.box-collateral {
+	margin-bottom: 0;
+}
+.box-up-sell {
+	margin-top: 0;
+}

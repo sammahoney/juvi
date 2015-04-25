@@ -24,39 +24,8 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
-<?php
-/**
- * Top menu for store
- *
- * @see Mage_Page_Block_Html_Topmenu
- */
-?>
-<?php $_menu = $this->getHtml('level-top') ?>
-
-<?php if($_menu): ?>
-    <nav id="nav">
-        <ul class="nav-primary">
-            <?php echo $_menu ?>
-            <?php // Check for associated CMS block
-            if(Mage::getModel('cms/block')->load('topnav_links')->getIsActive()){
-                echo $this->getLayout()->createBlock('cms/block')->setBlockId('topnav_links')->toHtml();
-            };
-            ?>
-        </ul>
-        <?php // Check for associated CMS block
-		if(Mage::getModel('cms/block')->load('menu_promo')->getIsActive()){
-		    echo $this->getLayout()->createBlock('cms/block')->setBlockId('menu_promo')->toHtml();
-		};
-		?>
-    </nav>
-<?php endif ?>
-
 <script type="text/javascript">
-jQuery(document).ready(function() {
-    jQuery('a.skip-link.skip-nav').sidr({
-        side: 'left',
-        source: '#nav'
+    document.observe('dom:loaded', function() {
+        var swatchesConfig = new Product.ConfigurableSwatches(spConfig);
     });
-});
 </script>
-
