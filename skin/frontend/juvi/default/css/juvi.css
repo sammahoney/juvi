@@ -1506,6 +1506,9 @@ h2.related-gem {
     right: 10px;
     border-top: 4px solid #26130B; }
 
+  .block-layered-nav .block-subtitle--filter {
+    font-family: "EngraversGothicBT", sans-serif; }
+
   .col-left.sidebar.col-left-first {
     margin-bottom: 25px; }
 
