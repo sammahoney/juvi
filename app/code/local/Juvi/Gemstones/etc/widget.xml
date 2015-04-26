@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Juvi_Gemstones extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Juvi
+ * @package        Juvi_Gemstones
+ * @copyright      Copyright (c) 2015
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<widgets>
+    <gemstones_gemstone_view type="juvi_gemstones/gemstone_widget_view" translate="name description" module="juvi_gemstones">
+        <name>Gemstone view</name>
+        <description>Gemstone view widget</description>
+        <is_email_compatible>0</is_email_compatible>
+        <parameters>
+            <gemstone_id type="complex" translate="label">
+                <visible>1</visible>
+                <required>1</required>
+                <label>Gemstone</label>
+                <type>label</type>
+                <helper_block>
+                    <type>juvi_gemstones/adminhtml_gemstone_widget_chooser</type>
+                    <data>
+                        <button translate="open">
+                            <open>Select Gemstone</open>
+                        </button>
+                    </data>
+                </helper_block>
+                <sort_order>120</sort_order>
+            </gemstone_id>
+        </parameters>
+    </gemstones_gemstone_view>
+    <gemstones_gemstone_link type="juvi_gemstones/gemstone_widget_link" translate="name description" module="juvi_gemstones">
+        <name>Gemstone link</name>
+        <description>Gemstone link widget</description>
+        <is_email_compatible>0</is_email_compatible>
+        <parameters>
+            <gemstone_id type="complex" translate="label">
+                <visible>1</visible>
+                <required>1</required>
+                <label>Gemstone</label>
+                <type>label</type>
+                <helper_block>
+                    <type>juvi_gemstones/adminhtml_gemstone_widget_chooser</type>
+                    <data>
+                        <button translate="open">
+                            <open>Select Gemstone</open>
+                        </button>
+                    </data>
+                </helper_block>
+                <sort_order>130</sort_order>
+            </gemstone_id>
+        </parameters>
+    </gemstones_gemstone_link>
+</widgets>

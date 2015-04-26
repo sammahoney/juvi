@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Juvi_Gemstones extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Juvi
+ * @package        Juvi_Gemstones
+ * @copyright      Copyright (c) 2015
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+--> 
+<layout>
+    <adminhtml_gemstones_gemstone_index>
+        <reference name="menu">
+            <action method="setActive">
+                <menupath>cms/juvi_gemstones/gemstone</menupath>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="juvi_gemstones/adminhtml_gemstone" name="gemstone" />
+
+        </reference>
+    </adminhtml_gemstones_gemstone_index>
+    <adminhtml_gemstones_gemstone_grid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="juvi_gemstones/adminhtml_gemstone_grid" name="gemstone_grid"/>
+        </block>
+    </adminhtml_gemstones_gemstone_grid>
+    <!-- Gemstone add/edit action -->
+    <adminhtml_gemstones_gemstone_edit>
+        <update handle="editor"/>
+        <reference name="menu">
+            <action method="setActive">
+                <menupath>cms/juvi_gemstones/gemstone</menupath>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="juvi_gemstones/adminhtml_gemstone_edit" name="gemstone_edit"></block>
+        </reference>
+        <reference name="left">
+            <block type="juvi_gemstones/adminhtml_gemstone_edit_tabs" name="gemstone_tabs"></block>
+        </reference>
+    </adminhtml_gemstones_gemstone_edit>
+
+    <adminhtml_gemstones_gemstone_catalog_product_gemstones>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="juvi_gemstones/adminhtml_catalog_product_edit_tab_gemstone" name="product.edit.tab.gemstone"/>
+            <block type="adminhtml/widget_grid_serializer" name="gemstone_grid_serializer">
+                <reference name="gemstone_grid_serializer">
+                    <action method="initSerializerBlock">
+                        <grid_block_name>product.edit.tab.gemstone</grid_block_name>
+                        <data_callback>getSelectedGemstones</data_callback>
+                        <hidden_input_name>gemstones</hidden_input_name>
+                        <reload_param_name>product_gemstones</reload_param_name>
+                    </action>
+                    <action method="addColumnInputName">
+                        <input_name>position</input_name>
+                    </action>
+                </reference>
+            </block>
+        </block>
+    </adminhtml_gemstones_gemstone_catalog_product_gemstones>
+    <adminhtml_gemstones_gemstone_catalog_product_gemstonesgrid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="juvi_gemstones/adminhtml_catalog_product_edit_tab_gemstone" name="product.edit.tab.gemstone"/>
+        </block>
+    </adminhtml_gemstones_gemstone_catalog_product_gemstonesgrid>
+    <adminhtml_gemstones_gemstone_products>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="juvi_gemstones/adminhtml_gemstone_edit_tab_product" name="gemstone.edit.tab.product"/>
+            <block type="adminhtml/widget_grid_serializer" name="product_grid_serializer">
+                <reference name="product_grid_serializer">
+                    <action method="initSerializerBlock">
+                        <grid_block_name>gemstone.edit.tab.product</grid_block_name>
+                            <data_callback>getSelectedProducts</data_callback>
+                            <hidden_input_name>products</hidden_input_name>
+                            <reload_param_name>gemstone_products</reload_param_name>
+                    </action>
+                    <action method="addColumnInputName">
+                        <input_name>position</input_name>
+                    </action>
+                </reference>
+            </block>
+        </block>
+    </adminhtml_gemstones_gemstone_products>
+    <adminhtml_gemstones_gemstone_productsgrid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="juvi_gemstones/adminhtml_gemstone_edit_tab_product" name="gemstone.edit.tab.product"/>
+        </block>
+    </adminhtml_gemstones_gemstone_productsgrid>
+</layout>

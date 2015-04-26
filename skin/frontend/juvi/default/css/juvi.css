@@ -54,8 +54,8 @@ label {
 .input-text:focus {
   border: 1px solid #26130B; }
 
-input:focus {
-  outline: none; }
+input:focus, *:focus, *:active, *:visited {
+  outline: none !important; }
 
 h1, h2, h3, h4, h5 {
   font-family: "EngraversGothicBT", sans-serif;
@@ -848,6 +848,11 @@ a.enlarge {
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in; }
+
+.fa-search-plus:before {
+  content: "\f00e";
+  margin: -27px -10px 0 0;
+  font-size: 25px; }
 
 .slide:hover a.enlarge {
   opacity: 1; }

@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Juvi_Gemstones extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Juvi
+ * @package        Juvi_Gemstones
+ * @copyright      Copyright (c) 2015
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config>
+    <modules>
+        <Juvi_Gemstones>
+            <version>1.0.0</version>
+        </Juvi_Gemstones>
+    </modules>
+    <global>
+        <resources>
+            <juvi_gemstones_setup>
+                <setup>
+                    <module>Juvi_Gemstones</module>
+                    <class>Juvi_Gemstones_Model_Resource_Setup</class>
+                </setup>
+            </juvi_gemstones_setup>
+        </resources>
+        <blocks>
+            <juvi_gemstones>
+                <class>Juvi_Gemstones_Block</class>
+            </juvi_gemstones>
+        </blocks>
+        <helpers>
+            <juvi_gemstones>
+                <class>Juvi_Gemstones_Helper</class>
+            </juvi_gemstones>
+        </helpers>
+        <models>
+            <juvi_gemstones>
+                <class>Juvi_Gemstones_Model</class>
+                <resourceModel>juvi_gemstones_resource</resourceModel>
+            </juvi_gemstones>
+            <juvi_gemstones_resource>
+                <class>Juvi_Gemstones_Model_Resource</class>
+                <entities>
+                    <gemstone>
+                        <table>juvi_gemstones_gemstone</table>
+                    </gemstone>
+                    <gemstone_product>
+                        <table>juvi_gemstones_gemstone_product</table>
+                    </gemstone_product>
+                </entities>
+            </juvi_gemstones_resource>
+        </models>
+        <events>
+            <controller_front_init_routers>
+                <observers>
+                    <juvi_gemstones>
+                        <class>Juvi_Gemstones_Controller_Router</class>
+                        <method>initControllerRouters</method>
+                    </juvi_gemstones>
+                </observers>
+            </controller_front_init_routers>
+        </events>
+    </global>
+    <adminhtml>
+        <layout>
+            <updates>
+                <juvi_gemstones>
+                    <file>juvi_gemstones.xml</file>
+                </juvi_gemstones>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Juvi_Gemstones>
+                    <files>
+                        <default>Juvi_Gemstones.csv</default>
+                    </files>
+                </Juvi_Gemstones>
+            </modules>
+        </translate>
+        <events>
+            <core_block_abstract_prepare_layout_after>
+                <observers>
+                    <juvi_gemstones_gemstone_product>
+                        <type>singleton</type>
+                        <class>juvi_gemstones/adminhtml_observer</class>
+                        <method>addProductGemstoneBlock</method>
+                    </juvi_gemstones_gemstone_product>
+                </observers>
+            </core_block_abstract_prepare_layout_after>
+            <catalog_product_save_after>
+                <observers>
+                    <juvi_gemstones_gemstone_product>
+                        <type>singleton</type>
+                        <class>juvi_gemstones/adminhtml_observer</class>
+                        <method>saveProductGemstoneData</method>
+                    </juvi_gemstones_gemstone_product>
+                </observers>
+            </catalog_product_save_after>
+        </events>
+        <global_search>
+            <gemstone>
+                <class>juvi_gemstones/adminhtml_search_gemstone</class>
+                <acl>juvi_gemstones</acl>
+            </gemstone>
+        </global_search>
+    </adminhtml>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Juvi_Gemstones before="Mage_Adminhtml">Juvi_Gemstones_Adminhtml</Juvi_Gemstones>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <frontend>
+        <routers>
+            <juvi_gemstones>
+                <use>standard</use>
+                <args>
+                    <module>Juvi_Gemstones</module>
+                    <frontName>juvi_gemstones</frontName>
+                </args>
+            </juvi_gemstones>
+        </routers>
+        <layout>
+            <updates>
+                <juvi_gemstones>
+                    <file>juvi_gemstones.xml</file>
+                </juvi_gemstones>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Juvi_Gemstones>
+                    <files>
+                        <default>Juvi_Gemstones.csv</default>
+                    </files>
+                </Juvi_Gemstones>
+            </modules>
+        </translate>
+    </frontend>
+    <default>
+        <juvi_gemstones>
+            <gemstone>
+                <breadcrumbs>1</breadcrumbs>
+                <meta_title>Gemstones</meta_title>
+            </gemstone>
+        </juvi_gemstones>
+    </default>
+</config>

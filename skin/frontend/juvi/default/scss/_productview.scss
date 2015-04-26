@@ -132,6 +132,11 @@ a.enlarge {
 	padding: 1px 0 0 6px;
 	@include transition(all 0.2s $transease);
 }
+.fa-search-plus:before {
+	content: "\f00e";
+	margin: -27px -10px 0 0;
+	font-size: 25px;
+}
 .slide:hover a.enlarge {
 	opacity: 1;
 }

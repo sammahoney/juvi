@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Juvi_Gemstones extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Juvi
+ * @package        Juvi_Gemstones
+ * @copyright      Copyright (c) 2015
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<layout>
+    
+    <juvi_gemstones_gemstone_index translate="label" module="juvi_gemstones">
+        <label>Gemstones list</label>
+        <update handle="page_one_column" />
+        <reference name="content">
+            <block type="juvi_gemstones/gemstone_list" name="gemstone_list" template="juvi_gemstones/gemstone/list.phtml" />
+        </reference>
+    </juvi_gemstones_gemstone_index>
+    <juvi_gemstones_gemstone_view translate="label" module="juvi_gemstones">
+        <label>Gemstone view page</label>
+        <update handle="page_one_column" />
+        <reference name="content">
+            <block type="juvi_gemstones/gemstone_view" name="gemstone_view" template="juvi_gemstones/gemstone/view.phtml" />
+            <block type="juvi_gemstones/gemstone_catalog_product_list" name="gemstone.info.products" as="gemstone_products" template="juvi_gemstones/gemstone/catalog/product/list.phtml" />
+        </reference>
+    </juvi_gemstones_gemstone_view>
+</layout>

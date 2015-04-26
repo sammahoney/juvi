@@ -1,0 +1,44 @@
+<?php 
+/**
+ * Juvi_Gemstones extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Juvi
+ * @package        Juvi_Gemstones
+ * @copyright      Copyright (c) 2015
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+/**
+ * Gemstone list template
+ *
+ * @category    Juvi
+ * @package     Juvi_Gemstones
+ * @author      Ultimate Module Creator
+ */
+?>
+<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+<?php $_gemstones = $this->getGemstones(); ?>
+<div class="page-title gemstone-title">
+    <h1><?php echo Mage::helper('juvi_gemstones')->__('Gemstones') ?></h1>
+</div>
+<?php if ($_gemstones->getSize() > 0) :?>
+    <?php echo $this->getPagerHtml(); ?>
+    <div class="gemstone-list-container">
+    <?php foreach ($_gemstones as $_gemstone) : ?>
+        <div class="gemstone-list-item">
+            <a href="<?php echo $_gemstone->getGemstoneUrl()?>">
+                <?php echo $_gemstone->getStoneName();?>
+            </a><br />
+        </div>
+    <?php endforeach;?>
+    </div>
+    <?php echo $this->getPagerHtml(); ?>
+<?php else : ?>
+    <?php echo Mage::helper('juvi_gemstones')->__('There are no gemstones at this moment');?>
+<?php endif;?>

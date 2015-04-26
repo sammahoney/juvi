@@ -67,8 +67,8 @@ label {
 .input-text:focus {
 	border: 1px solid $bordercolor;
 }
-input:focus {
-	outline: none;
+input:focus, *:focus, *:active, *:visited {
+	outline: none !important;
 }
 
 // =============================================

@@ -1,0 +1,50 @@
+<?php
+/**
+ * Juvi_Gemstones extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Juvi
+ * @package        Juvi_Gemstones
+ * @copyright      Copyright (c) 2015
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+/**
+ * Gemstone view template
+ *
+ * @category    Juvi
+ * @package     Juvi_Gemstones
+ * @author      Ultimate Module Creator
+ */
+?>
+<?php $_gemstone = $this->getCurrentGemstone();?>
+<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+<div class="page-title gemstone-title">
+    <h1><?php echo $_gemstone->getStoneName(); ?></h1>
+</div>
+<div class="gemstone-view">
+    <div class="gemstone-stone_name">
+        <?php echo Mage::helper('juvi_gemstones')->__('Stone Name');?>:<?php echo $_gemstone->getStoneName();?>
+
+    </div>
+    <div class="gemstone-stone_origin">
+        <?php echo Mage::helper('juvi_gemstones')->__('Stone Origin');?>:<?php echo $_gemstone->getStoneOrigin();?>
+
+    </div>
+    <div class="gemstone-stone_description">
+        <?php echo Mage::helper('juvi_gemstones')->__('Stone Description');?>:<?php echo $_gemstone->getStoneDescription();?>
+
+    </div>
+    <div class="gemstone-stone_image">
+        <?php if ($_gemstone->getStoneImage()) :?>
+    <img src="<?php echo Mage::helper('juvi_gemstones/gemstone_image')->init($_gemstone, 'stone_image')->resize(75);?>" alt="<?php echo $this->escapeHtml($_gemstone->getStoneName());?>" />
+<?php endif;?>
+
+    </div>
+
+</div>
