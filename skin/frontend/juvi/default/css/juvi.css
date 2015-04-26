@@ -699,7 +699,8 @@ p.welcome-msg {
   line-height: inherit;
   margin-right: inherit;
   text-align: left;
-  display: inline-block; }
+  display: inline-block;
+  margin: 0; }
 
 .category-description.std {
   font-size: 75%;
