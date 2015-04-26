@@ -24,21 +24,45 @@
 ?>
 <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
 <?php $_gemstones = $this->getGemstones(); ?>
-<div class="page-title gemstone-title">
-    <h1><?php echo Mage::helper('juvi_gemstones')->__('Gemstones') ?></h1>
-</div>
 <?php if ($_gemstones->getSize() > 0) :?>
-    <?php echo $this->getPagerHtml(); ?>
+    <?php // echo $this->getPagerHtml(); ?>
+    <?php foreach($_gemstones as $_gemstone): if(strpos($_gemstone->getStoneName(),'[featured]') !== false): ?>
+        <div class="gemstone-featured-item">
+            <a href="<?php echo $_gemstone->getGemstoneUrl()?>">
+                <?php if($_gemstone->getStoneImage()): ?>
+                    <div class="stone-img-wrapper">
+                        <img src="<?php echo Mage::helper('juvi_gemstones/gemstone_image')->init($_gemstone, 'stone_image')->resize(900,400);?>" alt="<?php echo $this->escapeHtml($_gemstone->getStoneName());?>" />
+                    </div>
+                <?php endif; ?>
+                <div class="stone-info-wrapper">
+                    <h3 class="featured"><?php echo Mage::helper('juvi_gemstones')->__('Featured');?></h3>
+                    <h2 class="name"><?php $featuredname = trim(str_replace('[featured]', '', $_gemstone->getStoneName())); echo $featuredname;?></h2>
+                    <div class="stone-origin"><?php echo Mage::helper('juvi_gemstones')->__('Origin: ');?><?php echo $_gemstone->getStoneOrigin();?></div>
+                    <br>
+                    <div class="stone-desc"><?php echo $_gemstone->getStoneDescription();?></div>
+                </div>
+            </a>
+        </div>
+    <?php endif; endforeach; ?>
+    <div class="clear"></div>
     <div class="gemstone-list-container">
-    <?php foreach ($_gemstones as $_gemstone) : ?>
+    <?php foreach($_gemstones as $_gemstone): if(strpos($_gemstone->getStoneName(),'[featured]') === false): ?>
         <div class="gemstone-list-item">
             <a href="<?php echo $_gemstone->getGemstoneUrl()?>">
-                <?php echo $_gemstone->getStoneName();?>
-            </a><br />
+                <?php if($_gemstone->getStoneImage()): ?>
+                    <div class="stone-img-wrapper">
+                        <img src="<?php echo Mage::helper('juvi_gemstones/gemstone_image')->init($_gemstone, 'stone_image')->resize(240,160);?>" alt="<?php echo $this->escapeHtml($_gemstone->getStoneName());?>" />
+                        <h3><?php echo Mage::helper('juvi_gemstones')->__('Discover');?></h3>
+                    </div>
+                <?php endif; ?>
+                <div class="stone-info-wrapper">
+                    <h2 class="name"><?php echo $_gemstone->getStoneName();?></h2>
+                    <div class="stone-origin"><?php echo Mage::helper('juvi_gemstones')->__('Origin: ');?><?php echo $_gemstone->getStoneOrigin();?></div>
+                </div>
+            </a>
         </div>
-    <?php endforeach;?>
+    <?php endif; endforeach; ?>
     </div>
-    <?php echo $this->getPagerHtml(); ?>
 <?php else : ?>
     <?php echo Mage::helper('juvi_gemstones')->__('There are no gemstones at this moment');?>
 <?php endif;?>

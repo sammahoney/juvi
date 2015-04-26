@@ -57,6 +57,9 @@ label {
 input:focus, *:focus, *:active, *:visited {
   outline: none !important; }
 
+.clear {
+  clear: both; }
+
 h1, h2, h3, h4, h5 {
   font-family: "EngraversGothicBT", sans-serif;
   font-weight: 300;
@@ -377,8 +380,11 @@ p.welcome-msg {
   -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2); }
 
+.skip-account {
+  padding: 0 17px 0 10px; }
+
 .account-cart-wrapper {
-  width: 260px;
+  width: 200px;
   right: 154px;
   top: -14px; }
   .account-cart-wrapper > a {
@@ -1054,6 +1060,52 @@ h2.table-caption {
   .product-review .product-img-box .product-image {
     float: left; }
 
+.gemstone-featured-item .stone-img-wrapper {
+  width: 59%;
+  float: left;
+  height: 315px;
+  overflow: hidden; }
+  .gemstone-featured-item .stone-img-wrapper img {
+    min-width: 100%;
+    min-height: 100%; }
+.gemstone-featured-item .stone-info-wrapper {
+  width: 38%;
+  float: right;
+  height: 315px;
+  overflow-y: scroll; }
+
+.gemstone-list-container {
+  margin: 20px -1%; }
+  .gemstone-list-container .gemstone-list-item {
+    width: 18%;
+    float: left;
+    margin: 1%;
+    position: relative; }
+    .gemstone-list-container .gemstone-list-item .stone-img-wrapper img {
+      width: 100%; }
+    .gemstone-list-container .gemstone-list-item .stone-img-wrapper h3 {
+      background: #26130B;
+      color: #FFF;
+      display: inline-block;
+      font-size: 90%;
+      padding: 0 5px 2px;
+      position: absolute;
+      top: 20px;
+      left: 20px; }
+      .gemstone-list-container .gemstone-list-item .stone-img-wrapper h3:before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7.5px 0 7.5px 10px;
+        border-color: transparent transparent transparent #FFF;
+        margin-left: -25px; }
+    .gemstone-list-container .gemstone-list-item .stone-info-wrapper h2.name {
+      font-size: 130%;
+      margin: 5px 0 0;
+      letter-spacing: 1px; }
+
 .cms-page-view h1 {
   width: 100%;
   text-align: center;
@@ -1348,7 +1400,15 @@ h2.table-caption {
     width: 100%; }
   .cms-page-view .std .left, .cms-page-view .std .right, .cms-no-route .std .left, .cms-no-route .std .right {
     clear: both;
-    padding: 0; } }
+    padding: 0; }
+
+  .gemstone-featured-item .stone-img-wrapper {
+    width: 39%; }
+  .gemstone-featured-item .stone-info-wrapper {
+    width: 58%; }
+
+  .gemstone-list-container .gemstone-list-item {
+    width: 48%; } }
 @media only screen and (max-width: 479px) {
   body:not(.no-footer-msg) .wrapper {
     padding-bottom: 60px; }

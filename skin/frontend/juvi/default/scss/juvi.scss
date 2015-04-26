@@ -70,6 +70,9 @@ label {
 input:focus, *:focus, *:active, *:visited {
 	outline: none !important;
 }
+.clear {
+	clear: both;
+}
 
 // =============================================
 // Titles & Typography
@@ -297,6 +300,12 @@ ul.messages {
 // =============================================
 
 @import "cart_checkout_account";
+
+// =============================================
+// Gemstones
+// =============================================
+
+@import "gemstones";
 
 // =============================================
 // CMS Pages

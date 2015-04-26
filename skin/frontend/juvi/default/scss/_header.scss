@@ -200,8 +200,11 @@ p.welcome-msg {
 		@include css3-prefix(box-shadow, 0 0 3px 0 rgba(0,0,0,0.2));
 	}
 }
+.skip-account {
+	padding: 0 17px 0 10px;
+}
 .account-cart-wrapper {
-	width: 260px;
+	width: 200px;
 	right: 154px;
 	top: -14px;
 	> a {

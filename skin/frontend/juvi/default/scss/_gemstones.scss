@@ -1,0 +1,64 @@
+
+// =============================================
+// Gemstones
+// =============================================
+
+.gemstone-featured-item {
+	.stone-img-wrapper {
+		width: 59%;
+		float: left;
+		height: 315px;
+		overflow: hidden;
+		img {
+			min-width: 100%;
+			min-height: 100%;
+		}
+	}
+	.stone-info-wrapper {
+		width: 38%;
+		float: right;
+		height: 315px;
+		overflow-y: scroll;
+	}
+}
+.gemstone-list-container {
+	margin: 20px -1%;
+	.gemstone-list-item {
+		width: 18%;
+		float: left;
+		margin: 1%;
+		position: relative;
+		.stone-img-wrapper {
+			img {
+				width: 100%;
+			}
+			h3 {
+				background: $background;
+				color: $buttontextcolor;
+				display: inline-block;
+				font-size: 90%;
+				padding: 0 5px 2px;
+				position: absolute;
+				top: 20px;
+				left: 20px;
+				&:before {
+					position: absolute;
+					content: "";
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 7.5px 0 7.5px 10px;
+					border-color: transparent transparent transparent $backgroundinvert;
+					margin-left: -25px;
+				}
+			}
+		}
+		.stone-info-wrapper {
+			h2.name {
+				font-size: 130%;
+				margin: 5px 0 0;
+				letter-spacing: 1px;
+			}
+		}
+	}
+}

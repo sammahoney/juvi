@@ -24,17 +24,15 @@ jQuery(document).ready(function(){
 		var link = el.attr('href');
 		window.location = link;
 	});
-	jQuery('#nav li.level0.parent').on('touchend', function() {
-		jQuery('#nav').addClass("show-promo");
-	});
-	// Fix for shipping link
-	jQuery('a.skip-shipping').on('click touchend', function() {
-		var el = jQuery(this);
-		var link = el.attr('href');
-		window.location = link;
-	});
 	// Hide messages if clicked
 	jQuery("ul.messages").click(function(){
         jQuery(this).fadeOut(400);
     });
+    // Equalise heights on list page
+    jQuery(window).load(function(){
+		var maxHeight = 0;
+		jQuery('.gemstone-list-container .gemstone-list-item').each(function() { 
+			maxHeight = Math.max(maxHeight, jQuery(this).height()); 
+		}).height(maxHeight);
+	});
 });
