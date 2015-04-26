@@ -101,6 +101,19 @@
 		}
 	}
 }
+// Mobile
+.block-layered-nav .block-subtitle--filter {
+	background-color: $background;
+	&:hover {
+		background-color: lighten($background, 5%);
+	}
+}
+.col-left.sidebar.col-left-first a {
+	padding-left: 10px;
+}
+.block-layered-nav .block-content > dl > dt:after, .block-layered-nav .block-content.accordion-open > dl > dt.current:after {
+	display: none;
+}
 // Swatch fixes
 #narrow-by-list dd .swatch-label {
 	background: transparent;

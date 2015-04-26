@@ -140,8 +140,27 @@ a.enlarge {
 .slide:hover a.enlarge {
 	opacity: 1;
 }
+.configurable-swatch-list .hover .swatch-link, .configurable-swatch-list .selected .swatch-link, .swatch-link:hover {
+	border-color: #7B561E;
+}
+.product-view .product-options .swatch-attr .select-label {
+	color: #7B561E;
+}
 // Related (used as swatches)
-.block-related .block-title h2 { display: none; }
+.block-related p.product-name a, .block-related .block-title h2 {
+	font-family: $mainfont;
+	display: block !important;
+	font-size: 130%;
+	color: $textcolor;
+}
+.block-related .product-details .price-box span:first-child {
+	padding-left: 0;
+}
+.mini-products-list .product-details .product-name {
+	padding-top: 10px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
 // Media 
 img.mfp-img { 
 	max-height: none !important; 

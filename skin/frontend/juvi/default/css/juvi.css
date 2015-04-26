@@ -549,6 +549,9 @@ p.welcome-msg {
 .breadcrumbs strong {
   color: #111; }
 
+.sidr ul li a {
+  font-family: "EngraversGothicBT", sans-serif; }
+
 .cms-index-index .std {
   display: none; }
 .cms-index-index .page-title {
@@ -683,6 +686,17 @@ p.welcome-msg {
     .block-layered-nav .block-content > dl > dt ol > li > a span.price, .block-layered-nav .block-content > dl > dt:hover ol > li > a span.price, .block-layered-nav .block-content > dl > dd ol > li > a span.price {
       padding: 0;
       font-size: 100%; }
+
+.block-layered-nav .block-subtitle--filter {
+  background-color: #26130B; }
+  .block-layered-nav .block-subtitle--filter:hover {
+    background-color: #3a1d11; }
+
+.col-left.sidebar.col-left-first a {
+  padding-left: 10px; }
+
+.block-layered-nav .block-content > dl > dt:after, .block-layered-nav .block-content.accordion-open > dl > dt.current:after {
+  display: none; }
 
 #narrow-by-list dd .swatch-label {
   background: transparent;
@@ -902,8 +916,25 @@ a.enlarge {
 .slide:hover a.enlarge {
   opacity: 1; }
 
-.block-related .block-title h2 {
-  display: none; }
+.configurable-swatch-list .hover .swatch-link, .configurable-swatch-list .selected .swatch-link, .swatch-link:hover {
+  border-color: #7B561E; }
+
+.product-view .product-options .swatch-attr .select-label {
+  color: #7B561E; }
+
+.block-related p.product-name a, .block-related .block-title h2 {
+  font-family: "EngraversGothicBT", sans-serif;
+  display: block !important;
+  font-size: 130%;
+  color: #111; }
+
+.block-related .product-details .price-box span:first-child {
+  padding-left: 0; }
+
+.mini-products-list .product-details .product-name {
+  padding-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0; }
 
 img.mfp-img {
   max-height: none !important; }
@@ -1347,6 +1378,9 @@ h2.related-gem {
     top: 44px;
     background: #FFF; }
 
+  .mini-products-list .product-details .product-name {
+    padding-top: 0; }
+
   .header-minicart .minicart-wrapper {
     clear: none;
     padding-bottom: 20px;
@@ -1358,31 +1392,66 @@ h2.related-gem {
     .header-minicart .minicart-wrapper .subtotal .label {
       color: #111 !important; }
     .header-minicart .minicart-wrapper .cart-link {
-      position: static; }
+      position: static;
+      color: #111 !important; }
 
   .skip-links {
     border: 0;
-    background: #753b22; }
+    background: #3a1d11; }
+    .skip-links a:focus, .skip-links a:visited {
+      color: #FFF; }
 
   .skip-link, .skip-nav {
     line-height: 44px;
     width: 25%;
     border: 0;
     background: transparent;
-    color: #FFF; }
+    color: #FFF;
+    padding: 0; }
 
-  .account-cart-wrapper .icon::before, .account-cart-wrapper .count, .account-cart-wrapper .label {
-    color: #FFF !important; }
+  .skip-account .icon:after {
+    font-family: "FontAwesome";
+    content: "\f007";
+    text-indent: 0;
+    color: #FFF;
+    position: absolute;
+    font-size: 24px;
+    margin: -9px 0 0 -6px; }
+
+  .skip-cart .icon:after {
+    font-family: "FontAwesome";
+    content: "\f07a";
+    text-indent: 0;
+    color: #FFF;
+    position: absolute;
+    font-size: 24px;
+    margin: -9px 0 0 -9px; }
+
+  .account-cart-wrapper {
+    width: auto; }
+    .account-cart-wrapper .icon {
+      display: inline-block;
+      background: none; }
+    .account-cart-wrapper a {
+      background: none; }
+    .account-cart-wrapper .icon::before, .account-cart-wrapper .count, .account-cart-wrapper .label {
+      color: #FFF !important; }
+
+  #header-search {
+    width: 100%; }
+
+  #search_mini_form input#search {
+    margin-top: 0; }
 
   .skip-search .icon {
     background: none !important; }
     .skip-search .icon:after {
-      font-family: "PG_Icons";
-      content: "2";
+      font-family: "FontAwesome";
+      content: "\f002";
       text-indent: 0;
       color: #FFF;
       position: absolute;
-      font-size: 24px;
+      font-size: 20px;
       margin: -9px 0 0 -6px; }
 
   .skip-nav .icon {
@@ -1393,21 +1462,21 @@ h2.related-gem {
       text-indent: 0;
       color: #FFF;
       position: absolute;
-      font-size: 17px;
-      margin: -9px 0 0 -6px; }
+      font-size: 20px;
+      margin: -7px 0 0 -6px; }
 
   .skip-link.skip-active {
     background: #894428;
     color: #FFF; }
 
   .skip-cart .count {
-    font-size: 14px;
+    font-size: 12px;
     top: 0;
     background: transparent; }
 
   .sidr, .skip-nav .label, .skip-link .label {
     font-family: "EngraversGothicBT", sans-serif;
-    font-size: 14px;
+    font-size: 12px !important;
     text-transform: uppercase;
     letter-spacing: 1px; }
 
@@ -1455,7 +1524,10 @@ h2.related-gem {
     width: 58%; }
 
   .gemstone-list-container .gemstone-list-item {
-    width: 48%; } }
+    width: 48%; }
+
+  .block-layered-nav .block-content > dl > dt {
+    width: 100%; } }
 @media only screen and (max-width: 479px) {
   body:not(.no-footer-msg) .wrapper {
     padding-bottom: 60px; }

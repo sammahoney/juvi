@@ -180,6 +180,9 @@
 		top: 44px;
 		background: $backgroundinvert;
 	}
+	.mini-products-list .product-details .product-name {
+		padding-top: 0;
+	}
 	.header-minicart .minicart-wrapper {
 		clear: none;
 		padding-bottom: 20px;
@@ -194,11 +197,15 @@
 		}
 		.cart-link {
 			position: static;
+			color: $textcolor !important;
 		}
 	}
 	.skip-links {
 		border: 0;
-		background: lighten($background, 20%);
+		background: lighten($background, 5%);
+		a:focus, a:visited {
+			color: $buttontextcolor;
+		}
 	}
 	.skip-link, .skip-nav {
 		line-height: 44px;
@@ -206,21 +213,58 @@
 		border: 0;
 		background: transparent;
 		color: $buttontextcolor;
+		padding: 0;
 	}
-	.account-cart-wrapper {
-		.icon::before, .count, .label {
-			color: $buttontextcolor !important;
-		}
-	}
-	.skip-search .icon {
-		background: none !important;
+	.skip-account .icon {
 		&:after {
-			font-family: "PG_Icons";
-			content: "2";
+			font-family: "FontAwesome";
+			content: "\f007";
 			text-indent: 0;
 			color: $buttontextcolor;
 			position: absolute;
 			font-size: 24px;
+			margin: -9px 0 0 -6px;
+		}
+	}
+	.skip-cart .icon {
+		&:after {
+			font-family: "FontAwesome";
+			content: "\f07a";
+			text-indent: 0;
+			color: $buttontextcolor;
+			position: absolute;
+			font-size: 24px;
+			margin: -9px 0 0 -9px;
+		}
+	}
+	.account-cart-wrapper {
+		width: auto;
+		.icon {
+			display: inline-block;
+			background: none;
+		}
+		a {
+			background: none;
+		}
+		.icon::before, .count, .label {
+			color: $buttontextcolor !important;
+		}
+	}
+	#header-search {
+		width: 100%;
+	}
+	#search_mini_form input#search {
+		margin-top: 0;
+	}
+	.skip-search .icon {
+		background: none !important;
+		&:after {
+			font-family: "FontAwesome";
+			content: "\f002";
+			text-indent: 0;
+			color: $buttontextcolor;
+			position: absolute;
+			font-size: 20px;
 			margin: -9px 0 0 -6px;
 		}
 	}
@@ -232,8 +276,8 @@
 			text-indent: 0;
 			color: $buttontextcolor;
 			position: absolute;
-			font-size: 17px;
-			margin: -9px 0 0 -6px;
+			font-size: 20px;
+			margin: -7px 0 0 -6px;
 		}
 	}
 	.skip-link.skip-active {
@@ -241,13 +285,13 @@
 		color: #FFF;
 	}
 	.skip-cart .count {
-		font-size: 14px;
+		font-size: 12px;
 		top: 0;
 		background: transparent;
 	}
 	.sidr, .skip-nav .label, .skip-link .label {
 		font-family: $titlefont;
-		font-size: 14px;
+		font-size: 12px !important;
 		text-transform: uppercase;
 		letter-spacing: $spacing+1;
 	}
@@ -312,6 +356,9 @@
 		.gemstone-list-item {
 			width: 48%;
 		}
+	}
+	.block-layered-nav .block-content > dl > dt {
+		width: 100%;
 	}
 
 }

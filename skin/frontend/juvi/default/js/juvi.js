@@ -36,4 +36,14 @@ jQuery(document).ready(function(){
 	});
 	// Scroll Gemstones prompt
 	jQuery('.gemstone-featured-item .stone-info-wrapper').scrollTop(1).scrollTop(0);
+	// Add Sidr menu accordions
+	jQuery("ul.sidr-class-level0").hide();
+	jQuery("li.sidr-class-level0.sidr-class-parent > a").click(function(e) {
+		e.preventDefault();
+		if (jQuery(this).next("ul.sidr-class-level0").is(":hidden")) {
+			jQuery(this).addClass("active").next("ul.sidr-class-level0").slideDown("normal");
+		} else {
+			jQuery(this).removeClass("active").next("ul.sidr-class-level0").slideUp("normal");
+		}
+	});
 });
