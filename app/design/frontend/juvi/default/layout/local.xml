@@ -59,21 +59,6 @@
 
 	<!-- Homepage -->
 	<cms_index_index>
-		<reference name="head">
-			<!-- <block type="core/text" name="google.font">
-				<action method="setText">
-					<text><![CDATA[<link href="//fonts.googleapis.com/css?family=Prata" rel="stylesheet">]]></text>
-				</action>
-			</block> -->
-			<action method="addItem">
-				<type>skin_js</type>
-				<name>js/swiper.jquery.min.js</name>
-			</action>
-			<action method="addItem">
-				<type>skin_css</type>
-				<name>css/swiper.min.css</name>
-			</action>
-		</reference>
 		<reference name="content">
 			<block type="homepage/homepage" name="homepage" as="homepage" template="home/homepage.phtml"/>
 		</reference>
@@ -95,7 +80,7 @@
 				<template>page/1column.phtml</template>
 			</action>
 		</reference>
-		<reference name="head">
+		<!--reference name="head">
 			<action method="addItem">
 				<type>skin_js</type>
 				<name>js/swiper.jquery.min.js</name>
@@ -117,7 +102,7 @@
 			        <text><![CDATA[<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100' rel='stylesheet' type='text/css'>]]></text>
 			    </action>
 			</block>
-		</reference>
+		</reference-->
 	</catalog_product_view>
 
 	<!-- Search List View -->
