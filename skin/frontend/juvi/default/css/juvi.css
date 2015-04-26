@@ -674,6 +674,33 @@ p.welcome-msg {
       padding: 0;
       font-size: 100%; }
 
+#narrow-by-list dd .swatch-label {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  display: block;
+  float: none;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  white-space: inherit;
+  font-size: inherit;
+  color: inherit; }
+
+#narrow-by-list dd .configurable-swatch-list {
+  margin-left: 0; }
+  #narrow-by-list dd .configurable-swatch-list li {
+    margin: inherit;
+    width: auto;
+    float: none; }
+
+#narrow-by-list dd .swatch-link {
+  border: none;
+  line-height: inherit;
+  margin-right: inherit;
+  text-align: left;
+  display: inline-block; }
+
 .category-description.std {
   font-size: 75%;
   font-family: "EngraversGothicBT", sans-serif;
@@ -734,6 +761,7 @@ p.welcome-msg {
     .toolbar .sorter .sort-by a.sort-by-switcher--desc:after {
       content: "\f175"; }
   .toolbar .pager .amount {
+    margin-top: 5px;
     font-family: "EngraversGothicBT", sans-serif;
     font-size: 90%;
     letter-spacing: 1px; }

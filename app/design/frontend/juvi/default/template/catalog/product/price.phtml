@@ -51,11 +51,9 @@ $_minimalPriceValue = $_store->roundPrice($_store->convertPrice($_minimalPriceVa
 $_minimalPrice = $_taxHelper->getPrice($_product, $_minimalPriceValue, $_simplePricesTax);
 $_convertedFinalPrice = $_store->roundPrice($_store->convertPrice($_product->getFinalPrice()));
 $specialPriceAttr = $this->getProductAttribute(‘special_price’);
-if (!is_null($specialPriceAttr)) {
-$_specialPriceStoreLabel = $specialPriceAttr->getStoreLabel();
-} else {
-$_specialPriceStoreLabel = ”;
-}
+//$_specialPriceStoreLabel = $this->getProductAttribute('special_price')->getStoreLabel();
+$_specialPriceStoreLabel = '';
+if ($this->getProductAttribute('special_price')) $_specialPriceStoreLabel = $this->getProductAttribute('special_price')->getStoreLabel();
 ?>
 
 <?php if (!$_product->isGrouped()): ?>

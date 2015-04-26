@@ -1,6 +1,5 @@
 // General js
 jQuery(document).ready(function(){
-
 	// Animate menu dropdown
 	jQuery('li.nav-1.level0.parent, .menu-promo').hover(
 		function() {
@@ -26,10 +25,10 @@ jQuery(document).ready(function(){
 	});
 	// Hide messages if clicked
 	jQuery("ul.messages").click(function(){
-        jQuery(this).fadeOut(400);
-    });
-    // Equalise heights on list page
-    jQuery(window).load(function(){
+		jQuery(this).fadeOut(400);
+	});
+		// Equalise heights on list page
+	jQuery(window).load(function(){
 		var maxHeight = 0;
 		jQuery('.gemstone-list-container .gemstone-list-item').each(function() { 
 			maxHeight = Math.max(maxHeight, jQuery(this).height()); 
