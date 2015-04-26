@@ -21,7 +21,7 @@
  * @package     Juvi_Gemstones
  * @author      Ultimate Module Creator
  */
-class Juvi_Gemstones_Block_Gemstone_Catalog_Product_List extends Mage_Core_Block_Template
+class Juvi_Gemstones_Block_Gemstone_Catalog_Product_List extends Mage_Catalog_Block_Product
 {
     /**
      * get the list of products
@@ -33,7 +33,7 @@ class Juvi_Gemstones_Block_Gemstone_Catalog_Product_List extends Mage_Core_Block
     public function getProductCollection()
     {
         $collection = $this->getGemstone()->getSelectedProductsCollection();
-        $collection->addAttributeToSelect('name');
+        $collection->addAttributeToSelect('*');
         $collection->addUrlRewrite();
         $collection->getSelect()->order('related.position');
         Mage::getSingleton('catalog/product_status')->addVisibleFilterToCollection($collection);

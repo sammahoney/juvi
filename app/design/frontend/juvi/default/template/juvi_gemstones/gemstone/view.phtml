@@ -24,27 +24,17 @@
 ?>
 <?php $_gemstone = $this->getCurrentGemstone();?>
 <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
-<div class="page-title gemstone-title">
-    <h1><?php echo $_gemstone->getStoneName(); ?></h1>
-</div>
-<div class="gemstone-view">
-    <div class="gemstone-stone_name">
-        <?php echo Mage::helper('juvi_gemstones')->__('Stone Name');?>:<?php echo $_gemstone->getStoneName();?>
 
+<div class="gemstone-featured-item">
+    <?php if($_gemstone->getStoneImage()): ?>
+        <div class="stone-img-wrapper">
+            <img src="<?php echo Mage::helper('juvi_gemstones/gemstone_image')->init($_gemstone, 'stone_image')->resize(900,400);?>" alt="<?php echo $this->escapeHtml($_gemstone->getStoneName());?>" />
+        </div>
+    <?php endif; ?>
+    <div class="stone-info-wrapper">
+        <h2 class="name"><?php $featuredname = trim(str_replace('[featured]', '', $_gemstone->getStoneName())); echo $featuredname;?></h2>
+        <div class="stone-origin"><?php echo Mage::helper('juvi_gemstones')->__('Origin: ');?><?php echo $_gemstone->getStoneOrigin();?></div>
+        <br>
+        <div class="stone-desc"><?php echo $_gemstone->getStoneDescription();?></div>
     </div>
-    <div class="gemstone-stone_origin">
-        <?php echo Mage::helper('juvi_gemstones')->__('Stone Origin');?>:<?php echo $_gemstone->getStoneOrigin();?>
-
-    </div>
-    <div class="gemstone-stone_description">
-        <?php echo Mage::helper('juvi_gemstones')->__('Stone Description');?>:<?php echo $_gemstone->getStoneDescription();?>
-
-    </div>
-    <div class="gemstone-stone_image">
-        <?php if ($_gemstone->getStoneImage()) :?>
-    <img src="<?php echo Mage::helper('juvi_gemstones/gemstone_image')->init($_gemstone, 'stone_image')->resize(75);?>" alt="<?php echo $this->escapeHtml($_gemstone->getStoneName());?>" />
-<?php endif;?>
-
-    </div>
-
 </div>

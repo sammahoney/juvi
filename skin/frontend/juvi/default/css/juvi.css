@@ -1106,6 +1106,14 @@ h2.table-caption {
       margin: 5px 0 0;
       letter-spacing: 1px; }
 
+h2.related-gem {
+  text-align: center;
+  padding: 20px 0;
+  clear: both;
+  display: block;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #26130B; }
+
 .cms-page-view h1 {
   width: 100%;
   text-align: center;

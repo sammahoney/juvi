@@ -35,4 +35,6 @@ jQuery(document).ready(function(){
 			maxHeight = Math.max(maxHeight, jQuery(this).height()); 
 		}).height(maxHeight);
 	});
+	// Scroll Gemstones prompt
+	jQuery('.gemstone-featured-item .stone-info-wrapper').scrollTop(1).scrollTop(0);
 });
