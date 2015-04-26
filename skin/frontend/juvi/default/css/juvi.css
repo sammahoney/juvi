@@ -301,7 +301,12 @@ p.welcome-msg {
     top: -5px;
     right: -5px; }
 .header-minicart .mini-products-list .product-image {
-  min-width: 95px; }
+  min-width: 55px; }
+.header-minicart .product-image img {
+  max-height: 900px !important;
+  border: 1px solid #DDD;
+  width: 90%;
+  height: auto; }
 .header-minicart .product-details > a {
   font-family: "EngraversGothicBT", sans-serif;
   font-size: 80%; }
@@ -337,7 +342,7 @@ p.welcome-msg {
       background: #753b22; }
 .header-minicart .subtotal {
   background: transparent;
-  border: 1px solid #fffefd;
+  border: 1px solid #f3dfd6;
   border-left: 0;
   border-right: 0;
   font-size: 100%;
@@ -353,6 +358,11 @@ p.welcome-msg {
 .header-minicart .minicart-actions .cart-link {
   line-height: 20px;
   font-size: 100%; }
+
+.truncated .truncated_full_value .item-options {
+  border-color: #26130B; }
+  .truncated .truncated_full_value .item-options:after {
+    border-bottom: 7px solid #26130B; }
 
 #header-account a {
   font-family: "EngraversGothicBT", sans-serif;

@@ -102,7 +102,13 @@ p.welcome-msg {
 		}
 	}
 	.mini-products-list .product-image {
-		min-width: 95px;
+		min-width: 55px;
+	}
+	.product-image img {
+		max-height: 900px !important;
+		border: 1px solid #DDD;
+		width: 90%;
+		height: auto;
 	}
 	.product-details {
 		> a {
@@ -149,7 +155,7 @@ p.welcome-msg {
 	}
 	.subtotal {
 		background: transparent;
-		border: 1px solid lighten($bordercolor, 90%);
+		border: 1px solid lighten($bordercolor, 80%);
 		border-left: 0;
 		border-right: 0;
 		font-size: 100%;
@@ -171,6 +177,12 @@ p.welcome-msg {
 			line-height: 20px;
 			font-size: 100%;
 		}
+	}
+}
+.truncated .truncated_full_value .item-options {
+	border-color: $bordercolor;
+	&:after {
+		border-bottom: 7px solid $bordercolor;
 	}
 }
 
