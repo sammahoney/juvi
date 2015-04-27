@@ -152,6 +152,15 @@ a.enlarge {
 .product-view .add-to-links li:first-child a {
 	padding-right: 18px;
 }
+.product-options p.required {
+	position: absolute;
+	top: 6px;
+	right: 11px;
+	text-align: right;
+	margin: -1px 0 0;
+	font-size: 10px;
+	padding: 0;
+}
 // Related (used as swatches)
 .block-related p.product-name a, .block-related .block-title h2 {
 	font-family: $mainfont;
