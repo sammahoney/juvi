@@ -51,7 +51,7 @@ class Juvi_Gemstones_Block_Gemstone_List extends Mage_Core_Block_Template
         $pager = $this->getLayout()->createBlock(
             'page/html_pager',
             'juvi_gemstones.gemstone.html.pager'
-        )
+        )->setLimit(100)
         ->setCollection($this->getGemstones());
         $this->setChild('pager', $pager);
         $this->getGemstones()->load();
