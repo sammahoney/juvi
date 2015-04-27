@@ -146,6 +146,12 @@ a.enlarge {
 .product-view .product-options .swatch-attr .select-label {
 	color: #7B561E;
 }
+.product-view .add-to-links li:last-child {
+	display: none;
+}
+.product-view .add-to-links li:first-child a {
+	padding-right: 18px;
+}
 // Related (used as swatches)
 .block-related p.product-name a, .block-related .block-title h2 {
 	font-family: $mainfont;

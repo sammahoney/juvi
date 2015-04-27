@@ -54,7 +54,7 @@
 			color: lighten( $textcolor, 30% );
 			display: block;
 			text-align: center;
-			margin-left: 1px;
+			margin-left: -6px;
 			@include transition(all $transpeed $transease);
 		}
 		.btn-remove:hover:after {
