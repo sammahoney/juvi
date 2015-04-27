@@ -83,3 +83,25 @@
 	}
 }
 
+// Events
+.event {
+	background: #FAFAFA;
+	padding: 20px;
+	margin: 0 0 20px;
+	.date {
+		font-size: 120%;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: #493230;
+	}
+}
+.press {
+	width: 46%;
+	float: left;
+	margin: 0 4% 4% 0;
+	box-sizing: border-box;
+	padding: 20px;
+	background: #FAFAFA;
+}
+
+
