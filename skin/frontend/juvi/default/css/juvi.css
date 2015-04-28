@@ -1284,6 +1284,34 @@ h2.related-gem {
   padding: 20px;
   background: #FAFAFA; }
 
+.contacts-index-index .w70.left {
+  width: 70%;
+  float: left; }
+  .contacts-index-index .w70.left img {
+    width: 100%;
+    margin-bottom: 20px; }
+  .contacts-index-index .w70.left p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 90%;
+    letter-spacing: 0;
+    line-height: 150%; }
+.contacts-index-index .w50.left {
+  width: 50%;
+  float: left;
+  padding-right: 15px; }
+.contacts-index-index .w50.right {
+  width: 50%;
+  float: right;
+  padding-left: 15px; }
+.contacts-index-index .w30.right {
+  width: 30%;
+  float: right; }
+  .contacts-index-index .w30.right .page-title {
+    padding-left: 40px; }
+.contacts-index-index #contactForm .fieldset .legend + .required {
+  margin: 0;
+  padding: 0; }
+
 /* Responsive Styles */
 @media only screen and (min-width: 1200px) {
   .logo {
@@ -1563,7 +1591,34 @@ h2.related-gem {
     width: 48%; }
 
   .block-layered-nav .block-content > dl > dt {
-    width: 100%; } }
+    width: 100%; }
+
+  .contacts-index-index .w70.left {
+    width: 100%;
+    float: none; }
+    .contacts-index-index .w70.left img {
+      width: 100%;
+      margin-bottom: 20px; }
+    .contacts-index-index .w70.left p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 90%;
+      letter-spacing: 0;
+      line-height: 150%; }
+  .contacts-index-index .w50.left, .contacts-index-index .w50.right {
+    width: 100%;
+    float: none;
+    padding: 0; }
+  .contacts-index-index .w30.right {
+    width: 100%;
+    padding-top: 20px;
+    float: none;
+    clear: both; }
+    .contacts-index-index .w30.right .page-title {
+      padding-left: 0; }
+    .contacts-index-index .w30.right input, .contacts-index-index .w30.right textarea, .contacts-index-index .w30.right .buttons-set {
+      width: 100%;
+      max-width: 100%;
+      margin: 0; } }
 @media only screen and (max-width: 479px) {
   body:not(.no-footer-msg) .wrapper {
     padding-bottom: 60px; }

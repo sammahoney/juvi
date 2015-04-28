@@ -329,6 +329,48 @@ ul.messages {
 @import "cms_helpers";
 
 // =============================================
+// Contacts
+// =============================================
+
+.contacts-index-index {
+	.w70.left {
+		width: 70%;
+		float: left;
+		img {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		p {
+			font-family: 'Roboto', sans-serif;
+			font-size: 90%;
+			letter-spacing: 0;
+			line-height: 150%;
+		}
+	}
+	.w50.left {
+		width: 50%;
+		float: left;
+		padding-right: 15px;
+	}
+	.w50.right {
+		width: 50%;
+		float: right;
+		padding-left: 15px;
+	}
+	.w30.right {
+		width: 30%;
+		float: right;
+		.page-title {
+			padding-left: 40px;
+		}
+	}
+	#contactForm .fieldset .legend + .required {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+// =============================================
 // Responsive
 // =============================================
 

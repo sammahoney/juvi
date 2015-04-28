@@ -363,6 +363,41 @@
 	.block-layered-nav .block-content > dl > dt {
 		width: 100%;
 	}
+	.contacts-index-index {
+		.w70.left {
+			width: 100%;
+			float: none;
+			img {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			p {
+				font-family: 'Roboto', sans-serif;
+				font-size: 90%;
+				letter-spacing: 0;
+				line-height: 150%;
+			}
+		}
+		.w50.left, .w50.right {
+			width: 100%;
+			float: none;
+			padding: 0;
+		}
+		.w30.right {
+			width: 100%;
+			 padding-top: 20px;
+			float: none;
+			clear: both;
+			.page-title {
+				padding-left: 0;
+			}
+			input, textarea, .buttons-set {
+				width: 100%;
+				max-width: 100%;
+				margin: 0;
+			}
+		}
+	}
 
 }
 // 479px and below
