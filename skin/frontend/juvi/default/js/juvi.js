@@ -46,8 +46,10 @@ jQuery(document).ready(function(){
 			jQuery(this).removeClass("active").next("ul.sidr-class-level0").slideUp("normal");
 		}
 	});
-	// MAgnific popup
-	var imgsrc = jQuery('.img.popup img').attr("src");
-	jQuery('.img.popup').attr("href",imgsrc);
-	jQuery('.popup').magnificPopup({type:'image',mainClass: 'mfp-fade',closeOnContentClick: 'true'});
+	// Magnific popup
+	jQuery('.img.popup').each(function(){
+	    var imgsrc = jQuery(this).children('img').attr("src");
+		jQuery(this).attr("href",imgsrc);
+		jQuery(this).magnificPopup({type:'image',mainClass: 'mfp-fade',closeOnContentClick: 'true'});
+	});
 });
