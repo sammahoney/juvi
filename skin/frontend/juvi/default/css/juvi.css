@@ -761,8 +761,8 @@ p.welcome-msg {
   font-size: 90%;
   letter-spacing: 1px;
   font-weight: 400; }
-  .products-grid .price-box .price .minimal-price-link {
-    display: none; }
+.products-grid .price-box .minimal-price-link {
+  display: none; }
 
 .toolbar {
   background: transparent;
