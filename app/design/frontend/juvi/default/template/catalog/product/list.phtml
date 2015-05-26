@@ -140,6 +140,13 @@ if ($this->getChild('after')) {
             }      
         });
         $j("#narrow-by-list > dt:first-child").addClass("active").next("#narrow-by-list > dd").show();
+        $j(".products-grid > li a").click(function(e){
+            e.preventDefault();
+            var productlink = $j(this).attr("href");
+            var swatchcode = $j(this).parent().find(".configurable-swatch-list li.selected").data('option-value');
+            var url = productlink + "#141=" + swatchcode;
+            window.location.href = url;
+        });
     });
 </script>
 
