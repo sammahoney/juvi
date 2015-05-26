@@ -25,6 +25,14 @@
 			color: lighten( $textcolor, 50% );
 		}
 	}
+	.gemstones-label {
+		font-size: 80%;
+		font-family: $mainfont;
+		font-weight: $mediumweight+100;
+		color: lighten($textcolor, 50%);
+		letter-spacing: $spacing+1;
+		text-transform: capitalize;
+	}
 	.product-image {
 		overflow: hidden;
 		border: 0;
@@ -48,6 +56,9 @@
 		.minimal-price-link {
 			display: none;
 		}
+	}
+	ul.configurable-swatch-list {
+		display: none !important;
 	}
 }
 // Toolbar

@@ -744,6 +744,13 @@ p.welcome-msg {
     text-transform: capitalize; }
   .products-grid .product-name a:hover {
     color: #919191; }
+.products-grid .gemstones-label {
+  font-size: 80%;
+  font-family: "EngraversGothicBT", sans-serif;
+  font-weight: 400;
+  color: #919191;
+  letter-spacing: 1px;
+  text-transform: capitalize; }
 .products-grid .product-image {
   overflow: hidden;
   border: 0; }
@@ -763,6 +770,8 @@ p.welcome-msg {
   font-weight: 400; }
 .products-grid .price-box .minimal-price-link {
   display: none; }
+.products-grid ul.configurable-swatch-list {
+  display: none !important; }
 
 .toolbar {
   background: transparent;
