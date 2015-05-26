@@ -92,6 +92,14 @@ body.customer-account .my-account .order-details h2 {
 	}
 }
 
+/* SagePay Icons */
+label[for="p_method_sagepaydirectpro"], label[for="p_method_sagepayserver"], label[for="p_method_sagepayform"] {
+  padding-left: 135px !important;
+  padding-top: 7px !important;
+  background-repeat: no-repeat;
+  background-image: url(../images/sage-pay-small.jpg);
+}
+
 // =============================================
 // Account
 // =============================================
