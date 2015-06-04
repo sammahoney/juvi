@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18917",
+"creatorBuild": "19022",
 "files": {
 	"\/app\/code\/community\/Lesti\/Fpc\/Block\/Catalog\/Product\/View\/Ajax.php": {
 		"fileType": 8192,
@@ -614,6 +614,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/app\/code\/local\/Mage\/ConfigurableSwatches\/Helper\/Mediafallback.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Mage\/ConfigurableSwatches\/Helper\/Mediafallback.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/README.md": {
 		"criticStyle": 0,
 		"enableFootnotes": 0,
@@ -660,6 +669,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/css\/jquery.sidr.light.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/skin\/frontend\/juvi\/default\/css\/juvi.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/css\/juvi.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -781,6 +799,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/skin\/frontend\/juvi\/default\/sagepaysuite\/images\/sage-pay-small.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19173,
+		"inputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/sagepaysuite\/images\/sage-pay-small.jpg",
+		"outputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/sagepaysuite\/images\/sage-pay-small.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/skin\/frontend\/juvi\/default\/scss\/_basicstyles.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -806,6 +835,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/scss\/_cart_checkout_account.scss",
 		"outputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/css\/_cart_checkout_account.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/skin\/frontend\/juvi\/default\/scss\/_categoryview.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/scss\/_categoryview.scss",
+		"outputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/css\/_categoryview.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
