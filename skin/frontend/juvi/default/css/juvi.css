@@ -994,6 +994,74 @@ img.mfp-img {
 .box-up-sell {
   margin-top: 0; }
 
+#configurable_swatch_stone_type.configurable-swatch-list li {
+  background: url(../images/juvi_swatch.jpg) no-repeat;
+  background-position: 6px -34px;
+  background-size: 425px;
+  height: 45px;
+  width: 50px;
+  padding-top: 10px;
+  margin-bottom: 15px; }
+  #configurable_swatch_stone_type.configurable-swatch-list li a {
+    border: 0; }
+#configurable_swatch_stone_type.configurable-swatch-list .swatch-label {
+  padding: 20px 6px 0;
+  font-size: 8px;
+  background: transparent;
+  border: 0;
+  position: absolute;
+  width: 37px;
+  white-space: normal;
+  line-height: 11px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option72 {
+  background-position: -17px 0 !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option73 {
+  background-position: -17px -54px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option74 {
+  background-position: -17px -108px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option81 {
+  background-position: -17px -162px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option82 {
+  background-position: -17px -215px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option83 {
+  background-position: -17px -376px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option84 {
+  background-position: -16px -268px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option85 {
+  background-position: -16px -322px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option86 {
+  background-position: -178px 0 !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option87 {
+  background-position: -178px -54px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option89 {
+  background-position: -178px -108px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option90 {
+  background-position: -178px -162px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option93 {
+  background-position: -178px -215px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option94 {
+  background-position: -179px -269px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option95 {
+  background-position: -178px -323px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option98 {
+  background-position: -339px -376px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option113 {
+  background-position: -178px -376px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option106 {
+  background-position: -339px 0 !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option107 {
+  background-position: -339px -54px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option109 {
+  background-position: -339px -108px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option110 {
+  background-position: -339px -162px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option111 {
+  background-position: -339px -215px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option112 {
+  background-position: -339px -269px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option108 {
+  background-position: -339px -323px !important; }
+
 #fixed_footer {
   position: fixed;
   bottom: 0;
