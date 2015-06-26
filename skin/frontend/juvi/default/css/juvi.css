@@ -1006,13 +1006,17 @@ img.mfp-img {
     border: 0; }
 #configurable_swatch_stone_type.configurable-swatch-list .swatch-label {
   padding: 20px 6px 0;
-  font-size: 8px;
+  font-size: 7px;
   background: transparent;
   border: 0;
   position: absolute;
   width: 37px;
   white-space: normal;
-  line-height: 11px !important; }
+  line-height: 12px !important;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px; }
+#configurable_swatch_stone_type.configurable-swatch-list .selected span.swatch-label {
+  color: brown; }
 #configurable_swatch_stone_type.configurable-swatch-list #option72 {
   background-position: -17px 0 !important; }
 #configurable_swatch_stone_type.configurable-swatch-list #option73 {

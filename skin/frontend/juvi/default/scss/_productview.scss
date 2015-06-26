@@ -226,13 +226,18 @@ img.mfp-img {
 	}
 	.swatch-label {
 		padding: 20px 6px 0;
-		font-size: 8px;
+		font-size: 7px;
 		background: transparent;
 		border: 0;
 		position: absolute;
 		width: 37px;
 		white-space: normal;
-		line-height: 11px !important;
+		line-height: 12px !important;
+		font-family: 'Roboto', sans-serif;
+		letter-spacing: 1px;
+	}
+	.selected span.swatch-label {
+		color: brown;
 	}
 	// Amazonite
 	#option71 {
