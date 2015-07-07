@@ -73,6 +73,9 @@
 			font-weight: $boldweight;
 			font-size: 90%;
 		}
+		&.btn-cart:disabled {
+			cursor: progress;
+		}
 	}
 	.box-collateral {
 		h2 {
@@ -87,7 +90,7 @@
 		}
 	}
 }
-// Media 
+// Media
 .product-image, .no-touch .product-img-box .product-image:not(.zoom-available):hover {
 	border: 0;
 }
@@ -176,9 +179,9 @@ a.enlarge {
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
-// Media 
-img.mfp-img { 
-	max-height: none !important; 
+// Media
+img.mfp-img {
+	max-height: none !important;
 }
 .mfp-bg {
 	background: $backgroundinvert !important;

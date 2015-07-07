@@ -864,6 +864,8 @@ p.welcome-msg {
     font-family: "EngraversGothicBT", sans-serif;
     font-weight: 500;
     font-size: 90%; }
+  .product-view .add-to-cart-buttons .button.btn-cart:disabled {
+    cursor: progress; }
 .product-view .box-collateral h2 {
   font-family: "EngraversGothicBT", sans-serif;
   font-weight: 300;
