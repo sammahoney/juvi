@@ -996,6 +996,9 @@ img.mfp-img {
 .box-up-sell {
   margin-top: 0; }
 
+#configurable_swatch_stone_type li.not-available {
+  opacity: 0.1; }
+
 #configurable_swatch_stone_type.configurable-swatch-list li {
   background: url(../images/juvi_swatch.jpg) no-repeat;
   background-position: 6px -34px;
