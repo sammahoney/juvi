@@ -831,10 +831,8 @@ p.welcome-msg {
   font-family: "EngraversGothicBT", sans-serif;
   letter-spacing: 1px;
   line-height: 200%; }
-.product-view .product-shop .availability.in-stock span:before {
-  font-family: 'FontAwesome';
-  content: "\f00c";
-  padding-right: 6px; }
+.product-view .product-shop .availability.in-stock {
+  display: none; }
 .product-view .product-img-box .product-image img {
   max-height: 900px !important; }
 .product-view .product-img-box .product-image-thumbs li a {

@@ -34,11 +34,7 @@
 			line-height: 200%;
 		}
 		.availability.in-stock {
-			& span:before {
-				font-family: 'FontAwesome';
-				content: "\f00c";
-				padding-right: 6px;
-			}
+			display: none;
 		}
 	}
 	.product-img-box {
