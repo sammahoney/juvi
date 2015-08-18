@@ -874,6 +874,21 @@ p.welcome-msg {
   text-align: center;
   padding: 20px 0 10px; }
 
+.product-view .accordion-info .box-collateral h2 {
+  cursor: pointer;
+  border-top: 1px solid #CCC; }
+.product-view .accordion-info .box-collateral p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 90%;
+  letter-spacing: 0;
+  line-height: 150%; }
+.product-view .accordion-info .box-collateral .fa {
+  padding-left: 18px;
+  display: inline; }
+  .product-view .accordion-info .box-collateral .fa:before {
+    font-size: 15px;
+    color: #888; }
+
 .product-image, .no-touch .product-img-box .product-image:not(.zoom-available):hover {
   border: 0; }
 

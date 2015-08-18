@@ -86,6 +86,27 @@
 		}
 	}
 }
+// Additional info
+.product-view .accordion-info .box-collateral {
+	h2 {
+		cursor: pointer;
+		border-top: 1px solid #CCC;
+	}
+	p {
+	    font-family: 'Roboto', sans-serif;
+	    font-size: 90%;
+	    letter-spacing: 0;
+	    line-height: 150%;
+	}
+	.fa {
+	    padding-left: 18px;
+	    display: inline;
+	    &:before {
+	    	font-size: 15px;
+	    	color: #888;
+	    }
+	}
+}
 // Media
 .product-image, .no-touch .product-img-box .product-image:not(.zoom-available):hover {
 	border: 0;

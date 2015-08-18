@@ -110,6 +110,25 @@
                         <?php echo $this->getChildHtml('sharing') ?>
                     </div>
                 <?php endif; ?>
+
+                <div class="accordion-info">
+                    <div class="box-collateral attributes">
+                        <?php $blockid = 'delivery'; $block = Mage::getModel('cms/block')->load($blockid); ?>
+                        <h2><?php echo $block->getTitle(); ?><i class="fa fa-angle-down"></i></h2>
+                        <div class="content"><?php echo $this->getLayout()->createBlock('cms/block')->setBlockId($blockid)->toHtml(); ?></div>
+                    </div>
+                    <div class="box-collateral attributes">
+                        <?php $blockid = 'returns'; $block = Mage::getModel('cms/block')->load($blockid); ?>
+                        <h2><?php echo $block->getTitle(); ?><i class="fa fa-angle-down"></i></h2>
+                        <div class="content"><?php echo $this->getLayout()->createBlock('cms/block')->setBlockId($blockid)->toHtml(); ?></div>
+                    </div>
+                    <div class="box-collateral attributes">
+                        <?php $blockid = 'guarantee'; $block = Mage::getModel('cms/block')->load($blockid); ?>
+                        <h2><?php echo $block->getTitle(); ?><i class="fa fa-angle-down"></i></h2>
+                        <div class="content"><?php echo $this->getLayout()->createBlock('cms/block')->setBlockId($blockid)->toHtml(); ?></div>
+                    </div>
+                </div>
+
             </div>
 
             <?php echo $this->getChildHtml('related_products') ?>
@@ -119,6 +138,8 @@
                 <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
             <?php endif;?>
         </form>
+
+
         <script type="text/javascript">
         //<![CDATA[
             var productAddToCartForm = new VarienForm('product_addtocart_form');
@@ -191,3 +212,22 @@
     <?php echo $this->getChildHtml('product_additional_data') ?>
 
 </div>
+
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+        jQuery(".product-essential .box-collateral .content").hide();
+        jQuery(".product-essential .box-collateral h2").click(function(){
+            if (jQuery(".product-essential .box-collateral h2").hasClass("active")) { jQuery(".product-essential .box-collateral h2").removeClass("active"); };
+            if (jQuery(this).next(".product-essential .box-collateral .content").is(":hidden")) {
+                jQuery(".product-essential .box-collateral .content:visible").slideUp("normal");
+                jQuery(this).next(".product-essential .box-collateral .content").slideDown("normal");
+                jQuery(this).addClass("active");
+                jQuery(this).prev(".product-essential .box-collateral h2").addClass("active");
+            } else {
+                jQuery(this).next(".product-essential .box-collateral .content").slideUp("normal");
+                jQuery(this).removeClass("active");
+                jQuery(this).prev(".product-essential .box-collateral h2").removeClass("active");
+            }
+        });
+    });
+</script>
