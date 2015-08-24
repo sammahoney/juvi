@@ -207,6 +207,16 @@ form .legend {
 		color: $textcolor;
 	}
 }
+//Tooltip
+.tooltip {
+    position:absolute;
+    background-color:rgba(39, 19, 11, 0.7);
+    border-radius:2px;
+    padding:2px 4px;
+    color:#fff;
+    font-size:10px;
+    display: block;
+}
 
 // =============================================
 // Messages
