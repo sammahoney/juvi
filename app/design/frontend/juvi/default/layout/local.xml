@@ -58,6 +58,13 @@
 			</block>
 		</reference>
 		<remove name="footer"/>
+		<reference name="footer.before">
+            <block type="reports/product_viewed" name="footer.reports.product.viewed">
+				<action method="setTemplate">
+					<template>catalog/footer_product_viewed.phtml</template>
+				</action>
+			</block>
+        </reference>
 		<reference name="before_body_end">
 			<block type="cms/block" name="fixed_footer">
 				<action method="setBlockId"><block_id>fixed_footer</block_id></action>
