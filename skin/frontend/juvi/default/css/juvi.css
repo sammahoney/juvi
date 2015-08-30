@@ -740,7 +740,8 @@ p.welcome-msg {
   font-family: "EngraversGothicBT", sans-serif;
   letter-spacing: 1px;
   line-height: 200%;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  font-weight: bold; }
 
 .products-grid .product-name {
   padding-top: 10px; }
