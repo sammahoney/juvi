@@ -86,6 +86,9 @@
 		}
 	}
 }
+.product-view .sharing-links a {
+	background-image: url(../images/icon_sprite.png);
+}
 // Additional info
 .product-view .accordion-info .box-collateral {
 	h2 {
@@ -339,7 +342,7 @@ img.mfp-img {
 	}
 	// Multi Gem
 	#option88 {
-
+		background-position: -260px -376px !important;
 	}
 	// Onyx
 	#option89 {

@@ -884,6 +884,9 @@ p.welcome-msg {
   text-align: center;
   padding: 20px 0 10px; }
 
+.product-view .sharing-links a {
+  background-image: url(../images/icon_sprite.png); }
+
 .product-view .accordion-info .box-collateral h2 {
   cursor: pointer;
   border-top: 1px solid #CCC; }
@@ -1065,6 +1068,8 @@ img.mfp-img {
   background-position: -178px 0 !important; }
 #configurable_swatch_stone_type.configurable-swatch-list #option87 {
   background-position: -178px -54px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option88 {
+  background-position: -260px -376px !important; }
 #configurable_swatch_stone_type.configurable-swatch-list #option89 {
   background-position: -178px -108px !important; }
 #configurable_swatch_stone_type.configurable-swatch-list #option90 {
