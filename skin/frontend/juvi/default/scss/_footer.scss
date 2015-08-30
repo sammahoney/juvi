@@ -21,6 +21,20 @@
 		.footer-wrap {
 			text-align: right;
 			padding: 0 30px;
+			a span {
+				font-size: 0;
+				display: inline-block;
+				overflow: hidden;
+				padding: 0 4px 0 13px;
+			}
+			i.fa {
+				top: -12px;
+				display: inline-block;
+				position: relative;
+				&:before {
+					font-size: 140%;
+				}
+			}
 		}
 		.copyright {
 			font-family: arial, sans-serif;

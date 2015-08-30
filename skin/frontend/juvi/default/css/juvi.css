@@ -1117,6 +1117,17 @@ img.mfp-img {
     #fixed_footer .footer-container .footer-wrap {
       text-align: right;
       padding: 0 30px; }
+      #fixed_footer .footer-container .footer-wrap a span {
+        font-size: 0;
+        display: inline-block;
+        overflow: hidden;
+        padding: 0 4px 0 13px; }
+      #fixed_footer .footer-container .footer-wrap i.fa {
+        top: -12px;
+        display: inline-block;
+        position: relative; }
+        #fixed_footer .footer-container .footer-wrap i.fa:before {
+          font-size: 140%; }
     #fixed_footer .footer-container .copyright {
       font-family: arial, sans-serif;
       font-size: 80%;
