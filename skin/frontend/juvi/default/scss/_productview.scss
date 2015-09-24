@@ -184,7 +184,7 @@ a.enlarge {
 	font-size: 10px;
 	padding: 0;
 }
-// Related (used as swatches)
+// Related 
 .block-related p.product-name a, .block-related .block-title h2 {
 	font-family: $mainfont;
 	display: block !important;
@@ -198,6 +198,10 @@ a.enlarge {
 	padding-top: 10px;
 	margin-bottom: 0;
 	padding-bottom: 0;
+}
+// Disable Zoom
+div.zoomContainer {
+	display: none;
 }
 // Media
 img.mfp-img {
