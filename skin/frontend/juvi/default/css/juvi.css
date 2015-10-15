@@ -818,6 +818,9 @@ p.welcome-msg {
   .toolbar .pager .pages .next:before {
     border-left: 4px solid #26130B; }
 
+.catalog-product-view .main-container {
+  padding: 30px 30px 5px !important; }
+
 .product-view .product-shop .product-name {
   width: 100%; }
   .product-view .product-shop .product-name .h1 {
@@ -1022,8 +1025,16 @@ img.mfp-img {
 .box-collateral {
   margin-bottom: 0; }
 
-.box-up-sell {
+.product-view > .box-up-sell {
   margin-top: 0; }
+  .product-view > .box-up-sell h2 {
+    cursor: pointer; }
+  .product-view > .box-up-sell .fa {
+    padding-left: 18px;
+    display: inline; }
+    .product-view > .box-up-sell .fa:before {
+      font-size: 15px;
+      color: #888; }
 
 .pinterest a {
   background-position: 0 -270px !important;

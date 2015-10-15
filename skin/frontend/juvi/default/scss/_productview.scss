@@ -2,7 +2,11 @@
 // =============================================
 // Product View
 // =============================================
-
+.catalog-product-view {
+	.main-container {
+		padding: 30px 30px 5px !important;
+	}
+}
 .product-view {
 	.product-shop {
 		.product-name {
@@ -233,8 +237,19 @@ img.mfp-img {
 .box-collateral {
 	margin-bottom: 0;
 }
-.box-up-sell {
+.product-view > .box-up-sell {
 	margin-top: 0;
+	h2 {
+		cursor: pointer;
+	}
+	.fa {
+		padding-left: 18px;
+		display: inline;
+		&:before {
+			font-size: 15px;
+			color: #888;
+		}
+	}
 }
 // Sharing
 .pinterest a {

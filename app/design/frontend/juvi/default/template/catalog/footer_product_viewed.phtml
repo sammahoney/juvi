@@ -26,16 +26,15 @@
 /* @var $this Mage_Reports_Block_Product_Viewed */
 ?>
 <div class="clear"></div>
-<br><br><br>
 <?php if ($_products = $this->getRecentlyViewedProducts()): ?>
 <div class="footer-container product-view">
     <div class="box-collateral box-up-sell">
-        <h2><?php echo $this->__('Recently Viewed Products') ?></h2>
+        <h2><?php echo $this->__('Recently Viewed Products') ?><i class="fa fa-angle-down"></i></h2>
         <ul class="products-grid products-grid--max-5-col" id="upsell-product-table">
         <?php foreach ($_products as $_link): ?>
             <li class="item-<?php echo $i; ?>">
                 <a href="<?php echo $_link->getProductUrl() ?>" class="product-image">
-                    <img src="<?php echo $this->helper('catalog/image')->init($_link, 'small_image')->resize(460,690) ?>" alt="<?php echo $this->escapeHtml($_link->getName()) ?>" />
+                    <img src="<?php echo $this->helper('catalog/image')->init($_link, 'small_image')->resize(460) ?>" alt="<?php echo $this->escapeHtml($_link->getName()) ?>" />
                 </a>
                 <h3 class="product-name"><a href="<?php echo $_link->getProductUrl() ?>" title="<?php echo $this->escapeHtml($_link->getName()) ?>"><?php echo $this->escapeHtml($_link->getName()) ?></a></h3>
                 <?php echo $this->getPriceHtml($_link, true, '-upsell') ?>

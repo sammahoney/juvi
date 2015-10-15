@@ -215,7 +215,8 @@
 
 <script type="text/javascript">
     jQuery(document).ready(function(){
-        jQuery(".product-essential .box-collateral .content").hide();
+        jQuery(".product-essential .box-collateral .content, .product-view > .box-collateral ul.products-grid, .product-view > .box-collateral ul.products-grid").hide();
+        // Info panels
         jQuery(".product-essential .box-collateral h2").click(function(){
             if (jQuery(".product-essential .box-collateral h2").hasClass("active")) { jQuery(".product-essential .box-collateral h2").removeClass("active"); };
             if (jQuery(this).next(".product-essential .box-collateral .content").is(":hidden")) {
@@ -227,6 +228,20 @@
                 jQuery(this).next(".product-essential .box-collateral .content").slideUp("normal");
                 jQuery(this).removeClass("active");
                 jQuery(this).prev(".product-essential .box-collateral h2").removeClass("active");
+            }
+        });
+        // Upsell/Viewed products
+        jQuery(".product-view > .box-collateral h2").click(function(){
+            if (jQuery(".product-view > .box-collateral h2").hasClass("active")) { jQuery(".product-view > .box-collateral h2").removeClass("active"); };
+            if (jQuery(this).next(".product-view > .box-collateral ul").is(":hidden")) {
+                jQuery(".product-view > .box-collateral ul:visible").slideUp("normal");
+                jQuery(this).next(".product-view > .box-collateral ul").slideDown("normal");
+                jQuery(this).addClass("active");
+                jQuery(this).prev(".product-view > .box-collateral h2").addClass("active");
+            } else {
+                jQuery(this).next(".product-view > .box-collateral ul").slideUp("normal");
+                jQuery(this).removeClass("active");
+                jQuery(this).prev(".product-view > .box-collateral h2").removeClass("active");
             }
         });
     });
