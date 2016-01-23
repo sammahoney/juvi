@@ -40,7 +40,7 @@
     <div class="product-image-gallery">
         <img id="image-main"
              class="gallery-image visible"
-             src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(1000,1000)->setQuality(95) ?>"
+             src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(1000,1000)->setQuality(100) ?>"
              alt="<?php echo $this->escapeHtml($this->getImageLabel()) ?>"
              title="<?php echo $this->escapeHtml($this->getImageLabel()); ?>" />
 
@@ -48,8 +48,8 @@
             <?php if ($this->isGalleryImageVisible($_image)): ?>
             <img id="image-<?php echo $i; ?>"
                  class="gallery-image"
-                 src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize(1500,1500)->setQuality(95); ?>"
-                 data-zoom-image="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize(1500,1500)->setQuality(95); ?>" />
+                 src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize(1500,1500)->setQuality(100); ?>"
+                 data-zoom-image="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize(1500,1500)->setQuality(100); ?>" />
             <?php endif; ?>
         <?php $i++; endforeach; ?>
     </div>
