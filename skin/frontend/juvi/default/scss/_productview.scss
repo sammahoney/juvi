@@ -37,8 +37,12 @@
 			letter-spacing: $spacing+1;
 			line-height: 200%;
 		}
-		.availability.in-stock {
-			display: none;
+		.availability {
+			font-size: 12px;
+			padding: 0;
+			&.in-stock {
+				color: transparent;
+			}
 		}
 	}
 	.product-img-box {
