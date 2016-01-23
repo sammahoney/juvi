@@ -49,7 +49,8 @@ jQuery(document).ready(function(){
 	// Magnific popup
 	jQuery('.img.popup').each(function(){
 	    var imgsrc = jQuery(this).children('img').attr("src");
-		jQuery(this).attr("href",imgsrc);
+	    var newsrc = imgsrc.replace( '/thumbnails', '');
+		jQuery(this).attr("href",newsrc);
 		jQuery(this).magnificPopup({type:'image',mainClass: 'mfp-fade',closeOnContentClick: 'true'});
 	});
 });
