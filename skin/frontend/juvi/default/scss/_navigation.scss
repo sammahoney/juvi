@@ -92,6 +92,9 @@
 			}
 			li.level1 {
 				margin-bottom: 5px;
+				min-width: 200px;
+				overflow: visible;
+				position: static;
 				a {
 					border: 0;
 					color: $textcolor;

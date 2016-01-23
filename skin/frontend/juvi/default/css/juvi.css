@@ -520,7 +520,10 @@ p.welcome-msg {
       .nav-primary li.level0 ul.level0 a:hover {
         color: #444444; }
       .nav-primary li.level0 ul.level0 li.level1 {
-        margin-bottom: 5px; }
+        margin-bottom: 5px;
+        min-width: 200px;
+        overflow: visible;
+        position: static; }
         .nav-primary li.level0 ul.level0 li.level1 a {
           border: 0;
           color: #111;
