@@ -48,8 +48,8 @@
             <?php if ($this->isGalleryImageVisible($_image)): ?>
             <img id="image-<?php echo $i; ?>"
                  class="gallery-image"
-                 src="<?php echo $this->getGalleryImageUrl($_image); ?>"
-                 data-zoom-image="<?php echo  $this->getGalleryImageUrl($_image); ?>" />
+                 src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize(1000,1000); ?>"
+                 data-zoom-image="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize(1000,1000); ?>" />
             <?php endif; ?>
         <?php $i++; endforeach; ?>
     </div>
