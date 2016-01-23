@@ -215,7 +215,8 @@
 
 <script type="text/javascript">
     jQuery(document).ready(function(){
-        jQuery(".product-essential .box-collateral .content, .product-view > .box-collateral ul.products-grid, .product-view > .box-collateral ul.products-grid").hide();
+        jQuery(".product-essential .box-collateral .content").hide();
+        /* jQuery(".product-view > .box-collateral ul.products-grid, .product-view > .box-collateral ul.products-grid").hide(); */
         // Info panels
         jQuery(".product-essential .box-collateral h2").click(function(){
             if (jQuery(".product-essential .box-collateral h2").hasClass("active")) { jQuery(".product-essential .box-collateral h2").removeClass("active"); };
