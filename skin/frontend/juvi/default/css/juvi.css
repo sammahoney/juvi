@@ -894,7 +894,7 @@ p.welcome-msg {
   background-image: url(../images/icon_sprite.png); }
 
 .product-view .accordion-info .box-collateral h2 {
-  /* cursor: pointer; */
+  cursor: pointer;
   border-top: 1px solid #CCC; }
 .product-view .accordion-info .box-collateral p {
   font-family: 'Roboto', sans-serif;
@@ -1031,7 +1031,7 @@ img.mfp-img {
 .product-view > .box-up-sell {
   margin-top: 0; }
   .product-view > .box-up-sell h2 {
-    cursor: pointer; }
+    /* cursor: pointer; */ }
   .product-view > .box-up-sell .fa {
     padding-left: 18px;
     display: inline; }

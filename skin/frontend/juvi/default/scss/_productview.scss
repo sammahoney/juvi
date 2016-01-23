@@ -100,7 +100,7 @@
 // Additional info
 .product-view .accordion-info .box-collateral {
 	h2 {
-		/* cursor: pointer; */
+		cursor: pointer;
 		border-top: 1px solid #CCC;
 	}
 	p {
@@ -244,7 +244,7 @@ img.mfp-img {
 .product-view > .box-up-sell {
 	margin-top: 0;
 	h2 {
-		cursor: pointer;
+		/* cursor: pointer; */
 	}
 	.fa {
 		padding-left: 18px;
