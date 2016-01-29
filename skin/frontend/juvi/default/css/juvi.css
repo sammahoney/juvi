@@ -1479,6 +1479,18 @@ h2.related-gem {
   margin: 0;
   padding: 0; }
 
+.mc-modal-bg {
+  background-color: #FFF !important; }
+
+.mc-closeModal {
+  color: inherit; }
+
+.modalContent__content {
+  font-family: "EngraversGothicBT", sans-serif !important; }
+  .modalContent__content label, .modalContent__content input, .modalContent__content .content__button {
+    font-family: "EngraversGothicBT", sans-serif !important;
+    border-radius: 0 !important; }
+
 /* Responsive Styles */
 @media only screen and (min-width: 1200px) {
   .logo {
