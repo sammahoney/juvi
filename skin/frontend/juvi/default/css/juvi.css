@@ -1483,13 +1483,7 @@ h2.related-gem {
   background-color: #FFF !important; }
 
 .mc-closeModal {
-  color: inherit; }
-
-.modalContent__content {
-  font-family: "EngraversGothicBT", sans-serif !important; }
-  .modalContent__content label, .modalContent__content input, .modalContent__content .content__button {
-    font-family: "EngraversGothicBT", sans-serif !important;
-    border-radius: 0 !important; }
+  color: inherit !important; }
 
 /* Responsive Styles */
 @media only screen and (min-width: 1200px) {
