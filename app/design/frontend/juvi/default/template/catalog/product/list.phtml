@@ -31,6 +31,22 @@
  * @see Mage_Catalog_Block_Product_List
  */
 /* @var $this Mage_Catalog_Block_Product_List */
+$product = Mage::registry('current_product');  
+if($product == ''){
+    $category = Mage::registry('current_category');
+    if(is_object($category)){
+        $catLoaded = Mage::getModel('catalog/category')->load($category->getEntityId());
+        $collection = $catLoaded->getProductCollection();
+        $collection->addAttributeToSelect('*');
+        if(count($collection) == 1){
+            foreach($collection as $product){
+                $productUrl = $product->getProductUrl();
+                header("location:$productUrl");
+                exit;
+            }
+        }
+    }
+}
 ?>
 <?php
     $_productCollection=$this->getLoadedProductCollection();
