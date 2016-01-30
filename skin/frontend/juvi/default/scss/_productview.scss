@@ -455,15 +455,18 @@ img.mfp-img {
 	}
 }
 // Out of stock fix 
-#configurable_swatch_stone_type li.out-of-stock:after {
-	content: "Out Of Stock";
-	position: absolute;
-	color: #FFF;
-	background-color: #666;
-	font-size: 8px;
-	text-transform: uppercase;
-	white-space: nowrap;
-	padding: 0 3px;
-	margin: -28px 0 0 -6px;
+#configurable_swatch_stone_type li.out-of-stock {
+	pointer-events: none;
+	&:after {
+		content: "Out Of Stock";
+		position: absolute;
+		color: #FFF;
+		background-color: #666;
+		font-size: 8px;
+		text-transform: uppercase;
+		white-space: nowrap;
+		padding: 0 3px;
+		margin: -28px 0 0 -6px;
+	}
 }
 
