@@ -519,23 +519,18 @@ p.welcome-msg {
       -o-box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.2); }
       .nav-primary li.level0 ul.level0 a:hover {
         color: #444444; }
-      .nav-primary li.level0 ul.level0 li.level1 {
-        margin-bottom: 5px;
-        min-width: 200px;
-        overflow: visible;
-        position: static; }
-        .nav-primary li.level0 ul.level0 li.level1 a {
-          border: 0;
-          color: #111;
-          font-family: "EngraversGothicBT", sans-serif;
-          font-size: 90%;
-          letter-spacing: 0px;
-          text-transform: uppercase; }
-        .nav-primary li.level0 ul.level0 li.level1.parent {
-          padding-bottom: 15px;
-          display: block; }
-          .nav-primary li.level0 ul.level0 li.level1.parent > a:after {
-            display: none; }
+      .nav-primary li.level0 ul.level0 li.level1 a {
+        border: 0;
+        color: #111;
+        font-family: "EngraversGothicBT", sans-serif;
+        font-size: 90%;
+        letter-spacing: 0px;
+        text-transform: uppercase; }
+      .nav-primary li.level0 ul.level0 li.level1.parent {
+        padding-bottom: 15px;
+        display: block; }
+        .nav-primary li.level0 ul.level0 li.level1.parent > a:after {
+          display: none; }
     .nav-primary li.level0 ul.level1 {
       position: static !important;
       border: 0;
