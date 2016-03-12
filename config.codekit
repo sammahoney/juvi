@@ -720,17 +720,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/skin\/frontend\/juvi\/default\/images\/juvi_swatch.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 77417,
-		"inputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/images\/juvi_swatch.jpg",
-		"outputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/images\/juvi_swatch.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/skin\/frontend\/juvi\/default\/images\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,

@@ -1126,6 +1126,10 @@ img.mfp-img {
   background-position: -339px -269px !important; }
 #configurable_swatch_stone_type.configurable-swatch-list #option108 {
   background-position: -339px -323px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option116 {
+  background-position: -253px -108px !important; }
+#configurable_swatch_stone_type.configurable-swatch-list #option117 {
+  background-position: -253px -161px !important; }
 
 #configurable_swatch_stone_type li.out-of-stock {
   pointer-events: none; }
