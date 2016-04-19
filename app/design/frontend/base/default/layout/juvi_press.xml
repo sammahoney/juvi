@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Juvi_Press extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Juvi
+ * @package        Juvi_Press
+ * @copyright      Copyright (c) 2016
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<layout>
+    
+    <juvi_press_pressarticle_index translate="label" module="juvi_press">
+        <label>Press Articles list</label>
+        <update handle="page_one_column" />
+        <reference name="content">
+            <block type="juvi_press/pressarticle_list" name="pressarticle_list" template="juvi_press/pressarticle/list.phtml" />
+        </reference>
+    </juvi_press_pressarticle_index>
+    <juvi_press_pressarticle_view translate="label" module="juvi_press">
+        <label>Press Article view page</label>
+        <update handle="page_one_column" />
+        <reference name="content">
+            <block type="juvi_press/pressarticle_view" name="pressarticle_view" template="juvi_press/pressarticle/view.phtml" />
+            <block type="juvi_press/pressarticle_catalog_product_list" name="pressarticle.info.products" as="pressarticle_products" template="juvi_press/pressarticle/catalog/product/list.phtml" />
+        </reference>
+    </juvi_press_pressarticle_view>
+</layout>

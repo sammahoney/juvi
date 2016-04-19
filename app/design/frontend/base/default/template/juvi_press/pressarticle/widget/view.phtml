@@ -1,0 +1,47 @@
+<?php
+/**
+ * Juvi_Press extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Juvi
+ * @package        Juvi_Press
+ * @copyright      Copyright (c) 2016
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+/**
+ * Press Article view widget template
+ *
+ * @category    Juvi
+ * @package     Juvi_Press
+ * @author      Ultimate Module Creator
+ */
+?>
+<?php $_pressarticle = $this->getCurrentPressarticle();?>
+<?php if ($_pressarticle) :?>
+    <div class="pressarticle-widget-view">
+        <h3><?php echo $_pressarticle->getPressArticleTitle()?></h3>
+        <div>
+            <div class="press_article_title-widget">
+                <?php echo Mage::helper('juvi_press')->__('Press Article Title');?>:<?php echo $_pressarticle->getPressArticleTitle();?>
+            </div>
+            <div class="press_article_origin_date-widget">
+                <?php echo Mage::helper('juvi_press')->__('Press Article Origin / Date');?>:<?php echo $_pressarticle->getPressArticleOriginDate();?>
+            </div>
+            <div class="press_article_description-widget">
+                <?php echo Mage::helper('juvi_press')->__('Press Article Description');?>:<?php echo $_pressarticle->getPressArticleDescription();?>
+            </div>
+            <div class="press_article_image-widget">
+                <?php if ($_pressarticle->getPressArticleImage()) :?>
+    <img src="<?php echo Mage::helper('juvi_press/pressarticle_image')->init($_pressarticle, 'press_article_image')->resize(75);?>" alt="<?php echo $this->escapeHtml($_pressarticle->getPressArticleTitle());?>" />
+<?php endif;?>
+            </div>
+
+        </div>
+    </div>
+<?php endif;?>

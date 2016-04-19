@@ -1,0 +1,44 @@
+<?php 
+/**
+ * Juvi_Press extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Juvi
+ * @package        Juvi_Press
+ * @copyright      Copyright (c) 2016
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+/**
+ * Press Article list template
+ *
+ * @category    Juvi
+ * @package     Juvi_Press
+ * @author      Ultimate Module Creator
+ */
+?>
+<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+<?php $_pressarticles = $this->getPressarticles(); ?>
+<div class="page-title pressarticle-title">
+    <h1><?php echo Mage::helper('juvi_press')->__('Press Articles') ?></h1>
+</div>
+<?php if ($_pressarticles->getSize() > 0) :?>
+    <?php echo $this->getPagerHtml(); ?>
+    <div class="pressarticle-list-container">
+    <?php foreach ($_pressarticles as $_pressarticle) : ?>
+        <div class="pressarticle-list-item">
+            <a href="<?php echo $_pressarticle->getPressarticleUrl()?>">
+                <?php echo $_pressarticle->getPressArticleTitle();?>
+            </a><br />
+        </div>
+    <?php endforeach;?>
+    </div>
+    <?php echo $this->getPagerHtml(); ?>
+<?php else : ?>
+    <?php echo Mage::helper('juvi_press')->__('There are no press articles at this moment');?>
+<?php endif;?>

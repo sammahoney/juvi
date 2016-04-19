@@ -1,6 +1,6 @@
 
 // =============================================
-// Gemstones
+// Gemstones & Press
 // =============================================
 
 .gemstone-featured-item {
@@ -19,6 +19,30 @@
 		float: right;
 		height: 315px;
 		overflow-y: scroll;
+	}
+}
+.juvi-press-pressarticle-view {
+	.gemstone-featured-item {
+		.stone-img-wrapper {
+			height: 990px;
+			img {
+				width: 100%;
+				min-height: auto;
+			}
+		}
+		.stone-info-wrapper {
+			height: auto;
+			overflow-y: auto;
+			h2.related-gem {
+				text-align: left;
+			}
+			.products-grid > li {
+				float: left;
+				clear: none;
+				width: 47% !important;
+				margin-right: 3% !important;
+			}
+		}
 	}
 }
 .gemstone-list-container {

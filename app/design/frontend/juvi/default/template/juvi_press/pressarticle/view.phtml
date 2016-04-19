@@ -1,0 +1,49 @@
+<?php
+/**
+ * Juvi_Press extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Juvi
+ * @package        Juvi_Press
+ * @copyright      Copyright (c) 2016
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+/**
+ * Press Article view template
+ *
+ * @category    Juvi
+ * @package     Juvi_Press
+ * @author      Ultimate Module Creator
+ */
+?>
+<?php $_pressarticle = $this->getCurrentPressarticle();?>
+<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+
+<div class="gemstone-featured-item">
+    <?php if($_pressarticle->getPressArticleImage()): ?>
+        <div class="stone-img-wrapper">
+            <img src="<?php echo Mage::helper('juvi_press/pressarticle_image')->init($_pressarticle, 'press_article_image')->resize(1000,1400);?>" alt="<?php echo $this->escapeHtml($_pressarticle->getPressArticleOriginDate());?>" />
+        </div>
+    <?php endif; ?>
+    <div class="stone-info-wrapper">
+        <h2 class="name"><?php $featuredname = trim(str_replace('[featured]', '', $_pressarticle->getPressArticleTitle())); echo $featuredname;?></h2>
+        <div class="stone-origin"><?php echo $_pressarticle->getPressArticleOriginDate();?></div>
+        <br>
+        <div class="stone-desc"><?php echo $_pressarticle->getPressArticleDescription();?></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(document).ready(function(){
+        var related = jQuery('.related-productlist-wrapper').html();
+        jQuery('.related-productlist-wrapper').remove();
+        jQuery('.stone-info-wrapper').append(related);
+    });
+</script>

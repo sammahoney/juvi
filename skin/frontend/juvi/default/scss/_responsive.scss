@@ -456,5 +456,14 @@
 	.catalog-product-view .products-grid > li.item-4 {
 		display: none;
 	}
+	.juvi-press-pressarticle-view {
+		.gemstone-featured-item {
+			.stone-img-wrapper,.stone-info-wrapper {
+				width: 100%;
+				height: auto;
+				padding-bottom: 20px;
+			}
+		}
+	}
 	
 }

@@ -614,6 +614,357 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Catalog\/Product\/Edit\/Tab\/Pressarticle.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Catalog\/Product\/Edit\/Tab\/Pressarticle.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Helper\/Column\/Renderer\/Relation.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Helper\/Column\/Renderer\/Relation.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle\/Edit.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle\/Edit.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle\/Edit\/Form.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle\/Edit\/Form.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle\/Edit\/Tab\/Form.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle\/Edit\/Tab\/Form.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle\/Edit\/Tab\/Meta.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle\/Edit\/Tab\/Meta.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle\/Edit\/Tab\/Product.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle\/Edit\/Tab\/Product.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle\/Edit\/Tabs.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle\/Edit\/Tabs.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle\/Grid.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle\/Grid.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle\/Helper\/Image.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle\/Helper\/Image.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle\/Widget\/Chooser.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Block\/Adminhtml\/Pressarticle\/Widget\/Chooser.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Block\/Pressarticle\/Catalog\/Product\/List.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Block\/Pressarticle\/Catalog\/Product\/List.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Block\/Pressarticle\/List.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Block\/Pressarticle\/List.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Block\/Pressarticle\/View.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Block\/Pressarticle\/View.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Block\/Pressarticle\/Widget\/Link.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Block\/Pressarticle\/Widget\/Link.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Block\/Pressarticle\/Widget\/View.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Block\/Pressarticle\/Widget\/View.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Controller\/Adminhtml\/Press.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Controller\/Adminhtml\/Press.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Controller\/Router.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Controller\/Router.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/controllers\/Adminhtml\/Press\/Pressarticle\/Catalog\/ProductController.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/controllers\/Adminhtml\/Press\/Pressarticle\/Catalog\/ProductController.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/controllers\/Adminhtml\/Press\/Pressarticle\/WidgetController.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/controllers\/Adminhtml\/Press\/Pressarticle\/WidgetController.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/controllers\/Adminhtml\/Press\/PressarticleController.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/controllers\/Adminhtml\/Press\/PressarticleController.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/controllers\/PressarticleController.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/controllers\/PressarticleController.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Helper\/Data.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Helper\/Data.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Helper\/Image\/Abstract.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Helper\/Image\/Abstract.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Helper\/Pressarticle.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Helper\/Pressarticle.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Helper\/Pressarticle\/Image.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Helper\/Pressarticle\/Image.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Helper\/Product.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Helper\/Product.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Model\/Adminhtml\/Observer.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Model\/Adminhtml\/Observer.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Model\/Adminhtml\/Search\/Pressarticle.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Model\/Adminhtml\/Search\/Pressarticle.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Model\/Pressarticle.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Model\/Pressarticle.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Model\/Pressarticle\/Product.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Model\/Pressarticle\/Product.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Model\/Pressarticle\/Source.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Model\/Pressarticle\/Source.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Model\/Resource\/Pressarticle.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Model\/Resource\/Pressarticle.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Model\/Resource\/Pressarticle\/Collection.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Model\/Resource\/Pressarticle\/Collection.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Model\/Resource\/Pressarticle\/Product.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Model\/Resource\/Pressarticle\/Product.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Model\/Resource\/Pressarticle\/Product\/Collection.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Model\/Resource\/Pressarticle\/Product\/Collection.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/Model\/Resource\/Setup.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/Model\/Resource\/Setup.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/code\/local\/Juvi\/Press\/sql\/juvi_press_setup\/install-1.0.0.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/code\/local\/Juvi\/Press\/sql\/juvi_press_setup\/install-1.0.0.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/app\/code\/local\/Mage\/Catalog\/Block\/Product\/View\/Type\/Configurable.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -664,6 +1015,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/skin\/frontend\/base\/default\/images\/placeholder\/pressarticle.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2913,
+		"inputAbbreviatedPath": "\/skin\/frontend\/base\/default\/images\/placeholder\/pressarticle.jpg",
+		"outputAbbreviatedPath": "\/skin\/frontend\/base\/default\/images\/placeholder\/pressarticle.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/skin\/frontend\/juvi\/default\/css\/Engravers_Gothic.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -709,6 +1071,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/skin\/frontend\/juvi\/default\/images\/1429LS-C49-min-32.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.24051e+06,
+		"inputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/images\/1429LS-C49-min-32.png",
+		"outputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/images\/1429LS-C49-min-32.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/skin\/frontend\/juvi\/default\/images\/icon_sprite.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -720,6 +1093,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/skin\/frontend\/juvi\/default\/images\/juvi_swatch.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 69465,
+		"inputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/images\/juvi_swatch.jpg",
+		"outputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/images\/juvi_swatch.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/skin\/frontend\/juvi\/default\/images\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -727,6 +1111,28 @@
 		"initialSize": 33849,
 		"inputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/images\/logo.png",
 		"outputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/images\/logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/skin\/frontend\/juvi\/default\/images\/placeholder\/gemstone.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2913,
+		"inputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/images\/placeholder\/gemstone.jpg",
+		"outputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/images\/placeholder\/gemstone.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/skin\/frontend\/juvi\/default\/images\/placeholder\/pressarticle.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2913,
+		"inputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/images\/placeholder\/pressarticle.jpg",
+		"outputAbbreviatedPath": "\/skin\/frontend\/juvi\/default\/images\/placeholder\/pressarticle.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

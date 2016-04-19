@@ -1338,6 +1338,22 @@ h2.table-caption {
   height: 315px;
   overflow-y: scroll; }
 
+.juvi-press-pressarticle-view .gemstone-featured-item .stone-img-wrapper {
+  height: 990px; }
+  .juvi-press-pressarticle-view .gemstone-featured-item .stone-img-wrapper img {
+    width: 100%;
+    min-height: auto; }
+.juvi-press-pressarticle-view .gemstone-featured-item .stone-info-wrapper {
+  height: auto;
+  overflow-y: auto; }
+  .juvi-press-pressarticle-view .gemstone-featured-item .stone-info-wrapper h2.related-gem {
+    text-align: left; }
+  .juvi-press-pressarticle-view .gemstone-featured-item .stone-info-wrapper .products-grid > li {
+    float: left;
+    clear: none;
+    width: 47% !important;
+    margin-right: 3% !important; }
+
 .gemstone-list-container {
   margin: 20px -1%; }
   .gemstone-list-container .gemstone-list-item {
@@ -1843,4 +1859,9 @@ h2.related-gem {
     width: 100%; }
 
   .catalog-product-view .products-grid > li.item-4 {
-    display: none; } }
+    display: none; }
+
+  .juvi-press-pressarticle-view .gemstone-featured-item .stone-img-wrapper, .juvi-press-pressarticle-view .gemstone-featured-item .stone-info-wrapper {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px; } }

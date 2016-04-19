@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Juvi_Press extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Juvi
+ * @package        Juvi_Press
+ * @copyright      Copyright (c) 2016
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+--> 
+<layout>
+    <adminhtml_press_pressarticle_index>
+        <reference name="menu">
+            <action method="setActive">
+                <menupath>cms/juvi_press/pressarticle</menupath>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="juvi_press/adminhtml_pressarticle" name="pressarticle" />
+
+        </reference>
+    </adminhtml_press_pressarticle_index>
+    <adminhtml_press_pressarticle_grid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="juvi_press/adminhtml_pressarticle_grid" name="pressarticle_grid"/>
+        </block>
+    </adminhtml_press_pressarticle_grid>
+    <!-- Pressarticle add/edit action -->
+    <adminhtml_press_pressarticle_edit>
+        <update handle="editor"/>
+        <reference name="menu">
+            <action method="setActive">
+                <menupath>cms/juvi_press/pressarticle</menupath>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="juvi_press/adminhtml_pressarticle_edit" name="pressarticle_edit"></block>
+        </reference>
+        <reference name="left">
+            <block type="juvi_press/adminhtml_pressarticle_edit_tabs" name="pressarticle_tabs"></block>
+        </reference>
+    </adminhtml_press_pressarticle_edit>
+
+    <adminhtml_press_pressarticle_catalog_product_pressarticles>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="juvi_press/adminhtml_catalog_product_edit_tab_pressarticle" name="product.edit.tab.pressarticle"/>
+            <block type="adminhtml/widget_grid_serializer" name="pressarticle_grid_serializer">
+                <reference name="pressarticle_grid_serializer">
+                    <action method="initSerializerBlock">
+                        <grid_block_name>product.edit.tab.pressarticle</grid_block_name>
+                        <data_callback>getSelectedPressarticles</data_callback>
+                        <hidden_input_name>pressarticles</hidden_input_name>
+                        <reload_param_name>product_pressarticles</reload_param_name>
+                    </action>
+                    <action method="addColumnInputName">
+                        <input_name>position</input_name>
+                    </action>
+                </reference>
+            </block>
+        </block>
+    </adminhtml_press_pressarticle_catalog_product_pressarticles>
+    <adminhtml_press_pressarticle_catalog_product_pressarticlesgrid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="juvi_press/adminhtml_catalog_product_edit_tab_pressarticle" name="product.edit.tab.pressarticle"/>
+        </block>
+    </adminhtml_press_pressarticle_catalog_product_pressarticlesgrid>
+    <adminhtml_press_pressarticle_products>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="juvi_press/adminhtml_pressarticle_edit_tab_product" name="pressarticle.edit.tab.product"/>
+            <block type="adminhtml/widget_grid_serializer" name="product_grid_serializer">
+                <reference name="product_grid_serializer">
+                    <action method="initSerializerBlock">
+                        <grid_block_name>pressarticle.edit.tab.product</grid_block_name>
+                            <data_callback>getSelectedProducts</data_callback>
+                            <hidden_input_name>products</hidden_input_name>
+                            <reload_param_name>pressarticle_products</reload_param_name>
+                    </action>
+                    <action method="addColumnInputName">
+                        <input_name>position</input_name>
+                    </action>
+                </reference>
+            </block>
+        </block>
+    </adminhtml_press_pressarticle_products>
+    <adminhtml_press_pressarticle_productsgrid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="juvi_press/adminhtml_pressarticle_edit_tab_product" name="pressarticle.edit.tab.product"/>
+        </block>
+    </adminhtml_press_pressarticle_productsgrid>
+</layout>

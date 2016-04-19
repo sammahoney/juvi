@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Juvi_Press extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Juvi
+ * @package        Juvi_Press
+ * @copyright      Copyright (c) 2016
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<widgets>
+    <press_pressarticle_view type="juvi_press/pressarticle_widget_view" translate="name description" module="juvi_press">
+        <name>Press Article view</name>
+        <description>Press Article view widget</description>
+        <is_email_compatible>0</is_email_compatible>
+        <parameters>
+            <pressarticle_id type="complex" translate="label">
+                <visible>1</visible>
+                <required>1</required>
+                <label>Press Article</label>
+                <type>label</type>
+                <helper_block>
+                    <type>juvi_press/adminhtml_pressarticle_widget_chooser</type>
+                    <data>
+                        <button translate="open">
+                            <open>Select Press Article</open>
+                        </button>
+                    </data>
+                </helper_block>
+                <sort_order>120</sort_order>
+            </pressarticle_id>
+        </parameters>
+    </press_pressarticle_view>
+    <press_pressarticle_link type="juvi_press/pressarticle_widget_link" translate="name description" module="juvi_press">
+        <name>Press Article link</name>
+        <description>Press Article link widget</description>
+        <is_email_compatible>0</is_email_compatible>
+        <parameters>
+            <pressarticle_id type="complex" translate="label">
+                <visible>1</visible>
+                <required>1</required>
+                <label>Press Article</label>
+                <type>label</type>
+                <helper_block>
+                    <type>juvi_press/adminhtml_pressarticle_widget_chooser</type>
+                    <data>
+                        <button translate="open">
+                            <open>Select Press Article</open>
+                        </button>
+                    </data>
+                </helper_block>
+                <sort_order>130</sort_order>
+            </pressarticle_id>
+        </parameters>
+    </press_pressarticle_link>
+</widgets>

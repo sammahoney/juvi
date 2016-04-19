@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Juvi_Press extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Juvi
+ * @package        Juvi_Press
+ * @copyright      Copyright (c) 2016
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config>
+    <modules>
+        <Juvi_Press>
+            <version>1.0.0</version>
+        </Juvi_Press>
+    </modules>
+    <global>
+        <resources>
+            <juvi_press_setup>
+                <setup>
+                    <module>Juvi_Press</module>
+                    <class>Juvi_Press_Model_Resource_Setup</class>
+                </setup>
+            </juvi_press_setup>
+        </resources>
+        <blocks>
+            <juvi_press>
+                <class>Juvi_Press_Block</class>
+            </juvi_press>
+        </blocks>
+        <helpers>
+            <juvi_press>
+                <class>Juvi_Press_Helper</class>
+            </juvi_press>
+        </helpers>
+        <models>
+            <juvi_press>
+                <class>Juvi_Press_Model</class>
+                <resourceModel>juvi_press_resource</resourceModel>
+            </juvi_press>
+            <juvi_press_resource>
+                <class>Juvi_Press_Model_Resource</class>
+                <entities>
+                    <pressarticle>
+                        <table>juvi_press_pressarticle</table>
+                    </pressarticle>
+                    <pressarticle_product>
+                        <table>juvi_press_pressarticle_product</table>
+                    </pressarticle_product>
+                </entities>
+            </juvi_press_resource>
+        </models>
+        <events>
+            <controller_front_init_routers>
+                <observers>
+                    <juvi_press>
+                        <class>Juvi_Press_Controller_Router</class>
+                        <method>initControllerRouters</method>
+                    </juvi_press>
+                </observers>
+            </controller_front_init_routers>
+        </events>
+    </global>
+    <adminhtml>
+        <layout>
+            <updates>
+                <juvi_press>
+                    <file>juvi_press.xml</file>
+                </juvi_press>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Juvi_Press>
+                    <files>
+                        <default>Juvi_Press.csv</default>
+                    </files>
+                </Juvi_Press>
+            </modules>
+        </translate>
+        <events>
+            <core_block_abstract_prepare_layout_after>
+                <observers>
+                    <juvi_press_pressarticle_product>
+                        <type>singleton</type>
+                        <class>juvi_press/adminhtml_observer</class>
+                        <method>addProductPressarticleBlock</method>
+                    </juvi_press_pressarticle_product>
+                </observers>
+            </core_block_abstract_prepare_layout_after>
+            <catalog_product_save_after>
+                <observers>
+                    <juvi_press_pressarticle_product>
+                        <type>singleton</type>
+                        <class>juvi_press/adminhtml_observer</class>
+                        <method>saveProductPressarticleData</method>
+                    </juvi_press_pressarticle_product>
+                </observers>
+            </catalog_product_save_after>
+        </events>
+        <global_search>
+            <pressarticle>
+                <class>juvi_press/adminhtml_search_pressarticle</class>
+                <acl>juvi_press</acl>
+            </pressarticle>
+        </global_search>
+    </adminhtml>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Juvi_Press before="Mage_Adminhtml">Juvi_Press_Adminhtml</Juvi_Press>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <frontend>
+        <routers>
+            <juvi_press>
+                <use>standard</use>
+                <args>
+                    <module>Juvi_Press</module>
+                    <frontName>juvi_press</frontName>
+                </args>
+            </juvi_press>
+        </routers>
+        <layout>
+            <updates>
+                <juvi_press>
+                    <file>juvi_press.xml</file>
+                </juvi_press>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Juvi_Press>
+                    <files>
+                        <default>Juvi_Press.csv</default>
+                    </files>
+                </Juvi_Press>
+            </modules>
+        </translate>
+    </frontend>
+    <default>
+        <juvi_press>
+            <pressarticle>
+                <breadcrumbs>1</breadcrumbs>
+                <meta_title>Press Articles</meta_title>
+            </pressarticle>
+        </juvi_press>
+    </default>
+</config>
