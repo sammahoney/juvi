@@ -400,7 +400,8 @@
 	}
 	.juvi-press-pressarticle-view {
 		.gemstone-featured-item {
-			.stone-img-wrapper,.stone-info-wrapper, .swiper-container {
+			position: relative;
+			.stone-img-wrapper,.stone-info-wrapper, .swiper-container, .arrow-wrap {
 				width: 100%;
 				height: auto;
 				padding-bottom: 20px;
@@ -467,7 +468,8 @@
 	}
 	.juvi-press-pressarticle-view {
 		.gemstone-featured-item {
-			.stone-img-wrapper,.stone-info-wrapper, .swiper-container {
+			position: relative;
+			.stone-img-wrapper,.stone-info-wrapper, .swiper-container, .arrow-wrap {
 				width: 100%;
 				height: auto;
 				padding-bottom: 20px;

@@ -26,11 +26,13 @@
 <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
 
 <div class="gemstone-featured-item">
+    <?php if ($_pressarticle->getPressArticleImage2()): ?>
+    <div class="arrow-wrap">
+        <a class="arrow-left" href="javascript:void(0);">&lsaquo;</a> 
+        <a class="arrow-right active" href="javascript:void(0);">&rsaquo;</a>
+    </div>
+    <?php endif; ?>
     <div class="swiper-container">
-        <?php if ($_pressarticle->getPressArticleImage2()): ?>
-            <a class="arrow-left" href="javascript:void(0);">&lsaquo;</a> 
-            <a class="arrow-right active" href="javascript:void(0);">&rsaquo;</a>
-        <?php endif; ?>
         <div class="swiper-wrapper">
             <?php if($_pressarticle->getPressArticleImage()): ?>
                 <div class="swiper-slide">
@@ -92,11 +94,4 @@ jQuery('.arrow-right').on('click', function(e){
     mySwiper.slideNext()
 });
 <?php endif; ?>
-jQuery(document).ready(function() {
-    jQuery('.enlarge').magnificPopup({
-        type:'image',
-        mainClass: 'mfp-fade',
-        closeOnContentClick: 'true'
-    });
-});
 </script>

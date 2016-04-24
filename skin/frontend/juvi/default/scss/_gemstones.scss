@@ -23,6 +23,7 @@
 }
 .juvi-press-pressarticle-view {
 	.gemstone-featured-item {
+		position: relative;
 		.stone-img-wrapper {
 			height: 990px;
 			img {
@@ -49,24 +50,29 @@
 			img {
 				max-width: 100%;
 			}
-			a.arrow-left, a.arrow-right {
-				font-family: "Alegreya Sans SC", "Roboto", arial;
-				position: absolute;
-				top: 32%;
-				z-index: 10;
-				display: block;
-				left: 0;
-				font-size: 750%;
-				font-weight: 100;
-				opacity: 1;
-				background: rgba(255,255,255,0.7);
-				padding: 0 15px 15px 10px;
-			}
-			a.arrow-right {
-				left: auto;
-				right: 0;
-				padding: 0 10px 15px 15px;
-			}
+		}
+		.arrow-wrap {
+			width: 59%;
+			position: absolute;
+			margin-top: 32%;
+		}
+		a.arrow-left, a.arrow-right {
+			font-family: "Alegreya Sans SC", "Roboto", arial;
+			position: absolute;
+			top: 32%;
+			z-index: 10;
+			display: block;
+			left: 0;
+			font-size: 750%;
+			font-weight: 100;
+			opacity: 1;
+			background: rgba(255,255,255,0.7);
+			padding: 0 15px 15px 10px;
+		}
+		a.arrow-right {
+			left: auto;
+			right: 0;
+			padding: 0 10px 15px 15px;
 		}
 	}
 }

@@ -1338,27 +1338,33 @@ h2.table-caption {
   height: 315px;
   overflow-y: scroll; }
 
-.juvi-press-pressarticle-view .gemstone-featured-item .stone-img-wrapper {
-  height: 990px; }
-  .juvi-press-pressarticle-view .gemstone-featured-item .stone-img-wrapper img {
-    width: 100%;
-    min-height: auto; }
-.juvi-press-pressarticle-view .gemstone-featured-item .stone-info-wrapper {
-  height: auto;
-  overflow-y: auto; }
-  .juvi-press-pressarticle-view .gemstone-featured-item .stone-info-wrapper h2.related-gem {
-    text-align: left; }
-  .juvi-press-pressarticle-view .gemstone-featured-item .stone-info-wrapper .products-grid > li {
-    float: left;
-    clear: none;
-    width: 47% !important;
-    margin-right: 3% !important; }
-.juvi-press-pressarticle-view .gemstone-featured-item .swiper-container {
-  width: 59%;
-  float: left; }
-  .juvi-press-pressarticle-view .gemstone-featured-item .swiper-container img {
-    max-width: 100%; }
-  .juvi-press-pressarticle-view .gemstone-featured-item .swiper-container a.arrow-left, .juvi-press-pressarticle-view .gemstone-featured-item .swiper-container a.arrow-right {
+.juvi-press-pressarticle-view .gemstone-featured-item {
+  position: relative; }
+  .juvi-press-pressarticle-view .gemstone-featured-item .stone-img-wrapper {
+    height: 990px; }
+    .juvi-press-pressarticle-view .gemstone-featured-item .stone-img-wrapper img {
+      width: 100%;
+      min-height: auto; }
+  .juvi-press-pressarticle-view .gemstone-featured-item .stone-info-wrapper {
+    height: auto;
+    overflow-y: auto; }
+    .juvi-press-pressarticle-view .gemstone-featured-item .stone-info-wrapper h2.related-gem {
+      text-align: left; }
+    .juvi-press-pressarticle-view .gemstone-featured-item .stone-info-wrapper .products-grid > li {
+      float: left;
+      clear: none;
+      width: 47% !important;
+      margin-right: 3% !important; }
+  .juvi-press-pressarticle-view .gemstone-featured-item .swiper-container {
+    width: 59%;
+    float: left; }
+    .juvi-press-pressarticle-view .gemstone-featured-item .swiper-container img {
+      max-width: 100%; }
+  .juvi-press-pressarticle-view .gemstone-featured-item .arrow-wrap {
+    width: 59%;
+    position: absolute;
+    margin-top: 32%; }
+  .juvi-press-pressarticle-view .gemstone-featured-item a.arrow-left, .juvi-press-pressarticle-view .gemstone-featured-item a.arrow-right {
     font-family: "Alegreya Sans SC", "Roboto", arial;
     position: absolute;
     top: 32%;
@@ -1370,7 +1376,7 @@ h2.table-caption {
     opacity: 1;
     background: rgba(255, 255, 255, 0.7);
     padding: 0 15px 15px 10px; }
-  .juvi-press-pressarticle-view .gemstone-featured-item .swiper-container a.arrow-right {
+  .juvi-press-pressarticle-view .gemstone-featured-item a.arrow-right {
     left: auto;
     right: 0;
     padding: 0 10px 15px 15px; }
@@ -1849,10 +1855,12 @@ h2.related-gem {
       max-width: 100%;
       margin: 0; }
 
-  .juvi-press-pressarticle-view .gemstone-featured-item .stone-img-wrapper, .juvi-press-pressarticle-view .gemstone-featured-item .stone-info-wrapper, .juvi-press-pressarticle-view .gemstone-featured-item .swiper-container {
-    width: 100%;
-    height: auto;
-    padding-bottom: 20px; } }
+  .juvi-press-pressarticle-view .gemstone-featured-item {
+    position: relative; }
+    .juvi-press-pressarticle-view .gemstone-featured-item .stone-img-wrapper, .juvi-press-pressarticle-view .gemstone-featured-item .stone-info-wrapper, .juvi-press-pressarticle-view .gemstone-featured-item .swiper-container, .juvi-press-pressarticle-view .gemstone-featured-item .arrow-wrap {
+      width: 100%;
+      height: auto;
+      padding-bottom: 20px; } }
 @media only screen and (max-width: 479px) {
   body:not(.no-footer-msg) .wrapper {
     padding-bottom: 60px; }
@@ -1894,7 +1902,9 @@ h2.related-gem {
   .catalog-product-view .products-grid > li.item-4 {
     display: none; }
 
-  .juvi-press-pressarticle-view .gemstone-featured-item .stone-img-wrapper, .juvi-press-pressarticle-view .gemstone-featured-item .stone-info-wrapper, .juvi-press-pressarticle-view .gemstone-featured-item .swiper-container {
-    width: 100%;
-    height: auto;
-    padding-bottom: 20px; } }
+  .juvi-press-pressarticle-view .gemstone-featured-item {
+    position: relative; }
+    .juvi-press-pressarticle-view .gemstone-featured-item .stone-img-wrapper, .juvi-press-pressarticle-view .gemstone-featured-item .stone-info-wrapper, .juvi-press-pressarticle-view .gemstone-featured-item .swiper-container, .juvi-press-pressarticle-view .gemstone-featured-item .arrow-wrap {
+      width: 100%;
+      height: auto;
+      padding-bottom: 20px; } }
