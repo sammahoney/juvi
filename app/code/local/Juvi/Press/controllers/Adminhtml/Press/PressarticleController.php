@@ -135,6 +135,24 @@ class Juvi_Press_Adminhtml_Press_PressarticleController extends Juvi_Press_Contr
                     $data
                 );
                 $pressarticle->setData('press_article_image', $pressArticleImageName);
+                $pressArticleImage2Name = $this->_uploadAndGetName(
+                    'press_article_image2',
+                    Mage::helper('juvi_press/pressarticle_image')->getImageBaseDir(),
+                    $data
+                );
+                $pressarticle->setData('press_article_image2', $pressArticleImage2Name);
+                $pressArticleImage3Name = $this->_uploadAndGetName(
+                    'press_article_image3',
+                    Mage::helper('juvi_press/pressarticle_image')->getImageBaseDir(),
+                    $data
+                );
+                $pressarticle->setData('press_article_image3', $pressArticleImage3Name);
+                $pressArticleImage4Name = $this->_uploadAndGetName(
+                    'press_article_image4',
+                    Mage::helper('juvi_press/pressarticle_image')->getImageBaseDir(),
+                    $data
+                );
+                $pressarticle->setData('press_article_image4', $pressArticleImage4Name);
                 $products = $this->getRequest()->getPost('products', -1);
                 if ($products != -1) {
                     $pressarticle->setProductsData(Mage::helper('adminhtml/js')->decodeGridSerializedInput($products));
@@ -154,6 +172,15 @@ class Juvi_Press_Adminhtml_Press_PressarticleController extends Juvi_Press_Contr
                 if (isset($data['press_article_image']['value'])) {
                     $data['press_article_image'] = $data['press_article_image']['value'];
                 }
+                if (isset($data['press_article_image2']['value'])) {
+                    $data['press_article_image2'] = $data['press_article_image2']['value'];
+                }
+                if (isset($data['press_article_image3']['value'])) {
+                    $data['press_article_image3'] = $data['press_article_image3']['value'];
+                }
+                if (isset($data['press_article_image4']['value'])) {
+                    $data['press_article_image4'] = $data['press_article_image4']['value'];
+                }
                 Mage::getSingleton('adminhtml/session')->addError($e->getMessage());
                 Mage::getSingleton('adminhtml/session')->setPressarticleData($data);
                 $this->_redirect('*/*/edit', array('id' => $this->getRequest()->getParam('id')));
@@ -162,6 +189,15 @@ class Juvi_Press_Adminhtml_Press_PressarticleController extends Juvi_Press_Contr
                 Mage::logException($e);
                 if (isset($data['press_article_image']['value'])) {
                     $data['press_article_image'] = $data['press_article_image']['value'];
+                }
+                if (isset($data['press_article_image2']['value'])) {
+                    $data['press_article_image2'] = $data['press_article_image2']['value'];
+                }
+                if (isset($data['press_article_image3']['value'])) {
+                    $data['press_article_image3'] = $data['press_article_image3']['value'];
+                }
+                if (isset($data['press_article_image4']['value'])) {
+                    $data['press_article_image4'] = $data['press_article_image4']['value'];
                 }
                 Mage::getSingleton('adminhtml/session')->addError(
                     Mage::helper('juvi_press')->__('There was a problem saving the press article.')

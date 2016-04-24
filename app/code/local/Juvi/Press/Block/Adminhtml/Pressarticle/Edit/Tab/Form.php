@@ -89,7 +89,40 @@ class Juvi_Press_Block_Adminhtml_Pressarticle_Edit_Tab_Form extends Mage_Adminht
             array(
                 'label' => Mage::helper('juvi_press')->__('Press Article Image'),
                 'name'  => 'press_article_image',
-            'note'	=> $this->__('Dimensions should be 1000px wide by 14000px tall'),
+            'note'	=> $this->__('Dimensions should be 1000px wide by 1400px tall'),
+
+           )
+        );
+
+        $fieldset->addField(
+            'press_article_image2',
+            'image',
+            array(
+                'label' => Mage::helper('juvi_press')->__('Press Article Image 2'),
+                'name'  => 'press_article_image2',
+            'note'	=> $this->__('Dimensions should be 1000px wide by 1400px tall'),
+
+           )
+        );
+
+        $fieldset->addField(
+            'press_article_image3',
+            'image',
+            array(
+                'label' => Mage::helper('juvi_press')->__('Press Article Image 3'),
+                'name'  => 'press_article_image3',
+            'note'	=> $this->__('Dimensions should be 1000px wide by 1400px tall'),
+
+           )
+        );
+
+        $fieldset->addField(
+            'press_article_image4',
+            'image',
+            array(
+                'label' => Mage::helper('juvi_press')->__('Press Article Image 4'),
+                'name'  => 'press_article_image4',
+            'note'	=> $this->__('Dimensions should be 1000px wide by 1400px tall'),
 
            )
         );

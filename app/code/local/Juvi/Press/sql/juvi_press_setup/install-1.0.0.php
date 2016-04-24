@@ -66,6 +66,24 @@ $table = $this->getConnection()
         'Press Article Image'
     )
     ->addColumn(
+        'press_article_image2',
+        Varien_Db_Ddl_Table::TYPE_TEXT, 255,
+        array(),
+        'Press Article Image 2'
+    )
+    ->addColumn(
+        'press_article_image3',
+        Varien_Db_Ddl_Table::TYPE_TEXT, 255,
+        array(),
+        'Press Article Image 3'
+    )
+    ->addColumn(
+        'press_article_image4',
+        Varien_Db_Ddl_Table::TYPE_TEXT, 255,
+        array(),
+        'Press Article Image 4'
+    )
+    ->addColumn(
         'status',
         Varien_Db_Ddl_Table::TYPE_SMALLINT, null,
         array(),

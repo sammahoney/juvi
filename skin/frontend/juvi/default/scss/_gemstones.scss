@@ -43,6 +43,31 @@
 				margin-right: 3% !important;
 			}
 		}
+		.swiper-container {
+			width: 59%;
+			float: left;
+			img {
+				max-width: 100%;
+			}
+			a.arrow-left, a.arrow-right {
+				font-family: "Alegreya Sans SC", "Roboto", arial;
+				position: absolute;
+				top: 32%;
+				z-index: 10;
+				display: block;
+				left: 0;
+				font-size: 750%;
+				font-weight: 100;
+				opacity: 1;
+				background: rgba(255,255,255,0.7);
+				padding: 0 15px 15px 10px;
+			}
+			a.arrow-right {
+				left: auto;
+				right: 0;
+				padding: 0 10px 15px 15px;
+			}
+		}
 	}
 }
 .gemstone-list-container {
@@ -83,6 +108,16 @@
 				margin: 5px 0 0;
 				letter-spacing: 1px;
 			}
+		}
+	}
+}
+.juvi-press-pressarticle-index {
+	.gemstone-list-item {
+		background: #FAFAFA;
+		padding: 0.5%;
+		.stone-info-wrapper {
+			padding: 10px 0.5%;
+			line-height: 14px;
 		}
 	}
 }

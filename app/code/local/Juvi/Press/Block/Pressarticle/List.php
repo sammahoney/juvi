@@ -34,7 +34,7 @@ class Juvi_Press_Block_Pressarticle_List extends Mage_Core_Block_Template
         parent::__construct();
         $pressarticles = Mage::getResourceModel('juvi_press/pressarticle_collection')
                          ->addFieldToFilter('status', 1);
-        $pressarticles->setOrder('press_article_title', 'asc');
+        $pressarticles->setOrder('entity_id', 'desc');
         $this->setPressarticles($pressarticles);
     }
 

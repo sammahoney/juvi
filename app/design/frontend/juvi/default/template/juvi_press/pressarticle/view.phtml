@@ -26,11 +26,43 @@
 <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
 
 <div class="gemstone-featured-item">
-    <?php if($_pressarticle->getPressArticleImage()): ?>
-        <div class="stone-img-wrapper">
-            <img src="<?php echo Mage::helper('juvi_press/pressarticle_image')->init($_pressarticle, 'press_article_image')->resize(1000,1400);?>" alt="<?php echo $this->escapeHtml($_pressarticle->getPressArticleOriginDate());?>" />
+    <div class="swiper-container">
+        <?php if ($_pressarticle->getPressArticleImage2()): ?>
+            <a class="arrow-left" href="javascript:void(0);">&lsaquo;</a> 
+            <a class="arrow-right active" href="javascript:void(0);">&rsaquo;</a>
+        <?php endif; ?>
+        <div class="swiper-wrapper">
+            <?php if($_pressarticle->getPressArticleImage()): ?>
+                <div class="swiper-slide">
+                    <div class="slide">
+                        <img src="<?php echo Mage::helper('juvi_press/pressarticle_image')->init($_pressarticle, 'press_article_image')->resize(1000,1400);?>" alt="<?php echo $this->escapeHtml($_pressarticle->getPressArticleOriginDate());?>" />
+                    </div>
+                </div>
+            <?php endif; ?>
+            <?php if($_pressarticle->getPressArticleImage2()): ?>
+                <div class="swiper-slide">
+                    <div class="slide">
+                        <img src="<?php echo Mage::helper('juvi_press/pressarticle_image')->init($_pressarticle, 'press_article_image2')->resize(1000,1400);?>" alt="<?php echo $this->escapeHtml($_pressarticle->getPressArticleOriginDate());?>" />
+                    </div>
+                </div>
+            <?php endif; ?>
+            <?php if($_pressarticle->getPressArticleImage3()): ?>
+                <div class="swiper-slide">
+                    <div class="slide">
+                        <img src="<?php echo Mage::helper('juvi_press/pressarticle_image')->init($_pressarticle, 'press_article_image3')->resize(1000,1400);?>" alt="<?php echo $this->escapeHtml($_pressarticle->getPressArticleOriginDate());?>" />
+                    </div>
+                </div>
+            <?php endif; ?>
+            <?php if($_pressarticle->getPressArticleImage4()): ?>
+                <div class="swiper-slide">
+                    <div class="slide">
+                        <img src="<?php echo Mage::helper('juvi_press/pressarticle_image')->init($_pressarticle, 'press_article_image4')->resize(1000,1400);?>" alt="<?php echo $this->escapeHtml($_pressarticle->getPressArticleOriginDate());?>" />
+                    </div>
+                </div>
+            <?php endif; ?>
         </div>
-    <?php endif; ?>
+    </div>
+
     <div class="stone-info-wrapper">
         <h2 class="name"><?php $featuredname = trim(str_replace('[featured]', '', $_pressarticle->getPressArticleTitle())); echo $featuredname;?></h2>
         <div class="stone-origin"><?php echo $_pressarticle->getPressArticleOriginDate();?></div>
@@ -40,10 +72,31 @@
 </div>
 
 <script type="text/javascript">
-    var $j = jQuery.noConflict();
-    $j(document).ready(function(){
-        var related = jQuery('.related-productlist-wrapper').html();
-        jQuery('.related-productlist-wrapper').remove();
-        jQuery('.stone-info-wrapper').append(related);
+jQuery(document).ready(function(){
+    var related = jQuery('.related-productlist-wrapper').html();
+    jQuery('.related-productlist-wrapper').remove();
+    jQuery('.stone-info-wrapper').append(related);
+});
+<?php if ($_pressarticle->getPressArticleImage2()): ?>
+var mySwiper = new Swiper('.swiper-container',{
+    loop:true,
+    speed: 600,
+    longSwipesRatio: 0.2
+});
+jQuery('.arrow-left').on('click', function(e){
+    e.preventDefault()
+    mySwiper.slidePrev()
+})
+jQuery('.arrow-right').on('click', function(e){
+    e.preventDefault()
+    mySwiper.slideNext()
+});
+<?php endif; ?>
+jQuery(document).ready(function() {
+    jQuery('.enlarge').magnificPopup({
+        type:'image',
+        mainClass: 'mfp-fade',
+        closeOnContentClick: 'true'
     });
+});
 </script>

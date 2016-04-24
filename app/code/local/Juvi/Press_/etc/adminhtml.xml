@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Juvi_Press extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Juvi
+ * @package        Juvi_Press
+ * @copyright      Copyright (c) 2016
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <juvi_press translate="title" module="juvi_press">
+                                        <title>Press</title>
+                                    </juvi_press>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                    <cms>
+                        <children>
+                            <juvi_press translate="title" module="juvi_press">
+                                <title>Press Articles</title>
+                                <children>
+                                    <pressarticle translate="title" module="juvi_press">
+                                        <title>Press Article</title>
+                                        <sort_order>0</sort_order>
+                                    </pressarticle>
+                                </children>
+                            </juvi_press>                        </children>
+                    </cms>
+
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <cms>
+            <children>
+                <juvi_press translate="title" module="juvi_press">
+                    <title>Press Articles</title>
+                    <sort_order>30</sort_order>
+                    <children>
+                        <pressarticle translate="title" module="juvi_press">
+                            <title>Press Article</title>
+                            <action>adminhtml/press_pressarticle</action>
+                            <sort_order>0</sort_order>
+                        </pressarticle>
+                    </children>
+                </juvi_press>            </children>
+        </cms>
+
+    </menu>
+</config>

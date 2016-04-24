@@ -33,7 +33,7 @@
             <a href="<?php echo $_pressarticle->getPressArticleUrl()?>">
                 <?php if($_pressarticle->getPressArticleImage()): ?>
                     <div class="stone-img-wrapper">
-                        <img src="<?php echo Mage::helper('juvi_press/pressarticle_image')->init($_pressarticle, 'press_article_image')->resize(222,310);?>" alt="<?php echo $this->escapeHtml($_pressarticle->getPressArticleOriginDate());?>" />
+                        <img src="<?php echo Mage::helper('juvi_press/pressarticle_image')->init($_pressarticle, 'press_article_image')->resize(330,460);?>" alt="<?php echo $this->escapeHtml($_pressarticle->getPressArticleOriginDate());?>" />
                     </div>
                 <?php endif; ?>
                 <div class="stone-info-wrapper">

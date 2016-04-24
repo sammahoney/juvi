@@ -33,7 +33,7 @@ class Juvi_Press_Block_Pressarticle_Catalog_Product_List extends Mage_Core_Block
     public function getProductCollection()
     {
         $collection = $this->getPressarticle()->getSelectedProductsCollection();
-        $collection->addAttributeToSelect('*');
+        $collection->addAttributeToSelect('name');
         $collection->addUrlRewrite();
         $collection->getSelect()->order('related.position');
         Mage::getSingleton('catalog/product_status')->addVisibleFilterToCollection($collection);
