@@ -1374,11 +1374,11 @@ h2.table-caption {
     font-size: 750%;
     font-weight: 100;
     opacity: 1;
-    background: rgba(94, 94, 94, 0.91);
+    background: rgba(39, 19, 12, 0.75);
     padding: 0 15px 15px 10px;
     color: #FFF; }
     .juvi-press-pressarticle-view .gemstone-featured-item a.arrow-left:hover, .juvi-press-pressarticle-view .gemstone-featured-item a.arrow-right:hover {
-      background: #5e5e5e; }
+      background: rgba(39, 19, 12, 0.9); }
   .juvi-press-pressarticle-view .gemstone-featured-item a.arrow-right {
     left: auto;
     right: 0;
