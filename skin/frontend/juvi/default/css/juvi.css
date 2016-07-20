@@ -1180,6 +1180,32 @@ img.mfp-img {
       padding: 4px 6px 0 0;
       color: #666; }
 
+#social_block {
+  text-align: center; }
+
+#social_block a {
+  display: inline-block;
+  margin-right: 2%;
+  width: 22.4%; }
+
+#social_block a:last-child {
+  margin-right: 0; }
+
+#social_block a img {
+  width: 100%; }
+
+#social_block h4 {
+  text-align: center;
+  font-size: 170%;
+  border-top: 1px solid #CCC;
+  padding-top: 16px; }
+
+#social_block h5 {
+  text-align: center;
+  font-size: 130%;
+  font-style: italic;
+  padding-bottom: 10px; }
+
 .cart-table thead th, .cart-table tbody td {
   font-family: "EngraversGothicBT", sans-serif; }
 .cart-table .button2 span, .cart-table .button2 span span {

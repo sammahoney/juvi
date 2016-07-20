@@ -66,6 +66,9 @@
 			</block>
         </reference>
 		<reference name="before_body_end">
+			<block type="cms/block" name="social_footer">
+				<action method="setBlockId"><block_id>social_footer_block</block_id></action>
+			</block>
 			<block type="cms/block" name="fixed_footer">
 				<action method="setBlockId"><block_id>fixed_footer</block_id></action>
 			</block>
