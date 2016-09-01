@@ -528,7 +528,8 @@ p.welcome-msg {
         text-transform: uppercase; }
       .nav-primary li.level0 ul.level0 li.level1.parent {
         padding-bottom: 15px;
-        display: block; }
+        display: block;
+        height: 164px; }
         .nav-primary li.level0 ul.level0 li.level1.parent > a:after {
           display: none; }
     .nav-primary li.level0 ul.level1 {
