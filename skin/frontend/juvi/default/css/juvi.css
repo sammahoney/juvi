@@ -559,6 +559,23 @@ p.welcome-msg {
 
 .sidr ul li a {
   font-family: "EngraversGothicBT", sans-serif; }
+  .sidr ul li a img {
+    display: none !important; }
+
+ul.collections.level0 {
+  padding: 20px 3% 20px 3% !important;
+  text-align: center;
+  column-count: 1 !important;
+  -webkit-column-count: 1 !important;
+  -moz-column-count: 1 !important;
+  -o-column-count: 1 !important; }
+  ul.collections.level0 li.collections.level2 {
+    display: inline-block;
+    width: 14%; }
+    ul.collections.level0 li.collections.level2 a {
+      font-family: "EngraversGothicBT", sans-serif; }
+      ul.collections.level0 li.collections.level2 a img {
+        width: 100%; }
 
 .cms-index-index .std {
   display: none; }

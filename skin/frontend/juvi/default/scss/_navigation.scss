@@ -146,5 +146,24 @@
 // Mobile 
 .sidr ul li a {
 	font-family: $mainfont;
+	img {
+		display: none !important;
+	}
+}
+// Collections
+ul.collections.level0 {
+    padding: 20px 3% 20px 3% !important;
+    text-align: center;
+    @include css3-prefix(column-count, 1 !important);
+    li.collections.level2 {
+		display: inline-block;
+		width: 14%;
+		a {
+			font-family: $titlefont;
+			img {
+				width: 100%;
+			}
+		}
+	}
 }
 

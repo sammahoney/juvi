@@ -1,12 +1,12 @@
 // General js
 jQuery(document).ready(function(){
 	// Animate menu dropdown
-	jQuery('li.nav-1.level0.parent, .menu-promo').hover(
+	jQuery('li.nav-2.level0.parent, .menu-promo').hover(
 		function() {
-			jQuery('li.nav-1.level0.parent').addClass("menu-active");
+			jQuery('li.nav-2.level0.parent').addClass("menu-active");
 			jQuery('#nav').addClass("show-promo");
 		}, function() {
-			jQuery('li.nav-1.level0.parent').removeClass("menu-active");
+			jQuery('li.nav-2.level0.parent').removeClass("menu-active");
 			jQuery('#nav').removeClass("show-promo");
 		}
 	);
