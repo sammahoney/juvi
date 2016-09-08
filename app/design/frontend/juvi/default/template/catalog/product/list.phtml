@@ -72,8 +72,11 @@ if($product == ''){
                 </a>
                 <div class="product-info">
                     <h2 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></h2>
+                    <?php if(trim($this->getImageLabel($_product, 'small_image')) != trim($_product->getName())): ?>
+                        <div class="gem-shown"><?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?></div>
+                    <?php endif; ?>
                     <?php if($_product->getData('more_gemstones_label') == 1): ?>
-                        <a href="<?php echo $_product->getProductUrl() ?>" class="gemstones-label"><?php echo $this->__('More Gemstones &rsaquo;') ?></a>
+                        <a href="<?php echo $_product->getProductUrl() ?>" class="gemstones-label"><?php echo $this->__('More Options &rsaquo;') ?></a>
                     <?php endif; ?>
                     <?php
                     // Provides extra blocks on which to hang some features for products in the list

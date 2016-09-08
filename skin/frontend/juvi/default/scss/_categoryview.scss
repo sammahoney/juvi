@@ -26,6 +26,10 @@
 			color: lighten( $textcolor, 50% );
 		}
 	}
+	.gem-shown {
+		font-size: 12px;
+		color: #b88776;
+	}
 	.gemstones-label {
 		font-size: 80%;
 		font-family: $mainfont;

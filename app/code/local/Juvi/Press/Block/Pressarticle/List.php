@@ -54,7 +54,7 @@ class Juvi_Press_Block_Pressarticle_List extends Mage_Core_Block_Template
         )
         ->setCollection($this->getPressarticles());
         $this->setChild('pager', $pager);
-        $this->getPressarticles()->load();
+        $this->getPressarticles()->setPageSize(99)->load();
         return $this;
     }
 
