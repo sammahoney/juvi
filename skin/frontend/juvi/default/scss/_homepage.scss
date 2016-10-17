@@ -70,4 +70,14 @@
 			}
 		}
 	}
+	.productscroller {
+		overflow: hidden;
+		text-align: center;
+	}
+	.product-pagination.swiper-pagination-clickable {
+		display: inline-block;
+		.swiper-pagination-bullet {
+			margin: 4px;
+		}
+	}
 }

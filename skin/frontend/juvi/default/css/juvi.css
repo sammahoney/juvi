@@ -628,6 +628,13 @@ ul.collections.level0 {
         display: block;
         font-size: 90%;
         margin-top: -5px; }
+.cms-index-index .productscroller {
+  overflow: hidden;
+  text-align: center; }
+.cms-index-index .product-pagination.swiper-pagination-clickable {
+  display: inline-block; }
+  .cms-index-index .product-pagination.swiper-pagination-clickable .swiper-pagination-bullet {
+    margin: 4px; }
 
 .block-layered-nav {
   color: #111; }

@@ -77,7 +77,18 @@
 
 	<!-- Homepage -->
 	<cms_index_index>
+		<!--reference name="head">
+			<action method="addItem">
+				<type>skin_js</type>
+				<name>js/swiper.jquery.min.js</name>
+			</action>
+			<action method="addItem">
+				<type>skin_css</type>
+				<name>css/swiper.min.css</name>
+			</action>
+		</reference-->
 		<reference name="content">
+			<!--block type="catalog/product_send" name="carousel" as="carousel" template="home/carousel.phtml"/-->
 			<block type="homepage/homepage" name="homepage" as="homepage" template="home/homepage.phtml"/>
 		</reference>
 	</cms_index_index>
