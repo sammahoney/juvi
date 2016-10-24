@@ -47,6 +47,7 @@ if($product == ''){
         }
     }
 }
+$fullActionName = Mage::app()->getFrontController()->getAction()->getFullActionName();
 ?>
 <?php
     $_productCollection=$this->getLoadedProductCollection();
@@ -64,8 +65,10 @@ if($product == ''){
             <?php /*if ($i++%$_columnCount==0): ?>
             <?php endif*/ ?>
             <?php // Get rollover img
-                if($_product->getMediaGalleryImages()->getItemByColumnValue('position_default', '2')){
-                    $rollover = $_product->getMediaGalleryImages()->getItemByColumnValue('position_default', '2')->getFile();
+                if($fullActionName != 'catalogsearch_result_index'){
+                    if($_product->getMediaGalleryImages()->getItemByColumnValue('position_default', '2')){
+                        $rollover = $_product->getMediaGalleryImages()->getItemByColumnValue('position_default', '2')->getFile();
+                    }
                 }
             ?>
             <li class="item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?>">
