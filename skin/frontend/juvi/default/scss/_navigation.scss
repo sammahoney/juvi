@@ -64,6 +64,7 @@
 		a {
 			color: $textcolor;
 			position: relative;
+			z-index: 11;
 			&.level0 {
 				font-family: $titlefont;
 				font-size: 90%;
