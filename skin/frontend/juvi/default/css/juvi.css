@@ -590,11 +590,15 @@ ul.collections.level0 {
 .cms-index-index .main-container {
   padding: 0;
   margin-top: -7px; }
+  @media only screen and (max-width: 480px) {
+    .cms-index-index .main-container {
+      margin-top: 4px; } }
   .cms-index-index .main-container .promo-wrapper {
     width: 100vw;
     position: relative;
     left: 50%;
-    margin-left: -50vw; }
+    margin-left: -50vw;
+    padding: 0 5px; }
 .cms-index-index .std {
   display: none; }
 .cms-index-index .page-title {
@@ -603,6 +607,9 @@ ul.collections.level0 {
   float: left; }
   .cms-index-index .promo-box.box-a {
     width: 50%; }
+    @media only screen and (min-width: 770px) {
+      .cms-index-index .promo-box.box-a {
+        margin-bottom: -2px; } }
   .cms-index-index .promo-box.box-b {
     width: 25%; }
   .cms-index-index .promo-box.box-c {
@@ -654,15 +661,19 @@ ul.collections.level0 {
   .cms-index-index #social_block {
     text-align: center;
     max-width: none;
-    width: 105vw;
-    margin-left: -2.7vw;
-    padding-bottom: 25px; }
+    width: 100vw;
+    margin-left: 0;
+    padding: 0 5px 25px; }
     .cms-index-index #social_block h4 {
       border: 0; }
     .cms-index-index #social_block a {
       display: inline-block;
-      margin-right: 6px;
-      width: 23.4%; } }
+      margin-right: 0;
+      float: left;
+      width: 25%; }
+      .cms-index-index #social_block a img {
+        outline: 5px solid white;
+        outline-offset: -5px; } }
 
 .block-layered-nav {
   color: #111; }
@@ -1943,7 +1954,6 @@ h2.related-gem {
     font-size: 13px; }
 
   .cms-index-index .promo-box.box-a, .cms-index-index .promo-box.box-b, .cms-index-index .promo-box.box-c, .cms-index-index .promo-box.box-d, .cms-index-index .promo-box.box-e, .cms-index-index .promo-box.box-f, .cms-index-index .promo-box.box-g {
-    margin: 0 0 2%;
     width: 100%;
     float: none;
     display: block; }
