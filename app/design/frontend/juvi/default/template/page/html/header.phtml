@@ -28,17 +28,6 @@
  */
 ?>
 
-<?php if(false): ?>
-<div class="header-language-background">
-    <div class="header-language-container">
-        <div class="store-language-container">
-            <?php echo $this->getChildHtml('store_language') ?>
-        </div>
-        <?php echo $this->getChildHtml('currency_switcher') ?>
-    </div>
-</div>
-<?php endif; ?>
-
 <header id="header" class="page-header">
     <div class="page-header-container">
         <a class="logo" href="<?php echo $this->getUrl('') ?>">
@@ -66,6 +55,10 @@
             </a>
 
             <div class="account-cart-wrapper">
+
+                <div class="currency">
+                    <?php echo $this->getChildHtml('currency_switcher') ?>
+                </div>
 
                 <a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" data-target-element="#header-account" class="skip-link skip-account">
                     <span class="icon"></span>

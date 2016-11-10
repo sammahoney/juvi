@@ -1,0 +1,24 @@
+<?php
+/**
+ * @author      Sam Mahoney for Meab
+ * @copyright   Copyright (C) 2016 - Meab
+ */
+?>
+
+<div class="currency-selector">
+    <strong>Currency</strong>
+    <?php foreach ($this->getCurrencies() as $_code => $_name): ?>
+        <?php if($_code == $this->getCurrentCurrencyCode()): ?>
+        <span class="current-currency <?php echo strtolower($_code) ?>"><?php echo Mage::app()->getLocale()->currency($_code)->getSymbol(); ?></span>
+        <?php endif; ?>
+    <?php endforeach; ?>
+    <ul class="currency-list">
+    <?php foreach ($this->getCurrencies() as $_code => $_name): ?>
+        <?php if($_code != $this->getCurrentCurrencyCode()): ?>
+        <li>
+            <a href="<?php echo $this->getSwitchCurrencyUrl($_code) ?>" class="<?php echo strtolower($_code) ?>"><?php echo Mage::app()->getLocale()->currency($_code)->getSymbol(); ?></a>
+        </li>
+        <?php endif; ?>
+    <?php endforeach; ?>
+    </ul>
+</div>

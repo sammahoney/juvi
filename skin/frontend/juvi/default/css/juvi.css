@@ -419,7 +419,7 @@ p.welcome-msg {
   padding: 0 17px 0 10px; }
 
 .account-cart-wrapper {
-  width: 200px;
+  width: 365px;
   right: 154px;
   top: -14px; }
   .account-cart-wrapper > a {
@@ -435,6 +435,55 @@ p.welcome-msg {
   display: inline-block !important;
   color: #111;
   font-family: "EngraversGothicBT", sans-serif; }
+
+.currency {
+  display: inline-block;
+  width: 140px;
+  position: relative;
+  z-index: 9;
+  top: -10px;
+  font-size: 80%; }
+  .currency strong {
+    font-weight: 200; }
+
+.currency-selector {
+  font-size: 100%;
+  font-family: "EngraversGothicBT", sans-serif;
+  text-transform: uppercase;
+  width: 170px;
+  float: left;
+  color: #919191; }
+  @media only screen and (min-width: 770px) and (max-width: 979px) {
+    .currency-selector {
+      width: 29%; } }
+  .currency-selector strong {
+    display: block;
+    float: left; }
+  .currency-selector span.current-currency {
+    display: block;
+    color: #FFF;
+    float: left;
+    border: 1px solid #FFF;
+    margin: -2px -1px 0 12px;
+    padding: 0 10px 1px;
+    font-size: 115%;
+    background: #999; }
+  .currency-selector ul {
+    margin-top: -2px; }
+    .currency-selector ul li {
+      display: inline-block;
+      border: 1px solid #ddd;
+      margin: 0 -6px 0 0;
+      padding: 0px 8px 1px;
+      font-size: 115%;
+      border-left: 0;
+      border-top-color: #FFF;
+      border-bottom-color: #FFF; }
+      .currency-selector ul li a:first-child {
+        text-align: right;
+        color: #919191;
+        font-weight: 100;
+        text-transform: uppercase; }
 
 #header-nav {
   border-bottom: 2px solid #26130B; }
