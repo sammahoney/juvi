@@ -445,6 +445,16 @@ p.welcome-msg {
   font-size: 80%; }
   .currency strong {
     font-weight: 200; }
+  @media only screen and (max-width: 769px) {
+    .currency {
+      display: inline-block;
+      width: 140px;
+      position: absolute;
+      z-index: 13;
+      top: 24px;
+      font-size: 80%;
+      height: 33px;
+      right: 10px; } }
 
 .currency-selector {
   font-size: 100%;
@@ -453,9 +463,6 @@ p.welcome-msg {
   width: 170px;
   float: left;
   color: #919191; }
-  @media only screen and (min-width: 770px) and (max-width: 979px) {
-    .currency-selector {
-      width: 29%; } }
   .currency-selector strong {
     display: block;
     float: left; }
@@ -484,6 +491,9 @@ p.welcome-msg {
         color: #919191;
         font-weight: 100;
         text-transform: uppercase; }
+      @media only screen and (max-width: 769px) {
+        .currency-selector ul li:last-child {
+          border-right: 0; } }
 
 #header-nav {
   border-bottom: 2px solid #26130B; }

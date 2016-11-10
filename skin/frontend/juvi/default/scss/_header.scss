@@ -248,6 +248,16 @@ p.welcome-msg {
 	strong {
 		font-weight: 200;
 	}
+	@media only screen and (max-width: 769px) {
+		display: inline-block;
+		width: 140px;
+		position: absolute;
+		z-index: 13;
+		top: 24px;
+		font-size: 80%;
+		height: 33px;
+		right: 10px;
+	}
 
 }
 .currency-selector {
@@ -256,7 +266,7 @@ p.welcome-msg {
 	text-transform: uppercase;
 	width: 170px;
 	@media only screen and (min-width: 770px) and (max-width: 979px) {
-		width: 29%;
+		
 	}
 	float: left;
 	color: #919191;
@@ -290,6 +300,11 @@ p.welcome-msg {
 				color: lighten($textcolor, 50%);
 				font-weight: $lightweight;
 				text-transform: uppercase;
+			}
+			&:last-child {
+				@media only screen and (max-width: 769px) {
+					border-right: 0;
+				}
 			}
 		}
 	}
