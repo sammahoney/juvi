@@ -104,4 +104,77 @@
 	background: #FAFAFA;
 }
 
-
+// New About
+#new-about {
+	.clear {
+		padding: 10px 0;
+	}
+	.banner {
+		img {
+			width: 100%;
+		}
+	}
+	h1 {
+		color: #987F6E;
+		font-size: 42px;
+		letter-spacing: 2px;
+		margin-top: 20px;
+	}
+	.desc p {
+		font-size: 20px !important;
+		line-height: 26px !important;
+		color: #000 !important;
+		padding-bottom: 40px !important;
+		@media only screen and (max-width: 1200px) {
+			font-size: 16px !important;
+			line-height: 22px !important;
+			padding-bottom: 30px !important;
+		}
+		@media only screen and (max-width: 1000px) {
+			font-size: 13px !important;
+			line-height: 18px !important;
+			padding-bottom: 10px !important;
+		}
+	}
+	.grid4 img {
+		width: 25%;
+		display: inline-block;
+		float: left;
+		height: 25%;
+		box-sizing: border-box;
+		padding: 0.5%;
+	}
+	.twothirds {
+		float: left;
+		width: 66%;
+		@media only screen and (max-width: 650px) {
+			width: 100%;
+		}
+		&.desc {
+			padding: 8% 20px 20px 0;
+		}
+	}
+	.onethird {
+		float: right;
+		width: 33%;
+		@media only screen and (max-width: 650px) {
+			width: 100%;
+		}
+		img {
+			padding-right: 1.6%;
+			@media only screen and (max-width: 650px) {
+				width: 100%;
+				padding-right: 0;
+			}
+		}
+	}
+	.id2 .desc p {
+		padding: 26px;
+		&:first-child {
+			padding-bottom: 10px !important;
+		}
+		&:last-child {
+			padding-top: 0 !important;
+		}
+	}
+}

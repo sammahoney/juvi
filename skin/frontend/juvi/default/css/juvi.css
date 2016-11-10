@@ -121,6 +121,7 @@ p {
 
 .button:hover, .button:active {
   background: #9d4e2d; }
+
 .button:focus {
   background: #d1815f; }
 
@@ -264,12 +265,14 @@ p.welcome-msg {
   border-bottom: 1px solid #000;
   border-radius: 0;
   font-size: 11px !important; }
+
 #search_mini_form .search-button:before {
   content: "\f002";
   font-family: "FontAwesome";
   background: none;
   text-indent: 0 !important;
   color: #111; }
+
 #search_mini_form .search-autocomplete ul {
   border: 1px solid #26130B; }
   #search_mini_form .search-autocomplete ul li {
@@ -277,6 +280,7 @@ p.welcome-msg {
     font-family: "EngraversGothicBT", sans-serif; }
     #search_mini_form .search-autocomplete ul li.selected {
       background-color: white; }
+
 #search_mini_form .search-autocomplete:before {
   border-bottom-color: #26130B; }
 
@@ -289,6 +293,7 @@ p.welcome-msg {
   -webkit-transition: opacity 0.1s ease-in;
   -moz-transition: opacity 0.1s ease-in;
   -o-transition: opacity 0.1s ease-in; }
+
 #header-cart.skip-active {
   border: 0;
   opacity: 1;
@@ -300,6 +305,7 @@ p.welcome-msg {
 
 .header-minicart .minicart-message {
   text-transform: uppercase; }
+
 .header-minicart .block-subtitle {
   font-family: "EngraversGothicBT", sans-serif;
   color: #111;
@@ -309,16 +315,20 @@ p.welcome-msg {
     font-family: "Alegreya Sans SC", "EngraversGothicBT", sans-serif;
     top: -5px;
     right: -5px; }
+
 .header-minicart .mini-products-list .product-image {
   min-width: 55px; }
+
 .header-minicart .product-image img {
   max-height: 900px !important;
   border: 1px solid #DDD;
   width: 90%;
   height: auto; }
+
 .header-minicart .product-details > a {
   font-family: "EngraversGothicBT", sans-serif;
   font-size: 80%; }
+
 .header-minicart .product-details .product-name {
   margin-bottom: 0;
   padding-bottom: 10px; }
@@ -326,6 +336,7 @@ p.welcome-msg {
     font-family: "EngraversGothicBT", sans-serif;
     color: #111;
     font-weight: 300; }
+
 .header-minicart .info-wrapper {
   margin-bottom: 0; }
   .header-minicart .info-wrapper th, .header-minicart .info-wrapper td {
@@ -349,6 +360,7 @@ p.welcome-msg {
     border-radius: 2px; }
     .header-minicart .info-wrapper .quantity-button:hover {
       background: #753b22; }
+
 .header-minicart .subtotal {
   background: transparent;
   border: 1px solid #f3dfd6;
@@ -359,11 +371,13 @@ p.welcome-msg {
   .header-minicart .subtotal .label, .header-minicart .subtotal .price {
     color: #111;
     font-size: 100%; }
+
 .header-minicart .minicart-actions .checkout-button {
   background: #753b22;
   color: #FFF; }
   .header-minicart .minicart-actions .checkout-button:hover {
     background: #26130B; }
+
 .header-minicart .minicart-actions .cart-link {
   line-height: 20px;
   font-size: 100%; }
@@ -379,6 +393,7 @@ p.welcome-msg {
   text-transform: uppercase; }
   #header-account a:hover {
     color: #919191; }
+
 #header-account.skip-content {
   opacity: 0;
   display: block;
@@ -388,6 +403,7 @@ p.welcome-msg {
   -webkit-transition: opacity 0.1s ease-in;
   -moz-transition: opacity 0.1s ease-in;
   -o-transition: opacity 0.1s ease-in; }
+
 #header-account.skip-active {
   opacity: 1;
   top: 30px;
@@ -553,8 +569,10 @@ p.welcome-msg {
 .breadcrumbs li, .breadcrumbs a {
   font-family: "EngraversGothicBT", sans-serif;
   text-transform: lowercase; }
+
 .breadcrumbs a:hover {
   color: #919191; }
+
 .breadcrumbs strong {
   color: #111; }
 
@@ -587,6 +605,7 @@ ul.collections.level0 {
   position: absolute;
   top: 0;
   z-index: -1; }
+
 .cms-index-index .main-container {
   padding: 0;
   margin-top: -7px; }
@@ -599,10 +618,13 @@ ul.collections.level0 {
     left: 50%;
     margin-left: -50vw;
     padding: 0 5px; }
+
 .cms-index-index .std {
   display: none; }
+
 .cms-index-index .page-title {
   display: none; }
+
 .cms-index-index .promo-box {
   float: left; }
   .cms-index-index .promo-box.box-a {
@@ -650,13 +672,16 @@ ul.collections.level0 {
         display: block;
         font-size: 90%;
         margin-top: -5px; }
+
 .cms-index-index .productscroller {
   overflow: hidden;
   text-align: center; }
+
 .cms-index-index .product-pagination.swiper-pagination-clickable {
   display: inline-block; }
   .cms-index-index .product-pagination.swiper-pagination-clickable .swiper-pagination-bullet {
     margin: 4px; }
+
 @media only screen and (min-width: 770px) {
   .cms-index-index #social_block {
     text-align: center;
@@ -816,9 +841,11 @@ ul.collections.level0 {
     text-transform: capitalize; }
   .products-grid .product-name a:hover {
     color: #919191; }
+
 .products-grid .gem-shown {
   font-size: 12px;
   color: #b88776; }
+
 .products-grid .gemstones-label {
   font-size: 80%;
   font-family: "EngraversGothicBT", sans-serif;
@@ -826,6 +853,7 @@ ul.collections.level0 {
   color: #919191;
   letter-spacing: 1px;
   text-transform: capitalize; }
+
 .products-grid .product-image {
   overflow: hidden;
   border: 0; }
@@ -836,15 +864,19 @@ ul.collections.level0 {
     -o-transition: all 0.2s ease-in; }
   .products-grid .product-image:hover img {
     opacity: 0.8; }
+
 .products-grid .product-info {
   padding: 0; }
+
 .products-grid .price-box .price {
   font-family: "EngraversGothicBT", sans-serif;
   font-size: 90%;
   letter-spacing: 1px;
   font-weight: 400; }
+
 .products-grid .price-box .minimal-price-link {
   display: none; }
+
 .products-grid ul.configurable-swatch-list {
   display: none !important; }
 
@@ -894,6 +926,7 @@ ul.collections.level0 {
     font-size: 155%;
     letter-spacing: 1px;
     color: #111; }
+
 .product-view .product-shop .price-info {
   width: 100%;
   max-width: 100%;
@@ -904,18 +937,22 @@ ul.collections.level0 {
     font-family: "EngraversGothicBT", sans-serif;
     font-size: 155%;
     letter-spacing: 1px; }
+
 .product-view .product-shop .short-description {
   font-size: 80%;
   font-family: "EngraversGothicBT", sans-serif;
   letter-spacing: 1px;
   line-height: 200%; }
+
 .product-view .product-shop .availability {
   font-size: 12px;
   padding: 0; }
   .product-view .product-shop .availability.in-stock {
     color: transparent; }
+
 .product-view .product-img-box .product-image img {
   max-height: 900px !important; }
+
 .product-view .product-img-box .product-image-thumbs li a {
   margin-right: 6px;
   overflow: hidden;
@@ -931,8 +968,10 @@ ul.collections.level0 {
       -webkit-transition: all 0.2s ease-in;
       -moz-transition: all 0.2s ease-in;
       -o-transition: all 0.2s ease-in; }
+
 .product-view .qty-wrapper {
   display: none; }
+
 .product-view .add-to-cart-buttons .button {
   background: #26130B;
   border: 0; }
@@ -945,6 +984,7 @@ ul.collections.level0 {
     font-size: 90%; }
   .product-view .add-to-cart-buttons .button.btn-cart:disabled {
     cursor: progress; }
+
 .product-view .box-collateral h2 {
   font-family: "EngraversGothicBT", sans-serif;
   font-weight: 300;
@@ -961,11 +1001,13 @@ ul.collections.level0 {
 .product-view .accordion-info .box-collateral h2 {
   cursor: pointer;
   border-top: 1px solid #CCC; }
+
 .product-view .accordion-info .box-collateral p {
   font-family: 'Roboto', sans-serif;
   font-size: 90%;
   letter-spacing: 0;
   line-height: 150%; }
+
 .product-view .accordion-info .box-collateral .fa {
   padding-left: 18px;
   display: inline; }
@@ -997,6 +1039,7 @@ a.arrow-right {
 
 .product-image img {
   max-height: 900px !important; }
+
 .product-image:hover a.arrow-left, .product-image:hover a.arrow-right {
   opacity: 1; }
 
@@ -1127,6 +1170,7 @@ img.mfp-img {
   margin-bottom: 15px; }
   #configurable_swatch_stone_type.configurable-swatch-list li a {
     border: 0; }
+
 #configurable_swatch_stone_type.configurable-swatch-list .swatch-label {
   padding: 20px 6px 0;
   font-size: 7px;
@@ -1138,60 +1182,88 @@ img.mfp-img {
   line-height: 12px !important;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px; }
+
 #configurable_swatch_stone_type.configurable-swatch-list .selected span.swatch-label {
   color: brown; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option72 {
   background-position: -17px 0 !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option73 {
   background-position: -17px -54px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option74 {
   background-position: -17px -108px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option81 {
   background-position: -17px -162px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option82 {
   background-position: -17px -215px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option83 {
   background-position: -17px -376px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option84 {
   background-position: -16px -268px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option85 {
   background-position: -16px -322px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option86 {
   background-position: -178px 0 !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option87 {
   background-position: -178px -54px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option88 {
   background-position: -260px -376px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option89 {
   background-position: -178px -108px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option90 {
   background-position: -178px -162px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option93 {
   background-position: -178px -215px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option94 {
   background-position: -179px -269px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option95 {
   background-position: -178px -323px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option98 {
   background-position: -339px -376px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option113 {
   background-position: -178px -376px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option106 {
   background-position: -339px 0 !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option107 {
   background-position: -339px -54px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option109 {
   background-position: -339px -108px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option110 {
   background-position: -339px -162px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option111 {
   background-position: -339px -215px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option112 {
   background-position: -339px -269px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option108 {
   background-position: -339px -323px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option116 {
   background-position: -253px -108px !important; }
+
 #configurable_swatch_stone_type.configurable-swatch-list #option117 {
   background-position: -253px -161px !important; }
 
@@ -1272,12 +1344,14 @@ img.mfp-img {
 
 .cart-table thead th, .cart-table tbody td {
   font-family: "EngraversGothicBT", sans-serif; }
+
 .cart-table .button2 span, .cart-table .button2 span span {
   font-family: "EngraversGothicBT", sans-serif;
   font-size: 90%; }
   .cart-table .button2 span:hover, .cart-table .button2 span span:hover {
     color: #919191;
     text-decoration: underline; }
+
 .cart-table .item-options {
   font-family: "EngraversGothicBT", sans-serif;
   padding-left: 0;
@@ -1287,11 +1361,14 @@ img.mfp-img {
   .cart-table .item-options dt {
     font-style: normal;
     font-weight: 300; }
+
 .cart-table .product-cart-sku {
   display: none; }
+
 .cart-table .product-name a {
   font-family: "EngraversGothicBT", sans-serif;
   font-weight: 300; }
+
 .cart-table .cart-links > li > a {
   font-family: "EngraversGothicBT", sans-serif;
   font-size: 80%;
@@ -1328,6 +1405,7 @@ body.customer-account .my-account .order-details h2 {
 
 .cart-table .product-cart-actions .button:active, #co-shipping-method-form .buttons-set .button:active {
   background: #9d4e2d; }
+
 .cart-table .product-cart-actions .button:focus, #co-shipping-method-form .buttons-set .button:focus {
   background: #d1815f; }
 
@@ -1356,6 +1434,7 @@ p.hello strong {
 .dashboard .box-head h2 {
   font-weight: 500;
   color: #111; }
+
 .dashboard .col2-set .col-1 .box-title h2, .dashboard .col2-set .col-1 .box-title h3, .dashboard .col2-set .col-2 .box-title h2, .dashboard .col2-set .col-2 .box-title h3 {
   font-weight: 500;
   color: #111; }
@@ -1383,9 +1462,11 @@ h2.table-caption {
   letter-spacing: 1px; }
   .block-account li a:hover, .block-cms-menu li a:hover {
     color: #5e5e5e; }
+
 .block-account li strong, .block-account li .block-cms-menu li strong, .block-cms-menu li strong, .block-cms-menu li .block-cms-menu li strong {
   color: #919191;
   font-weight: 300; }
+
 .block-account .block-title, .block-cms-menu .block-title {
   border-bottom: 1px solid #26130B;
   width: 75%;
@@ -1402,12 +1483,14 @@ h2.table-caption {
   font-weight: 500;
   color: #111;
   font-size: 120%; }
+
 #wishlist-table .wishlist-sku, #wishlist-table textarea {
   font-family: "EngraversGothicBT", sans-serif; }
 
 .product-review .ratings-table th, .product-review .ratings-description dt, .product-review .ratings-description dd, .product-review .product-img-box p.label {
   font-family: "EngraversGothicBT", sans-serif;
   color: #111; }
+
 .product-review .product-img-box {
   float: none;
   width: 100%; }
@@ -1422,6 +1505,7 @@ h2.table-caption {
   .gemstone-featured-item .stone-img-wrapper img {
     min-width: 100%;
     min-height: 100%; }
+
 .gemstone-featured-item .stone-info-wrapper {
   width: 38%;
   float: right;
@@ -1530,6 +1614,7 @@ h2.related-gem {
   color: #000;
   font-weight: 100;
   font-size: 120%; }
+
 .cms-faq p {
   font-size: 13px; }
 
@@ -1541,50 +1626,70 @@ h2.related-gem {
   font-style: normal;
   line-height: 18px;
   letter-spacing: 1px; }
+
 .cms-page-view .std a, .cms-no-route .std a {
   text-decoration: underline; }
+
 .cms-page-view .std ul, .cms-no-route .std ul {
   margin-bottom: 0; }
+
 .cms-page-view .std hr, .cms-no-route .std hr {
   border: 0;
   background: #CCC;
   height: 1px;
   display: block;
   margin: 20px 0 25px; }
+
 .cms-page-view .std .left, .cms-no-route .std .left {
   float: left;
   padding-right: 30px; }
+
 .cms-page-view .std .right, .cms-no-route .std .right {
   float: right;
   padding-left: 30px; }
+
 .cms-page-view .std .clear, .cms-no-route .std .clear {
   clear: both; }
+
 .cms-page-view .std .w100, .cms-no-route .std .w100 {
   width: 100%; }
+
 .cms-page-view .std .w90, .cms-no-route .std .w90 {
   width: 90%; }
+
 .cms-page-view .std .w80, .cms-no-route .std .w80 {
   width: 80%; }
+
 .cms-page-view .std .w75, .cms-no-route .std .w75 {
   width: 75%; }
+
 .cms-page-view .std .w70, .cms-no-route .std .w70 {
   width: 70%; }
+
 .cms-page-view .std .w66, .cms-no-route .std .w66 {
   width: 66.66%; }
+
 .cms-page-view .std .w60, .cms-no-route .std .w60 {
   width: 60%; }
+
 .cms-page-view .std .w50, .cms-no-route .std .w50 {
   width: 50%; }
+
 .cms-page-view .std .w40, .cms-no-route .std .w40 {
   width: 40%; }
+
 .cms-page-view .std .w33, .cms-no-route .std .w33 {
   width: 33.33%; }
+
 .cms-page-view .std .w30, .cms-no-route .std .w30 {
   width: 30%; }
+
 .cms-page-view .std .w25, .cms-no-route .std .w25 {
   width: 25%; }
+
 .cms-page-view .std .w20, .cms-no-route .std .w20 {
   width: 20%; }
+
 .cms-page-view .std .w10, .cms-no-route .std .w10 {
   width: 10%; }
 
@@ -1606,6 +1711,71 @@ h2.related-gem {
   padding: 20px;
   background: #FAFAFA; }
 
+#new-about .clear {
+  padding: 10px 0; }
+
+#new-about .banner img {
+  width: 100%; }
+
+#new-about h1 {
+  color: #987F6E;
+  font-size: 42px;
+  letter-spacing: 2px;
+  margin-top: 20px; }
+
+#new-about .desc p {
+  font-size: 20px !important;
+  line-height: 26px !important;
+  color: #000 !important;
+  padding-bottom: 40px !important; }
+  @media only screen and (max-width: 1200px) {
+    #new-about .desc p {
+      font-size: 16px !important;
+      line-height: 22px !important;
+      padding-bottom: 30px !important; } }
+  @media only screen and (max-width: 1000px) {
+    #new-about .desc p {
+      font-size: 13px !important;
+      line-height: 18px !important;
+      padding-bottom: 10px !important; } }
+
+#new-about .grid4 img {
+  width: 25%;
+  display: inline-block;
+  float: left;
+  height: 25%;
+  box-sizing: border-box;
+  padding: 0.5%; }
+
+#new-about .twothirds {
+  float: left;
+  width: 66%; }
+  @media only screen and (max-width: 650px) {
+    #new-about .twothirds {
+      width: 100%; } }
+  #new-about .twothirds.desc {
+    padding: 8% 20px 20px 0; }
+
+#new-about .onethird {
+  float: right;
+  width: 33%; }
+  @media only screen and (max-width: 650px) {
+    #new-about .onethird {
+      width: 100%; } }
+  #new-about .onethird img {
+    padding-right: 1.6%; }
+    @media only screen and (max-width: 650px) {
+      #new-about .onethird img {
+        width: 100%;
+        padding-right: 0; } }
+
+#new-about .id2 .desc p {
+  padding: 26px; }
+  #new-about .id2 .desc p:first-child {
+    padding-bottom: 10px !important; }
+  #new-about .id2 .desc p:last-child {
+    padding-top: 0 !important; }
+
 .contacts-index-index .w70.left {
   width: 70%;
   float: left; }
@@ -1617,19 +1787,23 @@ h2.related-gem {
     font-size: 90%;
     letter-spacing: 0;
     line-height: 150%; }
+
 .contacts-index-index .w50.left {
   width: 50%;
   float: left;
   padding-right: 15px; }
+
 .contacts-index-index .w50.right {
   width: 50%;
   float: right;
   padding-left: 15px; }
+
 .contacts-index-index .w30.right {
   width: 30%;
   float: right; }
   .contacts-index-index .w30.right .page-title {
     padding-left: 40px; }
+
 .contacts-index-index #contactForm .fieldset .legend + .required {
   margin: 0;
   padding: 0; }
@@ -1645,26 +1819,24 @@ h2.related-gem {
   .logo {
     max-width: 180px;
     min-height: 65px; } }
+
 @media only screen and (min-width: 980px) and (max-width: 1199px) {
   .logo {
     max-width: 180px;
     min-height: 65px; }
-
   .menu-promo {
     width: 440px;
     margin-top: 32px; }
-
   .nav-primary li.level0 ul.level0 {
     padding: 20px 48% 20px 3%; } }
+
 @media only screen and (min-width: 771px) and (max-width: 979px) {
   .logo {
     max-width: 140px;
     min-height: 65px; }
-
   #nav {
     margin-left: 170px;
     margin-top: -58px; }
-
   .nav-primary li.level0 ul.level0 {
     padding: 20px;
     top: 35px;
@@ -1673,9 +1845,9 @@ h2.related-gem {
     font-size: 80%;
     letter-spacing: 0;
     padding: 0 10px 5px; }
-
   .menu-promo {
     display: none; } }
+
 @media only screen and (min-width: 480px) and (max-width: 770px) {
   .cms-index-index .promo-box {
     float: left; }
@@ -1693,14 +1865,11 @@ h2.related-gem {
       width: 50%; }
     .cms-index-index .promo-box.box-g {
       width: 100%; }
-
   .product-view .product-img-box .product-image img {
     max-height: 450px !important;
     margin: 0 1px; }
-
   .footer .block-subscribe .actions .button {
     width: 100%; }
-
   .footer .links {
     font-size: 70%;
     margin-right: 0;
@@ -1716,7 +1885,6 @@ h2.related-gem {
     .footer .links:nth-child(odd) {
       clear: none;
       margin-right: 0; }
-
   .product-view .product-img-box, .product-view .product-shop, .product-view .add-to-cart-wrapper {
     width: 100%; }
   .product-view .product-img-box a.arrow-left, .product-view .product-img-box a.arrow-right {
@@ -1732,36 +1900,31 @@ h2.related-gem {
   .product-view ul.product-image-thumbs {
     float: left;
     width: 40%; } }
+
 @media only screen and (max-width: 770px) {
   .logo {
     max-width: 140px;
     margin-left: 20px;
     min-height: 65px; }
-
   #header-nav, .block-layered-nav .m-filter-group, p.welcome-msg {
     display: none !important; }
-
   .logo {
     width: 50%;
     min-height: 60px; }
     .logo img {
       padding: 0 4%;
       width: 200px; }
-
   #header-account.skip-active {
     position: relative;
     top: 0;
     right: 0;
     background: whitesmoke; }
-
   #header-cart.skip-content.skip-active {
     position: relative;
     top: 44px;
     background: #FFF; }
-
   .mini-products-list .product-details .product-name {
     padding-top: 0; }
-
   .header-minicart .minicart-wrapper {
     clear: none;
     padding-bottom: 20px;
@@ -1775,13 +1938,11 @@ h2.related-gem {
     .header-minicart .minicart-wrapper .cart-link {
       position: static;
       color: #111 !important; }
-
   .skip-links {
     border: 0;
     background: #3a1d11; }
     .skip-links a:focus, .skip-links a:visited {
       color: #FFF; }
-
   .skip-link, .skip-nav {
     line-height: 44px;
     width: 25%;
@@ -1789,7 +1950,6 @@ h2.related-gem {
     background: transparent;
     color: #FFF;
     padding: 0; }
-
   .skip-account .icon:after {
     font-family: "FontAwesome";
     content: "\f007";
@@ -1798,7 +1958,6 @@ h2.related-gem {
     position: absolute;
     font-size: 24px;
     margin: -9px 0 0 -6px; }
-
   .skip-cart .icon:after {
     font-family: "FontAwesome";
     content: "\f07a";
@@ -1807,7 +1966,6 @@ h2.related-gem {
     position: absolute;
     font-size: 24px;
     margin: -9px 0 0 -9px; }
-
   .account-cart-wrapper {
     width: auto; }
     .account-cart-wrapper .icon {
@@ -1817,13 +1975,10 @@ h2.related-gem {
       background: none; }
     .account-cart-wrapper .icon::before, .account-cart-wrapper .count, .account-cart-wrapper .label {
       color: #FFF !important; }
-
   #header-search {
     width: 100%; }
-
   #search_mini_form input#search {
     margin-top: 0; }
-
   .skip-search .icon {
     background: none !important; }
     .skip-search .icon:after {
@@ -1834,7 +1989,6 @@ h2.related-gem {
       position: absolute;
       font-size: 20px;
       margin: -9px 0 0 -6px; }
-
   .skip-nav .icon {
     background: none !important; }
     .skip-nav .icon:after {
@@ -1845,37 +1999,29 @@ h2.related-gem {
       position: absolute;
       font-size: 20px;
       margin: -7px 0 0 -6px; }
-
   .skip-link.skip-active {
     background: #894428;
     color: #FFF; }
-
   .skip-cart .count {
     font-size: 12px;
     top: 0;
     background: transparent; }
-
   .sidr, .skip-nav .label, .skip-link .label {
     font-family: "EngraversGothicBT", sans-serif;
     font-size: 12px !important;
     text-transform: uppercase;
     letter-spacing: 1px; }
-
   ul.sidr-class-level1 > li > a {
     padding-left: 40px !important; }
-
   li.sidr-class-level1.sidr-class-parent > a:after {
     content: "\f107";
     font-family: "FontAwesome";
     float: right; }
-
   li.sidr-class-level1.sidr-class-parent > a.active:after {
     content: "\f106"; }
-
   .sidr-class-menu-promo img {
     margin: -16px 0 -15px;
     width: 100%; }
-
   .block-layered-nav .block-content > dl > .filter-title {
     width: 100%; }
   .block-layered-nav .block-content > dl > dt:after {
@@ -1886,33 +2032,25 @@ h2.related-gem {
     left: auto;
     right: 10px;
     border-top: 4px solid #26130B; }
-
   .block-layered-nav .block-subtitle--filter {
     font-family: "EngraversGothicBT", sans-serif; }
-
   .col-left.sidebar.col-left-first {
     margin-bottom: 25px; }
-
   .reviewform-wrapper #product-review-table {
     width: 100%; }
-
   .cms-page-view .std .w90, .cms-page-view .std .w80, .cms-page-view .std .w75, .cms-page-view .std .w70, .cms-page-view .std .w60, .cms-page-view .std .w50, .cms-page-view .std .w40, .cms-page-view .std .w30, .cms-page-view .std .w25, .cms-page-view .std .w20, .cms-page-view .std .w10, .cms-no-route .std .w90, .cms-no-route .std .w80, .cms-no-route .std .w75, .cms-no-route .std .w70, .cms-no-route .std .w60, .cms-no-route .std .w50, .cms-no-route .std .w40, .cms-no-route .std .w30, .cms-no-route .std .w25, .cms-no-route .std .w20, .cms-no-route .std .w10 {
     width: 100%; }
   .cms-page-view .std .left, .cms-page-view .std .right, .cms-no-route .std .left, .cms-no-route .std .right {
     clear: both;
     padding: 0; }
-
   .gemstone-featured-item .stone-img-wrapper {
     width: 39%; }
   .gemstone-featured-item .stone-info-wrapper {
     width: 58%; }
-
   .gemstone-list-container .gemstone-list-item {
     width: 48%; }
-
   .block-layered-nav .block-content > dl > dt {
     width: 100%; }
-
   .contacts-index-index .w70.left {
     width: 100%;
     float: none; }
@@ -1939,31 +2077,26 @@ h2.related-gem {
       width: 100%;
       max-width: 100%;
       margin: 0; }
-
   .juvi-press-pressarticle-view .gemstone-featured-item {
     position: relative; }
     .juvi-press-pressarticle-view .gemstone-featured-item .stone-img-wrapper, .juvi-press-pressarticle-view .gemstone-featured-item .stone-info-wrapper, .juvi-press-pressarticle-view .gemstone-featured-item .swiper-container, .juvi-press-pressarticle-view .gemstone-featured-item .arrow-wrap {
       width: 100%;
       height: auto;
       padding-bottom: 20px; } }
+
 @media only screen and (max-width: 479px) {
   body:not(.no-footer-msg) .wrapper {
     padding-bottom: 60px; }
-
   .currency-selector ul {
     font-size: 13px; }
-
   .cms-index-index .promo-box.box-a, .cms-index-index .promo-box.box-b, .cms-index-index .promo-box.box-c, .cms-index-index .promo-box.box-d, .cms-index-index .promo-box.box-e, .cms-index-index .promo-box.box-f, .cms-index-index .promo-box.box-g {
     width: 100%;
     float: none;
     display: block; }
-
   .skip-search .icon:after {
     margin: -9px 0 0 0; }
-
   .footer .block-subscribe .actions .button {
     width: 100%; }
-
   .footer .links {
     font-size: 70%;
     margin-right: 0;
@@ -1979,13 +2112,10 @@ h2.related-gem {
     .footer .links:nth-child(odd) {
       clear: none;
       margin-right: 0; }
-
   .product-view .product-img-box, .product-view .product-shop, .product-view .add-to-cart-wrapper {
     width: 100%; }
-
   .catalog-product-view .products-grid > li.item-4 {
     display: none; }
-
   .juvi-press-pressarticle-view .gemstone-featured-item {
     position: relative; }
     .juvi-press-pressarticle-view .gemstone-featured-item .stone-img-wrapper, .juvi-press-pressarticle-view .gemstone-featured-item .stone-info-wrapper, .juvi-press-pressarticle-view .gemstone-featured-item .swiper-container, .juvi-press-pressarticle-view .gemstone-featured-item .arrow-wrap {
