@@ -20,7 +20,16 @@
 		padding: 0;
 		.footer-wrap {
 			text-align: right;
+			@media only screen and (max-width: 770px) {
+				text-align: center;
+			}
 			padding: 0 30px;
+			span.links-wrap {
+				@media only screen and (max-width: 770px) {
+					display: block;
+					padding: 10px 0;
+				}
+			}
 			a span {
 				font-size: 0;
 				display: inline-block;

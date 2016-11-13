@@ -1357,6 +1357,13 @@ img.mfp-img {
     #fixed_footer .footer-container .footer-wrap {
       text-align: right;
       padding: 0 30px; }
+      @media only screen and (max-width: 770px) {
+        #fixed_footer .footer-container .footer-wrap {
+          text-align: center; } }
+      @media only screen and (max-width: 770px) {
+        #fixed_footer .footer-container .footer-wrap span.links-wrap {
+          display: block;
+          padding: 10px 0; } }
       #fixed_footer .footer-container .footer-wrap a span {
         font-size: 0;
         display: inline-block;
