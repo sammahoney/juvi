@@ -28,20 +28,7 @@
 
 <div class="w70 left">
     <div class="page-title">
-        <h1><?php echo Mage::helper('contacts')->__('About Us') ?></h1>
-    </div>
-    <?php // Check for associated CMS block
-    if(Mage::getModel('cms/block')->load('about')->getIsActive()){
-        echo $this->getLayout()->createBlock('cms/block')->setBlockId('about')->toHtml();
-    };
-    ?>
-</div>
-
-<div class="w30 right">
-    <div class="page-title">
-        <h1><?php echo Mage::helper('contacts')->__('Contact') ?></h1>
-        <div>E: <?php echo Mage::getStoreConfig('contacts/email/recipient_email'); ?></div>
-        <p>T: <?php echo Mage::getStoreConfig('general/store_information/phone'); ?></p>
+        <h1><?php echo Mage::helper('contacts')->__('Your Enquiry') ?></h1>
     </div>
     <form action="<?php echo $this->getFormAction(); ?>" id="contactForm" method="post" class="scaffold-form">
         <div class="fieldset">
@@ -82,6 +69,15 @@
         </div>
     </form>
 </div>
+
+<div class="w30 right contacts-block">
+    <?php // Check for associated CMS block
+    if(Mage::getModel('cms/block')->load('about')->getIsActive()){
+       echo $this->getLayout()->createBlock('cms/block')->setBlockId('about')->toHtml();
+    };
+    ?>
+</div>
+
 <script type="text/javascript">
 //<![CDATA[
     var contactForm = new VarienForm('contactForm', true);
