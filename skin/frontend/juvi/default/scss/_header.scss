@@ -309,3 +309,16 @@ p.welcome-msg {
 		}
 	}
 }
+
+// Top bars
+body > .widget.widget-static-block > div {
+	text-align: center;
+	padding: 4px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	@media only screen and (max-width: 770px) {
+		padding: 6px 6px 9px;
+		font-size: 11px;
+		line-height: 11px;
+	}
+}
