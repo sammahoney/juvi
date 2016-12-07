@@ -251,5 +251,146 @@ $gold: #987F6E;
 	}
 }
 
+// Service pages
+.service-page {
+	color: #000;
+	.page-title h1 {
+		text-transform: none;
+	}
+	&.faq .std {
+		h5 {
+			font-size: 18px;
+			margin: 0;
+		}
+		p {
+			font-size: 16px;
+		}
+	}
+	.std {
+		font-size: 16px;
+		h3.solid {
+			background: $gold;
+			display: inline-block;
+			color: #FFF;
+			padding: 5px 12px;
+		}
+		h3 {
+			color: $gold;
+			font-size: 26px;
+			text-transform: none;
+		}
+		h5 {
+			color: $gold;
+			font-size: 26px;
+			text-transform: none;
+		}
+		p {
+			color: #000;
+			font-size: 18px;
+			letter-spacing: 0;
+		}
+		.gold {
+			color: $gold;
+		}
+		.large {
+			font-size: 22px;
+			line-height: 24px;
+		}
+		.no-p-m {
+			padding: 0;
+			margin: 0;
+		}
+		a {
+			color: $gold;
+		}
+		ul {
+			list-style-type: disc;
+			color: #000;
+			margin: 15px;
+			li {
+				color: #000;
+				font-size: 16px;
+				letter-spacing: 0;
+				margin: 0;
+				span {
+					display: block;
+					padding-top: 4px;
+					padding-bottom: 9px;
+					color: #000;
+				}
+			}
+		}
+	}
+	.sidebar {
+		margin-top: 60px;
+		ul {
+			list-style-type: disc;
+			color: $gold;
+			padding-left: 15px;
+			font-size: 24px;
+			@media only screen and (max-width: 770px) {
+				font-size: 18px;
+				border-top: 1px solid $gold;
+			}
+			li {
+				margin: 18px 0;
+				a {
+					color: $gold;
+					font-size: 22px;
+					@media only screen and (max-width: 770px) {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+		.widget {
+			display: none;
+		}
+	}
+}
 
+// Tables 
+.tg {
+	border-collapse:collapse;
+	border-spacing:0;
+	border-color:$gold;
+	font-family: $titlefont;
+	color: #000;
+	font-size: 18px;
+	width: 100%;
+	text-align: center;
+	@media only screen and (max-width: 770px) {
+		font-size: 14px;
+		line-height: 14px;
+	}
+	td {
+		padding:5px;
+		border-style:solid;
+		border-width:1px;
+		overflow:hidden;
+		word-break:normal;
+		border-color:$gold;
+		background-color:#fff;
+	}
+	th {
+		font-weight:normal;
+		padding:5px;
+		border-style:solid;
+		border-width:1px;
+		overflow:hidden;
+		word-break:normal;
+		border-color:$gold;
+		color:#fff;
+		background-color:$gold;
+		text-align: center;
+	}
+	.tg-9ars {
+		background-color:$gold;
+		color:#ffffff;
+		vertical-align:top;
+	}
+	.tg-yw4l {
+		vertical-align:top;
+	}
+}
 
