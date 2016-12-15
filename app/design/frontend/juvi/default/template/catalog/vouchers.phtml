@@ -1,0 +1,37 @@
+<?php
+$catid = $this->getCatId();
+	$products = Mage::getModel('catalog/category')->load($catid);
+	$productslist = $products->getProductCollection()
+		->addAttributeToFilter('status', 1)
+		->addAttributeToFilter('visibility', 4)
+		->addAttributeToSort('position', 'ASC')
+		->setPageSize(3)
+		->addAttributeToSelect('*');
+?>
+
+<ul class="vouchers products-grid products-grid--max-3-col" id="upsell-product-table">
+	
+		<?php foreach($productslist as $_product): 
+			$_product = Mage::getModel('catalog/product')->load($_product->getId());
+			$productBlock = $this->getLayout()->createBlock('catalog/product_price');
+			$count = $productslist->count();
+			?>
+			<li>
+				<a href="<?php echo $_product->getUrlInStore(array('_ignore_category' => true)); ?>" class="product-image">
+					<img id="product-collection-image-<?php echo $_product->getId(); ?>"
+						src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(400,284)->keepTransparency(true); ?>"
+						alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
+				</a>
+				<div class="product-info">
+					<div class="product-name">
+						<a href="<?php echo $_product->getUrlInStore(array('_ignore_category' => true)); ?>">
+							<?php echo Mage::helper('core')->currency($_product->getPrice()); ?> <?php echo $_product->getName() ?>
+						</a>
+					</div>
+				</div>
+				<a class="button btn-checkout" href="<?php echo Mage::getUrl('checkout/cart/add', array('product'=>$_product->getId(),'qty'=>1, 'form_key' => Mage::getSingleton('core/session')->getFormKey())) ?>
+">Add to Bag</a>
+			</li>
+		<?php endforeach; ?>
+</ul>
+

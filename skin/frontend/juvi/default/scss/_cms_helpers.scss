@@ -349,6 +349,34 @@
 	}
 }
 
+// Vouchers
+ul#upsell-product-table.vouchers {
+	margin: 0;
+	list-style-type: none;
+	li {
+		padding-right: 20px;
+		width: 33.33%;
+		@media only screen and (max-width: 770px) {
+			width: 100%;
+			padding-right: 0;
+			margin-bottom: 40px;
+		}
+		a {
+			text-decoration: none;
+			color: #000;
+			font-size: 18px;
+			letter-spacing: 0;
+		}
+		span.price {
+			display: inline-block !important;
+			width: auto;
+		}
+		a.button {
+			color: #FFF !important;
+		}
+	}
+}
+
 // Tables 
 .tg {
 	border-collapse:collapse;
