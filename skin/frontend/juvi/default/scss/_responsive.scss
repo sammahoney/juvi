@@ -29,6 +29,18 @@
 			padding: 20px 48% 20px 3%;
 		}
 	}
+	.standard-footer {
+		& > div {
+			ul {
+				li {
+					font-size: 13px;
+					h4 {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
 
 }
 // 979px to 771px
@@ -56,6 +68,18 @@
 	}
 	.menu-promo {
 		display: none;
+	}
+	.standard-footer {
+		& > div {
+			ul {
+				li {
+					font-size: 12px;
+					h4 {
+						font-size: 14px;
+					}
+				}
+			}
+		}
 	}
 
 }
@@ -400,14 +424,33 @@
 			}
 		}
 	}
+	.standard-footer {
+		& > div {
+			width: 100%;
+			text-align: center;
+			padding-bottom: 15px;
+			ul {
+				padding-right: 0;
+				li {
+					font-size: 14px;
+					h4 {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+		#mc-embedded-subscribe {
+			float: none;
+		}
+		.response {
+    		text-align: center;
+    	}
+	}
 
 }
 // 479px and below
 @media only screen and (max-width: $bp-small) {
 
-	body:not(.no-footer-msg) .wrapper {
-		padding-bottom: 60px;
-	}
 	.currency-selector ul {
 		font-size: 13px;
 	}

@@ -81,3 +81,40 @@
     font-style: italic;
     padding-bottom: 10px;
 }
+
+// Standard Footer
+.standard-footer {
+	& > div {
+		border-top: 2px solid $gold;
+		padding-top: 15px;
+		width: 20%;
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+		ul {
+			padding-right: 15px;
+			li {
+				font-size: 15px;
+				line-height: 100%;
+				margin-bottom: 8px;
+				h4 {
+					text-transform: capitalize;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	.response {
+		text-align: right;
+		font-size: 12px;
+		line-height: 13px;
+		padding: 10px 0;
+	}
+	#mc-embedded-subscribe {
+		margin-top: 14px;
+		float: right;
+		&:hover {
+			color: #FFF;
+		}
+	}
+}
