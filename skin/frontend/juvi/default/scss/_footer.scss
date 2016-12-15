@@ -105,14 +105,14 @@
 		}
 	}
 	.response {
-		text-align: right;
+		text-align: center;
 		font-size: 12px;
 		line-height: 13px;
 		padding: 10px 0;
 	}
 	#mc-embedded-subscribe {
-		margin-top: 14px;
-		float: right;
+		margin: 14px auto 0;
+		display: block;
 		&:hover {
 			color: #FFF;
 		}
