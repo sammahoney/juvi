@@ -6,6 +6,11 @@
 #header-nav {
 	border-bottom: 2px solid $bordercolor;
 }
+li.menu-promo-wrapper {
+	position: absolute !important;
+	right: 0;
+	top: 0;
+}
 .menu-promo {
 	opacity: 0;
 	position: absolute;
@@ -17,7 +22,7 @@
 		width: 100%;
 	}
 }
-.show-promo .menu-promo {
+.menu-active .menu-promo {
 	opacity: 1;
 	z-index: 10;
 	@include transition(opacity $transpeed $transease);
@@ -70,6 +75,9 @@
 				font-size: 90%;
 				letter-spacing: $spacing+1;
 				padding: 0 10px 15px;
+			}
+			&.sale {
+				color: #AB0006 !important;
 			}
 		}
 		ul.level0 {

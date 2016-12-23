@@ -84,9 +84,12 @@ foreach ($children as $child) {
 
     }else{
 
+        $sale = strtolower($child->getName());
+        if($sale == "sale"){$sale = "sale";}else{$sale = '';};
+
         $html .= '<li '. $this->_getRenderedMenuItemAttributes($child) .'>';
 
-        $html .= '<a href="'. $child->getUrl() .'" class="'. $outermostClassCode .' '. $_hasChildren .'">'. $this->escapeHtml($this->__($child->getName())) .'</a>';
+        $html .= '<a href="'. $child->getUrl() .'" class="'. $sale .' '. $outermostClassCode .' '. $_hasChildren .'">'. $this->escapeHtml($this->__($child->getName())) .'</a>';
 
         if (!empty($childrenWrapClass)) {
             $html .= '<div class="'. $childrenWrapClass .'">';
@@ -97,6 +100,12 @@ foreach ($children as $child) {
         if (!empty($_hasChildren)) {
             $html .= '<ul class="level'. $childLevel .'">';
             $html .=     $this->render($child, $childrenWrapClass);
+            // Add promo block if exists
+            $blockname = strtolower($child->getName());
+            $blockname = str_replace(' ', '-', $blockname);
+            if(Mage::getModel('cms/block')->load('menu_promo_'.$blockname)->getIsActive()){
+                $html .= '<li class="menu-promo-wrapper">'.$this->getLayout()->createBlock('cms/block')->setBlockId('menu_promo_'.$blockname)->toHtml().'</li>';
+            }
             $html .= '</ul>';
         }
 
