@@ -66,8 +66,10 @@ $fullActionName = Mage::app()->getFrontController()->getAction()->getFullActionN
             <?php endif*/ ?>
             <?php // Get rollover img
                 if($fullActionName != 'catalogsearch_result_index'){
-                    if($_product->getMediaGalleryImages()->getItemByColumnValue('position_default', '2')){
-                        $rollover = $_product->getMediaGalleryImages()->getItemByColumnValue('position_default', '2')->getFile();
+                    if(count($_product->getMediaGalleryImages() > 0)) {
+                        if($_product->getMediaGalleryImages()->getItemByColumnValue('position_default', '2')){
+                            $rollover = $_product->getMediaGalleryImages()->getItemByColumnValue('position_default', '2')->getFile();
+                        }
                     }
                 }
             ?>
