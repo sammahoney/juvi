@@ -192,6 +192,29 @@ a.enlarge {
 	font-size: 10px;
 	padding: 0;
 }
+// Notify
+.product-options.notify {
+	margin-bottom: 20px;
+	#notify-stock {
+		margin: 10px 0;
+		width: 100%;
+		input {
+			display: inline-block;
+			vertical-align: top;
+			height: 35px;
+			width: 60%;
+			margin-right: 1%;
+			margin-top: 2px;
+		}
+		button {
+			display: inline-block;
+			vertical-align: top;
+			height: 35px;
+			width: 38%;
+			margin-top: 2px;
+		}
+	}
+}
 // Related 
 .block-related p.product-name a, .block-related .block-title h2 {
 	font-family: $mainfont;
