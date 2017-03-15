@@ -39,7 +39,14 @@
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->toHtml() ?></div>
 <div class="product-view">
     <div class="product-essential">
-        <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
+        <?php $_storeId = Mage::app()->getStore()->getId(); ?>
+        <?php $_isActive = Mage::getStoreConfig('outofstocksubscription/mail/active', $_storeId); ?>
+        <?php if(!$_product->isSaleable() && $_isActive): ?>
+            <?php $_url = $this->getUrl('outofstocksubscription') ?>
+        <?php else: ?>
+            <?php $_url = $this->getAddToCartUrl($_product); ?>
+        <?php endif; ?>
+        <form action="<?php echo $_url ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
             <?php echo $this->getBlockHtml('formkey') ?>
             <div class="no-display">
                 <input type="hidden" name="product" value="<?php echo $_product->getId() ?>" />
@@ -68,6 +75,20 @@
                     <?php echo $this->getReviewsSummaryHtml($_product, 'default', false)?>
                     <?php echo $this->getChildHtml('product_type_availability'); ?>
                 </div>
+
+                <?php if(!$_product->isSaleable() && $_isActive): ?>
+                    <div class="product-options notify">
+                        <?php echo $this->__('Notify me when this item is back in stock') ?>
+                        <table id="notify-stock">                     
+                            <tr>
+                                <td>
+                                    <input placeholder="Enter Email" type="text" id="subscription_email" name="subscription_email" value="" class="input-text required-entry validate-email" />
+                                    <button onclick="productAddToCartForm.submit();" class="button btn-cart" type="button"><span><span><?php echo $this->__('Submit') ?></span></span></button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                <?php endif; ?>
 
                 <?php echo $this->getChildHtml('alert_urls') ?>
 
