@@ -92,7 +92,7 @@ li.menu-promo-wrapper {
 			width: 100%;
 			min-height: 206px;
 			margin-left: -220px;
-			@include css3-prefix(column-count, 4);
+			@include css3-prefix(column-count, 5);
 			@include css3-prefix(column-gap, 20px);
 			@include transition(opacity $transpeed $transease);
 			@include css3-prefix(box-shadow, 0 2px 8px -2px rgba(0, 0, 0, 0.2));
@@ -164,9 +164,10 @@ ul.collections.level0 {
     padding: 20px 3% 20px 3% !important;
     text-align: center;
     @include css3-prefix(column-count, 1 !important);
+    display: table !important;
     li.collections.level2 {
-		display: inline-block;
-		width: 12.5%;
+		display: table-cell !important;
+		width: auto;
 		a {
 			font-family: $titlefont;
 			img {
