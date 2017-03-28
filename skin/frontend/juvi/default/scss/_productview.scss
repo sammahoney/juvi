@@ -215,6 +215,20 @@ a.enlarge {
 		}
 	}
 }
+// Ring size guide
+.ring-size {
+	padding-bottom: 8px;
+	a {
+		color: $gold;
+	}
+}
+a.bespoke-rings {
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	margin: 10px 0;
+	border-radius: 5px;
+}
 // Related 
 .block-related p.product-name a, .block-related .block-title h2 {
 	font-family: $mainfont;
