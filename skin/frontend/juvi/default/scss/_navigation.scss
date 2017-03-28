@@ -72,9 +72,9 @@ li.menu-promo-wrapper {
 			z-index: 11;
 			&.level0 {
 				font-family: $titlefont;
-				font-size: 90%;
+				font-size: 85%;
 				letter-spacing: $spacing+1;
-				padding: 0 10px 15px;
+				padding: 0 0.7vw 15px;
 			}
 			&.sale {
 				color: #AB0006 !important;
@@ -107,11 +107,13 @@ li.menu-promo-wrapper {
 					font-size: 90%;
 					letter-spacing: $spacing;
 					text-transform: uppercase;
+					line-height: 15px;
+					padding-bottom: 10px;
 				}
 				&.parent {
 					padding-bottom: 15px;
 					display: block;
-					height: 164px;
+					height: 218px;
 					> a:after{
 						display: none;
 					}
@@ -135,6 +137,7 @@ li.menu-promo-wrapper {
 					font-size: 80%;
 					letter-spacing: $spacing;
 					font-weight: $lightweight;
+					padding-bottom: 0;
 				}
 			}
 		}
