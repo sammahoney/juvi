@@ -228,6 +228,9 @@ a.bespoke-rings {
 	display: inline-block;
 	margin: 10px 0;
 	border-radius: 5px;
+	@media only screen and (max-width: 700px) { 
+		font-size: 80%;
+	}
 }
 // Related 
 .block-related p.product-name a, .block-related .block-title h2 {
@@ -493,6 +496,11 @@ img.mfp-img {
 	// Pink Tourmaline
 	#option117 {
 		background-position: -253px -161px !important;
+	}
+
+	// Clear Quartz
+	#option105 {
+		background-position: -253px -216px !important;
 	}
 }
 // Out of stock fix 
