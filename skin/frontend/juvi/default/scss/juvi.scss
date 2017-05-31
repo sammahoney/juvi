@@ -394,6 +394,37 @@ ul.messages {
 }
 
 // =============================================
+// Shopstafeed
+// =============================================
+
+.insta-post-view {
+	.highlight {
+		background: #d9d5ca;
+		border: 1px solid #d9d5ca !important;
+		color: #000 !important;
+	}
+	.products-grid .product-name {
+		padding-top: 10px;
+		font-family: inherit;
+		font-size: 90%;
+	}
+	.insta-marker {
+		line-height: 26px;
+		border: 1px solid transparent;
+	}
+}
+#insta-popup-overlay {
+	background-color: rgba(255,255,255,.95);
+}
+.insta-popup {
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+	border: 1px solid #FFF;
+}
+.insta-popup-close {
+	color: inherit;
+}
+
+// =============================================
 // Responsive
 // =============================================
 
