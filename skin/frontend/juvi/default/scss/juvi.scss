@@ -413,14 +413,14 @@ ul.messages {
 		border: 1px solid transparent;
 	}
 }
-#insta-popup-overlay {
+div#insta-popup-overlay {
 	background-color: rgba(255,255,255,.95);
 }
 .insta-popup {
 	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
 	border: 1px solid #FFF;
 }
-.insta-popup-close {
+div.insta-popup-close {
 	color: inherit;
 }
 
