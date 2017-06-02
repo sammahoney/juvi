@@ -28,6 +28,11 @@
 		ul.level0 {
 			padding: 20px 48% 20px 3%;
 		}
+		a.level0 {
+			font-size: 90%;
+			letter-spacing: 1px;
+			padding: 0 0.5vw 15px;
+		}
 	}
 	.standard-footer {
 		& > div {
@@ -61,9 +66,9 @@
 			margin-left: -170px;
 		}
 		a.level0 {
-			font-size: 78%;
-			letter-spacing: 1px;
-			padding: 0 0.7vw 5px;
+			font-size: 74%;
+			letter-spacing: 0px;
+			padding: 0 0.5vw 5px;
 		}
 	}
 	.menu-promo {
