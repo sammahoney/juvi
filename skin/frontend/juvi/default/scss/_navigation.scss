@@ -119,11 +119,23 @@ li.menu-promo-wrapper {
 					}
 				}
 			}
+			&.columns-1 {
+				@include css3-prefix(column-count, 1);
+			}
 			&.columns-2 {
 				@include css3-prefix(column-count, 2);
 			}
+			&.columns-3 {
+				@include css3-prefix(column-count, 3);
+			}
 			&.columns-4 {
 				@include css3-prefix(column-count, 4);
+			}
+			&.columns-5 {
+				@include css3-prefix(column-count, 5);
+			}
+			&.columns-6 {
+				@include css3-prefix(column-count, 6);
 			}
 		}
 		ul.level1 {
