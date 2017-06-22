@@ -28,6 +28,12 @@
 /** @var Varien_Data_Tree_Node $menuTree */
 /** @var string $childrenWrapClass */
 
+// Load column counts for dropdown
+$customvar = Mage::getModel('core/variable')
+    ->setStoreId(Mage::app()->getStore()->getId())
+    ->loadByCode('dropdown_columns')
+    ->getValue('text');
+
 $html = '';
 
 $children = $menuTree->getChildren();
@@ -45,6 +51,11 @@ foreach ($children as $child) {
     $child->setIsFirst($counter == 1);
     $child->setIsLast($counter == $childrenCount);
     $child->setPositionClass($itemPositionClassPrefix . $counter);
+    $category_id = explode('category-node-',$child->getId())[1];
+    $chunks = array_chunk(preg_split('/(-|,)/', $customvar), 2);
+    $result = array_combine(array_column($chunks, 0), array_column($chunks, 1));
+    $columns = 'default';
+    if($result[$category_id]){$columns = $result[$category_id];};
 
     $outermostClassCode = 'level'. $childLevel;
     $_hasChildren = ($child->hasChildren()) ? 'has-children' : '';
@@ -98,7 +109,7 @@ foreach ($children as $child) {
         $nextChildLevel = $childLevel + 1;
 
         if (!empty($_hasChildren)) {
-            $html .= '<ul class="level'. $childLevel .'">';
+            $html .= '<ul class="level'. $childLevel . ' cat-' . $category_id . ' columns-' . $columns .'">';
             $html .=     $this->render($child, $childrenWrapClass);
             // Add promo block if exists
             $blockname = strtolower($child->getName());
