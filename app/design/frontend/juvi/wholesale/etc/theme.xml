@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<theme>
+	<parent>juvi/default</parent>
+	<layout>
+		<updates>
+			<my_new_file_name>
+				<file>wholesale_local.xml</file>
+			</my_new_file_name>
+		</updates>
+	</layout>
+</theme>
