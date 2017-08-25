@@ -44,6 +44,17 @@
 				color: transparent;
 			}
 		}
+		.product-sku {
+			@media only screen and (max-width: 770px) {
+				display: none;
+			}
+		}
+	}
+	.product-sku {
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		font-size: 13px;
+		color: #777;
 	}
 	.product-img-box {
 		.product-image img {
