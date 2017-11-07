@@ -73,8 +73,13 @@ class Mage_Shipping_Model_Carrier_Freeshipping
         ) {
             $coupon = Mage::getSingleton('checkout/session')->getQuote()->getCouponCode();
             $totals = Mage::getSingleton('checkout/session')->getQuote()->getTotals();
+            if(isset($totals['discount'])) {
+                $discount = abs($totals['discount']->getValue()); // Discount value if applied
+            } else {
+                $discount = '';
+            }
             // No free shipping if coupon used, unless GRAND total is still over free-shipping limit
-            if(!$coupon || $coupon && ($totals['subtotal']->getValue() - abs($totals['discount']->getValue())) > $this->getConfigData('free_shipping_subtotal')) {
+            if(!$coupon || $coupon && ($totals['subtotal']->getValue() - $discount) > $this->getConfigData('free_shipping_subtotal')) {
                 $method = Mage::getModel('shipping/rate_result_method');
 
                 $method->setCarrier('freeshipping');
