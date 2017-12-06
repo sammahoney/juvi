@@ -472,3 +472,34 @@ $bp-xlarge: 1199px;
 		}
 	}
 }
+
+// =============================================
+// Facebook Chat
+// =============================================
+
+#fb-chat-btn {
+	background: $background url(../images/chat_icon.png) no-repeat 12px 56%;
+	height: 40px;
+	width: 140px;
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	color: #FFF;
+	border-radius: 5px;
+	cursor: pointer;
+	z-index: 9;
+	span {
+		padding: 0 0 0 45px;
+		line-height: 38px;
+	}
+}
+.fb-page.fb_iframe_widget {
+	position: fixed;
+	bottom: 0;
+	right: -410px;
+	z-index: 10;
+	@include transition(all 0.2s $transease);
+	&.slide-out {
+		right: 0;
+	}
+}

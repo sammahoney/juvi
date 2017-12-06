@@ -36,4 +36,8 @@ jQuery(document).ready(function(){
 		jQuery(this).attr("href",newsrc);
 		jQuery(this).magnificPopup({type:'image',mainClass: 'mfp-fade',closeOnContentClick: 'true'});
 	});
+	// FB chat
+	jQuery('#fb-chat-btn span').on('click',function(){
+		jQuery('.fb-page.fb_iframe_widget').addClass("slide-out");
+	});
 });
