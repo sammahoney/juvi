@@ -38,6 +38,9 @@ jQuery(document).ready(function(){
 	});
 	// FB chat
 	jQuery('#fb-chat-btn span').on('click',function(){
-		jQuery('.fb-page.fb_iframe_widget').addClass("slide-out");
+		jQuery('.fb-page.fb_iframe_widget, #fb-close').addClass("slide-out");
+	});
+	jQuery('#fb-close').on('click',function(){
+		jQuery('.fb-page.fb_iframe_widget, #fb-close').removeClass("slide-out");
 	});
 });
