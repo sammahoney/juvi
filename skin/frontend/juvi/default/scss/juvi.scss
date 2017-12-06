@@ -498,7 +498,7 @@ $bp-xlarge: 1199px;
 	bottom: 0;
 	right: -410px;
 	z-index: 10;
-	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	box-shadow: 0 0 20px rgba(0,0,0,0.4);
 	@include transition(all 0.2s $transease);
 	&.slide-out {
 		right: 0;
@@ -508,8 +508,8 @@ $bp-xlarge: 1199px;
 	bottom: 290px;
 	right: -20px;
 	position: fixed;
-	height: 20px;
-	width: 20px;
+	height: 22px;
+	width: 22px;
 	color: #FFF;
 	background: #000;
 	z-index: 11;
@@ -518,6 +518,8 @@ $bp-xlarge: 1199px;
 	padding: 0 3px;
 	line-height: 17px;
 	cursor: pointer;
+	box-shadow: 0 0 20px rgba(0,0,0,0.4);
+	border: 1px solid #FFF;
 	@include transition(all 0.2s $transease);
 	&.slide-out {
 		right: 390px;
