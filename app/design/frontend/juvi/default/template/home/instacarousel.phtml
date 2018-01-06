@@ -1,8 +1,10 @@
 <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
 <?php $_posts = $this->getPosts(); ?>
 
-<div class="page-title">
-    <h1><?php echo $this->getInstaPageTitle() ?></h1>
+<div class="insta-clearer"></div>
+
+<div class="insta-title">
+    <h4><?php echo $this->getInstaPageTitle() ?></h4>
 </div>
 
 <div class="productscroller">
@@ -35,7 +37,7 @@
     var mySwiper2 = new Swiper('.scroller-container', {
         loop: false,
         speed: 1200,
-        slidesPerView: 5
+        slidesPerView: 4
     });
     jQuery('.product-arrow-l').on('click', function (e) {
         e.preventDefault()
