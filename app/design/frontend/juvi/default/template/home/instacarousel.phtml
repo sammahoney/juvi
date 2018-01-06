@@ -10,12 +10,14 @@
     <a class="arrow-right product-arrow-r" href="#"></a>
 
     <div class="scroller-container">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper insta-post-list-container">
             <?php $i = 0; foreach ($_posts as $_post): ?>
             
             <div class="swiper-slide">
                 <div class="insta-post">
-                    <a id="insta-post-<?php echo $i; ?>" class="insta-post-url" href="<?php echo $_post->getPostUrl();?>" style="background-image:url(<?php echo $_post->getShopstafeedPostImgUrl();?>)"></a>
+                    <a id="insta-post-<?php echo $i; ?>" class="insta-post-url" href="<?php echo $_post->getPostUrl();?>">
+                        <img src="https://scontent.cdninstagram.com/s640x640/<?php echo $_post->getShopstafeedPostImgUrl();?>" /> <!-- can be 320, 640 or 1080 -->
+                    </a>
                     <div class="insta-popup" id="insta-popup-<?php echo $i; ?>">
                         <div class="insta-post-place"></div>
                     </div>
