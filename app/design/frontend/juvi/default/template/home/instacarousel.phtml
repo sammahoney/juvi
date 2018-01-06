@@ -1,6 +1,5 @@
 <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
 <?php $_posts = $this->getPosts(); ?>
-<?php $square = Mage::helper('marlon_shopstafeed')->getCropToSquare(); ?>
 
 <div class="page-title">
     <h1><?php echo $this->getInstaPageTitle() ?></h1>
@@ -16,7 +15,7 @@
             
             <div class="swiper-slide">
                 <div class="insta-post">
-                    <a id="insta-post-<?php echo $i; ?>" class="insta-post-url <?php echo $square ?>" href="<?php echo $_post->getPostUrl();?>" style="background-image:url(<?php echo $_post->getShopstafeedPostImgUrl();?>)"></a>
+                    <a id="insta-post-<?php echo $i; ?>" class="insta-post-url" href="<?php echo $_post->getPostUrl();?>" style="background-image:url(<?php echo $_post->getShopstafeedPostImgUrl();?>)"></a>
                     <div class="insta-popup" id="insta-popup-<?php echo $i; ?>">
                         <div class="insta-post-place"></div>
                     </div>
