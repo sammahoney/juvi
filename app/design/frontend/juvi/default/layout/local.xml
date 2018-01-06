@@ -77,7 +77,7 @@
 
 	<!-- Homepage -->
 	<cms_index_index>
-		<!--reference name="head">
+		<reference name="head">
 			<action method="addItem">
 				<type>skin_js</type>
 				<name>js/swiper.jquery.min.js</name>
@@ -86,11 +86,26 @@
 				<type>skin_css</type>
 				<name>css/swiper.min.css</name>
 			</action>
-		</reference-->
-		<reference name="content">
-			<!--block type="catalog/product_send" name="carousel" as="carousel" template="home/carousel.phtml"/-->
-			<block type="homepage/homepage" name="homepage" as="homepage" template="home/homepage.phtml"/>
+			<action method="addItem">
+                <type>skin_js</type>
+                <name>js/shopstafeed.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/shopstafeed.css</name>
+            </action>
 		</reference>
+		<reference name="content">
+			<block type="homepage/homepage" name="homepage" as="homepage" template="home/homepage.phtml"/>
+			<block type="marlon_shopstafeed/post_list" name="instacarousel" template="home/instacarousel.phtml" />
+		</reference>
+		<reference name="before_body_end">
+            <block type="core/text" name="overlay">
+                <action method="setText">
+                    <text><![CDATA[<div id="insta-popup-overlay"></div>]]></text>
+                </action>
+            </block>
+        </reference>
 	</cms_index_index>
 
 	<!-- Category List View -->

@@ -1,0 +1,47 @@
+<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+<?php $_posts = $this->getPosts(); ?>
+<?php $square = Mage::helper('marlon_shopstafeed')->getCropToSquare(); ?>
+
+<div class="page-title">
+    <h1><?php echo $this->getInstaPageTitle() ?></h1>
+</div>
+
+<div class="productscroller">
+    <a class="arrow-left product-arrow-l" href="#"></a>
+    <a class="arrow-right product-arrow-r" href="#"></a>
+
+    <div class="scroller-container">
+        <div class="swiper-wrapper">
+            <?php $i = 0; foreach ($_posts as $_post): ?>
+            
+            <div class="swiper-slide">
+                <div class="insta-post">
+                    <a id="insta-post-<?php echo $i; ?>" class="insta-post-url <?php echo $square ?>" href="<?php echo $_post->getPostUrl();?>" style="background-image:url(<?php echo $_post->getShopstafeedPostImgUrl();?>)"></a>
+                    <div class="insta-popup" id="insta-popup-<?php echo $i; ?>">
+                        <div class="insta-post-place"></div>
+                    </div>
+                </div>
+            </div>
+
+            <?php $i++; endforeach; ?>
+            <div class="insta-clearer"></div>
+        </div>
+    </div>
+</div>
+<div class="insta-popup-close">×</div>
+
+<script type="text/javascript">
+    var mySwiper2 = new Swiper('.scroller-container', {
+        loop: false,
+        speed: 1200,
+        slidesPerView: 5
+    });
+    jQuery('.product-arrow-l').on('click', function (e) {
+        e.preventDefault()
+        mySwiper2.swipePrev()
+    });
+    jQuery('.product-arrow-r').on('click', function (e) {
+        e.preventDefault()
+        mySwiper2.swipeNext()
+    })
+</script>
