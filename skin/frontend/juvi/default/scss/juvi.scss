@@ -533,6 +533,8 @@ $bp-xlarge: 1199px;
 	padding: 15px;
 	width: calc(100vw + 10px);
 	position: relative;
+	left: 50%;
+	margin-left: -50vw;
 }
 .cms-index-index .insta-post {
 	width: 100%;
