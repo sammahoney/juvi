@@ -13,7 +13,7 @@
 
     <div class="scroller-container">
         <div class="swiper-wrapper insta-post-list-container">
-            <?php $i = 0; foreach ($_posts as $_post): ?>
+            <?php $i = 0; foreach ($_posts as $_post): if($i < 16): ?>
             
             <div class="swiper-slide">
                 <div class="insta-post">
@@ -26,7 +26,7 @@
                 </div>
             </div>
 
-            <?php $i++; endforeach; ?>
+            <?php $i++; endif; endforeach; ?>
             <div class="insta-clearer"></div>
         </div>
     </div>
