@@ -174,4 +174,17 @@
 		</reference>
 	</contacts_index_index>
 
+	<wishlist_index_index translate="label">
+        <reference name="customer.wishlist.buttons">
+            <action method="unsetChild"><name>customer.wishlist.button.share</name></action>
+        </reference>   
+    </wishlist_index_index>
+
+    <wishlist_index_share translate="label">
+    	<remove name="formkey"/>
+	    <reference name="my.account.wrapper">
+	        <action method="unsetChild"><name>wishlist.sharing</name></action>
+	    </reference>   
+	</wishlist_index_share>
+
 </layout>
