@@ -50,11 +50,20 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </image_a>
+                        <image_a_alt translate="label, comment">
+                            <label>Image Alt Tag</label>
+                            <comment><![CDATA[Add "Block A" image alt tag]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_a_alt>
                         <text_a translate="label, comment">
                             <label>Text</label>
                             <comment><![CDATA[Add "Block A" text]]></comment>
                             <frontend_type>textarea</frontend_type>
-                            <sort_order>3</sort_order>
+                            <sort_order>4</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -63,7 +72,7 @@
                             <label>Link</label>
                             <comment><![CDATA[Add "Block A" link (full link including http://)]]></comment>
                             <frontend_type>text</frontend_type>
-                            <sort_order>4</sort_order>
+                            <sort_order>5</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -71,7 +80,7 @@
                         <comment_b>
                             <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Block B</span>]]></label>
                             <frontend_type>label</frontend_type>
-                            <sort_order>5</sort_order>
+                            <sort_order>6</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -83,16 +92,25 @@
                             <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
                             <backend_model>adminhtml/system_config_backend_image</backend_model>
                             <base_url type="media" scope_info="1">homepage</base_url>
-                            <sort_order>6</sort_order>
+                            <sort_order>7</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </image_b>
+                        <image_b_alt translate="label, comment">
+                            <label>Image Alt Tag</label>
+                            <comment><![CDATA[Add "Block B" image alt tag]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_b_alt>
                         <text_b translate="label, comment">
                             <label>Text</label>
                             <comment><![CDATA[Add "Block B" text]]></comment>
                             <frontend_type>textarea</frontend_type>
-                            <sort_order>7</sort_order>
+                            <sort_order>9</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -101,7 +119,7 @@
                             <label>Link</label>
                             <comment><![CDATA[Add "Block B" link (full link including http://)]]></comment>
                             <frontend_type>text</frontend_type>
-                            <sort_order>8</sort_order>
+                            <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -109,7 +127,7 @@
                         <comment_c>
                             <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Block C</span>]]></label>
                             <frontend_type>label</frontend_type>
-                            <sort_order>9</sort_order>
+                            <sort_order>11</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -121,16 +139,25 @@
                             <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
                             <backend_model>adminhtml/system_config_backend_image</backend_model>
                             <base_url type="media" scope_info="1">homepage</base_url>
-                            <sort_order>10</sort_order>
+                            <sort_order>12</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </image_c>
+                        <image_c_alt translate="label, comment">
+                            <label>Image Alt Tag</label>
+                            <comment><![CDATA[Add "Block C" image alt tag]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_c_alt>
                         <text_c translate="label, comment">
                             <label>Text</label>
                             <comment><![CDATA[Add "Block C" text]]></comment>
                             <frontend_type>textarea</frontend_type>
-                            <sort_order>11</sort_order>
+                            <sort_order>14</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -139,7 +166,7 @@
                             <label>Link</label>
                             <comment><![CDATA[Add "Block C" link (full link including http://)]]></comment>
                             <frontend_type>text</frontend_type>
-                            <sort_order>12</sort_order>
+                            <sort_order>15</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -147,7 +174,7 @@
                         <comment_d>
                             <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Block D</span>]]></label>
                             <frontend_type>label</frontend_type>
-                            <sort_order>13</sort_order>
+                            <sort_order>16</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -159,16 +186,25 @@
                             <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
                             <backend_model>adminhtml/system_config_backend_image</backend_model>
                             <base_url type="media" scope_info="1">homepage</base_url>
-                            <sort_order>14</sort_order>
+                            <sort_order>17</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </image_d>
+                        <image_d_alt translate="label, comment">
+                            <label>Image Alt Tag</label>
+                            <comment><![CDATA[Add "Block D" image alt tag]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>18</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_d_alt>
                         <text_d translate="label, comment">
                             <label>Text</label>
                             <comment><![CDATA[Add "Block D" text]]></comment>
                             <frontend_type>textarea</frontend_type>
-                            <sort_order>15</sort_order>
+                            <sort_order>19</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -177,7 +213,7 @@
                             <label>Link</label>
                             <comment><![CDATA[Add "Block D" link (full link including http://)]]></comment>
                             <frontend_type>text</frontend_type>
-                            <sort_order>16</sort_order>
+                            <sort_order>20</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -185,7 +221,7 @@
                         <comment_e>
                             <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Block E</span>]]></label>
                             <frontend_type>label</frontend_type>
-                            <sort_order>17</sort_order>
+                            <sort_order>21</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -197,16 +233,25 @@
                             <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
                             <backend_model>adminhtml/system_config_backend_image</backend_model>
                             <base_url type="media" scope_info="1">homepage</base_url>
-                            <sort_order>18</sort_order>
+                            <sort_order>22</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </image_e>
+                        <image_e_alt translate="label, comment">
+                            <label>Image Alt Tag</label>
+                            <comment><![CDATA[Add "Block E" image alt tag]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>23</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_e_alt>
                         <text_e translate="label, comment">
                             <label>Text</label>
                             <comment><![CDATA[Add "Block E" text]]></comment>
                             <frontend_type>textarea</frontend_type>
-                            <sort_order>19</sort_order>
+                            <sort_order>24</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -215,7 +260,7 @@
                             <label>Link</label>
                             <comment><![CDATA[Add "Block E" link (full link including http://)]]></comment>
                             <frontend_type>text</frontend_type>
-                            <sort_order>20</sort_order>
+                            <sort_order>25</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -223,7 +268,7 @@
                         <comment_f>
                             <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Block F</span>]]></label>
                             <frontend_type>label</frontend_type>
-                            <sort_order>21</sort_order>
+                            <sort_order>26</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -235,16 +280,25 @@
                             <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
                             <backend_model>adminhtml/system_config_backend_image</backend_model>
                             <base_url type="media" scope_info="1">homepage</base_url>
-                            <sort_order>22</sort_order>
+                            <sort_order>27</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </image_f>
+                        <image_f_alt translate="label, comment">
+                            <label>Image Alt Tag</label>
+                            <comment><![CDATA[Add "Block F" image alt tag]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>28</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_f_alt>
                         <text_f translate="label, comment">
                             <label>Text</label>
                             <comment><![CDATA[Add "Block F" text]]></comment>
                             <frontend_type>textarea</frontend_type>
-                            <sort_order>23</sort_order>
+                            <sort_order>29</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -253,7 +307,7 @@
                             <label>Link</label>
                             <comment><![CDATA[Add "Block F" link (full link including http://)]]></comment>
                             <frontend_type>text</frontend_type>
-                            <sort_order>24</sort_order>
+                            <sort_order>30</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -261,7 +315,7 @@
                         <comment_g>
                             <label><![CDATA[<span style="font-weight: bold;background: #6F8993;color: #FFF;padding: 3px 7px 2px;display: block;width: 255%;">Block G</span>]]></label>
                             <frontend_type>label</frontend_type>
-                            <sort_order>25</sort_order>
+                            <sort_order>31</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -273,16 +327,25 @@
                             <upload_dir config="system/filesystem/media" scope_info="1">homepage</upload_dir>
                             <backend_model>adminhtml/system_config_backend_image</backend_model>
                             <base_url type="media" scope_info="1">homepage</base_url>
-                            <sort_order>26</sort_order>
+                            <sort_order>32</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </image_g>
+                        <image_g_alt translate="label, comment">
+                            <label>Image Alt Tag</label>
+                            <comment><![CDATA[Add "Block G" image alt tag]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>33</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_g_alt>
                         <text_g translate="label, comment">
                             <label>Text</label>
                             <comment><![CDATA[Add "Block G" text]]></comment>
                             <frontend_type>textarea</frontend_type>
-                            <sort_order>27</sort_order>
+                            <sort_order>34</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -291,7 +354,7 @@
                             <label>Link</label>
                             <comment><![CDATA[Add "Block G" link (full link including http://)]]></comment>
                             <frontend_type>text</frontend_type>
-                            <sort_order>28</sort_order>
+                            <sort_order>35</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
