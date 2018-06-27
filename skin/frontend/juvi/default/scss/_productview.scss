@@ -32,10 +32,11 @@
 			}
 		}
 		.short-description {
-			font-size: 80%;
+			font-size: 14px;
 			font-family: $mainfont;
 			letter-spacing: $spacing+1;
 			line-height: 200%;
+			padding-bottom: 20px;
 		}
 		.availability {
 			font-size: 12px;
@@ -75,6 +76,9 @@
 	}
 	.qty-wrapper {
 		display: none;
+	}
+	.add-to-cart {
+		background: url(../images/securepayment.jpg) no-repeat 100% 0;
 	}
 	.add-to-cart-buttons .button {
 		background: $bordercolor;
