@@ -152,8 +152,9 @@ h2.table-caption {
 			}
 		}
 		strong, .block-cms-menu li strong {
-			color: lighten($textcolor,50%);
+			color: $gold;
 			font-weight: $mediumweight;
+			font-family: $titlefont;
 		}
 	}
 	.block-title {
@@ -210,8 +211,8 @@ body.customer-account .my-account .page-title h1 {
 }
 .box-account.box-info.box-rewardpoints-summary {
 	background: #987F6E;
-	padding: 10px 25px;
-	color: #FFF;
+	padding: 20px 25px;
+	color: $gold;
 	p {
 		font-family: $mainfont;
 		font-style: normal;
@@ -222,19 +223,38 @@ body.customer-account .my-account .page-title h1 {
 	}
 	.box-head {
 		border-color: #E1D5C6;
+		margin-top: 10px;
 		h2 {
 			color: #E1D5C6;
 			padding-left: 0;
+			font-size: 150%;
+			letter-spacing: 1px;
 		}
 	}
 	.rewardpoints-money {
-		color: #E1D5C6;
+		color: #FFF;
+	}
+	a.rewardpoints-name-img {
+		display: none;
 	}
 	a {
 		color: $gold;
 		background: #D5D0C4;
 		padding: 12px;
-		margin-left: -22px;
+		margin-left: -32px;
 	}
 }
-
+.rewardpoints-dashboard-list {
+	strong.rewardpoints-title {
+		font-size: 15px;
+		color: #E1D5C6;
+		border-bottom: 1px solid #E1D5C6;
+		padding-bottom: 4px;
+		margin-bottom: 8px;
+		display: inline-block;
+	}
+	.rewardpoints-title-content, .rewardpointsrule-rule-name-policy, .rewardpoints-dashboard-ul {
+		color: #FFF;
+		font-size: 110%;
+	}
+}
