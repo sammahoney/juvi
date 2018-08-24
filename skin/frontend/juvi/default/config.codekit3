@@ -145,6 +145,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/images\/juvigem_dark.png": {
+		"ft": 32768,
+		"iS": 6160,
+		"oA": 0,
+		"oAP": "\/images\/juvigem_dark.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/juvigem_light.png": {
+		"ft": 32768,
+		"iS": 4909,
+		"oA": 0,
+		"oAP": "\/images\/juvigem_light.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/images\/logo.png": {
 		"ft": 32768,
 		"iS": 33849,

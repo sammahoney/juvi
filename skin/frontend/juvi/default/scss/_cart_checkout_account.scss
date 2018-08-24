@@ -210,9 +210,10 @@ body.customer-account .my-account .page-title h1 {
 	}
 }
 .box-account.box-info.box-rewardpoints-summary {
-	background: #987F6E;
 	padding: 20px 25px;
-	color: $gold;
+	color: #E1D5C6;
+	background: #987F6E url(/skin/frontend/juvi/default/images/juvigem_light.png) no-repeat 28px 18px;
+	background-size: 5%;
 	p {
 		font-family: $mainfont;
 		font-style: normal;
@@ -222,11 +223,11 @@ body.customer-account .my-account .page-title h1 {
 		display: none !important;
 	}
 	.box-head {
-		border-color: #E1D5C6;
+		border-bottom: 1px solid #E1D5C6;
 		margin-top: 10px;
 		h2 {
 			color: #E1D5C6;
-			padding-left: 0;
+			padding-left: 60px;
 			font-size: 150%;
 			letter-spacing: 1px;
 		}
@@ -244,17 +245,26 @@ body.customer-account .my-account .page-title h1 {
 		margin-left: -32px;
 	}
 }
-.rewardpoints-dashboard-list {
-	strong.rewardpoints-title {
-		font-size: 15px;
-		color: #E1D5C6;
-		border-bottom: 1px solid #E1D5C6;
-		padding-bottom: 4px;
-		margin-bottom: 8px;
-		display: inline-block;
+strong.rewardpoints-title {
+	font-size: 15px;
+	color: #E1D5C6;
+	border-bottom: 1px solid #E1D5C6;
+	padding-bottom: 4px;
+	margin-bottom: 8px;
+	display: inline-block;
+}
+.rewardpoints-title-content, .rewardpointsrule-rule-name-policy, .rewardpoints-dashboard-ul {
+	color: #FFF !important;
+	font-size: 110%;
+}
+.customer-account-index {
+	.box-account.box-info.box-rewardpoints-summary {
+		background: #987F6E url(/skin/frontend/juvi/default/images/juvigem_light.png) no-repeat 3.5% 11%;
+		background-size: 5%;
 	}
-	.rewardpoints-title-content, .rewardpointsrule-rule-name-policy, .rewardpoints-dashboard-ul {
-		color: #FFF;
-		font-size: 110%;
+}
+#header-account {
+	span.rewardpoints-name {
+		font-size: 70%;
 	}
 }
