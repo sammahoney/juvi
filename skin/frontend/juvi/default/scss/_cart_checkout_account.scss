@@ -196,3 +196,30 @@ h2.table-caption {
 		}
 	}
 }
+
+// JuviGems Styling
+body.customer-account .my-account .page-title h1 {
+	color: $gold;
+}
+.block-account .block-title {
+	border-bottom: 4px solid $gold;
+	strong {
+		font-size: 125%;
+		color: $gold;
+	}
+}
+.box-account.box-info.box-rewardpoints-summary {
+	background: #987F6E;
+	padding: 10px 25px;
+	color: #FFF;
+	.box-head {
+		border-color: #FFF;
+		h2 {
+			color: #FFF;
+		}
+	}
+	.rewardpoints-money, a {
+		color: #FFF;
+	}
+}
+
