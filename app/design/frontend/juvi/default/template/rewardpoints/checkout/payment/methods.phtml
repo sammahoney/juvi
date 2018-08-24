@@ -24,6 +24,15 @@
  * @see Magestore_RewardPoints_Block_Checkout_Onepage_Payment_Rewrite_Methods
  */
 ?>
+
+<?php 
+    $cartsubtotal = Mage::helper('checkout/cart')->getQuote()->getSubtotal();
+    $pointsbalance = Mage::helper('rewardpoints/customer')->getBalance();
+?>
+
+<?php if ($pointsbalance >= $cartsubtotal): ?>
+
+
 <!--<dl class="sp-methods" id="checkout-payment-method-load">-->
 <dl class="rewardpoints-sp-methods discount juvigems-cart-box" id="rewardpoints-checkout-payment-method-load">
     <h2><?php echo $this->__('Use Your JuviGems') ?></h2>
@@ -317,3 +326,5 @@
 <?php endif ?>
 //]]>
 </script>
+
+<?php endif ?>
