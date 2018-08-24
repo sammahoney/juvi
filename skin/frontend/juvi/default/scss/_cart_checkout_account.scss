@@ -212,14 +212,29 @@ body.customer-account .my-account .page-title h1 {
 	background: #987F6E;
 	padding: 10px 25px;
 	color: #FFF;
+	p {
+		font-family: $mainfont;
+		font-style: normal;
+		font-size: 110%;
+	}
+	img {
+		display: none !important;
+	}
 	.box-head {
-		border-color: #FFF;
+		border-color: #E1D5C6;
 		h2 {
-			color: #FFF;
+			color: #E1D5C6;
+			padding-left: 0;
 		}
 	}
-	.rewardpoints-money, a {
-		color: #FFF;
+	.rewardpoints-money {
+		color: #E1D5C6;
+	}
+	a {
+		color: $gold;
+		background: #D5D0C4;
+		padding: 12px;
+		margin-left: -22px;
 	}
 }
 
