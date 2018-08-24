@@ -239,9 +239,9 @@ body.customer-account .my-account .page-title h1 {
 		display: none;
 	}
 	a {
-		color: $gold;
-		background: #D5D0C4;
-		padding: 12px;
+		color: #636363;
+		background: #e2d5c5;
+		padding: 12px 30px;
 		margin-left: -32px;
 	}
 }
@@ -266,5 +266,48 @@ strong.rewardpoints-title {
 #header-account {
 	span.rewardpoints-name {
 		font-size: 70%;
+	}
+}
+// Cart Box
+.discount.juvigems-cart-box {
+	background: #987F6E url(/skin/frontend/juvi/default/images/juvigem_light.png) no-repeat 14px 9px;
+	background-size: 24px;
+	border: 0;
+	color: #E1D5C6;
+	dl.rewards-sales-rules dd {
+		display: inline-block;
+		background: #e2d5c5;
+		color: #636363;
+		margin-left: -20px;
+		padding-left: 10px;
+		label {
+			padding: 0 0 6px 10px;
+		}
+	}
+	h2 {
+		color: #E1D5C6;
+		border-bottom: 1px solid #E1D5C6;
+		padding-bottom: 10px;
+		font-size: 120% !important;
+		font-weight: 200 !important;
+		letter-spacing: 1px;
+		padding-left: 40px;
+	}
+	.white {
+		color: #FFF;
+	}
+}
+#rewardpoints-checkout-payment-method-load {
+	padding: 16px;
+	background-size: 30px;
+	#rewardpoints-slider {
+		margin: 0;
+	}
+	#rewardpoints-slider-container {
+		padding: 10px;
+		margin-left: -35px;
+		display: block;
+		background: #e2d5c5;
+		color: #997f6c;
 	}
 }
