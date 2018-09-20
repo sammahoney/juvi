@@ -41,6 +41,7 @@
     ?>
 
     <?php if (count($_sliderRules) || (count($_checkboxRules))): ?>
+    <?php if(count($_checkboxRules) != 1): ?>
         <div class="discount juvigems-cart-box">
             <h2><?php echo $this->__('Use Your JuviGems') ?></h2>
             <div class="discount-form" id="cart-rewards-form">
@@ -330,6 +331,7 @@
                    });
                 </script> 
             <?php endif; ?>
+    <?php endif ?>
     <?php endif ?>
 
 <?php else: ?>

@@ -1,0 +1,62 @@
+<?php
+	$_category = $this->getCategory();
+	$products = Mage::getModel('catalog/category')->load($_category->getId());
+	$visibility = array(
+		Mage_Catalog_Model_Product_Visibility::VISIBILITY_BOTH,
+		Mage_Catalog_Model_Product_Visibility::VISIBILITY_IN_CATALOG
+	);
+	$productslist = $products->getProductCollection()
+		->addAttributeToFilter('status', 1)
+		->addAttributeToFilter('visibility', $visibility)
+		->addAttributeToSort('position', 'ASC')
+		->addAttributeToSelect('name');
+?>
+
+<div class="featured productscroller">
+    <a class="arrow-left product-arrow-l" href="#"></a>
+    <a class="arrow-right product-arrow-r" href="#"></a>
+
+    <div class="feat-scroller-container">
+        <div class="swiper-wrapper">
+            <?php $i = 0; foreach($productslist as $featured_product): if($i < 8):
+            	$_product = Mage::getModel('catalog/product')->load($featured_product->getId());
+				$productBlock = $this->getLayout()->createBlock('catalog/product_price'); ?>
+            
+            <div class="swiper-slide">
+                <div class="product">
+                    <a href="<?php echo $featured_product->getProductUrl(); ?>">
+                        <img
+                            src="<?php echo $this->helper('catalog/image')->init($featured_product, 'thumbnail')->resize(220, 120); ?>"/>
+
+                        <h2 class="product-name"><?php echo $this->stripTags($featured_product->getName(), null, true) ?></h2>
+                    </a>
+                    <?php echo $productBlock->getPriceHtml($_product) ?>
+                    <a class="shop-now"
+                       href="<?php echo $featured_product->getProductUrl(); ?>"><?php echo $this->__('Shop Now >') ?></a>
+                </div>
+            </div>
+
+            <?php $i++; endif; endforeach; ?>
+        </div>
+    </div>
+    <div class="product-pagination"></div>
+</div>
+
+<script type="text/javascript">
+    var mySwiper3 = new Swiper('.feat-scroller-container', {
+        loop: false,
+        pagination: '.product-pagination',
+        paginationClickable: true,
+        speed: 1200,
+        slidesPerView: 5,
+        slidesPerGroup: 5
+    });
+    jQuery('.product-arrow-l').on('click', function (e) {
+        e.preventDefault()
+        mySwiper3.slidePrev()
+    });
+    jQuery('.product-arrow-r').on('click', function (e) {
+        e.preventDefault()
+        mySwiper3.slideNext()
+    })
+</script>

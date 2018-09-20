@@ -47,6 +47,7 @@
         ?>
 
         <?php if (count($_sliderRules) || (count($_checkboxRules))): ?>
+        <?php if(count($_checkboxRules) != 1): ?>
             <dt style="height: 0; position: relative; overflow: hidden; display: block">
             <input id="rewardpoints_payment_method" type="checkbox" title="<?php echo $this->__('Spend Your Points') ?>" <?php if ($this->isUsePoint()): ?> checked="checked"<?php endif ?> onclick="changeUsePointAjaxOnepage(this)" />
             <label for="rewardpoints_payment_method"><?php echo $this->__('Use your JuviGems') ?></label>
@@ -302,6 +303,7 @@
                     </dl>
                 </div>
             </dd>
+        <?php endif ?>
         <?php endif ?>
 
     <?php endif // end $this->enableReward() condition  ?>
