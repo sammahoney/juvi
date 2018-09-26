@@ -1,0 +1,17 @@
+<div class="<?php echo $this->getFullHtmlClass() ?> <?php if($this->getCol()){echo $this->getCol();} ?>" id="<?php echo $this->getHtmlId() ?>">
+    <div class="bettercms-content-inner">
+        <?php if($image = $this->getImageHtml()):?>
+        <div class="image">
+            <?php echo $image; ?>
+        </div>
+        <?php endif; ?>
+        <?php if($html = $this->getTextHtml()): ?>
+        <div class="text">
+            <?php echo $html; ?>
+        </div>
+        <?php endif; ?>
+    </div>
+    <?php if($img_link = $this->getAltData('image_link')): ?>
+        <a class="full-link" href="<?php echo Mage::getUrl($img_link) ?>"></a>
+    <?php endif; ?>
+</div>
