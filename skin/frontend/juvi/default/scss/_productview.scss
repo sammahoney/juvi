@@ -9,6 +9,7 @@
 }
 .product-view {
 	.product-shop {
+		width: 42%;
 		.product-name {
 			width: 100%;
 			.h1 {
@@ -58,18 +59,30 @@
 		color: #777;
 	}
 	.product-img-box {
+		position: relative;
 		.product-image img {
 			max-height: 900px !important;
 		}
-		.product-image-thumbs li a {
-			margin-right: 6px;
-			overflow: hidden;
-			@include transition(all 0.2s $transease);
-			&:hover {
-				border-color: transparent;
-				opacity: 0.8;
-				img {
-					@include transition(all 0.2s $transease);
+		.more-views {
+			@media only screen and (min-width: 771px) {
+				position: absolute;
+				right: -12%;
+				top: 0;
+				width: 80px;
+				h2 {
+					display: none;
+				}
+			}
+			.product-image-thumbs li a {
+				margin-right: 6px;
+				overflow: hidden;
+				@include transition(all 0.2s $transease);
+				&:hover {
+					border-color: transparent;
+					opacity: 0.8;
+					img {
+						@include transition(all 0.2s $transease);
+					}
 				}
 			}
 		}
@@ -79,10 +92,20 @@
 	}
 	.add-to-cart {
 		background: url(../images/securepayment.jpg) no-repeat 100% 0;
+		@media only screen and (min-width: 771px) {
+			background-size: 33.1%;
+		}
+	}
+	.add-to-cart-wrapper {
+		width: 42%;
 	}
 	.add-to-cart-buttons .button {
 		background: $bordercolor;
 		border: 0;
+		@media only screen and (max-width: 770px) {
+			padding: 0px 10px;
+			min-width: 110px;
+		}
 		&:hover {
 			background: #000;
 		}
