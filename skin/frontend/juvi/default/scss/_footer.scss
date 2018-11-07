@@ -57,11 +57,13 @@
 // Social Block
 #social_block {
 	text-align: center;
+	max-width: 210px;
+	margin: 20px auto 55px;
 }
 #social_block a {
 	display:inline-block;
-	margin-right: 2%;
-	width: 22.4%;
+	margin-right: 0;
+	width: 24%;
 }
 #social_block a:last-child {
 	margin-right: 0;
@@ -71,15 +73,21 @@
 }
 #social_block h4 {
     text-align: center;
-    font-size: 170%;
     border-top: 1px solid #CCC;
     padding-top: 16px;
+    font-size: 120%;
+	letter-spacing: 1px;
 }
 #social_block h5 {
     text-align: center;
     font-size: 130%;
     font-style: italic;
     padding-bottom: 10px;
+}
+#social_block .fa:before {
+	font-size: 30px;
+	color: #27130a;
+	left: -13px;
 }
 
 // Standard Footer

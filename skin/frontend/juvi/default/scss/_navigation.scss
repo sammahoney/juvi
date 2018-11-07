@@ -104,7 +104,7 @@ li.menu-promo-wrapper {
 					border: 0;
 					color: $textcolor;
 					font-family: $titlefont;
-					font-size: 90%;
+					font-size: 100%;
 					letter-spacing: $spacing;
 					text-transform: uppercase;
 					line-height: 15px;
@@ -152,7 +152,8 @@ li.menu-promo-wrapper {
 					color: $textcolor;
 					line-height: 22px;
 					font-family: $mainfont;
-					font-size: 80%;
+					font-size: 90%;
+					text-transform: capitalize;
 					letter-spacing: $spacing;
 					font-weight: $lightweight;
 					margin-bottom: 0;
@@ -191,6 +192,7 @@ ul.collections.level0 {
 		width: auto;
 		a {
 			font-family: $titlefont;
+			text-transform: uppercase;
 			img {
 				width: 100%;
 			}
