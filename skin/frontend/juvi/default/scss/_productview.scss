@@ -379,6 +379,10 @@ img.mfp-img {
 		white-space: normal;
 		line-height: 12px !important;
 		letter-spacing: 0;
+		color: #999;
+		&:hover {
+			color: #555;
+		}
 	}
 	.selected span.swatch-label {
 		color: brown;
