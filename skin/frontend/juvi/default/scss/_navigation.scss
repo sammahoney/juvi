@@ -149,10 +149,10 @@ li.menu-promo-wrapper {
 			li.level2 {
 				a {
 					border: 0;
-					color: $textcolor;
+					color: lighten( $textcolor, 30% );
 					line-height: 22px;
 					font-family: $mainfont;
-					font-size: 90%;
+					font-size: 88%;
 					text-transform: capitalize;
 					letter-spacing: $spacing;
 					font-weight: $lightweight;
@@ -193,6 +193,7 @@ ul.collections.level0 {
 		a {
 			font-family: $titlefont;
 			text-transform: uppercase;
+			line-height: 16px;
 			img {
 				width: 100%;
 			}
