@@ -272,7 +272,7 @@
             }
         });
         // Set # in URL
-        jQuery('#configurable_swatch_material_type').mouseout(function(){
+        jQuery('#configurable_swatch_material_type').parent().parent().parent().parent().mouseout(function(){
             var swatchmaterialId = jQuery('#configurable_swatch_material_type').prev('select').attr('id').replace('attribute','');
             var swatchmaterial = jQuery('#configurable_swatch_material_type > li.selected').attr('id').replace('option','');
             var swatchstoneId = jQuery('#configurable_swatch_stone_type').prev('select').attr('id').replace('attribute','');
