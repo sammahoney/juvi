@@ -17,7 +17,7 @@
                 <div class="product">
                     <a href="<?php echo $featured_product->getProductUrl(); ?>">
                         <img
-                            src="<?php echo $this->helper('catalog/image')->init($featured_product, 'thumbnail')->resize(220, 120); ?>"/>
+                            src="<?php echo $this->helper('catalog/image')->init($featured_product, 'thumbnail')->resize(160, 160); ?>"/>
 
                         <h2 class="product-name"><?php echo $this->stripTags($featured_product->getName(), null, true) ?></h2>
                     </a>
