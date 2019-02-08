@@ -29,6 +29,10 @@
 				<name>css/Engravers_Gothic.css</name>
 			</action>
 			<action method="addItem">
+				<type>skin_css</type>
+				<name>css/magnific-popup.css</name>
+			</action>
+			<action method="addItem">
 				<type>skin_js</type>
 				<name>js/min/juvi-min.js</name>
 				<params/>
@@ -42,9 +46,10 @@
 				<name>js/min/jquery.magnific-popup-min.js</name>
 			</action>
 			<action method="addItem">
-				<type>skin_css</type>
-				<name>css/magnific-popup.css</name>
+				<type>skin_js</type>
+				<name>js/jquery.c00kie.js</name>
 			</action>
+			
 			<!-- Fonts -->
 			<block type="core/text" name="google.fonts">
 			    <action method="setText">
