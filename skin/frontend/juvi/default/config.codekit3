@@ -241,6 +241,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/js/jquery.c00kie.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/jquery.c00kie-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"/js/jquery.magnific-popup.js": {
 		"ft": 64,
 		"ma": 0,
