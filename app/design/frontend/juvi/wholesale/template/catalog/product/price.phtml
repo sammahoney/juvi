@@ -25,7 +25,7 @@
  */
 ?>
 
-<?php if(Mage::getSingleton('customer/session')->isLoggedIn() == true): ?>
+<?php if($this->helper('customer')->isLoggedIn() == true): ?>
 <?php
 /**
  * Template for displaying product price in different places (products grid, product view page etc)
