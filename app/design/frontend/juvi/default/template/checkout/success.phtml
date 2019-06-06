@@ -42,9 +42,9 @@
             <?php foreach($_items as $_item): if($_item->getQtyToInvoice() > 0): ?>
                 <?php if($hasComma){ echo ","; } ?>
                 {
-                    id: '<?php echo $_item->getProduct()->getData("sku") ?>',
-                    quantity: <?php echo $_item->getQtyToInvoice() ?>,
-                    item_price: <?php echo $_item->getPrice() ?>
+                    id: '<?php echo $_item->getProduct()->getData("sku"); ?>',
+                    quantity: <?php echo $_item->getQtyToInvoice(); ?>,
+                    item_price: <?php echo round($_item->getPrice(),2); ?>
                 }
             <?php $hasComma = true; endif; endforeach; ?>
         ],
