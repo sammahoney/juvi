@@ -29,10 +29,27 @@
     $fb_OrderId = Mage::getSingleton('checkout/session')->getLastOrderId();
     $fb_Order = Mage::getModel('sales/order')->load($fb_OrderId);
     $fb_value = $fb_Order->getGrandTotal();
+    // Individual order items
+    $_items = $fb_Order->getAllItems();
+    $hasComma = false;
 ?>
 <script>
     /* FB pixel tracking for order value */
-    fbq('track', 'Purchase', {currency: "EUR", value: <?php echo round($fb_value,2); ?>});
+    fbq('track', 'Purchase', {
+        currency: "EUR", 
+        value: <?php echo round($fb_value,2); ?>,
+        contents: [
+            <?php foreach($_items as $_item): if($_item->getQtyToInvoice() > 0): ?>
+                <?php if($hasComma){ echo ","; } ?>
+                {
+                    id: '<?php echo $_item->getProduct()->getData("sku") ?>',
+                    quantity: <?php echo $_item->getQtyToInvoice() ?>,
+                    item_price: <?php echo $_item->getPrice() ?>
+                }
+            <?php $hasComma = true; endif; endforeach; ?>
+        ],
+        content_type: 'product'
+    });
 </script>
 
 
