@@ -322,4 +322,50 @@ strong.rewardpoints-title {
 		pointer-events: none;
 		opacity: 0;
 	}
+	.block-cart {
+		border-left: 1px solid #CCC;
+		padding: 5px 18px 20px;
+		margin-top: 55px;
+		.subtotal {
+			.label, .price {
+				font-family: $titlefont;
+				font-size: 16px;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+		}
+		li.item {
+			margin-left: 0;
+		}
+		p.product-name a {
+			font-family: $titlefont;
+		}
+		.block-title, .block-subtitle, .summary .amount, .actions, a.btn-edit, .details {
+			display: none;
+		}
+		.mini-products-list .product-details .product-name {
+			padding-top: 0;
+			margin-bottom: 0;
+			padding-bottom: 5px;
+		}
+		.item-options dd, .item-options dt {
+			font-size: 12px;
+			line-height: 12px;
+		}
+		.truncated {
+			cursor: default;
+			.truncated_full_value .item-options {
+				border-color: #26130B;
+				position: static;
+				display: block;
+				background: none;
+				border: 0;
+				padding: 0;
+				font-family: $mainfont;
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
 }
