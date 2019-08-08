@@ -313,3 +313,13 @@ strong.rewardpoints-title {
 		color: #997f6c;
 	}
 }
+
+// Checkout Lockdown styling
+.checkout-onepage-index {
+	#header-nav, .skip-links, #header-search {
+		height: 0;
+		overflow: hidden;
+		pointer-events: none;
+		opacity: 0;
+	}
+}
