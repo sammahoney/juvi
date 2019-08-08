@@ -368,4 +368,7 @@ strong.rewardpoints-title {
 			}
 		}
 	}
+	label[for="billing:postcode"].required:after {
+		display: none;
+	}
 }
