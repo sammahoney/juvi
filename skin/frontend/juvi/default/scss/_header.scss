@@ -167,10 +167,10 @@ p.welcome-msg {
 	}
 	.minicart-actions {
 		.checkout-button {
-			background: lighten($background, 20%);
+			background: $greencta;
 			color: $buttontextcolor;
 			&:hover {
-				background: $background;
+				background: $greenctahover;
 			}
 		}
 		.cart-link {
