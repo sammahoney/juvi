@@ -93,24 +93,28 @@
 	.add-to-cart-wrapper {
 		width: 42%;
 	}
-	.add-to-cart-buttons .button {
-		background: $bordercolor;
-		border: 0;
-		@media only screen and (max-width: 770px) {
-			padding: 0px 10px;
-			min-width: 110px;
-		}
-		&:hover {
-			background: #000;
-		}
-		span {
-			color: $buttontextcolor;
-			font-family: $titlefont;
-			font-weight: $boldweight;
-			font-size: 90%;
-		}
-		&.btn-cart:disabled {
-			cursor: progress;
+	.add-to-cart-buttons {
+		float: right !important;
+		margin-right: 0 !important;
+		.button {
+			background: $bordercolor;
+			border: 0;
+			@media only screen and (max-width: 770px) {
+				padding: 0px 10px;
+				min-width: 110px;
+			}
+			&:hover {
+				background: #000;
+			}
+			span {
+				color: $buttontextcolor;
+				font-family: $titlefont;
+				font-weight: $boldweight;
+				font-size: 90%;
+			}
+			&.btn-cart:disabled {
+				cursor: progress;
+			}
 		}
 	}
 	.box-collateral {
