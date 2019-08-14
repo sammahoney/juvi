@@ -45,6 +45,9 @@ p.welcome-msg {
 		border-bottom: 1px solid #000;
 		border-radius: 0;
 		font-size: 11px !important;
+		@media only screen and (max-width: 960px){
+			font-size: 16px !important;
+		}
 	}
 	.search-button:before {
 		content:"\f002";
