@@ -237,17 +237,19 @@ ul.messages {
 	margin: -1px !important;
 	cursor: pointer;
 	li {
-		padding: 14px 10px 12px 20px;
+		padding: 14px 50px 12px 20px;
+		@media only screen and (max-width: 770px){
+			font-size: 12px !important;
+		}
 	}
 	> li:after { 
-		font-family: 'Alegreya Sans SC', $mainfont;
 		content: "×";
 		position: absolute;
 		width:30px; 
 		height:30px; 
 		right: 20px;
 		top: 0;
-		font-size: 32px;
+		font-size: 27px;
 	}
 	a {
 		text-decoration: underline;
