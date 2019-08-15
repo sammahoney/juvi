@@ -7,18 +7,15 @@
 
 <div class="currency-selector">
     <strong>Currency</strong>
-    <?php foreach ($this->getCurrencies() as $_code => $_name): ?>
-        <?php if($_code == $this->getCurrentCurrencyCode()): ?>
-        <span class="current-currency <?php echo strtolower($_code) ?>"><?php echo Mage::app()->getLocale()->currency($_code)->getSymbol(); ?></span>
-        <?php endif; ?>
-    <?php endforeach; ?>
     <ul class="currency-list">
-    <?php foreach ($this->getCurrencies() as $_code => $_name): ?>
-        <?php if($_code != $this->getCurrentCurrencyCode()): ?>
+    <?php $currencies = $this->getCurrencies(); foreach ($currencies as $_code => $_name): ?>
         <li>
-            <a href="<?php echo $this->getSwitchCurrencyUrl($_code) ?>" class="<?php echo strtolower($_code) ?>"><?php echo Mage::app()->getLocale()->currency($_code)->getSymbol(); ?></a>
+            <?php if($_code == $this->getCurrentCurrencyCode()): ?>
+                <span class="current-currency <?php echo strtolower($_code) ?>"><?php echo Mage::app()->getLocale()->currency($_code)->getSymbol(); ?></span>
+            <?php else: ?>
+                <a href="<?php echo $this->getSwitchCurrencyUrl($_code) ?>" class="<?php echo strtolower($_code) ?>"><?php echo Mage::app()->getLocale()->currency($_code)->getSymbol(); ?></a>
+            <?php endif; ?>
         </li>
-        <?php endif; ?>
     <?php endforeach; ?>
     </ul>
 </div>

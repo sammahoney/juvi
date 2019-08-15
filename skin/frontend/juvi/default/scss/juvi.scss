@@ -530,6 +530,12 @@ $bp-xlarge: 1199px;
 		right: 390px;
 	}	
 }
+@media only screen and (max-width: $bp-medium) {
+	#fb-close.slide-out {
+		right: 100vw;
+		margin-right: -22px;
+	}
+}
 
 /* Carousel styling */
 .cms-index-index .productscroller {

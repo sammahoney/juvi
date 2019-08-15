@@ -276,16 +276,15 @@ p.welcome-msg {
 	strong {
 		display: block;
 		float: left;
+		line-height: 20px;
+		padding-right: 8px;
 	}
 	span.current-currency {
-		display: block;
 		color: #FFF;
-		float: left;
-		border: 1px solid #FFF;
-		margin: -2px -1px 0 12px;
-		padding: 0 10px 1px;
-		font-size: 115%;
-		background: #999;
+		padding: 0 5px 2px;
+		font-size: 110%;
+		background: #5e5e5e;
+		margin: 0 -9px 0 -6px;
 	}
 	ul {
 		margin-top: -2px;
@@ -293,11 +292,16 @@ p.welcome-msg {
 			display: inline-block;
 			border: 1px solid #ddd;
 			margin: 0 -6px 0 0;
-			padding: 0px 8px 1px;
+			padding: 0px 8px 0;
 			font-size: 115%;
 			border-left: 0;
 			border-top-color: #FFF;
 			border-bottom-color: #FFF;
+			max-height: 23px;
+			&:first-child {
+				border-left: 1px solid #ddd;
+				padding-left: 5px;
+			}
 			a:first-child {
 				text-align: right;
 				color: lighten($textcolor, 50%);
