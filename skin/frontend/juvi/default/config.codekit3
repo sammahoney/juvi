@@ -19,6 +19,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/css/fontawesome.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "/css/fontawesome-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/css/jquery.sidr.light.css": {
 		"aP": 0,
 		"bl": 0,
@@ -91,6 +101,48 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/favicon.ico",
+		"oF": 0
+		},
+	"/fonts/fontawesome-webfont.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/fonts/fontawesome-webfont.eot",
+		"oF": 0
+		},
+	"/fonts/fontawesome-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/fonts/fontawesome-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/fonts/fontawesome-webfont.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/fonts/fontawesome-webfont.ttf",
+		"oF": 0
+		},
+	"/fonts/fontawesome-webfont.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/fonts/fontawesome-webfont.woff",
+		"oF": 0
+		},
+	"/fonts/fontawesome-webfont.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/fonts/fontawesome-webfont.woff2",
 		"oF": 0
 		},
 	"/images/1429LS-C49-min-32.png": {
