@@ -392,7 +392,8 @@ ul.messages {
 // =============================================
 
 #PopupSignupForm_0 {
-	display: none;
+	position: relative;
+	z-index: -1;
 }
 .mc-modal-bg {
 	background-color: #FFF !important;

@@ -45,6 +45,6 @@ jQuery(document).ready(function(){
 	});
 	// Mailchimp popup - delay for 20 seconds
 	setTimeout(function(){
-		jQuery('#PopupSignupForm_0').show();
+		jQuery('#PopupSignupForm_0').css("z-index","9999");
 	}, 20000);
 });
