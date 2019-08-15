@@ -342,6 +342,9 @@
 	li.sidr-class-level1.sidr-class-parent > a.active:after {
 		content: "\f106";
 	}
+	li.sidr-class-menu-promo-wrapper {
+		display: none !important;
+	}
 	.sidr-class-menu-promo img {
 		margin: -16px 0 -15px;
 		width: 100%;
