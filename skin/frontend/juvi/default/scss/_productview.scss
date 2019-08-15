@@ -18,6 +18,9 @@
 				font-size: 155%;
 				letter-spacing: $spacing+1;
 				color: $textcolor;
+				@media only screen and (max-width: 770px) {
+					font-size: 24px;
+				}
 			}
 		}
 		.price-info {
@@ -129,6 +132,9 @@
 			padding: 20px 0 10px;
 		}
 	}
+}
+.more-views h2 {
+	display: none;
 }
 .product-view .sharing-links a {
 	background-image: url(../images/icon_sprite.png);
