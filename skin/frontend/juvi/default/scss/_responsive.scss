@@ -231,11 +231,18 @@
 	}
 	.skip-link, .skip-nav {
 		line-height: 44px;
-		width: 25%;
+		width: 14%;
 		border: 0;
 		background: transparent;
 		color: $buttontextcolor;
 		padding: 0;
+	}
+	a.skip-link.skip-nav {
+		position: absolute;
+		right: 0;
+		.label {
+			display: none;
+		}
 	}
 	.skip-account .icon {
 		&:after {
@@ -317,10 +324,13 @@
 		text-transform: uppercase;
 		letter-spacing: $spacing+1;
 	}
+	.sidr ul.sidr-class-level0, .sidr ul.sidr-class-level1 {
+		display: none;
+	}
 	ul.sidr-class-level1 > li > a {
 		padding-left: 40px !important;
 	}
-	li.sidr-class-level1.sidr-class-parent > a:after {
+	li.sidr-class-parent > a:after {
 		content: "\f107";
 		font-family: "FontAwesome";
 		float: right;
