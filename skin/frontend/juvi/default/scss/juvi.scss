@@ -391,6 +391,9 @@ ul.messages {
 // Mailchimp popup
 // =============================================
 
+#PopupSignupForm_0 {
+	display: none;
+}
 .mc-modal-bg {
 	background-color: #FFF !important;
 }
@@ -502,7 +505,7 @@ $bp-xlarge: 1199px;
 	position: fixed;
 	bottom: 0;
 	right: -410px;
-	z-index: 10;
+	z-index: 99;
 	box-shadow: 0 0 20px rgba(0,0,0,0.4);
 	@include transition(all 0.2s $transease);
 	&.slide-out {
@@ -510,6 +513,8 @@ $bp-xlarge: 1199px;
 	}
 }
 #fb-close {
+	text-indent: 2px;
+	font-family: initial;
 	bottom: 290px;
 	right: -30px;
 	position: fixed;
@@ -517,7 +522,7 @@ $bp-xlarge: 1199px;
 	width: 22px;
 	color: #FFF;
 	background: #000;
-	z-index: 11;
+	z-index: 100;
 	border-radius: 100%;
 	font-size: 18px;
 	padding: 0 3px;

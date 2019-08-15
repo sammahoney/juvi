@@ -43,4 +43,8 @@ jQuery(document).ready(function(){
 	jQuery('#fb-close').on('click',function(){
 		jQuery('.fb-page.fb_iframe_widget, #fb-close').removeClass("slide-out");
 	});
+	// Mailchimp popup - delay for 20 seconds
+	setTimeout(function(){
+		jQuery('#PopupSignupForm_0').show();
+	}, 20000);
 });
