@@ -63,6 +63,9 @@
 	}
 	.product-img-box {
 		position: relative;
+		.product-name h1 {
+			font-size: 24px;
+		}
 		.product-image img {
 			max-height: 900px !important;
 		}
@@ -160,7 +163,14 @@
 	display: none;
 }
 .product-view .sharing-links a {
-	background-image: url(../images/icon_sprite.png);
+	background: none;
+	text-indent: 0 !important;
+	.fa:before {
+		font-size: 25px;
+		top: -14px;
+		left: -5px;
+		color: #555;
+	}
 }
 // Additional info
 .product-view .accordion-info .box-collateral {
