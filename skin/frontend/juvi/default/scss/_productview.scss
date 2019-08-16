@@ -39,7 +39,7 @@
 			font-size: 14px;
 			font-family: $mainfont;
 			letter-spacing: 0;
-			line-height: 200%;
+			line-height: 160%;
 			padding-bottom: 20px;
 		}
 		.availability {
@@ -99,9 +99,11 @@
 	.add-to-cart-buttons {
 		float: right !important;
 		margin-right: 0 !important;
+		width: 50%;
 		.button {
 			background: $bordercolor;
 			border: 0;
+			min-width: 132px;
 			@media only screen and (max-width: 770px) {
 				padding: 0px 10px;
 				min-width: 110px;
@@ -119,6 +121,27 @@
 				cursor: progress;
 			}
 		}
+	}
+	.add-to-links {
+		margin-top: -56px;
+		width: 50%;
+		a {
+			border-right: 0;
+			font-family: $titlefont;
+			font-weight: $boldweight;
+			font-size: 90%;
+			text-transform: uppercase;
+			padding-right: 0 !important;
+			&:before {
+				content: "♥";
+				padding-right: 6px;
+				font-size: 11px;
+			}
+		}
+	}
+	.sharing-links {
+		float: none;
+		padding-top: 15px;
 	}
 	.box-collateral {
 		h2 {
