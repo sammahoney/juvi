@@ -145,6 +145,7 @@
 	.sharing-links {
 		float: none;
 		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 	.box-collateral {
 		h2 {
@@ -161,6 +162,9 @@
 }
 .more-views h2 {
 	display: none;
+}
+.product-options-bottom {
+	padding: 15px 20px 0;
 }
 .product-view .sharing-links a {
 	background: none;
@@ -260,14 +264,26 @@ a.enlarge {
 .product-view .add-to-links li:first-child a {
 	padding-right: 18px;
 }
-.product-options p.required {
-	position: absolute;
-	top: 6px;
-	right: 11px;
-	text-align: right;
-	margin: -1px 0 0;
-	font-size: 10px;
-	padding: 0;
+.product-options {
+	p.required {
+		position: absolute;
+		top: 6px;
+		right: 11px;
+		text-align: right;
+		margin: -1px 0 0;
+		font-size: 10px;
+		padding: 0;
+	}
+	.validation-advice {
+		font-size: 0;
+	}
+	.validation-advice:after {
+		content: "Make Your Selection";
+		font-size: 12px;
+	}
+}
+ul#configurable_swatch_material_type {
+	margin-top: 8px;
 }
 // Notify
 .product-options.notify {
