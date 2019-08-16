@@ -55,6 +55,17 @@
 #co-shipping-method-form .buttons-set .button, .shipping .sp-methods label span, .shipping #co-shipping-method-form .sp-methods dd label, .sp-methods dt {
 	font-family: $titlefont;
 }
+.sp-methods dt:first-child {
+	margin: 0 0 5px;
+	font-weight: 300;
+	font-size: 14px;
+	color: #111;
+	text-transform: uppercase;
+}
+.opc .checkbox + label, .opc .radio + label {
+	letter-spacing: 0;
+	font-size: 13px;
+}
 #discount-coupon-form label, .cart .giftcard label, #discount-coupon-form .button-wrapper > button,
 .cart .giftcard .button-wrapper > button, .shipping .form-list label, .cart .cart-totals table,
 .cart .cart-totals table tfoot strong span, .cart .cart-totals table tfoot span.price, .crosssell h2,
@@ -96,6 +107,13 @@ body.customer-account .my-account .order-details h2 {
 	&:hover {
 		background: $greenctahover;
 	}
+}
+.block-progress dd address, .block-progress dd, .block-progress dd p {
+	font-family: $mainfont;
+	font-style: normal;
+	letter-spacing: 0;
+	font-size: 13px;
+	color: #111;
 }
 
 // Social Sharing on checkout success
