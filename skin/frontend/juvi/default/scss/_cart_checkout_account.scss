@@ -118,7 +118,7 @@ body.customer-account .my-account .order-details h2 {
 
 // Social Sharing on checkout success
 .sc_container {
-	text-align: center;
+	text-align: center !important;
 	&:before {
 		content: "Share Your Purchase!";
 		display: block;
@@ -150,7 +150,7 @@ body.customer-account .my-account .order-details h2 {
 }
 @media only screen and (max-width: 770px) {
 	.sc_item {
-		width: 49%;
+		width: 49% !important;
 	}
 }
 
