@@ -90,18 +90,6 @@
 				<type>skin_css</type>
 				<name>css/swiper.min.css</name>
 			</action>
-			<action method="addItem">
-                <type>skin_js</type>
-                <name>js/shopstafeed.js</name>
-            </action>
-            <action method="addItem">
-                <type>skin_css</type>
-                <name>css/shopstafeed.css</name>
-            </action>
-		</reference>
-		<reference name="content">
-			<block type="homepage/homepage" name="homepage" as="homepage" template="home/homepage.phtml"/>
-			<block type="marlon_shopstafeed/post_list" name="instacarousel" template="home/instacarousel.phtml" />
 		</reference>
 		<reference name="before_body_end">
             <block type="core/text" name="overlay">
