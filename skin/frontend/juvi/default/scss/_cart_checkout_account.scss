@@ -161,6 +161,13 @@ label[for="p_method_sagepaydirectpro"], label[for="p_method_sagepayserver"], lab
   background-repeat: no-repeat;
   background-image: url(../sagepaysuite/images/sage-pay-small.jpg) !important;
 }
+/* Stripe Icons */
+label[for="p_method_amasty_stripe"] {
+  padding-left: 135px !important;
+  padding-top: 7px !important;
+  background-repeat: no-repeat;
+  background-image: url(../sagepaysuite/images/sage-pay-small.jpg) !important;
+}
 
 // =============================================
 // Account
