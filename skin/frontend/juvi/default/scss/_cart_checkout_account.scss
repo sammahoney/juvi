@@ -443,3 +443,22 @@ strong.rewardpoints-title {
 		display: none;
 	}
 }
+
+// Magento Order Attributes plugin styling
+#orderatt {
+	background: #ecf7e9 url(https://www.juvidesigns.com/media/wysiwyg/BetterCMS/Juvigems_800_x_800.jpg);
+	padding: 10px;
+	border-radius: 4px;
+	background-position: 60% 90%;
+	border: 1px solid #ecf7e9;
+	.field-row > label {
+		font-family: $titlefont;
+		font-weight: 300;
+		font-size: 100%;
+		color: #111;
+		font-size: 14px;
+		ul li label {
+			padding-left: 10px;
+		}
+	}
+}
