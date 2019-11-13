@@ -60,6 +60,11 @@
 			        		]]></text>
 			    </action>
 			</block>
+			<block type="core/text" name="fontawesome">
+				<action method="setText">
+					<text><![CDATA[<script src="https://use.fontawesome.com/54c55a2c89.js"></script>]]></text>
+				</action>
+			</block>
 		</reference>
 		<remove name="footer"/>
 		<reference name="footer.before">
