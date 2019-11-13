@@ -328,7 +328,10 @@
 		text-transform: uppercase;
 		letter-spacing: $spacing+1;
 	}
-	.sidr ul.sidr-class-level0, .sidr ul.sidr-class-level1 {
+	.skip-link .icon {
+		text-indent: 0;
+	}
+	.sidr ul.sidr-class-level0, .sidr ul.sidr-class-level1, .skip-link .label {
 		display: none;
 	}
 	ul.sidr-class-level1 > li > a {
