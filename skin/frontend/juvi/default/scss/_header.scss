@@ -212,6 +212,7 @@ p.welcome-msg {
 		right: 200px;
 		border: 0;
 		background: $backgroundinvert;
+		z-index: 1;
 		@include css3-prefix(box-shadow, 0 0 3px 0 rgba(0,0,0,0.2));
 	}
 }
