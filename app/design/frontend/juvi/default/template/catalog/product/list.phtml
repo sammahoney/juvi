@@ -68,15 +68,17 @@ $fullActionName = Mage::app()->getFrontController()->getAction()->getFullActionN
                 <a href="<?php echo $_product->getProductUrl() ?>" class="product-image">
                     <?php // Get rollover img
                         if($fullActionName != 'catalogsearch_result_index'){
-                            if(count($_product->getMediaGalleryImages() > 0)) {
+                            if(count($_product->getMediaGalleryImages()) > 1) {
                                 if($_product->getMediaGalleryImages()->getItemByColumnValue('position_default', '2')){
                                     $rollover = $_product->getMediaGalleryImages()->getItemByColumnValue('position_default', '2')->getFile();
                                 }
+                            }else{
+                                $rollover = NULL;
                             }
                         }
                     ?>
                     <img id="product-collection-image-<?php echo $_product->getId(); ?>" class="masterTooltip"
-                        <?php if($rollover): ?>
+                        <?php if($rollover != NULL): ?>
                         onmouseover="this.src='<?php echo $this->helper('catalog/image')->init(Mage::getModel('catalog/product')->load($_product->getProductId()), 'small_image', $rollover)->resize(460); ?>';" 
                         onmouseout="this.src='<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(460); ?>';"
                         <?php endif; ?>
