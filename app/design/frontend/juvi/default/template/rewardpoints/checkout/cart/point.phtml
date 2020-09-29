@@ -25,12 +25,6 @@
  */
 ?>
 
-<?php 
-    $cartsubtotal = Mage::helper('checkout/cart')->getQuote()->getSubtotal();
-    $pointsbalance = Mage::helper('rewardpoints/customer')->getBalance();
-?>
-
-<?php if ($pointsbalance >= $cartsubtotal && $this->enableReward()): ?>
     <?php
     $_sliderRules = $this->getSliderRules();
     $_checkboxRules = $this->getCheckboxRules();
@@ -333,13 +327,3 @@
             <?php endif; ?>
     <?php endif ?>
     <?php endif ?>
-
-<?php else: ?>
-
-    <div class="discount juvigems-cart-box">
-        <h2><?php echo $this->__('Use Your JuviGems') ?></h2>
-        <p class="white">Collect <?php echo ($cartsubtotal - $pointsbalance) ?> more JuviGems and get this item for free!</p>
-    </div>
-
-    <?php
- endif #end $this->enableReward() condition ?>
