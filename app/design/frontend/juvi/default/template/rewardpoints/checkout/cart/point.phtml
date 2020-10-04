@@ -25,6 +25,7 @@
  */
 ?>
 
+<?php if (Mage::getSingleton('customer/session')->isLoggedIn()): ?>
     <?php
     $_sliderRules = $this->getSliderRules();
     $_checkboxRules = $this->getCheckboxRules();
@@ -93,7 +94,7 @@
                                     <div class="input-max">
                                         <input type="checkbox" id="reward_max_points_used" onchange="changeUseMaxpoint(this)" />
                                         <label for="reward_max_points_used">
-                                            <?php echo $this->__('Use my JuviGems to get this item for free!') ?>
+                                            <?php echo $this->__('Use my JuviGems towards this purchase') ?>
                                         </label>
                                     </div>
                                     <div class="input-point" style="height: 0; position: relative; overflow: hidden">
@@ -327,3 +328,13 @@
             <?php endif; ?>
     <?php endif ?>
     <?php endif ?>
+
+<?php else: ?>
+
+    <div class="discount juvigems-cart-box">
+        <h2><?php echo $this->__('Use Your JuviGems') ?></h2>
+        <p class="white"><a href="/customer/account/login/">Login</a> to use your JuviGems for this purchase</p>
+    </div>
+
+    <?php
+ endif #end $this->enableReward() condition ?>
